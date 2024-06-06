@@ -1,5 +1,8 @@
 package day21.分块查找;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class blockSearch {
     public static void main(String[] args) {
         /*分块查找核心思想:块内无序，块间有序
@@ -27,6 +30,7 @@ public class blockSearch {
 
         //5.打印对应的索引
         System.out.println(index);
+        
     }
 
     //利用分块查找的原理，查询要查找的元素的索引
