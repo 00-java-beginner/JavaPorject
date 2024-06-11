@@ -1,4 +1,4 @@
-package p93_面向对象综合练习_03;
+package day9.p93_面向对象综合练习;
 
 public class GirlFriendTest {
     public static void main(String[] args) {

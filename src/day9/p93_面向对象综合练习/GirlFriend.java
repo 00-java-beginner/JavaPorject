@@ -1,4 +1,4 @@
-package p93_面向对象综合练习_03;
+package day9.p93_面向对象综合练习;
 public class GirlFriend {
     //女朋友的属性:姓名、年龄、性别、爱好
     private String name;

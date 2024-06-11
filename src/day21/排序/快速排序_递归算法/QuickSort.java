@@ -53,8 +53,6 @@ public class QuickSort {
             int temp = arr[start];
             arr[start] = arr[end];
             arr[end] = temp;
-
-
         }
 
         //上面循环结束后表示start和end指向的元素是同一个，此时循环结束
@@ -72,6 +70,5 @@ public class QuickSort {
         //在这里i交换后的数据，由于start是基准数本身，所以需要+1开始
         //j为一开始传递的值：arr.length - 1
         quickSort(arr, start + 1, j);
-
     }
 }
