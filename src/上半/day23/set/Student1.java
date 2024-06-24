@@ -1,4 +1,4 @@
-package 涓婂崐.day23.set;
+package 上半.day23.set;
 
 public class Student1 implements Comparable<Student1> {
     private String name;
@@ -24,7 +24,7 @@ public class Student1 implements Comparable<Student1> {
         int sum1 = this.getChinese() + this.getMath() + this.getEnglish();
         int sum2 = o.getChinese() + o.getMath() + o.getEnglish();
         int i = sum1 - sum2;
-        //姣旇緝鎬诲垎
+        //比较总分
         i = i == 0 ? this.getChinese() - o.getChinese() : i;
         i = i == 0 ? this.getMath() - o.getMath() : i;
         i = i == 0 ? this.getEnglish() - o.getEnglish() : i;
@@ -36,7 +36,7 @@ public class Student1 implements Comparable<Student1> {
 
 
     /**
-     * 鑾峰彇
+     * 获取
      *
      * @return name
      */
@@ -45,7 +45,7 @@ public class Student1 implements Comparable<Student1> {
     }
 
     /**
-     * 璁剧疆
+     * 设置
      *
      * @param name
      */
@@ -54,7 +54,7 @@ public class Student1 implements Comparable<Student1> {
     }
 
     /**
-     * 鑾峰彇
+     * 获取
      *
      * @return age
      */
@@ -63,7 +63,7 @@ public class Student1 implements Comparable<Student1> {
     }
 
     /**
-     * 璁剧疆
+     * 设置
      *
      * @param age
      */
@@ -72,7 +72,7 @@ public class Student1 implements Comparable<Student1> {
     }
 
     /**
-     * 鑾峰彇
+     * 获取
      *
      * @return Chinese
      */
@@ -81,7 +81,7 @@ public class Student1 implements Comparable<Student1> {
     }
 
     /**
-     * 璁剧疆
+     * 设置
      *
      * @param Chinese
      */
@@ -90,7 +90,7 @@ public class Student1 implements Comparable<Student1> {
     }
 
     /**
-     * 鑾峰彇
+     * 获取
      *
      * @return Math
      */
@@ -99,7 +99,7 @@ public class Student1 implements Comparable<Student1> {
     }
 
     /**
-     * 璁剧疆
+     * 设置
      *
      * @param Math
      */
@@ -108,7 +108,7 @@ public class Student1 implements Comparable<Student1> {
     }
 
     /**
-     * 鑾峰彇
+     * 获取
      *
      * @return English
      */
@@ -117,7 +117,7 @@ public class Student1 implements Comparable<Student1> {
     }
 
     /**
-     * 璁剧疆
+     * 设置
      *
      * @param English
      */

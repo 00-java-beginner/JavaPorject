@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day22.é›†åˆé¡¶å±‚æ¥å£collection;
+package ÉÏ°ë.day22.¼¯ºÏ¶¥²ã½Ó¿Úcollection;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -7,31 +7,31 @@ import java.util.Iterator;
 public class A03_CollectionDemo3 {
     public static void main(String[] args) {
         /*
-            Collectionç³»åˆ—é›†åˆä¸‰ç§é€šç”¨çš„éå†æ–¹å¼ï¼š
-                1.è¿­ä»£å™¨éå†
-                2.å¢å¼ºforéå†
-                3.lambdaè¡¨è¾¾å¼éå†
+            CollectionÏµÁĞ¼¯ºÏÈıÖÖÍ¨ÓÃµÄ±éÀú·½Ê½£º
+                1.µü´úÆ÷±éÀú
+                2.ÔöÇ¿for±éÀú
+                3.lambda±í´ïÊ½±éÀú
 
 
-             è¿­ä»£å™¨éå†ç›¸å…³çš„ä¸‰ä¸ªæ–¹æ³•ï¼š
-                    Iterator<E> iterator()  ï¼šè·å–ä¸€ä¸ªè¿­ä»£å™¨å¯¹è±¡
-                    boolean hasNext()       ï¼šåˆ¤æ–­å½“å‰æŒ‡å‘çš„ä½ç½®æ˜¯å¦æœ‰å…ƒç´ 
-                    E next()                ï¼šè·å–å½“å‰æŒ‡å‘çš„å…ƒç´ å¹¶ç§»åŠ¨æŒ‡é’ˆ
+             µü´úÆ÷±éÀúÏà¹ØµÄÈı¸ö·½·¨£º
+                    Iterator<E> iterator()  £º»ñÈ¡Ò»¸öµü´úÆ÷¶ÔÏó
+                    boolean hasNext()       £ºÅĞ¶Ïµ±Ç°Ö¸ÏòµÄÎ»ÖÃÊÇ·ñÓĞÔªËØ
+                    E next()                £º»ñÈ¡µ±Ç°Ö¸ÏòµÄÔªËØ²¢ÒÆ¶¯Ö¸Õë
         */
 
-        //1.åˆ›å»ºé›†åˆå¹¶æ·»åŠ å…ƒç´ 
+        //1.´´½¨¼¯ºÏ²¢Ìí¼ÓÔªËØ
         Collection<String> coll = new ArrayList<>();
         coll.add("aaa");
         coll.add("bbb");
         coll.add("ccc");
         coll.add("ddd");
 
-        //2.è·å–è¿­ä»£å™¨å¯¹è±¡
-        //è¿­ä»£å™¨å°±å¥½æ¯”æ˜¯ä¸€ä¸ªç®­å¤´ï¼Œé»˜è®¤æŒ‡å‘é›†åˆçš„0ç´¢å¼•å¤„
+        //2.»ñÈ¡µü´úÆ÷¶ÔÏó
+        //µü´úÆ÷¾ÍºÃ±ÈÊÇÒ»¸ö¼ıÍ·£¬Ä¬ÈÏÖ¸Ïò¼¯ºÏµÄ0Ë÷Òı´¦
         Iterator<String> it = coll.iterator();
-        //3.åˆ©ç”¨å¾ªç¯ä¸æ–­çš„å»è·å–é›†åˆä¸­çš„æ¯ä¸€ä¸ªå…ƒç´ 
+        //3.ÀûÓÃÑ­»·²»¶ÏµÄÈ¥»ñÈ¡¼¯ºÏÖĞµÄÃ¿Ò»¸öÔªËØ
         while(it.hasNext()){
-            //4.nextæ–¹æ³•çš„ä¸¤ä»¶äº‹æƒ…ï¼šè·å–å…ƒç´ å¹¶ç§»åŠ¨æŒ‡é’ˆ
+            //4.next·½·¨µÄÁ½¼şÊÂÇé£º»ñÈ¡ÔªËØ²¢ÒÆ¶¯Ö¸Õë
             String str = it.next();
             System.out.println(str);
         }

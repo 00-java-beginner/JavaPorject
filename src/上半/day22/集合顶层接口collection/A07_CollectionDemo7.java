@@ -1,29 +1,29 @@
-package ä¸ŠåŠ.day22.é›†åˆé¡¶å±‚æ¥å£collection;
+package ÉÏ°ë.day22.¼¯ºÏ¶¥²ã½Ó¿Úcollection;
 
 import java.util.ArrayList;
 import java.util.Collection;
 
 public class A07_CollectionDemo7 {
     public static void main(String[] args) {
-       /* Collectionç³»åˆ—é›†åˆä¸‰ç§é€šç”¨çš„éå†æ–¹å¼ï¼š
-        1.è¿­ä»£å™¨éå†
-        2.å¢å¼ºforéå†
-        3.lambdaè¡¨è¾¾å¼éå†
+       /* CollectionÏµÁĞ¼¯ºÏÈıÖÖÍ¨ÓÃµÄ±éÀú·½Ê½£º
+        1.µü´úÆ÷±éÀú
+        2.ÔöÇ¿for±éÀú
+        3.lambda±í´ïÊ½±éÀú
 
-        lambdaè¡¨è¾¾å¼éå†ï¼š
+        lambda±í´ïÊ½±éÀú£º
                 default void forEach(Consumer<? super T> action):
         */
 
-        //1.åˆ›å»ºé›†åˆå¹¶æ·»åŠ å…ƒç´ 
+        //1.´´½¨¼¯ºÏ²¢Ìí¼ÓÔªËØ
         Collection<String> coll = new ArrayList<>();
         coll.add("zhangsan");
         coll.add("lisi");
         coll.add("wangwu");
-        //2.åˆ©ç”¨åŒ¿åå†…éƒ¨ç±»çš„å½¢å¼
-        //åº•å±‚åŸç†ï¼š
-        //å…¶å®ä¹Ÿä¼šè‡ªå·±éå†é›†åˆï¼Œä¾æ¬¡å¾—åˆ°æ¯ä¸€ä¸ªå…ƒç´ 
-        //æŠŠå¾—åˆ°çš„æ¯ä¸€ä¸ªå…ƒç´ ï¼Œä¼ é€’ç»™ä¸‹é¢çš„acceptæ–¹æ³•
-        //sä¾æ¬¡è¡¨ç¤ºé›†åˆä¸­çš„æ¯ä¸€ä¸ªæ•°æ®
+        //2.ÀûÓÃÄäÃûÄÚ²¿ÀàµÄĞÎÊ½
+        //µ×²ãÔ­Àí£º
+        //ÆäÊµÒ²»á×Ô¼º±éÀú¼¯ºÏ£¬ÒÀ´ÎµÃµ½Ã¿Ò»¸öÔªËØ
+        //°ÑµÃµ½µÄÃ¿Ò»¸öÔªËØ£¬´«µİ¸øÏÂÃæµÄaccept·½·¨
+        //sÒÀ´Î±íÊ¾¼¯ºÏÖĞµÄÃ¿Ò»¸öÊı¾İ
        /* coll.forEach(new Consumer<String>() {
             @Override
             public void accept(String s) {
@@ -31,7 +31,7 @@ public class A07_CollectionDemo7 {
             }
         });*/
 
-        //lambdaè¡¨è¾¾å¼
+        //lambda±í´ïÊ½
         coll.forEach(s -> System.out.println(s));
 
 

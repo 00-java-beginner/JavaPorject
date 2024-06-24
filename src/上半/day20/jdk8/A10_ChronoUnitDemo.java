@@ -1,32 +1,32 @@
-package ä¸ŠåŠ.day20.jdk8;
+package ÉÏ°ë.day20.jdk8;
 
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 
 public class A10_ChronoUnitDemo {
     public static void main(String[] args) {
-        // å½“å‰æ—¶é—´
+        // µ±Ç°Ê±¼ä
         LocalDateTime today = LocalDateTime.now();
         System.out.println(today);
-        // ç”Ÿæ—¥æ—¶é—´
+        // ÉúÈÕÊ±¼ä
         LocalDateTime birthDate = LocalDateTime.of(2000, 1, 1,
                 0, 0, 0);
         System.out.println(birthDate);
 
-        System.out.println("ç›¸å·®çš„å¹´æ•°:" + ChronoUnit.YEARS.between(birthDate, today));
-        System.out.println("ç›¸å·®çš„æœˆæ•°:" + ChronoUnit.MONTHS.between(birthDate, today));
-        System.out.println("ç›¸å·®çš„å‘¨æ•°:" + ChronoUnit.WEEKS.between(birthDate, today));
-        System.out.println("ç›¸å·®çš„å¤©æ•°:" + ChronoUnit.DAYS.between(birthDate, today));
-        System.out.println("ç›¸å·®çš„æ—¶æ•°:" + ChronoUnit.HOURS.between(birthDate, today));
-        System.out.println("ç›¸å·®çš„åˆ†æ•°:" + ChronoUnit.MINUTES.between(birthDate, today));
-        System.out.println("ç›¸å·®çš„ç§’æ•°:" + ChronoUnit.SECONDS.between(birthDate, today));
-        System.out.println("ç›¸å·®çš„æ¯«ç§’æ•°:" + ChronoUnit.MILLIS.between(birthDate, today));
-        System.out.println("ç›¸å·®çš„å¾®ç§’æ•°:" + ChronoUnit.MICROS.between(birthDate, today));
-        System.out.println("ç›¸å·®çš„çº³ç§’æ•°:" + ChronoUnit.NANOS.between(birthDate, today));
-        System.out.println("ç›¸å·®çš„åŠå¤©æ•°:" + ChronoUnit.HALF_DAYS.between(birthDate, today));
-        System.out.println("ç›¸å·®çš„åå¹´æ•°:" + ChronoUnit.DECADES.between(birthDate, today));
-        System.out.println("ç›¸å·®çš„ä¸–çºª(ç™¾å¹´)æ•°:" + ChronoUnit.CENTURIES.between(birthDate, today));
-        System.out.println("ç›¸å·®çš„åƒå¹´æ•°:" + ChronoUnit.MILLENNIA.between(birthDate, today));
-        System.out.println("ç›¸å·®çš„çºªå…ƒæ•°:" + ChronoUnit.ERAS.between(birthDate, today));
+        System.out.println("Ïà²îµÄÄêÊı:" + ChronoUnit.YEARS.between(birthDate, today));
+        System.out.println("Ïà²îµÄÔÂÊı:" + ChronoUnit.MONTHS.between(birthDate, today));
+        System.out.println("Ïà²îµÄÖÜÊı:" + ChronoUnit.WEEKS.between(birthDate, today));
+        System.out.println("Ïà²îµÄÌìÊı:" + ChronoUnit.DAYS.between(birthDate, today));
+        System.out.println("Ïà²îµÄÊ±Êı:" + ChronoUnit.HOURS.between(birthDate, today));
+        System.out.println("Ïà²îµÄ·ÖÊı:" + ChronoUnit.MINUTES.between(birthDate, today));
+        System.out.println("Ïà²îµÄÃëÊı:" + ChronoUnit.SECONDS.between(birthDate, today));
+        System.out.println("Ïà²îµÄºÁÃëÊı:" + ChronoUnit.MILLIS.between(birthDate, today));
+        System.out.println("Ïà²îµÄÎ¢ÃëÊı:" + ChronoUnit.MICROS.between(birthDate, today));
+        System.out.println("Ïà²îµÄÄÉÃëÊı:" + ChronoUnit.NANOS.between(birthDate, today));
+        System.out.println("Ïà²îµÄ°ëÌìÊı:" + ChronoUnit.HALF_DAYS.between(birthDate, today));
+        System.out.println("Ïà²îµÄÊ®ÄêÊı:" + ChronoUnit.DECADES.between(birthDate, today));
+        System.out.println("Ïà²îµÄÊÀ¼Í(°ÙÄê)Êı:" + ChronoUnit.CENTURIES.between(birthDate, today));
+        System.out.println("Ïà²îµÄÇ§ÄêÊı:" + ChronoUnit.MILLENNIA.between(birthDate, today));
+        System.out.println("Ïà²îµÄ¼ÍÔªÊı:" + ChronoUnit.ERAS.between(birthDate, today));
     }
 }

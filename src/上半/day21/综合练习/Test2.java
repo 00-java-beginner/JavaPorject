@@ -1,9 +1,9 @@
-package ä¸ŠåŠ.day21.ç»¼åˆç»ƒä¹ ;
+package ÉÏ°ë.day21.×ÛºÏÁ·Ï°;
 
 public class Test2 {
     public static void main(String[] args) {
-        //ä¸æ­»ç¥å…”é—®é¢˜ï¼Œæ±‚ç¬¬åäºŒä¸ªæœˆæœ‰å¤šå°‘å¯¹å…”å­
-        //1.åˆ©ç”¨å¾ªç¯
+        //²»ËÀÉñÍÃÎÊÌâ£¬ÇóµÚÊ®¶ş¸öÔÂÓĞ¶àÉÙ¶ÔÍÃ×Ó
+        //1.ÀûÓÃÑ­»·
         int[] arr = new int[12];
         arr[0] = 1;
         arr[1] = 1;
@@ -12,7 +12,7 @@ public class Test2 {
         }
         System.out.println(arr[11]);
 
-        //2.åˆ©ç”¨é€’å½’
+        //2.ÀûÓÃµİ¹é
         System.out.println(getSum(12));
     }
 

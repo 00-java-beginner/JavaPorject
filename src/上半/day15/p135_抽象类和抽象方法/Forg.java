@@ -1,4 +1,4 @@
-package 涓婂崐.day15.p135_鎶借薄绫诲拰鎶借薄鏂规硶;
+package 上半.day15.p135_抽象类和抽象方法;
 
 public class Forg extends Animal {
     public Forg() {
@@ -10,6 +10,6 @@ public class Forg extends Animal {
 
     @Override
     public void eat() {
-        System.out.println("闈掕洐鍦ㄥ悆铏瓙");
+        System.out.println("青蛙在吃虫子");
     }
 }

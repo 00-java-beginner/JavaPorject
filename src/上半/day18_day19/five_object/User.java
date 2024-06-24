@@ -1,14 +1,14 @@
-package ä¸ŠåŠ.day18_day19.five_object;
+package ÉÏ°ë.day18_day19.five_object;
 
 import java.util.StringJoiner;
 
 
 
 //Cloneable
-//å¦‚æœä¸€ä¸ªæ¥å£é‡Œé¢æ²¡æœ‰æŠ½è±¡æ–¹æ³•
-//è¡¨ç¤ºå½“å‰çš„æ¥å£æ˜¯ä¸€ä¸ªæ ‡è®°æ€§æ¥å£
-//ç°åœ¨Cloneableè¡¨ç¤ºä¸€æ—¦å®ç°äº†ï¼Œé‚£ä¹ˆå½“å‰ç±»çš„å¯¹è±¡å°±å¯ä»¥è¢«å…‹é™
-//å¦‚æœæ²¡æœ‰å®ç°ï¼Œå½“å‰ç±»çš„å¯¹è±¡å°±ä¸èƒ½å…‹éš†
+//Èç¹ûÒ»¸ö½Ó¿ÚÀïÃæÃ»ÓĞ³éÏó·½·¨
+//±íÊ¾µ±Ç°µÄ½Ó¿ÚÊÇÒ»¸ö±ê¼ÇĞÔ½Ó¿Ú
+//ÏÖÔÚCloneable±íÊ¾Ò»µ©ÊµÏÖÁË£¬ÄÇÃ´µ±Ç°ÀàµÄ¶ÔÏó¾Í¿ÉÒÔ±»¿Ë½µ
+//Èç¹ûÃ»ÓĞÊµÏÖ£¬µ±Ç°ÀàµÄ¶ÔÏó¾Í²»ÄÜ¿ËÂ¡
 public class User implements Cloneable {
     private int id;
     private String username;
@@ -31,7 +31,7 @@ public class User implements Cloneable {
     }
 
     /**
-     * è·å–
+     * »ñÈ¡
      *
      * @return id
      */
@@ -40,7 +40,7 @@ public class User implements Cloneable {
     }
 
     /**
-     * è®¾ç½®
+     * ÉèÖÃ
      *
      * @param id
      */
@@ -49,7 +49,7 @@ public class User implements Cloneable {
     }
 
     /**
-     * è·å–
+     * »ñÈ¡
      *
      * @return username
      */
@@ -58,7 +58,7 @@ public class User implements Cloneable {
     }
 
     /**
-     * è®¾ç½®
+     * ÉèÖÃ
      *
      * @param username
      */
@@ -67,7 +67,7 @@ public class User implements Cloneable {
     }
 
     /**
-     * è·å–
+     * »ñÈ¡
      *
      * @return password
      */
@@ -76,7 +76,7 @@ public class User implements Cloneable {
     }
 
     /**
-     * è®¾ç½®
+     * ÉèÖÃ
      *
      * @param password
      */
@@ -85,7 +85,7 @@ public class User implements Cloneable {
     }
 
     /**
-     * è·å–
+     * »ñÈ¡
      *
      * @return path
      */
@@ -94,7 +94,7 @@ public class User implements Cloneable {
     }
 
     /**
-     * è®¾ç½®
+     * ÉèÖÃ
      *
      * @param path
      */
@@ -103,7 +103,7 @@ public class User implements Cloneable {
     }
 
     /**
-     * è·å–
+     * »ñÈ¡
      *
      * @return data
      */
@@ -112,7 +112,7 @@ public class User implements Cloneable {
     }
 
     /**
-     * è®¾ç½®
+     * ÉèÖÃ
      *
      * @param data
      */
@@ -121,7 +121,7 @@ public class User implements Cloneable {
     }
 
     public String toString() {
-        return "è§’è‰²ç¼–å·ä¸ºï¼š" + id + "ï¼Œç”¨æˆ·åä¸ºï¼š" + username + "å¯†ç ä¸ºï¼š" + password + ", æ¸¸æˆå›¾ç‰‡ä¸º:" + path + ", è¿›åº¦:" + arrToString();
+        return "½ÇÉ«±àºÅÎª£º" + id + "£¬ÓÃ»§ÃûÎª£º" + username + "ÃÜÂëÎª£º" + password + ", ÓÎÏ·Í¼Æ¬Îª:" + path + ", ½ø¶È:" + arrToString();
     }
 
 
@@ -136,20 +136,20 @@ public class User implements Cloneable {
 
     @Override
     protected Object clone() throws CloneNotSupportedException {
-        //è°ƒç”¨çˆ¶ç±»ä¸­çš„cloneæ–¹æ³•
-        //ç›¸å½“äºè®©Javaå¸®æˆ‘ä»¬å…‹éš†ä¸€ä¸ªå¯¹è±¡ï¼Œå¹¶æŠŠå…‹éš†ä¹‹åçš„å¯¹è±¡è¿”å›å‡ºå»ã€‚
+        //µ÷ÓÃ¸¸ÀàÖĞµÄclone·½·¨
+        //Ïàµ±ÓÚÈÃJava°ïÎÒÃÇ¿ËÂ¡Ò»¸ö¶ÔÏó£¬²¢°Ñ¿ËÂ¡Ö®ºóµÄ¶ÔÏó·µ»Ø³öÈ¥¡£
 
-        //å…ˆæŠŠè¢«å…‹éš†å¯¹è±¡ä¸­çš„æ•°ç»„è·å–å‡ºæ¥
+        //ÏÈ°Ñ±»¿ËÂ¡¶ÔÏóÖĞµÄÊı×é»ñÈ¡³öÀ´
         int[] data = this.data;
-        //åˆ›å»ºæ–°çš„æ•°ç»„
+        //´´½¨ĞÂµÄÊı×é
         int[] newData =new int[data.length];
-        //æ‹·è´æ•°ç»„ä¸­çš„æ•°æ®
+        //¿½±´Êı×éÖĞµÄÊı¾İ
         for (int i = 0; i < data.length; i++) {
             newData[i] = data[i];
         }
-        //è°ƒç”¨çˆ¶ç±»ä¸­çš„æ–¹æ³•å…‹éš†å¯¹è±¡
+        //µ÷ÓÃ¸¸ÀàÖĞµÄ·½·¨¿ËÂ¡¶ÔÏó
             User u=(User)super.clone();
-        //å› ä¸ºçˆ¶ç±»ä¸­çš„å…‹éš†æ–¹æ³•æ˜¯æµ…å…‹éš†ï¼Œæ›¿æ¢å…‹éš†å‡ºæ¥å¯¹è±¡ä¸­çš„æ•°ç»„åœ°å€å€¼
+        //ÒòÎª¸¸ÀàÖĞµÄ¿ËÂ¡·½·¨ÊÇÇ³¿ËÂ¡£¬Ìæ»»¿ËÂ¡³öÀ´¶ÔÏóÖĞµÄÊı×éµØÖ·Öµ
         u.data =newData;
         return u;
     }

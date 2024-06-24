@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day13.p129è®¤è¯†å¤šæ€;
+package ÉÏ°ë.day13.p129ÈÏÊ¶¶àÌ¬;
 
 public class Person {
     private String name;
@@ -18,7 +18,7 @@ public class Person {
     }
 
     /**
-     * è·å–
+     * »ñÈ¡
      * @return name
      */
     public String getName() {
@@ -26,7 +26,7 @@ public class Person {
     }
 
     /**
-     * è®¾ç½®
+     * ÉèÖÃ
      * @param name
      */
     public void setName(String name) {
@@ -34,7 +34,7 @@ public class Person {
     }
 
     /**
-     * è·å–
+     * »ñÈ¡
      * @return age
      */
     public int getAge() {
@@ -42,7 +42,7 @@ public class Person {
     }
 
     /**
-     * è®¾ç½®
+     * ÉèÖÃ
      * @param age
      */
     public void setAge(int age) {

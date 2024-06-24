@@ -1,36 +1,36 @@
-package ä¸ŠåŠ.day20.åŒ…è£…ç±»;
+package ÉÏ°ë.day20.°ü×°Àà;
 
 public class A04_IntegerDemo4 {
     public static void main(String[] args) {
         /*
-            public static string tobinarystring(int i) å¾—åˆ°äºŒè¿›åˆ¶
-            public static string tooctalstring(int i) å¾—åˆ°å…«è¿›åˆ¶
-            public static string toHexstring(int i) å¾—åˆ°åå…­è¿›åˆ¶
-            public static int parseInt(string s) å°†å­—ç¬¦ä¸²ç±»å‹çš„æ•´æ•°è½¬æˆintç±»å‹çš„æ•´æ•°
+            public static string tobinarystring(int i) µÃµ½¶ş½øÖÆ
+            public static string tooctalstring(int i) µÃµ½°Ë½øÖÆ
+            public static string toHexstring(int i) µÃµ½Ê®Áù½øÖÆ
+            public static int parseInt(string s) ½«×Ö·û´®ÀàĞÍµÄÕûÊı×ª³ÉintÀàĞÍµÄÕûÊı
         */
 
-        //1.æŠŠæ•´æ•°è½¬æˆäºŒè¿›åˆ¶ï¼Œåå…­è¿›åˆ¶
+        //1.°ÑÕûÊı×ª³É¶ş½øÖÆ£¬Ê®Áù½øÖÆ
         String str1 = Integer.toBinaryString(100);
         System.out.println(str1);//1100100
 
-        //2.æŠŠæ•´æ•°è½¬æˆå…«è¿›åˆ¶
+        //2.°ÑÕûÊı×ª³É°Ë½øÖÆ
         String str2 = Integer.toOctalString(100);
         System.out.println(str2);//144
 
-        //3.æŠŠæ•´æ•°è½¬æˆåå…­è¿›åˆ¶
+        //3.°ÑÕûÊı×ª³ÉÊ®Áù½øÖÆ
         String str3 = Integer.toHexString(100);
         System.out.println(str3);//64
 
-        //4.å°†å­—ç¬¦ä¸²ç±»å‹çš„æ•´æ•°è½¬æˆintç±»å‹çš„æ•´æ•°
-        //å¼ºç±»å‹è¯­è¨€:æ¯ç§æ•°æ®åœ¨javaä¸­éƒ½æœ‰å„è‡ªçš„æ•°æ®ç±»å‹
-        //åœ¨è®¡ç®—çš„æ—¶å€™ï¼Œå¦‚æœä¸æ˜¯åŒä¸€ç§æ•°æ®ç±»å‹ï¼Œæ˜¯æ— æ³•ç›´æ¥è®¡ç®—çš„ã€‚
+        //4.½«×Ö·û´®ÀàĞÍµÄÕûÊı×ª³ÉintÀàĞÍµÄÕûÊı
+        //Ç¿ÀàĞÍÓïÑÔ:Ã¿ÖÖÊı¾İÔÚjavaÖĞ¶¼ÓĞ¸÷×ÔµÄÊı¾İÀàĞÍ
+        //ÔÚ¼ÆËãµÄÊ±ºò£¬Èç¹û²»ÊÇÍ¬Ò»ÖÖÊı¾İÀàĞÍ£¬ÊÇÎŞ·¨Ö±½Ó¼ÆËãµÄ¡£
         int i = Integer.parseInt("123");
         System.out.println(i);
         System.out.println(i + 1);//124
-        //ç»†èŠ‚1:
-        //åœ¨ç±»å‹è½¬æ¢çš„æ—¶å€™ï¼Œæ‹¬å·ä¸­çš„å‚æ•°åªèƒ½æ˜¯æ•°å­—ä¸èƒ½æ˜¯å…¶ä»–ï¼Œå¦åˆ™ä»£ç ä¼šæŠ¥é”™
-        //ç»†èŠ‚2:
-        //8ç§åŒ…è£…ç±»å½“ä¸­ï¼Œé™¤äº†Characteréƒ½æœ‰å¯¹åº”çš„parseXxxçš„æ–¹æ³•ï¼Œè¿›è¡Œç±»å‹è½¬æ¢
+        //Ï¸½Ú1:
+        //ÔÚÀàĞÍ×ª»»µÄÊ±ºò£¬À¨ºÅÖĞµÄ²ÎÊıÖ»ÄÜÊÇÊı×Ö²»ÄÜÊÇÆäËû£¬·ñÔò´úÂë»á±¨´í
+        //Ï¸½Ú2:
+        //8ÖÖ°ü×°Ààµ±ÖĞ£¬³ıÁËCharacter¶¼ÓĞ¶ÔÓ¦µÄparseXxxµÄ·½·¨£¬½øĞĞÀàĞÍ×ª»»
         String str = "true";
         boolean b = Boolean.parseBoolean(str);
         System.out.println(b);

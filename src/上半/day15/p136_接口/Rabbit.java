@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day15.p136_æ¥å£;
+package ÉÏ°ë.day15.p136_½Ó¿Ú;
 
 public class Rabbit extends Animal{
     public Rabbit() {
@@ -10,6 +10,6 @@ public class Rabbit extends Animal{
 
     @Override
     public void eat() {
-        System.out.println("å…”å­åœ¨åƒèƒ¡èåœ");
+        System.out.println("ÍÃ×ÓÔÚ³ÔºúÂÜ²·");
     }
 }

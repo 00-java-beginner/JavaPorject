@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day23.æ³›å‹ç»ƒä¹ ;
+package ÉÏ°ë.day23.·ºĞÍÁ·Ï°;
 
 public class lihuaCat extends Cat{
     public lihuaCat() {
@@ -10,6 +10,6 @@ public class lihuaCat extends Cat{
 
     @Override
     public void eat(){
-        System.out.println("ä¸€åªå«åš" + getName()+ "çš„"+getAge() + "å²çš„ç‹¸èŠ±çŒ«ï¼Œæ­£åœ¨åƒé±¼");
+        System.out.println("Ò»Ö»½Ğ×ö" + getName()+ "µÄ"+getAge() + "ËêµÄÀê»¨Ã¨£¬ÕıÔÚ³ÔÓã");
     }
 }

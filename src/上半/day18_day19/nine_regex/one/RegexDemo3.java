@@ -1,49 +1,49 @@
-package ä¸ŠåŠ.day18_day19.nine_regex.one;
+package ÉÏ°ë.day18_day19.nine_regex.one;
 
 public class RegexDemo3 {
     public static void main(String[] args) {
-        // \ è½¬ä¹‰å­—ç¬¦ æ”¹å˜åé¢é‚£ä¸ªå­—ç¬¦åŸæœ¬çš„å«ä¹‰
-        //ç»ƒä¹ :ä»¥å­—ç¬¦ä¸²çš„å½¢å¼æ‰“å°ä¸€ä¸ªåŒå¼•å·
-        //"åœ¨Javaä¸­è¡¨ç¤ºå­—ç¬¦ä¸²çš„å¼€å¤´æˆ–è€…ç»“å°¾
+        // \ ×ªÒå×Ö·û ¸Ä±äºóÃæÄÇ¸ö×Ö·ûÔ­±¾µÄº¬Òå
+        //Á·Ï°:ÒÔ×Ö·û´®µÄĞÎÊ½´òÓ¡Ò»¸öË«ÒıºÅ
+        //"ÔÚJavaÖĞ±íÊ¾×Ö·û´®µÄ¿ªÍ·»òÕß½áÎ²
 
-        //æ­¤æ—¶\è¡¨ç¤ºè½¬ä¹‰å­—ç¬¦ï¼Œæ”¹å˜äº†åé¢é‚£ä¸ªåŒå¼•å·åŸæœ¬çš„å«ä¹‰
-        //æŠŠä»–å˜æˆäº†ä¸€ä¸ªæ™®æ™®é€šé€šçš„åŒå¼•å·è€Œå·²ã€‚
+        //´ËÊ±\±íÊ¾×ªÒå×Ö·û£¬¸Ä±äÁËºóÃæÄÇ¸öË«ÒıºÅÔ­±¾µÄº¬Òå
+        //°ÑËû±ä³ÉÁËÒ»¸öÆÕÆÕÍ¨Í¨µÄË«ÒıºÅ¶øÒÑ¡£
         System.out.println("\"");
 
-        // \è¡¨ç¤ºè½¬ä¹‰å­—ç¬¦
-        //ä¸¤ä¸ª\çš„ç†è§£æ–¹å¼ï¼šå‰é¢çš„\æ˜¯ä¸€ä¸ªè½¬ä¹‰å­—ç¬¦ï¼Œæ”¹å˜äº†åé¢\åŸæœ¬çš„å«ä¹‰ï¼ŒæŠŠä»–å˜æˆä¸€ä¸ªæ™®æ™®é€šé€šçš„\è€Œå·²ã€‚
+        // \±íÊ¾×ªÒå×Ö·û
+        //Á½¸ö\µÄÀí½â·½Ê½£ºÇ°ÃæµÄ\ÊÇÒ»¸ö×ªÒå×Ö·û£¬¸Ä±äÁËºóÃæ\Ô­±¾µÄº¬Òå£¬°ÑËû±ä³ÉÒ»¸öÆÕÆÕÍ¨Í¨µÄ\¶øÒÑ¡£
         System.out.println("c:Users\\moon\\IdeaProjects\\basic-code\\myapi\\src\\com\\itheima\\a08regexdemo\\RegexDemo1.java");
 
 
-        //.è¡¨ç¤ºä»»æ„ä¸€ä¸ªå­—ç¬¦
-        System.out.println("ä½ ".matches("..")); //false
-        System.out.println("ä½ ".matches(".")); //true
-        System.out.println("ä½ a".matches(".."));//true
+        //.±íÊ¾ÈÎÒâÒ»¸ö×Ö·û
+        System.out.println("Äã".matches("..")); //false
+        System.out.println("Äã".matches(".")); //true
+        System.out.println("Äãa".matches(".."));//true
 
-        // \\d è¡¨ç¤ºä»»æ„çš„ä¸€ä¸ªæ•°å­—
-        // \\dåªèƒ½æ˜¯ä»»æ„çš„ä¸€ä½æ•°å­—
-        // ç®€å•æ¥è®°:ä¸¤ä¸ª\è¡¨ç¤ºä¸€ä¸ª\
+        // \\d ±íÊ¾ÈÎÒâµÄÒ»¸öÊı×Ö
+        // \\dÖ»ÄÜÊÇÈÎÒâµÄÒ»Î»Êı×Ö
+        // ¼òµ¥À´¼Ç:Á½¸ö\±íÊ¾Ò»¸ö\
         System.out.println("a".matches("\\d")); // false
         System.out.println("3".matches("\\d")); // true
         System.out.println("333".matches("\\d")); // false
 
-        //\\wåªèƒ½æ˜¯ä¸€ä½å•è¯å­—ç¬¦[a-zA-Z_0-9]
+        //\\wÖ»ÄÜÊÇÒ»Î»µ¥´Ê×Ö·û[a-zA-Z_0-9]
         System.out.println("z".matches("\\w")); // true
         System.out.println("2".matches("\\w")); // true
         System.out.println("21".matches("\\w")); // false
-        System.out.println("ä½ ".matches("\\w"));//false
+        System.out.println("Äã".matches("\\w"));//false
 
-        // éå•è¯å­—ç¬¦
-        System.out.println("ä½ ".matches("\\W")); // true
+        // ·Çµ¥´Ê×Ö·û
+        System.out.println("Äã".matches("\\W")); // true
         System.out.println("---------------------------------------------");
-        // ä»¥ä¸Šæ­£åˆ™åŒ¹é…åªèƒ½æ ¡éªŒå•ä¸ªå­—ç¬¦ã€‚
+        // ÒÔÉÏÕıÔòÆ¥ÅäÖ»ÄÜĞ£Ñéµ¥¸ö×Ö·û¡£
 
 
-        // å¿…é¡»æ˜¯æ•°å­— å­—æ¯ ä¸‹åˆ’çº¿ è‡³å°‘ 6ä½
+        // ±ØĞëÊÇÊı×Ö ×ÖÄ¸ ÏÂ»®Ïß ÖÁÉÙ 6Î»
         System.out.println("2442fsfsf".matches("\\w{6,}"));//true
         System.out.println("244f".matches("\\w{6,}"));//false
 
-        // å¿…é¡»æ˜¯æ•°å­—å’Œå­—ç¬¦ å¿…é¡»æ˜¯4ä½
+        // ±ØĞëÊÇÊı×ÖºÍ×Ö·û ±ØĞëÊÇ4Î»
         System.out.println("23dF".matches("[a-zA-Z0-9]{4}"));//true
         System.out.println("23 F".matches("[a-zA-Z0-9]{4}"));//false
         System.out.println("23dF".matches("[\\w&&[^_]]{4}"));//true

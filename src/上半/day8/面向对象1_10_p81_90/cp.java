@@ -1,12 +1,12 @@
-package ä¸ŠåŠ.day8.é¢å‘å¯¹è±¡1_10_p81_90;
+package ÉÏ°ë.day8.ÃæÏò¶ÔÏó1_10_p81_90;
 public class cp {
-    //å®šä¹‰å±žæ€§
+    //¶¨ÒåÊôÐÔ
     private String food;
     private int price;
     public void setFood(String food) {
-        //thiså…³é”®å­—çš„ä½œç”¨ï¼šå¯ä»¥å°†å±€éƒ¨å˜é‡å’Œæˆå‘˜å˜é‡çš„å–å€¼èŒƒå›´è¿›è¡ŒåŒºåˆ†
-        //ç­‰å·å·¦è¾¹åŠ ä¸Šthisçš„ä½œç”¨ï¼šè¡¨ç¤ºå³è¾¹çš„å˜é‡å–å€¼èŒƒå›´ä¸ºå°±è¿‘åŽŸåˆ™ä¸å˜
-        //å·¦è¾¹çš„ä¾æ—§æ˜¯å¯¹æˆå‘˜å˜é‡å–å€¼ï¼Œè¿™æ ·å¯ä»¥è§£å†³å˜é‡åéš¾å–çš„æƒ…å†µ
+        //this¹Ø¼ü×ÖµÄ×÷ÓÃ£º¿ÉÒÔ½«¾Ö²¿±äÁ¿ºÍ³ÉÔ±±äÁ¿µÄÈ¡Öµ·¶Î§½øÐÐÇø·Ö
+        //µÈºÅ×ó±ß¼ÓÉÏthisµÄ×÷ÓÃ£º±íÊ¾ÓÒ±ßµÄ±äÁ¿È¡Öµ·¶Î§Îª¾Í½üÔ­Ôò²»±ä
+        //×ó±ßµÄÒÀ¾ÉÊÇ¶Ô³ÉÔ±±äÁ¿È¡Öµ£¬ÕâÑù¿ÉÒÔ½â¾ö±äÁ¿ÃûÄÑÈ¡µÄÇé¿ö
         this.food = food;
     }
     public String getFood() {
@@ -16,15 +16,15 @@ public class cp {
         if (price >= 0 && price <= 88) {
             this.price = price;
         } else {
-            System.out.println("éžæ³•å‚æ•°");
+            System.out.println("·Ç·¨²ÎÊý");
         }
     }
     public int getPrice() {
         return price;
     }
 
-    //å®šä¹‰è¡Œä¸º
+    //¶¨ÒåÐÐÎª
     public void eat() {
-        System.out.println("ä¸œè¥¿å¾ˆå¥½åƒ");
+        System.out.println("¶«Î÷ºÜºÃ³Ô");
     }
 }

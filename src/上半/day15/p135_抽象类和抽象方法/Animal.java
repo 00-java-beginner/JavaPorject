@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day15.p135_æŠ½è±¡ç±»å’ŒæŠ½è±¡æ–¹æ³•;
+package ÉÏ°ë.day15.p135_³éÏóÀàºÍ³éÏó·½·¨;
 
 public abstract class Animal {
     private String name;
@@ -24,7 +24,7 @@ public abstract class Animal {
         this.age = age;
     }
     public void drink(){
-        System.out.println("åŠ¨ç‰©åœ¨å–æ°´");
+        System.out.println("¶¯ÎïÔÚºÈË®");
     }
     public abstract void eat();
 }

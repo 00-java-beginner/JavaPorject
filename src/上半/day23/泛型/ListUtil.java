@@ -1,16 +1,16 @@
-package ä¸ŠåŠ.day23.æ³›å‹;
+package ÉÏ°ë.day23.·ºĞÍ;
 
 import java.util.ArrayList;
 
 public class ListUtil {
     private ListUtil(){}
 
-    //ç±»ä¸­å®šä¹‰ä¸€ä¸ªé™æ€æ–¹æ³•addAllï¼Œç”¨æ¥æ·»åŠ å¤šä¸ªé›†åˆçš„å…ƒç´ ã€‚
+    //ÀàÖĞ¶¨ÒåÒ»¸ö¾²Ì¬·½·¨addAll£¬ÓÃÀ´Ìí¼Ó¶à¸ö¼¯ºÏµÄÔªËØ¡£
 
 
     /*
-    *   å‚æ•°ä¸€ï¼šé›†åˆ
-    *   å‚æ•°äºŒ~æœ€åï¼šè¦æ·»åŠ çš„å…ƒç´ 
+    *   ²ÎÊıÒ»£º¼¯ºÏ
+    *   ²ÎÊı¶ş~×îºó£ºÒªÌí¼ÓµÄÔªËØ
     *
     * */
     public static<E> void addAll(ArrayList<E> list, E e1,E e2,E e3,E e4){
@@ -28,6 +28,6 @@ public class ListUtil {
 
 
     public void show(){
-        System.out.println("å°¼å¤æ‹‰æ–¯Â·çº¯æƒ…Â·å¤©çœŸÂ·æš–ç”·Â·é˜¿ç®");
+        System.out.println("Äá¹ÅÀ­Ë¹¡¤´¿Çé¡¤ÌìÕæ¡¤Å¯ÄĞ¡¤°¢çâ");
     }
 }

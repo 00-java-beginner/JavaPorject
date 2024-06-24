@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day21.ç»¼åˆç»ƒä¹ ;
+package ÉÏ°ë.day21.×ÛºÏÁ·Ï°;
 
 public class GirlFriend {
     private String name;
@@ -15,7 +15,7 @@ public class GirlFriend {
     }
 
     /**
-     * è·å–
+     * »ñÈ¡
      * @return name
      */
     public String getName() {
@@ -23,7 +23,7 @@ public class GirlFriend {
     }
 
     /**
-     * è®¾ç½®
+     * ÉèÖÃ
      * @param name
      */
     public void setName(String name) {
@@ -31,7 +31,7 @@ public class GirlFriend {
     }
 
     /**
-     * è·å–
+     * »ñÈ¡
      * @return age
      */
     public int getAge() {
@@ -39,7 +39,7 @@ public class GirlFriend {
     }
 
     /**
-     * è®¾ç½®
+     * ÉèÖÃ
      * @param age
      */
     public void setAge(int age) {
@@ -47,7 +47,7 @@ public class GirlFriend {
     }
 
     /**
-     * è·å–
+     * »ñÈ¡
      * @return height
      */
     public double getHeight() {
@@ -55,7 +55,7 @@ public class GirlFriend {
     }
 
     /**
-     * è®¾ç½®
+     * ÉèÖÃ
      * @param height
      */
     public void setHeight(double height) {

@@ -1,11 +1,11 @@
-package 涓婂崐.day10;
+package 上半.day10;
 
-public class p105_02_缁冧範 {
+public class p105_02_练习 {
     public static void main(String[] args) {
-        //1.瀹氫箟鏁扮粍
+        //1.定义数组
         int [] arr = {1,2,3};
 
-        //2.璋冪敤鏂规硶灏嗘暟缁勫彉涓哄瓧绗︿覆
+        //2.调用方法将数组变为字符串
         String str = arrToString(arr);
         System.out.println(str);
     }

@@ -1,38 +1,38 @@
-package ä¸ŠåŠ.day20.jdk8;
+package ÉÏ°ë.day20.jdk8;
 
 import java.time.LocalTime;
 
 public class A06_LocalTimeDemo {
     public static void main(String[] args) {
-        // è·å–æœ¬åœ°æ—¶é—´çš„æ—¥å†å¯¹è±¡ã€‚(åŒ…å« æ—¶åˆ†ç§’)
+        // »ñÈ¡±¾µØÊ±¼äµÄÈÕÀú¶ÔÏó¡£(°üº¬ Ê±·ÖÃë)
         LocalTime nowTime = LocalTime.now();
-        System.out.println("ä»Šå¤©çš„æ—¶é—´:" + nowTime);
+        System.out.println("½ñÌìµÄÊ±¼ä:" + nowTime);
 
-        int hour = nowTime.getHour();//æ—¶
+        int hour = nowTime.getHour();//Ê±
         System.out.println("hour: " + hour);
 
-        int minute = nowTime.getMinute();//åˆ†
+        int minute = nowTime.getMinute();//·Ö
         System.out.println("minute: " + minute);
 
-        int second = nowTime.getSecond();//ç§’
+        int second = nowTime.getSecond();//Ãë
         System.out.println("second:" + second);
 
-        int nano = nowTime.getNano();//çº³ç§’
+        int nano = nowTime.getNano();//ÄÉÃë
         System.out.println("nano:" + nano);
         System.out.println("------------------------------------");
-        System.out.println(LocalTime.of(8, 20));//æ—¶åˆ†
-        System.out.println(LocalTime.of(8, 20, 30));//æ—¶åˆ†ç§’
-        System.out.println(LocalTime.of(8, 20, 30, 150));//æ—¶åˆ†ç§’çº³ç§’
+        System.out.println(LocalTime.of(8, 20));//Ê±·Ö
+        System.out.println(LocalTime.of(8, 20, 30));//Ê±·ÖÃë
+        System.out.println(LocalTime.of(8, 20, 30, 150));//Ê±·ÖÃëÄÉÃë
         LocalTime mTime = LocalTime.of(8, 20, 30, 150);
 
-        //isç³»åˆ—çš„æ–¹æ³•
+        //isÏµÁĞµÄ·½·¨
         System.out.println(nowTime.isBefore(mTime));
         System.out.println(nowTime.isAfter(mTime));
 
-        //withç³»åˆ—çš„æ–¹æ³•ï¼Œåªèƒ½ä¿®æ”¹æ—¶ã€åˆ†ã€ç§’
+        //withÏµÁĞµÄ·½·¨£¬Ö»ÄÜĞŞ¸ÄÊ±¡¢·Ö¡¢Ãë
         System.out.println(nowTime.withHour(10));
 
-        //plusç³»åˆ—çš„æ–¹æ³•ï¼Œåªèƒ½ä¿®æ”¹æ—¶ã€åˆ†ã€ç§’
+        //plusÏµÁĞµÄ·½·¨£¬Ö»ÄÜĞŞ¸ÄÊ±¡¢·Ö¡¢Ãë
         System.out.println(nowTime.plusHours(10));
 
 

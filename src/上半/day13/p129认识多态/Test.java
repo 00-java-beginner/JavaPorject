@@ -1,17 +1,17 @@
-package ä¸ŠåŠ.day13.p129è®¤è¯†å¤šæ€;
+package ÉÏ°ë.day13.p129ÈÏÊ¶¶àÌ¬;
 
 public class Test {
     public static void main(String[] args) {
         Student s = new Student();
-        s.setName("å¼ ä¸‰");
+        s.setName("ÕÅÈı");
         s.setAge(18);
 
         Teacher t = new Teacher();
-        t.setName("èµµå››");
+        t.setName("ÕÔËÄ");
         t.setAge(40);
 
         Administrator admin = new Administrator();
-        admin.setName("å®¿ç®¡å¤§å”");
+        admin.setName("ËŞ¹Ü´óÊå");
         admin.setAge(50);
 
         register(s);

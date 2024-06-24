@@ -1,4 +1,4 @@
-package 涓婂崐.day15.p138_鎺ュ彛鍜屾娊璞＄被缁煎悎缁冧範;
+package 上半.day15.p138_接口和抽象类综合练习;
 
 public interface English {
     public abstract void SpeakEnglish();

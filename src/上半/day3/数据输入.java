@@ -1,29 +1,29 @@
-package ä¸ŠåŠ.day3;
+package ÉÏ°ë.day3;
 
 import java.util.Scanner;
 
-public class æ•°æ®è¾“å…¥ {
+public class Êý¾ÝÊäÈë {
     public static void main(String[] args) {
-        //åˆ›å»ºå¯¹è±¡  scæ˜¯å˜é‡å¯ä»¥æ”¹å˜  å…¶ä½™ä¸å…è®¸æ”¹å˜
+        //´´½¨¶ÔÏó  scÊÇ±äÁ¿¿ÉÒÔ¸Ä±ä  ÆäÓà²»ÔÊÐí¸Ä±ä
         Scanner sc = new Scanner(System.in);
 
-        //æŽ¥æ”¶æ•°æ®  iæ˜¯å˜é‡å¯ä»¥æ”¹å˜  å…¶ä½™ä¸å…è®¸æ”¹å˜
+        //½ÓÊÕÊý¾Ý  iÊÇ±äÁ¿¿ÉÒÔ¸Ä±ä  ÆäÓà²»ÔÊÐí¸Ä±ä
         int i = sc.nextInt();
 
-        //è¾“å‡ºæ•°æ®
-        System.out.println("ç»“æžœä¸º" + i);
+        //Êä³öÊý¾Ý
+        System.out.println("½á¹ûÎª" + i);
 
-        System.out.println("è¯·è¾“å…¥ç¬¬ä¸€ä¸ªå’Œå°šçš„èº«é«˜");
+        System.out.println("ÇëÊäÈëµÚÒ»¸öºÍÉÐµÄÉí¸ß");
         int height1 = sc.nextInt();
 
-        System.out.println("è¯·è¾“å…¥ç¬¬äºŒä¸ªå’Œå°šçš„èº«é«˜");
+        System.out.println("ÇëÊäÈëµÚ¶þ¸öºÍÉÐµÄÉí¸ß");
         int height2 = sc.nextInt();
 
-        System.out.println("è¯·è¾“å…¥ç¬¬ä¸‰ä¸ªå’Œå°šçš„èº«é«˜");
+        System.out.println("ÇëÊäÈëµÚÈý¸öºÍÉÐµÄÉí¸ß");
         int height3 = sc.nextInt();
 
         int max1 = height1 > height2 ? height1 : height2;
         int max2 = max1 > height3 ? max1 : height3;
-        System.out.println("æœ€é«˜çš„å’Œå°šä¸º" + max2);
+        System.out.println("×î¸ßµÄºÍÉÐÎª" + max2);
     }
 }

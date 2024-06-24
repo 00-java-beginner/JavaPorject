@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day15.p136_æ¥å£;
+package ÉÏ°ë.day15.p136_½Ó¿Ú;
 
 public class Dog extends Animal implements Swim{
     public Dog() {
@@ -8,10 +8,10 @@ public class Dog extends Animal implements Swim{
     }
     @Override
     public void eat() {
-        System.out.println("ç‹—åœ¨åƒéª¨å¤´");
+        System.out.println("¹·ÔÚ³Ô¹ÇÍ·");
     }
     @Override
     public void swim() {
-        System.out.println("ç‹—åœ¨æ¸¸æ³³");
+        System.out.println("¹·ÔÚÓÎÓ¾");
     }
 }

@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day20.jdk8;
+package ÉÏ°ë.day20.jdk8;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
@@ -7,67 +7,67 @@ import java.time.MonthDay;
 
 public class A05_LocalDateDemo {
     public static void main(String[] args) {
-        //1.è·å–å½“å‰æ—¶é—´çš„æ—¥å†å¯¹è±¡(åŒ…å« å¹´æœˆæ—¥)
+        //1.»ñÈ¡µ±Ç°Ê±¼äµÄÈÕÀú¶ÔÏó(°üº¬ ÄêÔÂÈÕ)
         LocalDate nowDate = LocalDate.now();
-        //System.out.println("ä»Šå¤©çš„æ—¥æœŸ:" + nowDate);
-        //2.è·å–æŒ‡å®šçš„æ—¶é—´çš„æ—¥å†å¯¹è±¡
+        //System.out.println("½ñÌìµÄÈÕÆÚ:" + nowDate);
+        //2.»ñÈ¡Ö¸¶¨µÄÊ±¼äµÄÈÕÀú¶ÔÏó
         LocalDate ldDate = LocalDate.of(2023, 1, 1);
-        System.out.println("æŒ‡å®šæ—¥æœŸ:" + ldDate);
+        System.out.println("Ö¸¶¨ÈÕÆÚ:" + ldDate);
 
         System.out.println("=============================");
 
-        //3.getç³»åˆ—æ–¹æ³•è·å–æ—¥å†ä¸­çš„æ¯ä¸€ä¸ªå±æ€§å€¼//è·å–å¹´
+        //3.getÏµÁĞ·½·¨»ñÈ¡ÈÕÀúÖĞµÄÃ¿Ò»¸öÊôĞÔÖµ//»ñÈ¡Äê
         int year = ldDate.getYear();
         System.out.println("year: " + year);
-        //è·å–æœˆ//æ–¹å¼ä¸€:
+        //»ñÈ¡ÔÂ//·½Ê½Ò»:
         Month m = ldDate.getMonth();
         System.out.println(m);
         System.out.println(m.getValue());
 
-        //æ–¹å¼äºŒ:
+        //·½Ê½¶ş:
         int month = ldDate.getMonthValue();
         System.out.println("month: " + month);
 
 
-        //è·å–æ—¥
+        //»ñÈ¡ÈÕ
         int day = ldDate.getDayOfMonth();
         System.out.println("day:" + day);
 
-        //è·å–ä¸€å¹´çš„ç¬¬å‡ å¤©
+        //»ñÈ¡Ò»ÄêµÄµÚ¼¸Ìì
         int dayofYear = ldDate.getDayOfYear();
         System.out.println("dayOfYear:" + dayofYear);
 
-        //è·å–æ˜ŸæœŸ
+        //»ñÈ¡ĞÇÆÚ
         DayOfWeek dayOfWeek = ldDate.getDayOfWeek();
         System.out.println(dayOfWeek);
         System.out.println(dayOfWeek.getValue());
 
-        //iså¼€å¤´çš„æ–¹æ³•è¡¨ç¤ºåˆ¤æ–­
+        //is¿ªÍ·µÄ·½·¨±íÊ¾ÅĞ¶Ï
         System.out.println(ldDate.isBefore(ldDate));
         System.out.println(ldDate.isAfter(ldDate));
 
-        //withå¼€å¤´çš„æ–¹æ³•è¡¨ç¤ºä¿®æ”¹ï¼Œåªèƒ½ä¿®æ”¹å¹´æœˆæ—¥
+        //with¿ªÍ·µÄ·½·¨±íÊ¾ĞŞ¸Ä£¬Ö»ÄÜĞŞ¸ÄÄêÔÂÈÕ
         LocalDate withLocalDate = ldDate.withYear(2000);
         System.out.println(withLocalDate);
 
-        //minuså¼€å¤´çš„æ–¹æ³•è¡¨ç¤ºå‡å°‘ï¼Œåªèƒ½å‡å°‘å¹´æœˆæ—¥
+        //minus¿ªÍ·µÄ·½·¨±íÊ¾¼õÉÙ£¬Ö»ÄÜ¼õÉÙÄêÔÂÈÕ
         LocalDate minusLocalDate = ldDate.minusYears(1);
         System.out.println(minusLocalDate);
 
 
-        //pluså¼€å¤´çš„æ–¹æ³•è¡¨ç¤ºå¢åŠ ï¼Œåªèƒ½å¢åŠ å¹´æœˆæ—¥
+        //plus¿ªÍ·µÄ·½·¨±íÊ¾Ôö¼Ó£¬Ö»ÄÜÔö¼ÓÄêÔÂÈÕ
         LocalDate plusLocalDate = ldDate.plusDays(1);
         System.out.println(plusLocalDate);
 
         //-------------
-        // åˆ¤æ–­ä»Šå¤©æ˜¯å¦æ˜¯ä½ çš„ç”Ÿæ—¥
+        // ÅĞ¶Ï½ñÌìÊÇ·ñÊÇÄãµÄÉúÈÕ
         LocalDate birDate = LocalDate.of(2000, 1, 1);
         LocalDate nowDate1 = LocalDate.now();
 
         MonthDay birMd = MonthDay.of(birDate.getMonthValue(), birDate.getDayOfMonth());
         MonthDay nowMd = MonthDay.from(nowDate1);
 
-        System.out.println("ä»Šå¤©æ˜¯ä½ çš„ç”Ÿæ—¥å—? " + birMd.equals(nowMd));//ä»Šå¤©æ˜¯ä½ çš„ç”Ÿæ—¥å—?
+        System.out.println("½ñÌìÊÇÄãµÄÉúÈÕÂğ? " + birMd.equals(nowMd));//½ñÌìÊÇÄãµÄÉúÈÕÂğ?
 
     }
 }

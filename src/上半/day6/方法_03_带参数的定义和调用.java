@@ -1,11 +1,11 @@
-package ä¸ŠåŠ.day6;
+package ÉÏ°ë.day6;
 
-public class æ–¹æ³•_03_å¸¦å‚æ•°çš„å®šä¹‰å’Œè°ƒç”¨ {
+public class ·½·¨_03_´ø²ÎÊıµÄ¶¨ÒåºÍµ÷ÓÃ {
     public static void main(String[] args) {
         getsum(1, 2);
     }
 
-    //å®šä¹‰æ–¹æ³•æ—¶å°†å˜é‡å†™åœ¨å°æ‹¬å·å†…ï¼Œåœ¨è°ƒç”¨çš„æ—¶å€™è¿›è¡Œèµ‹å€¼
+    //¶¨Òå·½·¨Ê±½«±äÁ¿Ğ´ÔÚĞ¡À¨ºÅÄÚ£¬ÔÚµ÷ÓÃµÄÊ±ºò½øĞĞ¸³Öµ
     public static void getsum(int num1, int num2) {
         int result = num1 + num2;
         System.out.println(result);

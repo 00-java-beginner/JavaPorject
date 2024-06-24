@@ -1,40 +1,40 @@
-package ä¸ŠåŠ.day18_day19.six_objects;
+package ÉÏ°ë.day18_day19.six_objects;
 
 import java.util.Objects;
 
 public class ObjectsDemo1 {
     public static void main(String[] args) {
         /*
-            public static boolean equals(Object a, Object b) å…ˆåšéç©ºåˆ¤æ–­ï¼Œæ¯”è¾ƒä¸¤ä¸ªå¯¹è±¡
-            public static boolean isNull(Object obj) åˆ¤æ–­å¯¹è±¡æ˜¯å¦ä¸ºnullï¼Œä¸ºnul1è¿”å›true ï¼Œåä¹‹
-            public static boolean nonNull(Object obj) åˆ¤æ–­å¯¹è±¡æ˜¯å¦ä¸ºnullï¼Œè·ŸisNullçš„ç»“æœç›¸å
+            public static boolean equals(Object a, Object b) ÏÈ×ö·Ç¿ÕÅĞ¶Ï£¬±È½ÏÁ½¸ö¶ÔÏó
+            public static boolean isNull(Object obj) ÅĞ¶Ï¶ÔÏóÊÇ·ñÎªnull£¬Îªnul1·µ»Øtrue £¬·´Ö®
+            public static boolean nonNull(Object obj) ÅĞ¶Ï¶ÔÏóÊÇ·ñÎªnull£¬¸úisNullµÄ½á¹ûÏà·´
         */
-        //1.åˆ›å»ºå­¦ç”Ÿç±»çš„å¯¹è±¡
+        //1.´´½¨Ñ§ÉúÀàµÄ¶ÔÏó
         Student s1 = null;
         Student s2 = new Student("zhangsan", 23);
 
-        //2.æ¯”è¾ƒä¸¤ä¸ªå¯¹è±¡çš„å±æ€§å€¼æ˜¯å¦ç›¸åŒ
+        //2.±È½ÏÁ½¸ö¶ÔÏóµÄÊôĞÔÖµÊÇ·ñÏàÍ¬
         if(s1 != null){
             boolean result = s1.equals(s2);
             System.out.println(result);
         }else{
-            System.out.println("è°ƒç”¨è€…ä¸ºç©º");
+            System.out.println("µ÷ÓÃÕßÎª¿Õ");
         }
 
 
         boolean result = Objects.equals(s1, s2);
         System.out.println(result);
-        //ç»†èŠ‚:
-        //1.æ–¹æ³•çš„åº•å±‚ä¼šåˆ¤æ–­s1æ˜¯å¦ä¸ºnullï¼Œå¦‚æœä¸ºnullï¼Œç›´æ¥è¿”å›false
-        //2.å¦‚æœs1ä¸ä¸ºnullï¼Œé‚£ä¹ˆå°±åˆ©ç”¨s1å†æ¬¡è°ƒç”¨equalsæ–¹æ³•
-        //3.æ­¤æ—¶s1æ˜¯studentç±»å‹ï¼Œæ‰€ä»¥æœ€ç»ˆè¿˜æ˜¯ä¼šè°ƒç”¨studentä¸­çš„equalsæ–¹æ³•ã€‚
-        // å¦‚æœæ²¡æœ‰é‡å†™ï¼Œæ¯”è¾ƒåœ°å€å€¼ï¼Œå¦‚æœé‡å†™äº†ï¼Œå°±æ¯”è¾ƒå±æ€§å€¼ã€‚
+        //Ï¸½Ú:
+        //1.·½·¨µÄµ×²ã»áÅĞ¶Ïs1ÊÇ·ñÎªnull£¬Èç¹ûÎªnull£¬Ö±½Ó·µ»Øfalse
+        //2.Èç¹ûs1²»Îªnull£¬ÄÇÃ´¾ÍÀûÓÃs1ÔÙ´Îµ÷ÓÃequals·½·¨
+        //3.´ËÊ±s1ÊÇstudentÀàĞÍ£¬ËùÒÔ×îÖÕ»¹ÊÇ»áµ÷ÓÃstudentÖĞµÄequals·½·¨¡£
+        // Èç¹ûÃ»ÓĞÖØĞ´£¬±È½ÏµØÖ·Öµ£¬Èç¹ûÖØĞ´ÁË£¬¾Í±È½ÏÊôĞÔÖµ¡£
 
 
 
 
 
-        //public static boolean isNull(Obiect obi) åˆ¤æ–­å¯¹è±¡æ˜¯å¦ä¸ºnullï¼Œä¸ºnul1è¿”å›true,åä¹‹
+        //public static boolean isNull(Obiect obi) ÅĞ¶Ï¶ÔÏóÊÇ·ñÎªnull£¬Îªnul1·µ»Øtrue,·´Ö®
         Student s3 = new Student();
         Student s4 = null;
 

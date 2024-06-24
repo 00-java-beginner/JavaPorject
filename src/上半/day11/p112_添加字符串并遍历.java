@@ -1,17 +1,17 @@
-package ä¸ŠåŠ.day11;
+package ÉÏ°ë.day11;
 
 import java.util.ArrayList;
 
-public class p112_æ·»åŠ å­—ç¬¦ä¸²å¹¶éå† {
+public class p112_Ìí¼Ó×Ö·û´®²¢±éÀú {
     public static void main(String[] args) {
-        //åˆ›å»ºä¸€ä¸ªé›†åˆï¼Œæ·»åŠ å­—ç¬¦ä¸²å¹¶éå†
-        //1.åˆ›å»ºé›†åˆ
+        //´´½¨Ò»¸ö¼¯ºÏ£¬Ìí¼Ó×Ö·û´®²¢±éÀú
+        //1.´´½¨¼¯ºÏ
         ArrayList<String> list = new ArrayList<>();
-        //2.æ·»åŠ å…ƒç´ 
-        list.add("åƒé¥­");
-        list.add("ç¡è§‰");
-        list.add("æ‰“è±†è±†");
-        //3.éå†é›†åˆ
+        //2.Ìí¼ÓÔªËØ
+        list.add("³Ô·¹");
+        list.add("Ë¯¾õ");
+        list.add("´ò¶¹¶¹");
+        //3.±éÀú¼¯ºÏ
         System.out.print("[");
         for (int i = 0; i < list.size(); i++) {
             if (i == list.size() - 1){

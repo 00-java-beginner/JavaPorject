@@ -1,29 +1,29 @@
-package p96andp110_å­—ç¬¦ä¸²;
+package p96andp110_×Ö·û´®;
 import java.util.Scanner;
-public class p100_ç”¨æˆ·ç™»é™† {
+public class p100_ÓÃ»§µÇÂ½ {
     public static void main(String[] args) {
-        //æ¨¡æ‹Ÿç”¨æˆ·ç™»é™†ï¼Œæœ‰ä¸‰æ¬¡é”™è¯¯çš„æœºä¼š
-        //1.å®šä¹‰ä¸¤ä¸ªå˜é‡è®°å½•æ­£ç¡®çš„ç”¨æˆ·åå’Œå¯†ç 
+        //Ä£ÄâÓÃ»§µÇÂ½£¬ÓĞÈı´Î´íÎóµÄ»ú»á
+        //1.¶¨ÒåÁ½¸ö±äÁ¿¼ÇÂ¼ÕıÈ·µÄÓÃ»§ÃûºÍÃÜÂë
         String rightUserName = "zhangsan";
         String rightPassWord = "123456";
 
         Scanner sc = new Scanner(System.in);
-        //2.é”®ç›˜å½•å…¥ç”¨æˆ·åå’Œå¯†ç 
+        //2.¼üÅÌÂ¼ÈëÓÃ»§ÃûºÍÃÜÂë
         for (int i = 0; i < 3; i++) {
-            System.out.println("è¯·è¾“å…¥ç”¨æˆ·å");
+            System.out.println("ÇëÊäÈëÓÃ»§Ãû");
             String username = sc.next();
-            System.out.println("è¯·è¾“å…¥å¯†ç ");
+            System.out.println("ÇëÊäÈëÃÜÂë");
             String password = sc.next();
 
-            //3.å¯¹é”®ç›˜å½•å…¥çš„ç”¨æˆ·åå’Œå¯†ç è¿›è¡Œåˆ¤æ–­
+            //3.¶Ô¼üÅÌÂ¼ÈëµÄÓÃ»§ÃûºÍÃÜÂë½øĞĞÅĞ¶Ï
             if (username.equals(rightUserName) && password.equals(rightPassWord)){
-                System.out.println("ç”¨æˆ·ç™»é™†æˆåŠŸ");
+                System.out.println("ÓÃ»§µÇÂ½³É¹¦");
                 break;
             }else {
                 if (i == 2){
-                    System.out.println("è´¦æˆ·è¢«é”å®šï¼Œè¯·è”ç³»ç®¡ç†å‘˜");
+                    System.out.println("ÕË»§±»Ëø¶¨£¬ÇëÁªÏµ¹ÜÀíÔ±");
                 }else {
-                    System.out.println("ç”¨æˆ·ç™»é™†å¤±è´¥ï¼Œç”¨æˆ·åæˆ–è€…å¯†ç é”™è¯¯,è¿˜å‰©ä¸‹"+(2 - i) + "æ¬¡æœºä¼š");
+                    System.out.println("ÓÃ»§µÇÂ½Ê§°Ü£¬ÓÃ»§Ãû»òÕßÃÜÂë´íÎó,»¹Ê£ÏÂ"+(2 - i) + "´Î»ú»á");
                 }
 
             }

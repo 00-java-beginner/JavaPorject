@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day20.jdk8;
+package ÉÏ°ë.day20.jdk8;
 
 import java.time.ZoneId;
 import java.util.Set;
@@ -6,21 +6,21 @@ import java.util.Set;
 public class A01_ZoneIDDemo1 {
     public static void main(String[] args) {
         /*
-        static Set<string> getAvailableZoneIds() è·å–Javaä¸­æ”¯æŒçš„æ‰€æœ‰æ—¶åŒº
-        static ZoneId systemDefault() è·å–ç³»ç»Ÿé»˜è®¤æ—¶åŒº
-        static Zoneld of(string zoneld) è·å–ä¸€ä¸ªæŒ‡å®šæ—¶åŒº
+        static Set<string> getAvailableZoneIds() »ñÈ¡JavaÖĞÖ§³ÖµÄËùÓĞÊ±Çø
+        static ZoneId systemDefault() »ñÈ¡ÏµÍ³Ä¬ÈÏÊ±Çø
+        static Zoneld of(string zoneld) »ñÈ¡Ò»¸öÖ¸¶¨Ê±Çø
         */
 
-        //1.è·å–æ‰€æœ‰çš„æ—¶åŒºåç§°
+        //1.»ñÈ¡ËùÓĞµÄÊ±ÇøÃû³Æ
         Set<String> zoneIds = ZoneId.getAvailableZoneIds();
         System.out.println(zoneIds.size());//600
         System.out.println(zoneIds);// Asia/Shanghai
 
-        //2.è·å–å½“å‰ç³»ç»Ÿçš„é»˜è®¤æ—¶åŒº
+        //2.»ñÈ¡µ±Ç°ÏµÍ³µÄÄ¬ÈÏÊ±Çø
         ZoneId zoneId = ZoneId.systemDefault();
         System.out.println(zoneId);//Asia/Shanghai
 
-        //3.è·å–æŒ‡å®šçš„æ—¶åŒº
+        //3.»ñÈ¡Ö¸¶¨µÄÊ±Çø
         ZoneId zoneId1 = ZoneId.of("Asia/Pontianak");
         System.out.println(zoneId1);//Asia/Pontianak
     }

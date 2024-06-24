@@ -1,8 +1,9 @@
-package 涓嬪崐.day24;
+package 下半.day24;
 
+import java.util.Comparator;
 import java.util.Objects;
 
-public class Student {
+public class Student implements Comparable<Student> {
     private String name;
     private int age;
 
@@ -15,7 +16,7 @@ public class Student {
     }
 
     /**
-     * 鑾峰彇
+     * 获取
      * @return name
      */
     public String getName() {
@@ -23,7 +24,7 @@ public class Student {
     }
 
     /**
-     * 璁剧疆
+     * 设置
      * @param name
      */
     public void setName(String name) {
@@ -31,7 +32,7 @@ public class Student {
     }
 
     /**
-     * 鑾峰彇
+     * 获取
      * @return age
      */
     public int getAge() {
@@ -39,7 +40,7 @@ public class Student {
     }
 
     /**
-     * 璁剧疆
+     * 设置
      * @param age
      */
     public void setAge(int age) {
@@ -61,5 +62,13 @@ public class Student {
 
     public String toString() {
         return "Student{name = " + name + ", age = " + age + "}";
+    }
+
+    @Override
+    public int compareTo(Student o) {
+        //要求:按照学生年龄的升序排列，年龄一样按照姓名的字母排列，同姓名年龄视为同一个人。
+        int i = this.getAge() - o.getAge();
+        i = i == 0 ? this.getName().compareTo(o.getName()):i;
+        return i;
     }
 }

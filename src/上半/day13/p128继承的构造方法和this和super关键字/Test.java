@@ -1,13 +1,13 @@
-package ä¸ŠåŠ.day13.p128ç»§æ‰¿çš„æ„é€ æ–¹æ³•å’Œthiså’Œsuperå…³é”®å­—;
+package ÉÏ°ë.day13.p128¼Ì³ĞµÄ¹¹Ôì·½·¨ºÍthisºÍsuper¹Ø¼ü×Ö;
 
 public class Test {
     public static void main(String[] args) {
-        Manager m = new Manager("001" , "å¼ ä¸‰" , 15000 , 8000);
+        Manager m = new Manager("001" , "ÕÅÈı" , 15000 , 8000);
         System.out.println(m.getId() + m.getName() + m.getSalary() + m.getBouns());
         m.work();
         m.eat();
 
-        Cook c = new Cook("002" , "æå››" , 15000);
+        Cook c = new Cook("002" , "ÀîËÄ" , 15000);
         System.out.println(c.getId() + c.getName() + c.getSalary());
         c.work();
         c.eat();

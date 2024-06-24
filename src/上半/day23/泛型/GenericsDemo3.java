@@ -1,11 +1,11 @@
-package ä¸ŠåŠ.day23.æ³›å‹;
+package ÉÏ°ë.day23.·ºĞÍ;
 
 
 import java.util.ArrayList;
 
 /*
-    å®šä¹‰ä¸€ä¸ªå·¥å…·ç±»ï¼šListUtil
-    ç±»ä¸­å®šä¹‰ä¸€ä¸ªé™æ€æ–¹æ³•addAllï¼Œç”¨æ¥æ·»åŠ å¤šä¸ªé›†åˆçš„å…ƒç´ ã€‚
+    ¶¨ÒåÒ»¸ö¹¤¾ßÀà£ºListUtil
+    ÀàÖĞ¶¨ÒåÒ»¸ö¾²Ì¬·½·¨addAll£¬ÓÃÀ´Ìí¼Ó¶à¸ö¼¯ºÏµÄÔªËØ¡£
 */
 public class GenericsDemo3 {
     public static void main(String[] args) {

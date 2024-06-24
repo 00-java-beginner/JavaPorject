@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day13.p128_ç»ƒä¹ ;
+package ÉÏ°ë.day13.p128_Á·Ï°;
 
 public class Buyer extends AdminStaff{
     public Buyer(){

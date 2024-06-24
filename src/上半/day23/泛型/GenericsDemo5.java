@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day23.æ³›å‹;
+package ÉÏ°ë.day23.·ºĞÍ;
 
 
 import java.util.ArrayList;
@@ -6,15 +6,15 @@ import java.util.ArrayList;
 public class GenericsDemo5 {
     public static void main(String[] args) {
         /*
-            æ³›å‹ä¸å…·å¤‡ç»§æ‰¿æ€§ï¼Œä½†æ˜¯æ•°æ®å…·å¤‡ç»§æ‰¿æ€§
+            ·ºĞÍ²»¾ß±¸¼Ì³ĞĞÔ£¬µ«ÊÇÊı¾İ¾ß±¸¼Ì³ĞĞÔ
         */
 
-        //åˆ›å»ºé›†åˆçš„å¯¹è±¡
+        //´´½¨¼¯ºÏµÄ¶ÔÏó
         ArrayList<Ye> list1 = new ArrayList<>();
         ArrayList<Fu> list2 = new ArrayList<>();
         ArrayList<Zi> list3 = new ArrayList<>();
 
-        //è°ƒç”¨methodæ–¹æ³•
+        //µ÷ÓÃmethod·½·¨
         //method(list1);
         //method(list2);
         //method(list3);
@@ -29,7 +29,7 @@ public class GenericsDemo5 {
 
 
     /*
-    * æ­¤æ—¶ï¼Œæ³›å‹é‡Œé¢å†™çš„æ˜¯ä»€ä¹ˆç±»å‹ï¼Œé‚£ä¹ˆåªèƒ½ä¼ é€’ä»€ä¹ˆç±»å‹çš„æ•°æ®ã€‚
+    * ´ËÊ±£¬·ºĞÍÀïÃæĞ´µÄÊÇÊ²Ã´ÀàĞÍ£¬ÄÇÃ´Ö»ÄÜ´«µİÊ²Ã´ÀàĞÍµÄÊı¾İ¡£
     * */
     public static void method(ArrayList<Ye> list) {
 

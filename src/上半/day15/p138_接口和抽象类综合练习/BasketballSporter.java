@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day15.p138_æ¥å£å’ŒæŠ½è±¡ç±»ç»¼åˆç»ƒä¹ ;
+package ÉÏ°ë.day15.p138_½Ó¿ÚºÍ³éÏóÀà×ÛºÏÁ·Ï°;
 
 public class BasketballSporter extends Sporter{
     public BasketballSporter() {
@@ -10,6 +10,6 @@ public class BasketballSporter extends Sporter{
 
     @Override
     public void Study() {
-        System.out.println("ç¯®çƒè¿åŠ¨å‘˜åœ¨å­¦ä¹ æ‰“ç¯®çƒ");
+        System.out.println("ÀºÇòÔË¶¯Ô±ÔÚÑ§Ï°´òÀºÇò");
     }
 }

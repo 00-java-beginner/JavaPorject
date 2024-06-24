@@ -1,22 +1,22 @@
-package ä¸‹åŠ.day24;
+package ÏÂ°ë.day24;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class mapéå†çš„ç¬¬äºŒç§æ–¹å¼ {
+public class map±éÀúµÄµÚ¶şÖÖ·½Ê½ {
     public static void main(String[] args) {
         Map<String,String> m = new HashMap<>();
 
-        m.put("éƒ­é–", "é»„è“‰");
-        m.put("éŸ¦å°å®","æ²å‰‘å±");
-        m.put("å°¹å¿—å¹³","å°é¾™å¥³");
+        m.put("¹ù¾¸", "»ÆÈØ");
+        m.put("Î¤Ğ¡±¦","ãå½£ÆÁ");
+        m.put("ÒüÖ¾Æ½","Ğ¡ÁúÅ®");
 
-        //è·å–æ‰€æœ‰çš„é”®å€¼å¯¹å¯¹è±¡ï¼Œè¿”å›é›†åˆ
+        //»ñÈ¡ËùÓĞµÄ¼üÖµ¶Ô¶ÔÏó£¬·µ»Ø¼¯ºÏ
         Set<Map.Entry<String, String>> entries = m.entrySet();
-        //éå†é›†åˆï¼Œå¾—åˆ°é‡Œé¢çš„æ¯ä¸€ä¸ªé”®å€¼å¯¹å¯¹è±¡
+        //±éÀú¼¯ºÏ£¬µÃµ½ÀïÃæµÄÃ¿Ò»¸ö¼üÖµ¶Ô¶ÔÏó
         for (Map.Entry<String, String> entry : entries) {
-            //åˆ†åˆ«è°ƒç”¨æ–¹æ³•è·å–é”®å€¼
+            //·Ö±ğµ÷ÓÃ·½·¨»ñÈ¡¼üÖµ
             String key = entry.getKey();
             String value = entry.getValue();
             System.out.println(key + " = " + value);

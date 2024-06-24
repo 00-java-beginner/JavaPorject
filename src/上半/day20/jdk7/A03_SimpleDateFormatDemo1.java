@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day20.jdk7;
+package ÉÏ°ë.day20.jdk7;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -7,37 +7,37 @@ import java.util.Date;
 public class A03_SimpleDateFormatDemo1 {
     public static void main(String[] args) throws ParseException {
         /*
-            public simpleDateFormat() é»˜è®¤æ ¼å¼
-            public simpleDateFormat(String pattern) æŒ‡å®šæ ¼å¼
-            public final string format(Date date) æ ¼å¼åŒ–(æ—¥æœŸå¯¹è±¡ ->å­—ç¬¦ä¸²)
-            public Date parse(string source) è§£æ(å­—ç¬¦ä¸² ->æ—¥æœŸå¯¹è±¡)
+            public simpleDateFormat() Ä¬ÈÏ¸ñÊ½
+            public simpleDateFormat(String pattern) Ö¸¶¨¸ñÊ½
+            public final string format(Date date) ¸ñÊ½»¯(ÈÕÆÚ¶ÔÏó ->×Ö·û´®)
+            public Date parse(string source) ½âÎö(×Ö·û´® ->ÈÕÆÚ¶ÔÏó)
         */
 
-        //1.å®šä¹‰ä¸€ä¸ªå­—ç¬¦ä¸²è¡¨ç¤ºæ—¶é—´
+        //1.¶¨ÒåÒ»¸ö×Ö·û´®±íÊ¾Ê±¼ä
         String str = "2023-11-11 11:11:11";
-        //2.åˆ©ç”¨ç©ºå‚æ„é€ åˆ›å»ºsimpleDateFormatå¯¹è±¡
-        // ç»†èŠ‚:
-        //åˆ›å»ºå¯¹è±¡çš„æ ¼å¼è¦è·Ÿå­—ç¬¦ä¸²çš„æ ¼å¼å®Œå…¨ä¸€è‡´
+        //2.ÀûÓÃ¿Õ²Î¹¹Ôì´´½¨simpleDateFormat¶ÔÏó
+        // Ï¸½Ú:
+        //´´½¨¶ÔÏóµÄ¸ñÊ½Òª¸ú×Ö·û´®µÄ¸ñÊ½ÍêÈ«Ò»ÖÂ
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date date = sdf.parse(str);
-        //3.æ‰“å°ç»“æœ
+        //3.´òÓ¡½á¹û
         System.out.println(date.getTime());//1699672271000
 
 
     }
 
     private static void method1() {
-        //1.åˆ©ç”¨ç©ºå‚æ„é€ åˆ›å»ºsimpleDateFormatå¯¹è±¡ï¼Œé»˜è®¤æ ¼å¼
+        //1.ÀûÓÃ¿Õ²Î¹¹Ôì´´½¨simpleDateFormat¶ÔÏó£¬Ä¬ÈÏ¸ñÊ½
         SimpleDateFormat sdf1 = new SimpleDateFormat();
         Date d1 = new Date(0L);
         String str1 = sdf1.format(d1);
-        System.out.println(str1);//1970/1/1 ä¸Šåˆ8:00
+        System.out.println(str1);//1970/1/1 ÉÏÎç8:00
 
-        //2.åˆ©ç”¨å¸¦å‚æ„é€ åˆ›å»ºsimpleDateFormatå¯¹è±¡ï¼ŒæŒ‡å®šæ ¼å¼
-        SimpleDateFormat sdf2 = new SimpleDateFormat("yyyyå¹´MMæœˆddæ—¥HH:mm:ss");
+        //2.ÀûÓÃ´ø²Î¹¹Ôì´´½¨simpleDateFormat¶ÔÏó£¬Ö¸¶¨¸ñÊ½
+        SimpleDateFormat sdf2 = new SimpleDateFormat("yyyyÄêMMÔÂddÈÕHH:mm:ss");
         String str2 = sdf2.format(d1);
-        System.out.println(str2);//1970å¹´01æœˆ01æ—¥ 08:00:00
+        System.out.println(str2);//1970Äê01ÔÂ01ÈÕ 08:00:00
 
-        //è¯¾å ‚ç»ƒä¹ :yyyyå¹´MMæœˆddæ—¥ æ—¶:åˆ†:ç§’ æ˜ŸæœŸ
+        //¿ÎÌÃÁ·Ï°:yyyyÄêMMÔÂddÈÕ Ê±:·Ö:Ãë ĞÇÆÚ
     }
 }

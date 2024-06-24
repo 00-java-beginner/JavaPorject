@@ -1,8 +1,8 @@
-package ä¸ŠåŠ.day13.p127_åˆ©ç”¨æ–¹æ³•çš„é‡å†™è®¾è®¡ç»§æ‰¿ç»“æ„;
+package ÉÏ°ë.day13.p127_ÀûÓÃ·½·¨µÄÖØĞ´Éè¼Æ¼Ì³Ğ½á¹¹;
 
 public class ChineseDog extends Dog {
     @Override
     public void eat() {
-        System.out.println("åƒå‰©é¥­");
+        System.out.println("³ÔÊ£·¹");
     }
 }

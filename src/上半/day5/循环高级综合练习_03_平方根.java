@@ -1,22 +1,22 @@
-package ä¸ŠåŠ.day5;
+package ÉÏ°ë.day5;
 
 import java.util.Scanner;
 
-public class å¾ªç¯é«˜çº§ç»¼åˆç»ƒä¹ _03_å¹³æ–¹æ ¹ {
+public class Ñ­»·¸ß¼¶×ÛºÏÁ·Ï°_03_Æ½·½¸ù {
     public static void main(String[] args) {
-        //éœ€æ±‚ï¼šé”®ç›˜å½•å…¥ä¸€ä¸ªæ•´æ•°ï¼Œå¾—åˆ°ä»–çš„å¹³æ–¹æ ¹ï¼Œå¦‚æœæ˜¯å°æ•°åˆ™å–æ•´æ•°éƒ¨ä½
-        //1.é”®ç›˜å½•å…¥ä¸€ä¸ªæ•´æ•°
+        //ĞèÇó£º¼üÅÌÂ¼ÈëÒ»¸öÕûÊı£¬µÃµ½ËûµÄÆ½·½¸ù£¬Èç¹ûÊÇĞ¡ÊıÔòÈ¡ÕûÊı²¿Î»
+        //1.¼üÅÌÂ¼ÈëÒ»¸öÕûÊı
         Scanner sc = new Scanner(System.in);
-        System.out.println("è¯·è¾“å…¥ä¸€ä¸ªæ•´æ•°");
+        System.out.println("ÇëÊäÈëÒ»¸öÕûÊı");
         int number = sc.nextInt();
 
-        //2.ä»1å¼€å§‹å¾ªç¯åˆ¤æ–­ï¼Œå¦‚æœæ˜¯å°äºnumberå°±ç»§ç»­ï¼Œå¦‚æœå¤§äºç­‰äºå°±ç»“æŸ
+        //2.´Ó1¿ªÊ¼Ñ­»·ÅĞ¶Ï£¬Èç¹ûÊÇĞ¡ÓÚnumber¾Í¼ÌĞø£¬Èç¹û´óÓÚµÈÓÚ¾Í½áÊø
         for (int i = 1; i <= number; i++) {
             if (i * i == number) {
-                System.out.println(i + "å°±æ˜¯" + number + "çš„å¹³æ–¹æ ¹");
+                System.out.println(i + "¾ÍÊÇ" + number + "µÄÆ½·½¸ù");
                 break;
             } else if (i * i > number) {
-                System.out.println((i - 1) + "å°±æ˜¯" + number + "å¹³æ–¹æ ¹çš„æ•´æ•°éƒ¨åˆ†");
+                System.out.println((i - 1) + "¾ÍÊÇ" + number + "Æ½·½¸ùµÄÕûÊı²¿·Ö");
                 break;
             }
         }

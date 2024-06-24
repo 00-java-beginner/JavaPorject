@@ -1,112 +1,112 @@
-package ä¸ŠåŠ.day7;
+package ÉÏ°ë.day7;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class ç»¼åˆç»ƒä¹ _åŒè‰²çƒå½©ç¥¨ç³»ç»Ÿ {
+public class ×ÛºÏÁ·Ï°_Ë«É«Çò²ÊÆ±ÏµÍ³ {
     public static void main(String[] args) {
-        //1.ç”Ÿæˆä¸­å¥–å·ç 
+        //1.Éú³ÉÖĞ½±ºÅÂë
         int[] arr = createNumber();
 
-        //2.ç”¨æˆ·è¾“å…¥å½©ç¥¨å·ç 
+        //2.ÓÃ»§ÊäÈë²ÊÆ±ºÅÂë
         int[] userInputArr = userInputNumber();
-        //3.åˆ¤æ–­ç”¨æˆ·çš„ä¸­å¥–æƒ…å†µ
+        //3.ÅĞ¶ÏÓÃ»§µÄÖĞ½±Çé¿ö
         int redConut = 0;
         int blueConut = 0;
-        //4.åˆ¤æ–­çº¢çƒçš„ä¸­å¥–æƒ…å†µ
+        //4.ÅĞ¶ÏºìÇòµÄÖĞ½±Çé¿ö
         for (int i = 0; i < userInputArr.length - 1; i++) {
             int redNumber = userInputArr[i];
             for (int j = 0; j < arr.length - 1; j++) {
                 if (arr[j] == redNumber) {
                     redConut++;
-                    //å¦‚æœæ‰¾åˆ°äº†ç”¨æˆ·è¾“å…¥çš„çº¢çƒå·ç åœ¨ä¸­å¥–çš„æ•°ç»„ä¸­åˆ™ç»“æŸå†…å¾ªç¯ï¼Œç»§ç»­å¤–å¾ªç¯åˆ¤æ–­ä¸‹ä¸€ä¸ª
+                    //Èç¹ûÕÒµ½ÁËÓÃ»§ÊäÈëµÄºìÇòºÅÂëÔÚÖĞ½±µÄÊı×éÖĞÔò½áÊøÄÚÑ­»·£¬¼ÌĞøÍâÑ­»·ÅĞ¶ÏÏÂÒ»¸ö
                     break;
                 }
             }
         }
-        //5.åˆ¤æ–­è“çƒçš„ä¸­å¥–æƒ…å†µ
+        //5.ÅĞ¶ÏÀ¶ÇòµÄÖĞ½±Çé¿ö
         int blueNumber = userInputArr[userInputArr.length - 1];
         if (blueNumber == arr[arr.length - 1]) {
             blueConut++;
         }
-        //6.æ ¹æ®çº¢çƒå’Œè“çƒçš„ä¸ªæ•°åˆ¤æ–­ä¸­å¥–æƒ…å†µ
+        //6.¸ù¾İºìÇòºÍÀ¶ÇòµÄ¸öÊıÅĞ¶ÏÖĞ½±Çé¿ö
         if (redConut == 6 && blueConut == 1) {
-            System.out.println("ä¸­å¥–1000ä¸‡");
+            System.out.println("ÖĞ½±1000Íò");
         } else if (redConut == 6 && blueConut == 0) {
-            System.out.println("ä¸­å¥–500ä¸‡");
+            System.out.println("ÖĞ½±500Íò");
         } else if (redConut == 5 && blueConut == 1) {
-            System.out.println("ä¸­å¥–300ä¸‡");
+            System.out.println("ÖĞ½±300Íò");
         } else if ((redConut == 5 && blueConut == 0) || (redConut == 4 && blueConut == 1)) {
-            System.out.println("ä¸­å¥–100ä¸‡");
+            System.out.println("ÖĞ½±100Íò");
         } else if ((redConut == 4 && blueConut == 0) ||
                 (redConut == 3 && blueConut == 1) || (redConut == 2 && blueConut == 1)) {
-            System.out.println("ä¸­å¥–50ä¸‡");
+            System.out.println("ÖĞ½±50Íò");
         } else if ((redConut == 1 && blueConut == 1) || (redConut == 0 && blueConut == 1)) {
-            System.out.println("ä¸­å¥–10ä¸‡");
+            System.out.println("ÖĞ½±10Íò");
         } else {
-            System.out.println("æ²¡æœ‰ä¸­å¥–ï¼Œè°¢è°¢å‚ä¸");
+            System.out.println("Ã»ÓĞÖĞ½±£¬Ğ»Ğ»²ÎÓë");
         }
     }
 
     public static int[] userInputNumber() {
-        //1.åˆ›å»ºæ•°ç»„å­˜å‚¨ç”¨æˆ·è´­ä¹°çš„å½©ç¥¨å·ç 
+        //1.´´½¨Êı×é´æ´¢ÓÃ»§¹ºÂòµÄ²ÊÆ±ºÅÂë
         int arr[] = new int[7];
-        //2.é”®ç›˜å½•å…¥è®©ç”¨æˆ·è¾“å…¥
+        //2.¼üÅÌÂ¼ÈëÈÃÓÃ»§ÊäÈë
         Scanner sc = new Scanner(System.in);
-        //3.è®©ç”¨æˆ·è¾“å…¥çº¢çƒå·ç ,ï¼ˆçº¢çƒå·ç ä¸èƒ½è¶…å‡ºèŒƒå›´å¹¶ä¸”å…·æœ‰å”¯ä¸€æ€§ï¼‰
+        //3.ÈÃÓÃ»§ÊäÈëºìÇòºÅÂë,£¨ºìÇòºÅÂë²»ÄÜ³¬³ö·¶Î§²¢ÇÒ¾ßÓĞÎ¨Ò»ĞÔ£©
         for (int i = 0; i < 6; ) {
-            System.out.println("è¯·è¾“å…¥ç¬¬" + (i + 1) + "ä¸ªçº¢çƒå·ç ");
+            System.out.println("ÇëÊäÈëµÚ" + (i + 1) + "¸öºìÇòºÅÂë");
             int redNumber = sc.nextInt();
             if (redNumber >= 1 && redNumber <= 33) {
-                //è¡¨ç¤ºåœ¨èŒƒå›´å†…å…è®¸å½•å…¥
+                //±íÊ¾ÔÚ·¶Î§ÄÚÔÊĞíÂ¼Èë
                 boolean flag = contains(arr, redNumber);
                 if (!flag) {
-                    //è¡¨ç¤ºå½“å‰å½•å…¥çš„å·ç ä¸å­˜åœ¨ï¼Œæ·»åŠ è¿›æ•°ç»„
+                    //±íÊ¾µ±Ç°Â¼ÈëµÄºÅÂë²»´æÔÚ£¬Ìí¼Ó½øÊı×é
                     arr[i] = redNumber;
-                    //æˆåŠŸæ·»åŠ åç´¢å¼•æ‰èƒ½è‡ªå¢
+                    //³É¹¦Ìí¼ÓºóË÷Òı²ÅÄÜ×ÔÔö
                     i++;
                 } else {
-                    System.out.println("å½“å‰çº¢çƒå·ç å·²ç»å­˜åœ¨ï¼Œè¯·é‡æ–°è¾“å…¥");
+                    System.out.println("µ±Ç°ºìÇòºÅÂëÒÑ¾­´æÔÚ£¬ÇëÖØĞÂÊäÈë");
                 }
             } else {
-                System.out.println("å½“å‰å½•å…¥çš„çº¢çƒå·ç è¶…å‡ºäº†èŒƒå›´");
+                System.out.println("µ±Ç°Â¼ÈëµÄºìÇòºÅÂë³¬³öÁË·¶Î§");
             }
         }
-        //4.è®©ç”¨æˆ·è¾“å…¥è“çƒå·ç 
-        System.out.println("è¯·è¾“å…¥è“çƒå·ç ");
+        //4.ÈÃÓÃ»§ÊäÈëÀ¶ÇòºÅÂë
+        System.out.println("ÇëÊäÈëÀ¶ÇòºÅÂë");
         while (true) {
             int blueNumber = sc.nextInt();
             if (blueNumber >= 1 && blueNumber <= 16) {
                 arr[arr.length - 1] = blueNumber;
-                //åªæœ‰è¾“å…¥æ­£ç¡®èŒƒå›´çš„å·ç æ‰ä¼šç»“æŸå¾ªç¯
+                //Ö»ÓĞÊäÈëÕıÈ··¶Î§µÄºÅÂë²Å»á½áÊøÑ­»·
                 break;
             } else {
-                System.out.println("å½“å‰å½•å…¥çš„è“çƒå·ç è¶…å‡ºäº†èŒƒå›´");
+                System.out.println("µ±Ç°Â¼ÈëµÄÀ¶ÇòºÅÂë³¬³öÁË·¶Î§");
             }
         }
-        //5.è¿”å›æ•°ç»„
+        //5.·µ»ØÊı×é
         return arr;
     }
 
     public static int[] createNumber() {
-        //1.åˆ›å»ºæ•°ç»„ç”¨äºæ·»åŠ ä¸­å¥–å·ç ,å…­ä¸ªçº¢çƒï¼Œä¸€ä¸ªè“çƒ
+        //1.´´½¨Êı×éÓÃÓÚÌí¼ÓÖĞ½±ºÅÂë,Áù¸öºìÇò£¬Ò»¸öÀ¶Çò
         int[] arr = new int[7];
-        //2.éšæœºç”Ÿæˆå·ç å¹¶æ·»åŠ åˆ°æ•°ç»„å½“ä¸­ï¼Œçº¢çƒä¸èƒ½é‡å¤ï¼Œè“çƒå¯ä»¥é‡å¤
+        //2.Ëæ»úÉú³ÉºÅÂë²¢Ìí¼Óµ½Êı×éµ±ÖĞ£¬ºìÇò²»ÄÜÖØ¸´£¬À¶Çò¿ÉÒÔÖØ¸´
         Random r = new Random();
-        //ç”Ÿæˆçº¢çƒå·ç å¹¶æ·»åŠ åˆ°æ•°ç»„å½“ä¸­
+        //Éú³ÉºìÇòºÅÂë²¢Ìí¼Óµ½Êı×éµ±ÖĞ
         for (int i = 0; i < 6; ) {
-            int redNumber = r.nextInt(33) + 1;//èŒƒå›´æ˜¯1-33
+            int redNumber = r.nextInt(33) + 1;//·¶Î§ÊÇ1-33
             boolean flag = contains(arr, redNumber);
             if (!flag) {
                 arr[i] = redNumber;
-                //åªæœ‰æ·»åŠ æˆåŠŸåç´¢å¼•æ‰ä¼šè‡ªå¢
+                //Ö»ÓĞÌí¼Ó³É¹¦ºóË÷Òı²Å»á×ÔÔö
                 i++;
             }
         }
-        //ç”Ÿæˆè“çƒå·ç å¹¶æ·»åŠ åˆ°æ•°ç»„å½“ä¸­
-        int blueNumber = r.nextInt(16) + 1;//èŒƒå›´æ˜¯1-16
+        //Éú³ÉÀ¶ÇòºÅÂë²¢Ìí¼Óµ½Êı×éµ±ÖĞ
+        int blueNumber = r.nextInt(16) + 1;//·¶Î§ÊÇ1-16
         arr[arr.length - 1] = blueNumber;
-        //ç”Ÿæˆå®Œæˆåè¿”å›æ•°ç»„
+        //Éú³ÉÍê³Éºó·µ»ØÊı×é
         return arr;
     }
 

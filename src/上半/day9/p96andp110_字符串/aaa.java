@@ -1,4 +1,4 @@
-package p96andp110_å­—ç¬¦ä¸²;
+package p96andp110_×Ö·û´®;
 
 import java.util.Random;
 
@@ -8,9 +8,9 @@ public class aaa {
         for (int i = 0; i < 3; i++) {
             int random = r.nextInt(100);
             if (random % 2 == 1){
-                System.out.println("ä¸ä¹°å½©ç¥¨");
+                System.out.println("²»Âò²ÊÆ±");
             }else {
-                System.out.println("ä¹°å½©ç¥¨");
+                System.out.println("Âò²ÊÆ±");
             }
         }
 

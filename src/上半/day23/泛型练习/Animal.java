@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day23.æ³›å‹ç»ƒä¹ ;
+package ÉÏ°ë.day23.·ºĞÍÁ·Ï°;
 
 public abstract class Animal {
     private String name;
@@ -13,7 +13,7 @@ public abstract class Animal {
     }
 
     /**
-     * è·å–
+     * »ñÈ¡
      * @return name
      */
     public String getName() {
@@ -21,7 +21,7 @@ public abstract class Animal {
     }
 
     /**
-     * è®¾ç½®
+     * ÉèÖÃ
      * @param name
      */
     public void setName(String name) {
@@ -29,7 +29,7 @@ public abstract class Animal {
     }
 
     /**
-     * è·å–
+     * »ñÈ¡
      * @return age
      */
     public int getAge() {
@@ -37,7 +37,7 @@ public abstract class Animal {
     }
 
     /**
-     * è®¾ç½®
+     * ÉèÖÃ
      * @param age
      */
     public void setAge(int age) {

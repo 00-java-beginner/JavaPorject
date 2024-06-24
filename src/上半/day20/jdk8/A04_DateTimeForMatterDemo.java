@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day20.jdk8;
+package ÉÏ°ë.day20.jdk8;
 
 import java.time.Instant;
 import java.time.ZoneId;
@@ -8,15 +8,15 @@ import java.time.format.DateTimeFormatter;
 public class A04_DateTimeForMatterDemo {
     public static void main(String[] args) {
         /*
-            static DateTimeFormatter ofPattern(æ ¼å¼) è·å–æ ¼å¼å¯¹è±¡
-            String format(æ—¶é—´å¯¹è±¡) æŒ‰ç…§æŒ‡å®šæ–¹å¼æ ¼å¼åŒ–
+            static DateTimeFormatter ofPattern(¸ñÊ½) »ñÈ¡¸ñÊ½¶ÔÏó
+            String format(Ê±¼ä¶ÔÏó) °´ÕÕÖ¸¶¨·½Ê½¸ñÊ½»¯
         */
-        //è·å–æ—¶é—´å¯¹è±¡
+        //»ñÈ¡Ê±¼ä¶ÔÏó
         ZonedDateTime time = Instant.now().atZone(ZoneId.of("Asia/Shanghai"));
 
-        // è§£æ/æ ¼å¼åŒ–å™¨
+        // ½âÎö/¸ñÊ½»¯Æ÷
         DateTimeFormatter dtf1=DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm;ss EE a");
-        // æ ¼å¼åŒ–
+        // ¸ñÊ½»¯
         System.out.println(dtf1.format(time));
     }
 }

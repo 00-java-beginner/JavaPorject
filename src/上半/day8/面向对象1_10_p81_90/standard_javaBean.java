@@ -1,27 +1,27 @@
-package ä¸ŠåŠ.day8.é¢å‘å¯¹è±¡1_10_p81_90;
+package ÉÏ°ë.day8.ÃæÏò¶ÔÏó1_10_p81_90;
 
 public class standard_javaBean {
     public static void main(String[] args) {
         /*
-        1.ç±»åéœ€è¦è§åä¹‹æ„
-        2.æˆå‘˜å˜é‡ä½¿ç”¨privateä¿®é¥°
-        3ï¼Œè‡³å°‘æä¾›ä¸¤ä¸ªæ„é€ æ–¹æ³•ï¼ˆæ— å‚å’Œå¸¦å…¨éƒ¨å‚æ•°ï¼‰
-        4.æä¾›æ¯ä¸€ä¸ªæˆå‘˜å˜é‡å¯¹åº”çš„setå’Œgetï¼Œå¦‚æœæœ‰å…¶ä»–è¡Œä¸ºï¼Œä¹Ÿè¦åŠ ä¸Š
-        5.PTGï¼šæ„æˆJavaBeanå¿«é€Ÿæ’ä»¶
+        1.ÀàÃûĞèÒª¼ûÃûÖ®Òâ
+        2.³ÉÔ±±äÁ¿Ê¹ÓÃprivateĞŞÊÎ
+        3£¬ÖÁÉÙÌá¹©Á½¸ö¹¹Ôì·½·¨£¨ÎŞ²ÎºÍ´øÈ«²¿²ÎÊı£©
+        4.Ìá¹©Ã¿Ò»¸ö³ÉÔ±±äÁ¿¶ÔÓ¦µÄsetºÍget£¬Èç¹ûÓĞÆäËûĞĞÎª£¬Ò²Òª¼ÓÉÏ
+        5.PTG£º¹¹³ÉJavaBean¿ìËÙ²å¼ş
         */
     }
-    //éœ€æ±‚ï¼šjavabeanç»ƒä¹ 
-    //1.å±æ€§
+    //ĞèÇó£ºjavabeanÁ·Ï°
+    //1.ÊôĞÔ
     private String username;
     private String password;
     private String email;
     private String gender;
     private int age;
-    //2.åˆ›å»ºæ„é€ æ–¹æ³•
-    //å¿«æ·é”®alt + insertï¼Œé€‰æ‹©constructor
-    //ç©ºå‚
+    //2.´´½¨¹¹Ôì·½·¨
+    //¿ì½İ¼üalt + insert£¬Ñ¡Ôñconstructor
+    //¿Õ²Î
     public standard_javaBean(){}
-    //å¸¦å…¨éƒ¨å‚æ•°çš„æ„é€ 
+    //´øÈ«²¿²ÎÊıµÄ¹¹Ôì
     public standard_javaBean(String username,String password,String email,String gender,int age){
         this.username = username;
         this.password = password;
@@ -29,8 +29,8 @@ public class standard_javaBean {
         this.gender = gender;
         this.age = age;
     }
-    //æä¾›æ¯ä¸€ä¸ªæˆå‘˜å˜é‡å¯¹åº”çš„setå’Œget
-    //å¿«æ·é”®alt + insert,é€‰æ‹©getter and setter
+    //Ìá¹©Ã¿Ò»¸ö³ÉÔ±±äÁ¿¶ÔÓ¦µÄsetºÍget
+    //¿ì½İ¼üalt + insert,Ñ¡Ôñgetter and setter
     public void setUsername(String username){
         this.username = username;
     }

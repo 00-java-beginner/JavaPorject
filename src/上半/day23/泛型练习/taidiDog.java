@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day23.æ³›å‹ç»ƒä¹ ;
+package ÉÏ°ë.day23.·ºĞÍÁ·Ï°;
 
 public class taidiDog extends Dog{
     public taidiDog() {
@@ -10,6 +10,6 @@ public class taidiDog extends Dog{
 
     @Override
     public void eat(){
-        System.out.println("ä¸€åªå«åš" + getName() + "çš„" + getAge() + "å²çš„æ³°è¿ªï¼Œæ­£åœ¨åƒéª¨å¤´ï¼Œè¾¹åƒè¾¹è¹­");
+        System.out.println("Ò»Ö»½Ğ×ö" + getName() + "µÄ" + getAge() + "ËêµÄÌ©µÏ£¬ÕıÔÚ³Ô¹ÇÍ·£¬±ß³Ô±ß²ä");
     }
 }

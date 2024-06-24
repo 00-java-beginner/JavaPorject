@@ -1,8 +1,8 @@
-package 涓婂崐.day18_day19.two_缁冧範;
+package 上半.day18_day19.two_练习;
 
 public class Test2 {
   public static void main(String[] args) {
-    //缁熻3浣嶆暟涓湁澶氬皯涓按浠欒姳
+    //统计3位数中有多少个水仙花
     int count = 0;
     for (int i = 100; i < 1000; i++) {
         int ge = i % 10;

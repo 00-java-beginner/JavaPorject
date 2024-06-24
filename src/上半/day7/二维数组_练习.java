@@ -1,23 +1,23 @@
-package ä¸ŠåŠ.day7;
+package ÉÏ°ë.day7;
 
-public class äºŒç»´æ•°ç»„_ç»ƒä¹  {
+public class ¶şÎ¬Êı×é_Á·Ï° {
     public static void main(String[] args) {
-        //1.åˆ›å»ºäºŒç»´æ•°ç»„
+        //1.´´½¨¶şÎ¬Êı×é
         int[][] yearTwoArr = {
                 {1, 2, 3},
                 {4, 5, 6},
                 {7, 8, 9},
                 {10, 11, 12}
         };
-        //2.éå†äºŒç»´æ•°ç»„ï¼Œå°†å¾—åˆ°çš„æ•°æ®æ±‚å’Œ
+        //2.±éÀú¶şÎ¬Êı×é£¬½«µÃµ½µÄÊı¾İÇóºÍ
         int yearSum = 0;
         for (int i = 0; i < yearTwoArr.length; i++) {
             int[] quarterArr = yearTwoArr[i];
             int sum = getSum(quarterArr);
-            System.out.println("ç¬¬" + (i + 1) + "ä¸ªæœˆè¥ä¸šé¢ä¸ºï¼š" + sum);
+            System.out.println("µÚ" + (i + 1) + "¸öÔÂÓªÒµ¶îÎª£º" + sum);
             yearSum = sum + yearSum;
         }
-        System.out.println("å…¨å¹´çš„è¥ä¸šé¢ä¸ºï¼š" + yearSum);
+        System.out.println("È«ÄêµÄÓªÒµ¶îÎª£º" + yearSum);
     }
     public static int getSum(int[] arr) {
         int sum = 0;

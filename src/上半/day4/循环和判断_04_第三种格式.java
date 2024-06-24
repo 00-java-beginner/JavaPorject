@@ -1,49 +1,49 @@
-package ä¸ŠåŠ.day4;
+package ÉÏ°ë.day4;
 
 import java.util.Scanner;
 
-public class å¾ªçŽ¯å’Œåˆ¤æ–­_04_ç¬¬ä¸‰ç§æ ¼å¼ {
+public class Ñ­»·ºÍÅÐ¶Ï_04_µÚÈýÖÖ¸ñÊ½ {
     public static void main(String[] args) {
-        //1.å½•å…¥è€ƒè¯•çš„æˆç»©
+        //1.Â¼Èë¿¼ÊÔµÄ³É¼¨
 //        Scanner sc = new Scanner(System.in);
-//        System.out.println("è¯·è¾“å…¥ä½ çš„æˆç»©");
+//        System.out.println("ÇëÊäÈëÄãµÄ³É¼¨");
 //        int score = sc.nextInt();
 //
-//        //2.æ ¹æ®ä¸åŒçš„æˆç»©ç»™å‡ºä¸åŒçš„å¥–åŠ±ï¼ˆéœ€è¦å¯¹å¼‚å¸¸æ•°æ®è¿›è¡Œæ ¡éªŒï¼‰
+//        //2.¸ù¾Ý²»Í¬µÄ³É¼¨¸ø³ö²»Í¬µÄ½±Àø£¨ÐèÒª¶ÔÒì³£Êý¾Ý½øÐÐÐ£Ñé£©
 //        if(score >0 && score <= 100 ){
 //            if(score >= 95 && score <= 100){
-//                System.out.println("å¥–åŠ±ç‰›æŽ’ä¸€å—");
+//                System.out.println("½±ÀøÅ£ÅÅÒ»¿é");
 //            }else if(score >= 90 && score < 95){
-//                System.out.println("å¥–åŠ±é¸¡æŽ’ä¸€å—");
+//                System.out.println("½±Àø¼¦ÅÅÒ»¿é");
 //            }else if(score >= 85 && score < 90){
-//                System.out.println("å¥–åŠ±çŒªæŽ’ä¸€å—");
+//                System.out.println("½±ÀøÖíÅÅÒ»¿é");
 //            }else{
-//                System.out.println("æ²¡é¥­åƒ");
+//                System.out.println("Ã»·¹³Ô");
 //            }
 //        }else {
-//            System.out.println("è¾“å…¥çš„æˆç»©ä¸æ­£ç¡®");
+//            System.out.println("ÊäÈëµÄ³É¼¨²»ÕýÈ·");
 //        }
 
 
-        //å‡è®¾å•†å“æ€»ä»·ä¸º1000ï¼Œé”®ç›˜å½•å…¥ä¼šå‘˜çš„ç­‰çº§ï¼Œå¹¶è®¡ç®—å‡ºå®žé™…æ”¯ä»˜çš„é’±
-        //ä¸€çº§æ‰“ä¹æŠ˜ï¼ŒäºŒçº§æ‰“å…«æŠ˜ï¼Œä¸‰çº§æ‰“ä¸ƒæŠ˜
-        //1.å®šä¹‰å˜é‡è®°å½•å•†å“çš„ä»·æ ¼
+        //¼ÙÉèÉÌÆ·×Ü¼ÛÎª1000£¬¼üÅÌÂ¼Èë»áÔ±µÄµÈ¼¶£¬²¢¼ÆËã³öÊµ¼ÊÖ§¸¶µÄÇ®
+        //Ò»¼¶´ò¾ÅÕÛ£¬¶þ¼¶´ò°ËÕÛ£¬Èý¼¶´òÆßÕÛ
+        //1.¶¨Òå±äÁ¿¼ÇÂ¼ÉÌÆ·µÄ¼Û¸ñ
         int price = 1000;
 
-        //2.é”®ç›˜å½•å…¥ä¼šå‘˜çš„ç­‰çº§
+        //2.¼üÅÌÂ¼Èë»áÔ±µÄµÈ¼¶
         Scanner sc1 = new Scanner(System.in);
-        System.out.println("è¯·è¾“å…¥ä¼šå‘˜çš„ç­‰çº§");
+        System.out.println("ÇëÊäÈë»áÔ±µÄµÈ¼¶");
         int vip = sc1.nextInt();
 
-        //3.æ ¹æ®çº§åˆ«æ¥è®¡ç®—å®žé™…è¦æ”¯ä»˜çš„é’±
+        //3.¸ù¾Ý¼¶±ðÀ´¼ÆËãÊµ¼ÊÒªÖ§¸¶µÄÇ®
         if (vip == 1) {
-            System.out.println("å®žé™…æ”¯ä»˜çš„é’±ä¸º" + (price * 0.9));
+            System.out.println("Êµ¼ÊÖ§¸¶µÄÇ®Îª" + (price * 0.9));
         } else if (vip == 2) {
-            System.out.println("å®žé™…è¦æ”¯ä»˜çš„é’±" + (price * 0.8));
+            System.out.println("Êµ¼ÊÒªÖ§¸¶µÄÇ®" + (price * 0.8));
         } else if (vip == 3) {
-            System.out.println("å®žé™…è¦æ”¯ä»˜çš„é’±" + (price * 0.7));
+            System.out.println("Êµ¼ÊÒªÖ§¸¶µÄÇ®" + (price * 0.7));
         } else {
-            System.out.println("å®žé™…è¦æ”¯ä»˜çš„é’±" + price);
+            System.out.println("Êµ¼ÊÒªÖ§¸¶µÄÇ®" + price);
         }
     }
 }

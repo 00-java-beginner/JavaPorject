@@ -1,8 +1,8 @@
-package ä¸ŠåŠ.day13.p129è®¤è¯†å¤šæ€;
+package ÉÏ°ë.day13.p129ÈÏÊ¶¶àÌ¬;
 
 public class Administrator extends Person{
     @Override
     public void show() {
-        System.out.println("ç®¡ç†å‘˜çš„ä¿¡æ¯ä¸ºï¼š" + getName() + "," + getAge());
+        System.out.println("¹ÜÀíÔ±µÄĞÅÏ¢Îª£º" + getName() + "," + getAge());
     }
 }

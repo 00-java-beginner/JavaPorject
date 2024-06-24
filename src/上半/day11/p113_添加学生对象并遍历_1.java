@@ -1,32 +1,34 @@
-package ä¸ŠåŠ.day11;
+/*
+package ÉÏ°ë.day11;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class p113_æ·»åŠ å­¦ç”Ÿå¯¹è±¡å¹¶éå†_1 {
+public class p113_Ìí¼ÓÑ§Éú¶ÔÏó²¢±éÀú_1 {
     public static void main(String[] args) {
-        //1.åˆ›å»ºé›†åˆ
+        //1.´´½¨¼¯ºÏ
         ArrayList<Student> list = new ArrayList<>();
-        //2.é”®ç›˜å½•å…¥
+        //2.¼üÅÌÂ¼Èë
         Scanner sc = new Scanner(System.in);
-        //3.æ·»åŠ ä¸‰ä¸ªå­¦ç”Ÿå¯¹è±¡
+        //3.Ìí¼ÓÈı¸öÑ§Éú¶ÔÏó
         for (int i = 0; i < 3; i++) {
-            //åˆ›å»ºå­¦ç”Ÿå¯¹è±¡ï¼Œéœ€è¦æ”¾åœ¨å¾ªç¯å†…ï¼Œä¸ç„¶æ¯æ¬¡å¾ªç¯ä¼šå°†ä¸Šä¸€ä¸ªå…ƒç´ è¦†ç›–
+            //´´½¨Ñ§Éú¶ÔÏó£¬ĞèÒª·ÅÔÚÑ­»·ÄÚ£¬²»È»Ã¿´ÎÑ­»·»á½«ÉÏÒ»¸öÔªËØ¸²¸Ç
             Student s = new Student();
-            System.out.println("è¯·è¾“å…¥å­¦ç”Ÿçš„å§“å");
+            System.out.println("ÇëÊäÈëÑ§ÉúµÄĞÕÃû");
             String name = sc.next();
-            System.out.println("è¯·è¾“å…¥å­¦ç”Ÿçš„å¹´é¾„");
+            System.out.println("ÇëÊäÈëÑ§ÉúµÄÄêÁä");
             int age = sc.nextInt();
-            //å°†é”®ç›˜å½•å…¥çš„æ•°æ®æ·»åŠ åˆ°å­¦ç”Ÿå¯¹è±¡ä¸­
+            //½«¼üÅÌÂ¼ÈëµÄÊı¾İÌí¼Óµ½Ñ§Éú¶ÔÏóÖĞ
             s.setName(name);
             s.setAge(age);
-            //å°†å­¦ç”Ÿå¯¹è±¡æ·»åŠ åˆ°é›†åˆä¸­
+            //½«Ñ§Éú¶ÔÏóÌí¼Óµ½¼¯ºÏÖĞ
             list.add(s);
         }
-        //4.éå†é›†åˆå¾—åˆ°é‡Œé¢çš„å…ƒç´ 
+        //4.±éÀú¼¯ºÏµÃµ½ÀïÃæµÄÔªËØ
         for (int i = 0; i < list.size(); i++) {
             Student stu = list.get(i);
             System.out.println(stu.getName() + ", " + stu.getAge());
         }
     }
 }
+*/

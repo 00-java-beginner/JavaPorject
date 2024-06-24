@@ -1,18 +1,18 @@
-package ä¸ŠåŠ.day9.p92_å¯¹è±¡æ•°ç»„çš„ç»ƒä¹ ;
+package ÉÏ°ë.day9.p92_¶ÔÏóÊı×éµÄÁ·Ï°;
 
 public class GoodsTest {
     public static void main(String[] args) {
-        //1.åˆ›å»ºä¸€ä¸ªæ•°ç»„
+        //1.´´½¨Ò»¸öÊı×é
         Goods[] arr = new Goods[3];
-        //2.åˆ›å»ºå¯¹è±¡
-        Goods g1 = new Goods("001","å¸ç‹èŸ¹",1999.0,10);
-        Goods g2 = new Goods("002","æ³¢å£«é¡¿é¾™è™¾",999.0,20);
-        Goods g3 = new Goods("003","çå®èŸ¹",599.0,30);
-        //3.æŠŠå•†å“æ·»åŠ åˆ°æ•°ç»„ä¸­
+        //2.´´½¨¶ÔÏó
+        Goods g1 = new Goods("001","µÛÍõĞ·",1999.0,10);
+        Goods g2 = new Goods("002","²¨Ê¿¶ÙÁúÏº",999.0,20);
+        Goods g3 = new Goods("003","Õä±¦Ğ·",599.0,30);
+        //3.°ÑÉÌÆ·Ìí¼Óµ½Êı×éÖĞ
         arr[0] = g1;
         arr[1] = g2;
         arr[2] = g3;
-        //4.æ‰“å°æ•°ç»„
+        //4.´òÓ¡Êı×é
         for (int i = 0; i < arr.length; i++) {
             Goods goods = arr[i];
             System.out.println(goods.getId()+","+goods.getName()+","+goods.getPrice()+","+goods.getCount());

@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day18_day19.five_object;
+package ÉÏ°ë.day18_day19.five_object;
 
 public class ObjectDemo3 {
     public static void main(String[] args) {
@@ -6,19 +6,19 @@ public class ObjectDemo3 {
         StringBuilder sb = new StringBuilder("abc");
 
         System.out.println(s.equals(sb));// false
-        //å› ä¸ºequalsæ–¹æ³•æ˜¯è¢«sè°ƒç”¨çš„ï¼Œè€Œsæ˜¯å­—ç¬¦ä¸²
-        //æ‰€ä»¥equalsè¦çœ‹stringç±»ä¸­çš„
-        //å­—ç¬¦ä¸²ä¸­çš„equalsæ–¹æ³•ï¼Œå…ˆåˆ¤æ–­å‚æ•°æ˜¯å¦ä¸ºå­—ç¬¦ä¸²
-        // å¦‚æœæ˜¯å­—ç¬¦ä¸²ï¼Œå†æ¯”è¾ƒå†…éƒ¨çš„å±æ€§
-        //ä½†æ˜¯å¦‚æœå‚æ•°ä¸æ˜¯å­—ç¬¦ä¸²ï¼Œç›´æ¥è¿”å›false
+        //ÒòÎªequals·½·¨ÊÇ±»sµ÷ÓÃµÄ£¬¶øsÊÇ×Ö·û´®
+        //ËùÒÔequalsÒª¿´stringÀàÖĞµÄ
+        //×Ö·û´®ÖĞµÄequals·½·¨£¬ÏÈÅĞ¶Ï²ÎÊıÊÇ·ñÎª×Ö·û´®
+        // Èç¹ûÊÇ×Ö·û´®£¬ÔÙ±È½ÏÄÚ²¿µÄÊôĞÔ
+        //µ«ÊÇÈç¹û²ÎÊı²»ÊÇ×Ö·û´®£¬Ö±½Ó·µ»Øfalse
 
 
         System.out.println(sb.equals(s));// false
-        //å› ä¸ºequalsæ–¹æ³•æ˜¯è¢«sbè°ƒç”¨çš„ï¼Œè€Œsbæ˜¯StringBuilder
-        //æ‰€ä»¥è¿™é‡Œçš„equalsæ–¹æ³•è¦çœ‹StringBuilderä¸­çš„equalsæ–¹æ³•
-        //é‚£ä¹ˆåœ¨StringBuilderå½“ä¸­ï¼Œæ²¡æœ‰é‡å†™equalsæ–¹æ³•
-        //ä½¿ç”¨çš„æ˜¯Objectä¸­çš„
-        //åœ¨Objectå½“ä¸­é»˜è®¤æ˜¯ä½¿ç”¨==å·æ¯”è¾ƒä¸¤ä¸ªå¯¹è±¡çš„åœ°å€å€¼
-        //è€Œè¿™é‡Œçš„så’Œsbè®°å½•çš„åœ°å€å€¼æ˜¯ä¸ä¸€æ ·çš„ï¼Œæ‰€ä»¥ç»“æœè¿”å›false
+        //ÒòÎªequals·½·¨ÊÇ±»sbµ÷ÓÃµÄ£¬¶øsbÊÇStringBuilder
+        //ËùÒÔÕâÀïµÄequals·½·¨Òª¿´StringBuilderÖĞµÄequals·½·¨
+        //ÄÇÃ´ÔÚStringBuilderµ±ÖĞ£¬Ã»ÓĞÖØĞ´equals·½·¨
+        //Ê¹ÓÃµÄÊÇObjectÖĞµÄ
+        //ÔÚObjectµ±ÖĞÄ¬ÈÏÊÇÊ¹ÓÃ==ºÅ±È½ÏÁ½¸ö¶ÔÏóµÄµØÖ·Öµ
+        //¶øÕâÀïµÄsºÍsb¼ÇÂ¼µÄµØÖ·ÖµÊÇ²»Ò»ÑùµÄ£¬ËùÒÔ½á¹û·µ»Øfalse
     }
 }

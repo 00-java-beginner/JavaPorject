@@ -1,11 +1,11 @@
-package ä¸ŠåŠ.day10;
+package ÉÏ°ë.day10;
 
 public class p110_test3 {
     public static void main(String[] args) {
-        //å®šä¹‰ä¸¤ä¸ªå­—ç¬¦ä¸²ï¼Œè¿”å›ä»–ä»¬çš„ä¹˜ç§¯
+        //¶¨ÒåÁ½¸ö×Ö·û´®£¬·µ»ØËûÃÇµÄ³Ë»ı
         String num1 = "12345";
         String num2 = "23456";
-        //1.å°†num1å’Œnum2å˜æˆintç±»å‹
+        //1.½«num1ºÍnum2±ä³ÉintÀàĞÍ
         char[] arr1 = num1.toCharArray();
         char[] arr2 = num2.toCharArray();
         int number1 = 0;
@@ -16,10 +16,10 @@ public class p110_test3 {
         for (int i = 0; i < arr2.length; i++) {
             number2 = (number2*10) + (arr2[i] - 48);
         }
-        //2.ç›¸ä¹˜
+        //2.Ïà³Ë
         int number3 = number1 * number2;
 
-        //3.å°†ç›¸ä¹˜åçš„ç»“æœè½¬æ¢æˆå­—ç¬¦ä¸²
+        //3.½«Ïà³ËºóµÄ½á¹û×ª»»³É×Ö·û´®
         String str = number3 + "";
         System.out.println(str);
 

@@ -1,8 +1,8 @@
-package ä¸ŠåŠ.day13.é¢å‘å¯¹è±¡è¿›é˜¶_02;
+package ÉÏ°ë.day13.ÃæÏò¶ÔÏó½ø½×_02;
 
 public class TestDemo {
     public static void main(String[] args) {
-        //æµ‹è¯•å·¥å…·ç±»ä¸­çš„ä¸¤ä¸ªæ–¹æ³•æ˜¯å¦æ­£ç¡®
+        //²âÊÔ¹¤¾ßÀàÖĞµÄÁ½¸ö·½·¨ÊÇ·ñÕıÈ·
         int[] arr1 = {1, 2, 3, 4, 5};
         String str = ArrayUtil.printArr(arr1);
         System.out.println(str);

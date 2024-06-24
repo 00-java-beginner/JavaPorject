@@ -1,19 +1,19 @@
-package ä¸ŠåŠ.day20.ç»¼åˆç»ƒä¹ ;
+package ÉÏ°ë.day20.×ÛºÏÁ·Ï°;
 
 import java.time.LocalDate;
 import java.util.Calendar;
 
 public class Test5 {
     public static void main(String[] args) {
-        //jdk7,åˆ¤æ–­å¹³å¹´æˆ–é—°å¹´
+        //jdk7,ÅĞ¶ÏÆ½Äê»òÈòÄê
         Calendar c = Calendar.getInstance();
-        c.set(2000,2,1);//æœˆä»½çš„èŒƒå›´0-11
+        c.set(2000,2,1);//ÔÂ·İµÄ·¶Î§0-11
         c.add(Calendar.DAY_OF_MONTH,-1);
         int day1 = c.get(Calendar.DAY_OF_MONTH);
         if (day1 == 29){
-            System.out.println("æ˜¯é—°å¹´");
+            System.out.println("ÊÇÈòÄê");
         }else {
-            System.out.println("æ˜¯å¹³å¹´");
+            System.out.println("ÊÇÆ½Äê");
         }
 
         //jdk8
@@ -21,11 +21,11 @@ public class Test5 {
         LocalDate ld2 = ld1.minusDays(1);
         int day2 = ld2.getDayOfMonth();
         if (day2 == 29){
-            System.out.println("æ˜¯é—°å¹´");
+            System.out.println("ÊÇÈòÄê");
         }else {
-            System.out.println("æ˜¯å¹³å¹´");
+            System.out.println("ÊÇÆ½Äê");
         }
-        //ç›´æ¥å¯ä»¥åˆ¤æ–­å¹³é—°å¹´
+        //Ö±½Ó¿ÉÒÔÅĞ¶ÏÆ½ÈòÄê
         System.out.println(ld1.isLeapYear());
 
     }

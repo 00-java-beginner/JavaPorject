@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day15.p136_æ¥å£;
+package ÉÏ°ë.day15.p136_½Ó¿Ú;
 
 public class Frog extends Animal implements Swim{
     public Frog() {
@@ -10,10 +10,10 @@ public class Frog extends Animal implements Swim{
 
     @Override
     public void eat() {
-        System.out.println("é’è›™åœ¨åƒè™«å­");
+        System.out.println("ÇàÍÜÔÚ³Ô³æ×Ó");
     }
     @Override
     public void swim() {
-        System.out.println("é’è›™åœ¨æ¸¸æ³³");
+        System.out.println("ÇàÍÜÔÚÓÎÓ¾");
     }
 }

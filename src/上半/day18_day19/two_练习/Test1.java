@@ -1,4 +1,4 @@
-package ‰∏äÂçä.day18_day19.two_ÁªÉ‰π†;
+package …œ∞Î.day18_day19.two_¡∑œ∞;
 
 public class Test1 {
   public static void main(String[] args) {

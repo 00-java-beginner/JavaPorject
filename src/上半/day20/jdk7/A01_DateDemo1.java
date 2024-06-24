@@ -1,30 +1,30 @@
-package ä¸ŠåŠ.day20.jdk7;
+package ÉÏ°ë.day20.jdk7;
 
 import java.util.Date;
 
 public class A01_DateDemo1 {
     public static void main(String[] args) {
         /*
-            public Date() åˆ›å»ºDateå¯¹è±¡ï¼Œè¡¨ç¤ºå½“å‰æ—¶é—´
-            public Date(long date) åˆ›å»ºDateå¯¹è±¡ï¼Œè¡¨ç¤ºæŒ‡å®šæ—¶é—´
-            public void settime(long time) è®¾ç½®/ä¿®æ”¹æ¯«ç§’å€¼
-            public long gettime() è·å–æ—¶é—´å¯¹è±¡çš„æ¯«ç§’å€¼
+            public Date() ´´½¨Date¶ÔÏó£¬±íÊ¾µ±Ç°Ê±¼ä
+            public Date(long date) ´´½¨Date¶ÔÏó£¬±íÊ¾Ö¸¶¨Ê±¼ä
+            public void settime(long time) ÉèÖÃ/ĞŞ¸ÄºÁÃëÖµ
+            public long gettime() »ñÈ¡Ê±¼ä¶ÔÏóµÄºÁÃëÖµ
         */
 
-        //1.åˆ›å»ºå¯¹è±¡è¡¨ç¤ºä¸€ä¸ªæ—¶é—´
+        //1.´´½¨¶ÔÏó±íÊ¾Ò»¸öÊ±¼ä
         Date d1 = new Date();
         //system.out.println(d1);
 
-        //2.åˆ›å»ºå¯¹è±¡è¡¨ç¤ºä¸€ä¸ªæŒ‡å®šçš„æ—¶é—´
+        //2.´´½¨¶ÔÏó±íÊ¾Ò»¸öÖ¸¶¨µÄÊ±¼ä
         Date d2 = new Date(0L);
         System.out.println(d2);
 
-        //3.settime ä¿®æ”¹æ—¶é—´
-        //1000æ¯«ç§’=1ç§’
+        //3.settime ĞŞ¸ÄÊ±¼ä
+        //1000ºÁÃë=1Ãë
         d2.setTime(1000L);
         System.out.println(d2);
 
-        //4.getTimeè·å–å½“å‰æ—¶é—´çš„æ¯«ç§’å€¼
+        //4.getTime»ñÈ¡µ±Ç°Ê±¼äµÄºÁÃëÖµ
         long time = d2.getTime();
         System.out.println(time);
     }

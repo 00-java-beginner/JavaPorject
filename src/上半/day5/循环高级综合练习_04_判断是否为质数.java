@@ -1,18 +1,18 @@
-package ä¸ŠåŠ.day5;
+package ÉÏ°ë.day5;
 
 import java.util.Scanner;
 
-public class å¾ªç¯é«˜çº§ç»¼åˆç»ƒä¹ _04_åˆ¤æ–­æ˜¯å¦ä¸ºè´¨æ•° {
+public class Ñ­»·¸ß¼¶×ÛºÏÁ·Ï°_04_ÅĞ¶ÏÊÇ·ñÎªÖÊÊı {
     public static void main(String[] args) {
-        //éœ€æ±‚ï¼šé”®ç›˜å½•å…¥ä¸€ä¸ªæ­£æ•´æ•°ï¼Œåˆ¤æ–­æ˜¯å¦ä¸ºä¸€ä¸ªè´¨æ•°
-        //1.é”®ç›˜å½•å…¥ä¸€ä¸ªæ­£æ•´æ•°
+        //ĞèÇó£º¼üÅÌÂ¼ÈëÒ»¸öÕıÕûÊı£¬ÅĞ¶ÏÊÇ·ñÎªÒ»¸öÖÊÊı
+        //1.¼üÅÌÂ¼ÈëÒ»¸öÕıÕûÊı
         Scanner sc = new Scanner(System.in);
-        System.out.println("è¯·è¾“å…¥ä¸€ä¸ªæ­£æ•´æ•°");
+        System.out.println("ÇëÊäÈëÒ»¸öÕıÕûÊı");
         int number = sc.nextInt();
 
-        //å®šä¹‰ä¸€ä¸ªå˜é‡è¡¨ç¤ºæ ‡è®°ï¼Œæ ‡è®°numberæ˜¯å¦ä¸ºä¸€ä¸ªè´¨æ•°
+        //¶¨ÒåÒ»¸ö±äÁ¿±íÊ¾±ê¼Ç£¬±ê¼ÇnumberÊÇ·ñÎªÒ»¸öÖÊÊı
         boolean flag = true;
-        //2.å†™ä¸€ä¸ªå¾ªç¯ï¼Œä»2å¼€å§‹åˆ¤æ–­ï¼Œåˆ¤æ–­æ˜¯å¦ä¸ºä¸€ä¸ªè´¨æ•°
+        //2.Ğ´Ò»¸öÑ­»·£¬´Ó2¿ªÊ¼ÅĞ¶Ï£¬ÅĞ¶ÏÊÇ·ñÎªÒ»¸öÖÊÊı
         for (int i = 2; i < number; i++) {
             if (number % i == 0) {
                 flag = false;
@@ -20,9 +20,9 @@ public class å¾ªç¯é«˜çº§ç»¼åˆç»ƒä¹ _04_åˆ¤æ–­æ˜¯å¦ä¸ºè´¨æ•° {
             }
         }
         if (flag) {
-            System.out.println(number + "æ˜¯ä¸€ä¸ªè´¨æ•°");
+            System.out.println(number + "ÊÇÒ»¸öÖÊÊı");
         } else {
-            System.out.println(number + "ä¸æ˜¯ä¸€ä¸ªè´¨æ•°");
+            System.out.println(number + "²»ÊÇÒ»¸öÖÊÊı");
         }
     }
 }

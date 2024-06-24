@@ -1,12 +1,12 @@
-package ä¸ŠåŠ.day6;
+package ÉÏ°ë.day6;
 
-public class æ–¹æ³•_04_å¸¦è¿”å›å€¼çš„å®šä¹‰å’Œè°ƒç”¨ {
+public class ·½·¨_04_´ø·µ»ØÖµµÄ¶¨ÒåºÍµ÷ÓÃ {
     /*
     public static void main(String[] args) {
-        //å¸¦è¿”å›å€¼çš„æ–¹æ³•è°ƒç”¨çš„æ–¹å¼æœ‰ä¸‰ç§
-        //1.ç›´æ¥è°ƒç”¨ï¼šæ–¹æ³•å();
-        //2.èµ‹å€¼è°ƒç”¨ï¼šå˜é‡ç±»å‹ å˜é‡ = æ–¹æ³•å();
-        //3.è¾“å‡ºè°ƒç”¨ï¼šSystem.out.println(æ–¹æ³•å());
+        //´ø·µ»ØÖµµÄ·½·¨µ÷ÓÃµÄ·½Ê½ÓĞÈıÖÖ
+        //1.Ö±½Óµ÷ÓÃ£º·½·¨Ãû();
+        //2.¸³Öµµ÷ÓÃ£º±äÁ¿ÀàĞÍ ±äÁ¿ = ·½·¨Ãû();
+        //3.Êä³öµ÷ÓÃ£ºSystem.out.println(·½·¨Ãû());
         System.out.println(getsum(1,2,3));
     }
     public static int getsum(int num1,int num2,int num3){
@@ -19,9 +19,9 @@ public class æ–¹æ³•_04_å¸¦è¿”å›å€¼çš„å®šä¹‰å’Œè°ƒç”¨ {
         double area1 = getArea(1.3, 2.6);
         double area2 = getArea(5.5, 6.6);
         if (area1 > area2) {
-            System.out.println("ç¬¬ä¸€ä¸ªé¢ç§¯å¤§");
+            System.out.println("µÚÒ»¸öÃæ»ı´ó");
         } else {
-            System.out.println("ç¬¬äºŒä¸ªé¢ç§¯å¤§");
+            System.out.println("µÚ¶ş¸öÃæ»ı´ó");
         }
     }
 

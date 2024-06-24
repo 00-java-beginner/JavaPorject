@@ -1,21 +1,21 @@
-package p96andp110_å­—ç¬¦ä¸²;
-public class p102_01_å­—ç¬¦ä¸²çš„æ‹¼æ¥ {
+package p96andp110_×Ö·û´®;
+public class p102_01_×Ö·û´®µÄÆ´½Ó {
     public static void main(String[] args) {
-        //å®šä¹‰ä¸€ä¸ªæ–¹æ³•,æŠŠintæ•°ç»„ä¸­çš„æ•°æ®æŒ‰ç…§æŒ‡å®šçš„æ ¼å¼æ‹¼æ¥æˆä¸€ä¸ªå­—ç¬¦ä¸²è¿”å›,
-        //è°ƒç”¨è¯¥æ–¹æ³•,å¹¶åœ¨æ§åˆ¶å°è¾“å‡ºç»“æœã€‚
+        //¶¨ÒåÒ»¸ö·½·¨,°ÑintÊı×éÖĞµÄÊı¾İ°´ÕÕÖ¸¶¨µÄ¸ñÊ½Æ´½Ó³ÉÒ»¸ö×Ö·û´®·µ»Ø,
+        //µ÷ÓÃ¸Ã·½·¨,²¢ÔÚ¿ØÖÆÌ¨Êä³ö½á¹û¡£
         int [] arr = {1,2,3};
         String str = arrToString(arr);
         System.out.println(str);
     }
     public static String arrToString(int[] arr){
-        //1.å…ˆè¿›è¡Œæ ¡éªŒ
+        //1.ÏÈ½øĞĞĞ£Ñé
         if (arr == null){
             return "";
         }
         if (arr.length == 0){
             return "[]";
         }
-        //2.éå†æ•°ç»„ï¼Œè·å–æ•°ç»„ä¸­çš„å…ƒç´ 
+        //2.±éÀúÊı×é£¬»ñÈ¡Êı×éÖĞµÄÔªËØ
         String result = "[";
         for (int i = 0; i < arr.length; i++) {
             if (i == arr.length - 1){

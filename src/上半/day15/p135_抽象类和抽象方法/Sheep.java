@@ -1,4 +1,4 @@
-package 涓婂崐.day15.p135_鎶借薄绫诲拰鎶借薄鏂规硶;
+package 上半.day15.p135_抽象类和抽象方法;
 
 public class Sheep extends Animal{
     public Sheep() {
@@ -10,6 +10,6 @@ public class Sheep extends Animal{
 
     @Override
     public void eat() {
-        System.out.println("缇婂湪鍚冭崏");
+        System.out.println("羊在吃草");
     }
 }

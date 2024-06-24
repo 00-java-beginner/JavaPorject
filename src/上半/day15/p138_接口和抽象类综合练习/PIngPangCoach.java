@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day15.p138_æ¥å£å’ŒæŠ½è±¡ç±»ç»¼åˆç»ƒä¹ ;
+package ÉÏ°ë.day15.p138_½Ó¿ÚºÍ³éÏóÀà×ÛºÏÁ·Ï°;
 
 public class PIngPangCoach extends Coach implements English{
     public PIngPangCoach() {
@@ -10,11 +10,11 @@ public class PIngPangCoach extends Coach implements English{
 
     @Override
     public void teach() {
-        System.out.println("ä¹’ä¹“çƒæ•™ç»ƒåœ¨æ•™ä¹’ä¹“çƒ");
+        System.out.println("Æ¹ÅÒÇò½ÌÁ·ÔÚ½ÌÆ¹ÅÒÇò");
     }
 
     @Override
     public void SpeakEnglish() {
-        System.out.println("ä¹’ä¹“çƒæ•™ç»ƒåœ¨è¯´è‹±è¯­");
+        System.out.println("Æ¹ÅÒÇò½ÌÁ·ÔÚËµÓ¢Óï");
     }
 }

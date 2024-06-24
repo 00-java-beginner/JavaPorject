@@ -1,14 +1,14 @@
-package 涓婂崐.day10;
+package 上半.day10;
 
 import java.util.StringJoiner;
 
 public class p106_Stringjoiner {
     public static void main(String[] args) {
-        //1.鍒涘缓涓�涓璞★紝骞跺埗瀹氫腑闂村垎闅旂
+        //1.创建一个对象，并制定中间分隔符
         //StringJoiner sj = new StringJoiner("---");
         StringJoiner sj = new StringJoiner(",","[","]");
 
-        //2.娣诲姞鍏冪礌
+        //2.添加元素
         sj.add("aaa").add("bbb").add("ccc");
 
         int len = sj.length();
@@ -16,7 +16,7 @@ public class p106_Stringjoiner {
 
         String str = sj.toString();
         System.out.println(str);
-        //3.鎵撳嵃缁撴灉
+        //3.打印结果
         System.out.println(sj);
 
     }

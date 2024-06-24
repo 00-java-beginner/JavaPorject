@@ -1,4 +1,4 @@
-public class p69_ç»ƒä¹ _1 {
+public class p69_Á·Ï°_1 {
     public static void main(String[] args) {
         int arr [] = {1,5,32,65,678,35};
 

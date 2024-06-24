@@ -1,29 +1,29 @@
-package p93_é¢å‘å¯¹è±¡ç»¼åˆç»ƒä¹ _03;
+package p93_ÃæÏò¶ÔÏó×ÛºÏÁ·Ï°_03;
 
 public class PhoneTest {
     public static void main(String[] args) {
-        //1.åˆ›å»ºä¸€ä¸ªæ•°ç»„
+        //1.´´½¨Ò»¸öÊı×é
         Phone[] arr = new Phone[3];
 
-        //2.åˆ›å»ºå¯¹è±¡
-        Phone p1 = new Phone("å°ç±³",1999,"ç™½è‰²");
-        Phone p2 = new Phone("åä¸º",4999,"çº¢è‰²");
-        Phone p3 = new Phone("è£è€€",3999,"è“è‰²");
+        //2.´´½¨¶ÔÏó
+        Phone p1 = new Phone("Ğ¡Ã×",1999,"°×É«");
+        Phone p2 = new Phone("»ªÎª",4999,"ºìÉ«");
+        Phone p3 = new Phone("ÈÙÒ«",3999,"À¶É«");
 
-        //3.èµ‹å€¼
+        //3.¸³Öµ
         arr[0] = p1;
         arr[1] = p2;
         arr[2] = p3;
 
-        //4.è·å–ä»·æ ¼
-            //å®šä¹‰ä¸€ä¸ªå˜é‡æ¥å—æ•°ç»„ä¸­çš„ä»·æ ¼
+        //4.»ñÈ¡¼Û¸ñ
+            //¶¨ÒåÒ»¸ö±äÁ¿½ÓÊÜÊı×éÖĞµÄ¼Û¸ñ
         int sum = 0;
         for (int i = 0; i < arr.length; i++) {
-            //å°†å¾ªç¯å¾—åˆ°çš„å…ƒç´ èµ‹å€¼ç»™ä¸€ä¸ªæ–°çš„å˜é‡
+            //½«Ñ­»·µÃµ½µÄÔªËØ¸³Öµ¸øÒ»¸öĞÂµÄ±äÁ¿
             Phone phone = arr[i];
             sum = sum + phone.getPrice();
         }
-        //5.è®¡ç®—å¹³å‡ä»·æ ¼
+        //5.¼ÆËãÆ½¾ù¼Û¸ñ
         int avg = sum / arr.length;
         System.out.println(avg);
     }

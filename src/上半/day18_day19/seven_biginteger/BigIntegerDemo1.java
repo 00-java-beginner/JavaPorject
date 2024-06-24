@@ -1,22 +1,22 @@
-package ä¸ŠåŠ.day18_day19.seven_biginteger;
+package ÉÏ°ë.day18_day19.seven_biginteger;
 
 import java.math.BigInteger;
 
 public class BigIntegerDemo1 {
     public static void main(String[] args) {
         /*
-            public BigInteger(int num, Random rnd) è·å–éšæœºå¤§æ•´æ•°ï¼ŒèŒƒå›´:[0~ 2çš„numæ¬¡æ–¹-11
-            public BigInteger(String val) è·å–æŒ‡å®šçš„å¤§æ•´æ•°
-            public BigInteger(String val, int radix) è·å–æŒ‡å®šè¿›åˆ¶çš„å¤§æ•´æ•°
+            public BigInteger(int num, Random rnd) »ñÈ¡Ëæ»ú´óÕûÊı£¬·¶Î§:[0~ 2µÄnum´Î·½-11
+            public BigInteger(String val) »ñÈ¡Ö¸¶¨µÄ´óÕûÊı
+            public BigInteger(String val, int radix) »ñÈ¡Ö¸¶¨½øÖÆµÄ´óÕûÊı
 
-            public static BigInteger valueOf(long val) é™æ€æ–¹æ³•è·å–BigIntegerçš„å¯¹è±¡ï¼Œå†…éƒ¨æœ‰ä¼˜åŒ–
+            public static BigInteger valueOf(long val) ¾²Ì¬·½·¨»ñÈ¡BigIntegerµÄ¶ÔÏó£¬ÄÚ²¿ÓĞÓÅ»¯
 
-            ç»†èŠ‚:
-            å¯¹è±¡ä¸€æ—¦åˆ›å»ºé‡Œé¢çš„æ•°æ®ä¸èƒ½å‘ç”Ÿæ”¹å˜ã€‚
+            Ï¸½Ú:
+            ¶ÔÏóÒ»µ©´´½¨ÀïÃæµÄÊı¾İ²»ÄÜ·¢Éú¸Ä±ä¡£
         */
 
 
-        //1.è·å–ä¸€ä¸ªéšæœºçš„å¤§æ•´æ•°
+        //1.»ñÈ¡Ò»¸öËæ»úµÄ´óÕûÊı
         /* Random r=new Random();
             for (int i = e; i < 100; i++) {
             BigInteger bd1 = new BigInteger(4,r);
@@ -24,8 +24,8 @@ public class BigIntegerDemo1 {
             }
         */
 
-        //2.è·å–ä¸€ä¸ªæŒ‡å®šçš„å¤§æ•´æ•°ï¼Œå¯ä»¥è¶…å‡ºlongçš„å–å€¼èŒƒå›´
-        //ç»†èŠ‚:å­—ç¬¦ä¸²ä¸­å¿…é¡»æ˜¯æ•´æ•°ï¼Œå¦åˆ™ä¼šæŠ¥é”™
+        //2.»ñÈ¡Ò»¸öÖ¸¶¨µÄ´óÕûÊı£¬¿ÉÒÔ³¬³ölongµÄÈ¡Öµ·¶Î§
+        //Ï¸½Ú:×Ö·û´®ÖĞ±ØĞëÊÇÕûÊı£¬·ñÔò»á±¨´í
         /* BigInteger bd2 = new BigInteger("1.1");
             System.out.println(bd2);
         */
@@ -35,19 +35,19 @@ public class BigIntegerDemo1 {
             System.out.println(bd3);
          */
 
-        //3.è·å–æŒ‡å®šè¿›åˆ¶çš„å¤§æ•´æ•°
-        //ç»†èŠ‚:
-        //1.å­—ç¬¦ä¸²ä¸­çš„æ•°å­—å¿…é¡»æ˜¯æ•´æ•°
-        //2.å­—ç¬¦ä¸²ä¸­çš„æ•°å­—å¿…é¡»è¦è·Ÿè¿›åˆ¶å»åˆã€‚
-        //æ¯”å¦‚äºŒè¿›åˆ¶ä¸­ï¼Œé‚£ä¹ˆåªèƒ½å†™æ—¥å’Œ1ï¼Œå†™å…¶ä»–çš„å°±æŠ¥é”™ã€‚
+        //3.»ñÈ¡Ö¸¶¨½øÖÆµÄ´óÕûÊı
+        //Ï¸½Ú:
+        //1.×Ö·û´®ÖĞµÄÊı×Ö±ØĞëÊÇÕûÊı
+        //2.×Ö·û´®ÖĞµÄÊı×Ö±ØĞëÒª¸ú½øÖÆÎÇºÏ¡£
+        //±ÈÈç¶ş½øÖÆÖĞ£¬ÄÇÃ´Ö»ÄÜĞ´ÈÕºÍ1£¬Ğ´ÆäËûµÄ¾Í±¨´í¡£
         BigInteger bd4 = new BigInteger("123", 2);
         System.out.println(bd4);
 
-        //4.é™æ€æ–¹æ³•è·å–BigIntegerçš„å¯¹è±¡ï¼Œå†…éƒ¨æœ‰ä¼˜åŒ–
-        //ç»†èŠ‚:
-        //1.èƒ½è¡¨ç¤ºèŒƒå›´æ¯”è¾ƒå°ï¼Œåªèƒ½åœ¨longçš„å–å€¼èŒƒå›´ä¹‹å†…ï¼Œå¦‚æœè¶…å‡ºlongçš„èŒƒå›´å°±ä¸è¡Œäº†ã€‚
-        //2.åœ¨å†…éƒ¨å¯¹å¸¸ç”¨çš„æ•°å­—: -16 ~ 16 è¿›è¡Œäº†ä¼˜åŒ–ã€‚
-        //  æå‰æŠŠ-16~16 å…ˆåˆ›å»ºå¥½BigIntegerçš„å¯¹è±¡ï¼Œå¦‚æœå¤šæ¬¡è·å–ä¸ä¼šé‡æ–°åˆ›å»ºæ–°çš„ã€‚
+        //4.¾²Ì¬·½·¨»ñÈ¡BigIntegerµÄ¶ÔÏó£¬ÄÚ²¿ÓĞÓÅ»¯
+        //Ï¸½Ú:
+        //1.ÄÜ±íÊ¾·¶Î§±È½ÏĞ¡£¬Ö»ÄÜÔÚlongµÄÈ¡Öµ·¶Î§Ö®ÄÚ£¬Èç¹û³¬³ölongµÄ·¶Î§¾Í²»ĞĞÁË¡£
+        //2.ÔÚÄÚ²¿¶Ô³£ÓÃµÄÊı×Ö: -16 ~ 16 ½øĞĞÁËÓÅ»¯¡£
+        //  ÌáÇ°°Ñ-16~16 ÏÈ´´½¨ºÃBigIntegerµÄ¶ÔÏó£¬Èç¹û¶à´Î»ñÈ¡²»»áÖØĞÂ´´½¨ĞÂµÄ¡£
         BigInteger bd5 = BigInteger.valueOf(16);
         BigInteger bd6 = BigInteger.valueOf(16);
         System.out.println(bd5 == bd6);//true
@@ -58,10 +58,10 @@ public class BigIntegerDemo1 {
         System.out.println(bd7 == bd8);//false
 
 
-        //5.å¯¹è±¡ä¸€æ—¦åˆ›å»ºå†…éƒ¨çš„æ•°æ®ä¸èƒ½å‘ç”Ÿæ”¹å˜
+        //5.¶ÔÏóÒ»µ©´´½¨ÄÚ²¿µÄÊı¾İ²»ÄÜ·¢Éú¸Ä±ä
         BigInteger bd9 =BigInteger.valueOf(1);
         BigInteger bd10 =BigInteger.valueOf(2);
-        //æ­¤æ—¶ï¼Œä¸ä¼šä¿®æ”¹å‚ä¸è®¡ç®—çš„BigIntegerå¯¹è±¡ä¸­çš„å€Ÿï¼Œè€Œæ˜¯äº§ç”Ÿäº†ä¸€ä¸ªæ–°çš„BigIntegerå¯¹è±¡è®°å½•
+        //´ËÊ±£¬²»»áĞŞ¸Ä²ÎÓë¼ÆËãµÄBigInteger¶ÔÏóÖĞµÄ½è£¬¶øÊÇ²úÉúÁËÒ»¸öĞÂµÄBigInteger¶ÔÏó¼ÇÂ¼
         BigInteger result=bd9.add(bd10);
         System.out.println(result);//3
 

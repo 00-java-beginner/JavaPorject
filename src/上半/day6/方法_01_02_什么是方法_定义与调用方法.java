@@ -1,15 +1,15 @@
-package ä¸ŠåŠ.day6;
+package ÉÏ°ë.day6;
 
-public class æ–¹æ³•_01_02_ä»€ä¹ˆæ˜¯æ–¹æ³•_å®šä¹‰ä¸è°ƒç”¨æ–¹æ³• {
+public class ·½·¨_01_02_Ê²Ã´ÊÇ·½·¨_¶¨ÒåÓëµ÷ÓÃ·½·¨ {
     public static void main(String[] args) {
-        //è°ƒç”¨æ–¹æ³•
+        //µ÷ÓÃ·½·¨
         playGame();
     }
 
-    //å®šä¹‰ä¸€ä¸ªæ–¹æ³•
+    //¶¨ÒåÒ»¸ö·½·¨
     public static void playGame() {
-        System.out.println("åƒé¥­");
-        System.out.println("ç¡è§‰");
-        System.out.println("æ‰“è±†è±†");
+        System.out.println("³Ô·¹");
+        System.out.println("Ë¯¾õ");
+        System.out.println("´ò¶¹¶¹");
     }
 }

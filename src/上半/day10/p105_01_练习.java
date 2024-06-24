@@ -1,31 +1,31 @@
-package ä¸ŠåŠ.day10;
+package ÉÏ°ë.day10;
 
 import java.util.Scanner;
 
-public class p105_01_ç»ƒä¹  {
+public class p105_01_Á·Ï° {
     public static void main(String[] args) {
-        //ä½¿ç”¨StringBuilderçš„åœºæ™¯
-        //1.å­—ç¬¦ä¸²çš„æ‹¼æ¥
-        //2.å­—ç¬¦ä¸²çš„åè½¬
+        //Ê¹ÓÃStringBuilderµÄ³¡¾°
+        //1.×Ö·û´®µÄÆ´½Ó
+        //2.×Ö·û´®µÄ·´×ª
 
-        //1.é”®ç›˜å½•å…¥ä¸€ä¸ªå­—ç¬¦ä¸²
+        //1.¼üÅÌÂ¼ÈëÒ»¸ö×Ö·û´®
         Scanner sc = new Scanner(System.in);
-        System.out.println("è¯·è¾“å…¥ä¸€ä¸ªå­—ç¬¦ä¸²");
+        System.out.println("ÇëÊäÈëÒ»¸ö×Ö·û´®");
         String str = sc.next();
 
-        //2.åè½¬é”®ç›˜å½•å…¥çš„å­—ç¬¦ä¸²
+        //2.·´×ª¼üÅÌÂ¼ÈëµÄ×Ö·û´®
 //        StringBuilder sb = new StringBuilder();
 //        sb.append(str);
 //        sb.reverse();
 
-        //åˆ©ç”¨é“¾å¼ç¼–ç¨‹ä¹¦å†™
+        //ÀûÓÃÁ´Ê½±à³ÌÊéĞ´
         String result = new StringBuilder().append(str).reverse().toString();
 
-        //3.æ¯”è¾ƒ
+        //3.±È½Ï
         if (str.equals(result)){
-            System.out.println("å½“å‰å­—ç¬¦ä¸²æ˜¯å¯¹ç§°çš„");
+            System.out.println("µ±Ç°×Ö·û´®ÊÇ¶Ô³ÆµÄ");
         }else {
-            System.out.println("å½“å‰å­—ç¬¦ä¸²ä¸æ˜¯å¯¹ç§°çš„");
+            System.out.println("µ±Ç°×Ö·û´®²»ÊÇ¶Ô³ÆµÄ");
         }
     }
 }

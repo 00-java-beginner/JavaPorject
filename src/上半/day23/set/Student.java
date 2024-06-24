@@ -1,4 +1,4 @@
-package 涓婂崐.day23.set;
+package 上半.day23.set;
 
 import java.util.Objects;
 
@@ -15,7 +15,7 @@ public class Student implements Comparable<Student> {
     }
 
     /**
-     * 鑾峰彇
+     * 获取
      * @return age
      */
     public int getAge() {
@@ -23,7 +23,7 @@ public class Student implements Comparable<Student> {
     }
 
     /**
-     * 璁剧疆
+     * 设置
      * @param age
      */
     public void setAge(int age) {
@@ -31,7 +31,7 @@ public class Student implements Comparable<Student> {
     }
 
     /**
-     * 鑾峰彇
+     * 获取
      * @return name
      */
     public String getName() {
@@ -39,7 +39,7 @@ public class Student implements Comparable<Student> {
     }
 
     /**
-     * 璁剧疆
+     * 设置
      * @param name
      */
     public void setName(String name) {

@@ -1,11 +1,11 @@
-package ä¸ŠåŠ.day13.p127_åˆ©ç”¨æ–¹æ³•çš„é‡å†™è®¾è®¡ç»§æ‰¿ç»“æ„;
+package ÉÏ°ë.day13.p127_ÀûÓÃ·½·¨µÄÖØĞ´Éè¼Æ¼Ì³Ğ½á¹¹;
 
-import ä¸ŠåŠ.day13.p125_ç»§æ‰¿çš„ç‰¹ç‚¹å’Œç»§æ‰¿ä½“ç³»çš„è®¾è®¡.Dog;
+import ÉÏ°ë.day13.p125_¼Ì³ĞµÄÌØµãºÍ¼Ì³ĞÌåÏµµÄÉè¼Æ.Dog;
 
 public class SharPei extends Dog {
     @Override
     public void eat (){
         super.eat();
-        System.out.println("åƒéª¨å¤´");
+        System.out.println("³Ô¹ÇÍ·");
     }
 }

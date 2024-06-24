@@ -1,32 +1,32 @@
-package ä¸ŠåŠ.day6;
+package ÉÏ°ë.day6;
 
-public class æ–¹æ³•_08_ç»ƒä¹ _æ‹·è´æ•°ç»„ {
+public class ·½·¨_08_Á·Ï°_¿½±´Êı×é {
     public static void main(String[] args) {
-        //1.å®šä¹‰ä¸€ä¸ªæ•°ç»„
+        //1.¶¨ÒåÒ»¸öÊı×é
         int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 
-        //2.è°ƒç”¨æ–¹æ³•
+        //2.µ÷ÓÃ·½·¨
         int[] copyarr = copyofrange(arr, 3, 7);
 
-        //å¾ªç¯éå†
+        //Ñ­»·±éÀú
         for (int i = 0; i < copyarr.length; i++) {
             System.out.print(copyarr[i] + " ");
         }
     }
 
     public static int[] copyofrange(int[] arr, int form, int to) {
-        //2.å®šä¹‰ä¸€ä¸ªæ–°çš„æ•°ç»„
+        //2.¶¨ÒåÒ»¸öĞÂµÄÊı×é
         int[] newarr = new int[to - form];
 
-        //3.å¾ªç¯éå†å°†ç¬¬ä¸€ä¸ªæ•°ç»„ä¸­çš„å†…å®¹copyåˆ°æ–°æ•°ç»„ä¸­
-        //å®šä¹‰ä¸€ä¸ªä¸´æ—¶å˜é‡ç”¨æ¥ä¼ªé€ ç´¢å¼•
+        //3.Ñ­»·±éÀú½«µÚÒ»¸öÊı×éÖĞµÄÄÚÈİcopyµ½ĞÂÊı×éÖĞ
+        //¶¨ÒåÒ»¸öÁÙÊ±±äÁ¿ÓÃÀ´Î±ÔìË÷Òı
         int index = 0;
         for (int i = form; i < to; i++) {
-            //4.å°†å–å‡ºæ¥çš„æ•°æ®èµ‹å€¼ç»™æ–°æ•°ç»„
+            //4.½«È¡³öÀ´µÄÊı¾İ¸³Öµ¸øĞÂÊı×é
             newarr[index] = arr[i];
             index++;
         }
-        //5.è¿”å›æ–°æ•°ç»„
+        //5.·µ»ØĞÂÊı×é
         return newarr;
     }
 

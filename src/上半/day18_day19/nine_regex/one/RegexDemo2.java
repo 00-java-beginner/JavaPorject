@@ -1,21 +1,21 @@
-package ä¸ŠåŠ.day18_day19.nine_regex.one;
+package ÉÏ°ë.day18_day19.nine_regex.one;
 
 public class RegexDemo2 {
     public static void main(String[] args) {
-        //public boolean matches(String regex):åˆ¤æ–­æ˜¯å¦ä¸æ­£åˆ™è¡¨è¾¾å¼åŒ¹é…ï¼ŒåŒ¹é…è¿”å›true
-        // åªèƒ½æ˜¯a b c
+        //public boolean matches(String regex):ÅĞ¶ÏÊÇ·ñÓëÕıÔò±í´ïÊ½Æ¥Åä£¬Æ¥Åä·µ»Øtrue
+        // Ö»ÄÜÊÇa b c
         System.out.println("-----------1-------------");
         System.out.println("a".matches("[abc]")); // true
         System.out.println("z".matches("[abc]")); // false
 
-        // ä¸èƒ½å‡ºç°a b c
+        // ²»ÄÜ³öÏÖa b c
         System.out.println("-----------2-------------");
         System.out.println("a".matches("[^abc]")); // false
         System.out.println("z".matches("[^abc]")); // true
         System.out.println("zz".matches("[^abc]")); //false
         System.out.println("zz".matches("[^abc][^abc]")); //true
 
-        // aåˆ°zAåˆ°Z(åŒ…æ‹¬å¤´å°¾çš„èŒƒå›´)
+        // aµ½zAµ½Z(°üÀ¨Í·Î²µÄ·¶Î§)
         System.out.println("-----------3-------------");
         System.out.println("a".matches("[a-zA-z]")); // true
         System.out.println("z".matches("[a-zA-z]")); // true
@@ -26,7 +26,7 @@ public class RegexDemo2 {
         System.out.println("0".matches("[a-zA-Z0-9]"));//true
 
 
-        // [a-d[m-p]] aåˆ°dï¼Œæˆ–måˆ°p
+        // [a-d[m-p]] aµ½d£¬»òmµ½p
         System.out.println("-----------4-------------");
         System.out.println("a".matches("[a-d[m-p]]"));//true
         System.out.println("d".matches("[a-d[m-p]]")); //true
@@ -35,19 +35,19 @@ public class RegexDemo2 {
         System.out.println("e".matches("[a-d[m-p]]")); //false
         System.out.println("0".matches("[a-d[m-p]]")); //false
 
-        // [a-z&&[def]] a-zå’Œdefçš„äº¤é›†ã€‚ä¸º:dï¼Œeï¼Œf
+        // [a-z&&[def]] a-zºÍdefµÄ½»¼¯¡£Îª:d£¬e£¬f
         System.out.println("----------5------------");
         System.out.println("a".matches("[a-z&[def]]")); //false
         System.out.println("d".matches("[a-z&&[def]]")); //true
         System.out.println("0".matches("[a-z&&[def]]")); //false
 
-        // [a-z&&[^bc]] a-zå’Œébcçš„äº¤é›†ã€‚(ç­‰åŒäº[ad-z])
+        // [a-z&&[^bc]] a-zºÍ·ÇbcµÄ½»¼¯¡£(µÈÍ¬ÓÚ[ad-z])
         System.out.println("-----------6------------_");
         System.out.println("a".matches("[a-z&&[^bc]]"));//true
         System.out.println("b".matches("[a-z&&[^bc]]")); //false
         System.out.println("0".matches("[a-z&&[^bc]]")); //false
 
-        // [a-z&&[^m-p]] aåˆ°zå’Œé™¤äº†måˆ°pçš„äº¤é›†ã€‚(ç­‰åŒäº[a-1q-z])
+        // [a-z&&[^m-p]] aµ½zºÍ³ıÁËmµ½pµÄ½»¼¯¡£(µÈÍ¬ÓÚ[a-1q-z])
         System.out.println("-----------7-------------");
         System.out.println("a".matches("[a-z&&[^m-p]]")); //true
         System.out.println("m".matches("[a-z&&[^m-p]]")); //false

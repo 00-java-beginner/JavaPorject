@@ -1,9 +1,9 @@
-package 涓婂崐.day16_day17;
+package 上半.day16_day17;
 
 public class App {
     public static void main(String[] args) {
-        //琛ㄧず绋嬪簭鐨勪富鍏ュ彛
-        //濡傛灉闇�瑕佸紑鍚竴涓晫闈紝鐩存帴鍒涘缓璋佺殑瀵硅薄灏卞彲浠ヤ簡
+        //表示程序的主入口
+        //如果需要开启一个界面，直接创建谁的对象就可以了
         //new RegisterJFrame();
         new LoginJFrame();
         //new GameJFrame();

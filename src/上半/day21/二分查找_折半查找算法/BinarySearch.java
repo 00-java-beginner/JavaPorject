@@ -1,32 +1,32 @@
-package ä¸ŠåŠ.day21.äºŒåˆ†æŸ¥æ‰¾_æŠ˜åŠæŸ¥æ‰¾ç®—æ³•;
+package ÉÏ°ë.day21.¶ş·Ö²éÕÒ_ÕÛ°ë²éÕÒËã·¨;
 
 public class BinarySearch {
     public static void main(String[] args) {
-        //éœ€æ±‚:å®šä¹‰ä¸€ä¸ªæ–¹æ³•åˆ©ç”¨äºŒåˆ†æŸ¥æ‰¾ï¼ŒæŸ¥è¯¢æŸä¸ªå…ƒç´ åœ¨æ•°ç»„ä¸­çš„ç´¢å¼•
+        //ĞèÇó:¶¨ÒåÒ»¸ö·½·¨ÀûÓÃ¶ş·Ö²éÕÒ£¬²éÑ¯Ä³¸öÔªËØÔÚÊı×éÖĞµÄË÷Òı
         int[] arr = {10, 44, 88, 101, 155, 200, 388, 418};
         System.out.println(binarySearch(arr, 155));
     }
 
     public static int binarySearch(int[] arr, int number) {
-        //è¡¨ç¤ºè¦æŸ¥æ‰¾çš„èŒƒå›´
+        //±íÊ¾Òª²éÕÒµÄ·¶Î§
         int max = arr.length - 1;
         int min = 0;
         while (true){
-            //å½“min>maxæ—¶ï¼Œè¡¨ç¤ºå½“å‰æ•°ç»„ä¸­æ²¡æœ‰è¿™ä¸ªæ•°å­—ï¼Œç›´æ¥è¿”å›-1
+            //µ±min>maxÊ±£¬±íÊ¾µ±Ç°Êı×éÖĞÃ»ÓĞÕâ¸öÊı×Ö£¬Ö±½Ó·µ»Ø-1
             if (min > max){
                 return -1;
             }
-            //midæ˜¯åœ¨ä¸­é—´èŒƒå›´
+            //midÊÇÔÚÖĞ¼ä·¶Î§
             int mid = (max + min) / 2;
-            //æ‹¿ç€midæŒ‡å‘çš„å…ƒç´ è·Ÿè¦æŸ¥æ‰¾çš„å…ƒç´ è¿›è¡Œæ¯”è¾ƒ
+            //ÄÃ×ÅmidÖ¸ÏòµÄÔªËØ¸úÒª²éÕÒµÄÔªËØ½øĞĞ±È½Ï
             if (arr[mid] > number){
-                //1.numberåœ¨midçš„å·¦è¾¹
+                //1.numberÔÚmidµÄ×ó±ß
                 max = mid - 1;
             }else if (arr[mid] < number){
-                //2.numberåœ¨midçš„å³è¾¹
+                //2.numberÔÚmidµÄÓÒ±ß
                 min = mid + 1;
             }else{
-                //3.numberè·ŸmidæŒ‡å‘çš„å…ƒç´ ä¸€è‡´
+                //3.number¸úmidÖ¸ÏòµÄÔªËØÒ»ÖÂ
                 return mid;
             }
         }

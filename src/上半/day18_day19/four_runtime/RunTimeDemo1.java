@@ -1,43 +1,43 @@
-package ä¸ŠåŠ.day18_day19.four_runtime;
+package ÉÏ°ë.day18_day19.four_runtime;
 
 import java.io.IOException;
 
 public class RunTimeDemo1 {
     public static void main(String[] args) throws IOException {
         /*
-            public static Runtime getRuntime() å½“å‰ç³»ç»Ÿçš„è¿è¡Œç¯å¢ƒå¯¹è±¡
-            public void exit(int status) åœæ­¢è™šæ‹Ÿæœº
-            public int availableProcessors() è·å¾—CPUçš„çº¿ç¨‹æ•°
-            public long maxMemory() JVMèƒ½ä»ç³»ç»Ÿä¸­è·å–æ€»å†…å­˜å¤§å°(å•ä½byte)
-            public long totalMemory() JVMå·²ç»ä»ç³»ç»Ÿä¸­è·å–æ€»å†…å­˜å¤§å°(å•ä½byte)
-            public long freeMemory() JVMå‰©ä½™å†…å­˜å¤§å°(å•ä½byte)
-            public Process exec(string command) è¿è¡Œcmdå‘½ä»¤
+            public static Runtime getRuntime() µ±Ç°ÏµÍ³µÄÔËĞĞ»·¾³¶ÔÏó
+            public void exit(int status) Í£Ö¹ĞéÄâ»ú
+            public int availableProcessors() »ñµÃCPUµÄÏß³ÌÊı
+            public long maxMemory() JVMÄÜ´ÓÏµÍ³ÖĞ»ñÈ¡×ÜÄÚ´æ´óĞ¡(µ¥Î»byte)
+            public long totalMemory() JVMÒÑ¾­´ÓÏµÍ³ÖĞ»ñÈ¡×ÜÄÚ´æ´óĞ¡(µ¥Î»byte)
+            public long freeMemory() JVMÊ£ÓàÄÚ´æ´óĞ¡(µ¥Î»byte)
+            public Process exec(string command) ÔËĞĞcmdÃüÁî
         */
 
-        //1.è·å–Runtimeçš„å¯¹è±¡
+        //1.»ñÈ¡RuntimeµÄ¶ÔÏó
         //Runtime r1 =Runtime.getRuntime();
 
-        //2.exit åœæ­¢è™šæ‹Ÿæœº
+        //2.exit Í£Ö¹ĞéÄâ»ú
         //Runtime.getRuntime().exit(0);
-        //System.out.println("çœ‹çœ‹æˆ‘æ‰§è¡Œäº†å—?");
+        //System.out.println("¿´¿´ÎÒÖ´ĞĞÁËÂğ?");
 
 
-        //3.è·å¾—CPUçš„çº¿ç¨‹æ•°
+        //3.»ñµÃCPUµÄÏß³ÌÊı
         System.out.println(Runtime.getRuntime().availableProcessors());//8
-        //4.æ€»å†…å­˜å¤§å°,å•ä½byteå­—èŠ‚
+        //4.×ÜÄÚ´æ´óĞ¡,µ¥Î»byte×Ö½Ú
         System.out.println(Runtime.getRuntime().maxMemory() / 1024 / 1024);//4064
-        //5.å·²ç»è·å–çš„æ€»å†…å­˜å¤§å°,å•ä½byteå­—èŠ‚
+        //5.ÒÑ¾­»ñÈ¡µÄ×ÜÄÚ´æ´óĞ¡,µ¥Î»byte×Ö½Ú
         System.out.println(Runtime.getRuntime().totalMemory() / 1024 / 1024);//254
-        //6.å‰©ä½™å†…å­˜å¤§å°
+        //6.Ê£ÓàÄÚ´æ´óĞ¡
         System.out.println(Runtime.getRuntime().freeMemory() / 1024 / 1024);//251
 
-        //7.è¿è¡Œcmdå‘½ä»¤
-        //shutdown :å…³æœº
-        //åŠ ä¸Šå‚æ•°æ‰èƒ½æ‰§è¡Œ
-        //-s :é»˜è®¤åœ¨1åˆ†é’Ÿä¹‹åå…³æœº
-        //-s -t æŒ‡å®šæ—¶é—´ : æŒ‡å®šå…³æœºæ—¶é—´
-        //-a :å–æ¶ˆå…³æœºæ“ä½œ
-        //-r: å…³æœºå¹¶é‡å¯
+        //7.ÔËĞĞcmdÃüÁî
+        //shutdown :¹Ø»ú
+        //¼ÓÉÏ²ÎÊı²ÅÄÜÖ´ĞĞ
+        //-s :Ä¬ÈÏÔÚ1·ÖÖÓÖ®ºó¹Ø»ú
+        //-s -t Ö¸¶¨Ê±¼ä : Ö¸¶¨¹Ø»úÊ±¼ä
+        //-a :È¡Ïû¹Ø»ú²Ù×÷
+        //-r: ¹Ø»ú²¢ÖØÆô
         Runtime.getRuntime().exec("shutdown -s -t 3600");
 
 

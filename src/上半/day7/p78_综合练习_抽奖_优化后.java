@@ -1,14 +1,14 @@
 import java.util.Random;
 
-public class p78_ç»¼åˆç»ƒä¹ _æŠ½å¥–_ä¼˜åŒ–å {
+public class p78_×ÛºÏÁ·Ï°_³é½±_ÓÅ»¯ºó {
     public static void main(String[] args) {
-        //1.æŠŠå¥–æ± é‡Œé¢çš„æ‰€æœ‰é€‰é¡¹å…¨éƒ¨æ‰“ä¹±
+        //1.°Ñ½±³ØÀïÃæµÄËùÓĞÑ¡ÏîÈ«²¿´òÂÒ
         int[] arr = {88, 888, 8888, 88888, 888888};
         Random r = new Random();
         for (int i = 0; i < arr.length; i++) {
-            //è·å–éšæœºç´¢å¼•
+            //»ñÈ¡Ëæ»úË÷Òı
             int randomIndex = r.nextInt(arr.length);
-            //ç”¨iè·Ÿéšæœºç´¢å¼•randomIndexè¿›è¡Œäº¤æ¢
+            //ÓÃi¸úËæ»úË÷ÒırandomIndex½øĞĞ½»»»
             int temp = arr[i];
             arr[i] = arr[randomIndex];
             arr[randomIndex] = temp;

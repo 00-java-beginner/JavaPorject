@@ -1,38 +1,38 @@
-package ä¸ŠåŠ.day20.ç»¼åˆç»ƒä¹ ;
+package ÉÏ°ë.day20.×ÛºÏÁ·Ï°;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Test1 {
     public static void main(String[] args) {
-        /*é”®ç›˜å½•å…¥ä¸€äº›1~100ä¹‹é—´çš„æ•´æ•°ï¼Œå¹¶æ·»åŠ åˆ°é›†åˆä¸­ç›´åˆ°é›†åˆä¸­æ‰€æœ‰æ•°æ®å’Œè¶…è¿‡200ä¸ºæ­¢ã€‚*/
-        //1.åˆ›å»ºä¸€ä¸ªé›†åˆç”¨æ¥æ·»åŠ æ•°æ®
+        /*¼üÅÌÂ¼ÈëÒ»Ğ©1~100Ö®¼äµÄÕûÊı£¬²¢Ìí¼Óµ½¼¯ºÏÖĞÖ±µ½¼¯ºÏÖĞËùÓĞÊı¾İºÍ³¬¹ı200ÎªÖ¹¡£*/
+        //1.´´½¨Ò»¸ö¼¯ºÏÓÃÀ´Ìí¼ÓÊı¾İ
         ArrayList<Integer> list = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
         while (true){
-            System.out.println("è¯·è¾“å…¥1-100ä¹‹é—´çš„æ•´æ•°");
+            System.out.println("ÇëÊäÈë1-100Ö®¼äµÄÕûÊı");
             String numStr = sc.nextLine();
-            //å°†é”®ç›˜å½•å…¥çš„å†…å®¹è½¬æ¢æˆintç±»å‹è¿›è¡Œè®¡ç®—
+            //½«¼üÅÌÂ¼ÈëµÄÄÚÈİ×ª»»³ÉintÀàĞÍ½øĞĞ¼ÆËã
             int num = Integer.parseInt(numStr);
-            //å¯¹å¼‚å¸¸æ¸…ç©ºè¿›è¡Œåˆ¤æ–­
+            //¶ÔÒì³£Çå¿Õ½øĞĞÅĞ¶Ï
             if (num < 1 || num >100 ){
-                System.out.println("è¾“å…¥çš„æ•°å­—ä¸åˆæ³•ï¼Œè¯·é‡æ–°è¾“å…¥");
+                System.out.println("ÊäÈëµÄÊı×Ö²»ºÏ·¨£¬ÇëÖØĞÂÊäÈë");
                 continue;
             }
-            //å°†è½¬æ¢åçš„å†…å®¹æ·»åŠ åˆ°é›†åˆä¸­
+            //½«×ª»»ºóµÄÄÚÈİÌí¼Óµ½¼¯ºÏÖĞ
             //list.add(Integer.valueOf(num));
-            //é«˜ç‰ˆæœ¬jdkè§¦å‘äº†è‡ªåŠ¨è£…ç®±ï¼Œä¸éœ€è¦è½¬æ¢ç±»å‹
+            //¸ß°æ±¾jdk´¥·¢ÁË×Ô¶¯×°Ïä£¬²»ĞèÒª×ª»»ÀàĞÍ
             list.add(num);
-            //ç»Ÿè®¡é›†åˆä¸­çš„æ•°æ®å’Œ
+            //Í³¼Æ¼¯ºÏÖĞµÄÊı¾İºÍ
             int sum = getSum(list);
-            //å¯¹sumè¿›è¡Œåˆ¤æ–­
+            //¶Ôsum½øĞĞÅĞ¶Ï
             if (sum > 200){
                 break;
             }
         }
         System.out.println(list);
     }
-    //å¯¹é›†åˆä¸­çš„æ•°æ®è¿›è¡Œç´¯åŠ 
+    //¶Ô¼¯ºÏÖĞµÄÊı¾İ½øĞĞÀÛ¼Ó
     private static int getSum(ArrayList<Integer> list) {
         int sum = 0;
         for (int i = 0; i < list.size(); i++) {

@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day23.æ³›å‹;
+package ÉÏ°ë.day23.·ºĞÍ;
 
 public class GenericsDemo2 {
     public static void main(String[] args) {

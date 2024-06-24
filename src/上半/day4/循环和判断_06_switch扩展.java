@@ -1,48 +1,48 @@
-package ä¸ŠåŠ.day4;
+package ÉÏ°ë.day4;
 
 import java.util.Scanner;
 
-public class å¾ªç¯å’Œåˆ¤æ–­_06_switchæ‰©å±• {
+public class Ñ­»·ºÍÅĞ¶Ï_06_switchÀ©Õ¹ {
     public static void main(String[] args) {
-        //switchæ–°ç‰¹æ€§  JDK12+æ‰æœ‰  åªæœ‰ä¸€è¡Œçš„æƒ…å†µä¸‹å¯ä»¥çœç•¥å¤§æ‹¬å·
+        //switchĞÂÌØĞÔ  JDK12+²ÅÓĞ  Ö»ÓĞÒ»ĞĞµÄÇé¿öÏÂ¿ÉÒÔÊ¡ÂÔ´óÀ¨ºÅ
 //        int number = 2;
 //        switch (number){
-//            case 1 -> System.out.println("ä¸€");
-//            case 2 -> System.out.println("äºŒ");
-//            case 3 -> System.out.println("ä¸‰");
-//            default -> System.out.println("æ²¡æœ‰è¿™ä¸ªé€‰é¡¹");
+//            case 1 -> System.out.println("Ò»");
+//            case 2 -> System.out.println("¶ş");
+//            case 3 -> System.out.println("Èı");
+//            default -> System.out.println("Ã»ÓĞÕâ¸öÑ¡Ïî");
 //        }
 
-        //switchå’Œifç¬¬ä¸‰ç§æ ¼å¼å„è‡ªçš„ä½¿ç”¨åœºæ™¯
-        //ifçš„ç¬¬ä¸‰ç§æ ¼å¼ï¼šä¸€èˆ¬ç”¨äºå¯¹èŒƒå›´çš„åˆ¤æ–­
-        //switchï¼šæŠŠæœ‰é™ä¸ªæ•°æ®ä¸€ä¸€åˆ—ä¸¾å‡ºæ¥ï¼Œè®©æˆ‘ä»¬ä»»é€‰å…¶ä¸€
+        //switchºÍifµÚÈıÖÖ¸ñÊ½¸÷×ÔµÄÊ¹ÓÃ³¡¾°
+        //ifµÄµÚÈıÖÖ¸ñÊ½£ºÒ»°ãÓÃÓÚ¶Ô·¶Î§µÄÅĞ¶Ï
+        //switch£º°ÑÓĞÏŞ¸öÊı¾İÒ»Ò»ÁĞ¾Ù³öÀ´£¬ÈÃÎÒÃÇÈÎÑ¡ÆäÒ»
 
 
-        //éœ€æ±‚ï¼šé”®ç›˜å½•å…¥æ˜ŸæœŸå‡ ï¼Œè¾“å‡ºå·¥ä½œæ—¥å’Œä¼‘æ¯æ—¥
-        //1.é”®ç›˜å½•å…¥æ˜ŸæœŸå‡ 
+        //ĞèÇó£º¼üÅÌÂ¼ÈëĞÇÆÚ¼¸£¬Êä³ö¹¤×÷ÈÕºÍĞİÏ¢ÈÕ
+        //1.¼üÅÌÂ¼ÈëĞÇÆÚ¼¸
 //        Scanner sc = new Scanner(System.in);
-//        System.out.println("è¯·è¾“å…¥ä»Šå¤©æ˜ŸæœŸå‡ ");
+//        System.out.println("ÇëÊäÈë½ñÌìĞÇÆÚ¼¸");
 //        int week = sc.nextInt();
-//        //2.åˆ©ç”¨switchè¯­å¥æ¥è¿›è¡Œé€‰æ‹©
+//        //2.ÀûÓÃswitchÓï¾äÀ´½øĞĞÑ¡Ôñ
 //        switch (week){
-//            case 1,2,3,4,5 -> System.out.println("å·¥ä½œæ—¥");
-//            case 6,7 -> System.out.println("ä¼‘æ¯æ—¥");
-//            default -> System.out.println("æ²¡æœ‰è¿™ä¸ªæ˜ŸæœŸ");
+//            case 1,2,3,4,5 -> System.out.println("¹¤×÷ÈÕ");
+//            case 6,7 -> System.out.println("ĞİÏ¢ÈÕ");
+//            default -> System.out.println("Ã»ÓĞÕâ¸öĞÇÆÚ");
 //        }
-        //éœ€æ±‚ï¼šæ‹¨æ‰“æœåŠ¡ç”µè¯è¿›è¡Œæ¡ˆä»¶é€‰æ‹©
-        //1.æœºç¥¨æŸ¥è¯¢   2.æœºç¥¨é¢„å®š  3.æœºç¥¨æ”¹ç­¾  4.é€€å‡ºæœåŠ¡
+        //ĞèÇó£º²¦´ò·şÎñµç»°½øĞĞ°¸¼şÑ¡Ôñ
+        //1.»úÆ±²éÑ¯   2.»úÆ±Ô¤¶¨  3.»úÆ±¸ÄÇ©  4.ÍË³ö·şÎñ
 
-        //1.é”®ç›˜å½•å…¥ä¸€ä¸ªæ•´æ•°
+        //1.¼üÅÌÂ¼ÈëÒ»¸öÕûÊı
         Scanner sc1 = new Scanner(System.in);
-        System.out.println("è¯·è¾“å…¥ä½ çš„é€‰æ‹©");
+        System.out.println("ÇëÊäÈëÄãµÄÑ¡Ôñ");
         int number1 = sc1.nextInt();
-        //2.æ ¹æ®é€‰æ‹©æ‰§è¡Œä¸åŒçš„ä»£ç é€»è¾‘
+        //2.¸ù¾İÑ¡ÔñÖ´ĞĞ²»Í¬µÄ´úÂëÂß¼­
         switch (number1) {
-            case 1 -> System.out.println("æœºç¥¨æŸ¥è¯¢");
-            case 2 -> System.out.println("æœºç¥¨é¢„å®š");
-            case 3 -> System.out.println("æœºç¥¨æ”¹ç­¾");
-            case 4 -> System.out.println("é€€å‡ºæœåŠ¡");
-            default -> System.out.println("é€€å‡ºæœåŠ¡");
+            case 1 -> System.out.println("»úÆ±²éÑ¯");
+            case 2 -> System.out.println("»úÆ±Ô¤¶¨");
+            case 3 -> System.out.println("»úÆ±¸ÄÇ©");
+            case 4 -> System.out.println("ÍË³ö·şÎñ");
+            default -> System.out.println("ÍË³ö·şÎñ");
         }
     }
 }

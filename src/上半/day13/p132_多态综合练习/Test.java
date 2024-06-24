@@ -1,19 +1,19 @@
-package ä¸ŠåŠ.day13.p132_å¤šæ€ç»¼åˆç»ƒä¹ ;
+package ÉÏ°ë.day13.p132_¶àÌ¬×ÛºÏÁ·Ï°;
 
 public class Test {
     public static void main(String[] args) {
 //        Person p = new Person(25,"linjian");
-//        Cat c = new Cat(2,"ç™½");
-//        p.keepPet(c,"çŒ«ç²®");
+//        Cat c = new Cat(2,"°×");
+//        p.keepPet(c,"Ã¨Á¸");
 //
 //        Person p1 = new Person(27,"jiajian");
-//        Dog d = new Dog(2,"ç™½");
-//        p1.keepPet(d,"éª¨å¤´");
+//        Dog d = new Dog(2,"°×");
+//        p1.keepPet(d,"¹ÇÍ·");
 
         Person p2 = new Person(22,"zhangsan");
-        Dog d1 = new Dog(2,"é»‘");
-        Cat c1 = new Cat(2,"ç°");
-        p2.keepPet(d1,"éª¨å¤´");
-        p2.keepPet(c1,"çŒ«ç²®");
+        Dog d1 = new Dog(2,"ºÚ");
+        Cat c1 = new Cat(2,"»Ò");
+        p2.keepPet(d1,"¹ÇÍ·");
+        p2.keepPet(c1,"Ã¨Á¸");
     }
 }

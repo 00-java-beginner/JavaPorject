@@ -1,17 +1,17 @@
-package ä¸ŠåŠ.day15.p141_p143å†…éƒ¨ç±»;
+package ÉÏ°ë.day15.p141_p143ÄÚ²¿Àà;
 
 public class p143Test {
     public static void main(String[] args) {
-        //new ç±»åæˆ–æ¥å£å(){
-        // é‡å†™æ–¹æ³•
+        //new ÀàÃû»ò½Ó¿ÚÃû(){
+        // ÖØĞ´·½·¨
         // }
 
-        //ç¼–å†™åŒ¿åå†…éƒ¨ç±»çš„ä»£ç 
+        //±àĞ´ÄäÃûÄÚ²¿ÀàµÄ´úÂë
         new Swim(){
 
             @Override
             public void swim() {
-                System.out.println("é‡å†™äº†æ¸¸æ³³çš„æ–¹æ³•");
+                System.out.println("ÖØĞ´ÁËÓÎÓ¾µÄ·½·¨");
             }
         };
 

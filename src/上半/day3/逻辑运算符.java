@@ -1,10 +1,10 @@
-package ä¸ŠåŠ.day3;
+package ÉÏ°ë.day3;
 
-public class é€»è¾‘è¿ç®—ç¬¦ {
+public class Âß¼­ÔËËã·û {
     public static void main(String[] args) {
-//        é€»è¾‘è¿ç®—ç¬¦
-//        é€»è¾‘ä¸Žï¼š&   é€»è¾‘æˆ–ï¼š|    é€»è¾‘å¼‚æˆ–ï¼š^   é€»è¾‘éžï¼šï¼
-        //é€»è¾‘ä¸Žï¼š&   æœ‰falseåˆ™æ˜¯false
+//        Âß¼­ÔËËã·û
+//        Âß¼­Óë£º&   Âß¼­»ò£º|    Âß¼­Òì»ò£º^   Âß¼­·Ç£º£¡
+        //Âß¼­Óë£º&   ÓÐfalseÔòÊÇfalse
         int a = 10;
         int b = 20;
         int c = 30;
@@ -13,34 +13,34 @@ public class é€»è¾‘è¿ç®—ç¬¦ {
         System.out.println((a > b) & (a < c));//false & true
         System.out.println((a < b) & (a < c));//true & true
 
-        //é€»è¾‘æˆ–ï¼š|  æœ‰trueåˆ™æ˜¯true
+        //Âß¼­»ò£º|  ÓÐtrueÔòÊÇtrue
         System.out.println((a > b) | (a > c));//false | false
         System.out.println((a < b) | (a > c));//true | false
         System.out.println((a > b) | (a < c));//false | true
         System.out.println((a < b) | (a < c));//true | true
 
-        //é€»è¾‘å¼‚æˆ–ï¼š^ ç›¸åŒä¸ºfalse  ä¸åŒä¸ºtrue
+        //Âß¼­Òì»ò£º^ ÏàÍ¬Îªfalse  ²»Í¬Îªtrue
         System.out.println((a > b) ^ (a > c));//false ^ false
         System.out.println((a < b) ^ (a > c));//true ^ false
         System.out.println((a > b) ^ (a < c));//false ^ true
         System.out.println((a < b) ^ (a < c));//true ^ true
 
-        //é€»è¾‘éžï¼šï¼  ç»“æžœå’Œaçš„ç»“æžœç›¸å
+        //Âß¼­·Ç£º£¡  ½á¹ûºÍaµÄ½á¹ûÏà·´
         System.out.println(!(a > b)); //false
 
-//      çŸ­è·¯é€»è¾‘è¿ç®—ç¬¦
-//      çŸ­è·¯ä¸Žï¼š&&   çŸ­è·¯æˆ–ï¼š||
-//      çŸ­è·¯ä¸Žï¼š&&   æœ‰falseåˆ™æ˜¯false
-//      ä½œç”¨ä¸Ž&ä¸€æ ·ï¼Œä½†æ˜¯æœ‰çŸ­è·¯æ•ˆæžœ  é€»è¾‘ä¸Ž&æ— è®ºå·¦è¾¹çœŸå‡å³è¾¹éƒ½è¦æ‰§è¡Œ
-//      çŸ­è·¯ä¸Ž&&å¦‚æžœå·¦è¾¹ä¸ºçœŸï¼Œå³è¾¹æ‰§è¡Œï¼Œå¦‚æžœå·¦è¾¹ä¸ºå‡ï¼Œå³è¾¹ä¸æ‰§è¡Œ
+//      ¶ÌÂ·Âß¼­ÔËËã·û
+//      ¶ÌÂ·Óë£º&&   ¶ÌÂ·»ò£º||
+//      ¶ÌÂ·Óë£º&&   ÓÐfalseÔòÊÇfalse
+//      ×÷ÓÃÓë&Ò»Ñù£¬µ«ÊÇÓÐ¶ÌÂ·Ð§¹û  Âß¼­Óë&ÎÞÂÛ×ó±ßÕæ¼ÙÓÒ±ß¶¼ÒªÖ´ÐÐ
+//      ¶ÌÂ·Óë&&Èç¹û×ó±ßÎªÕæ£¬ÓÒ±ßÖ´ÐÐ£¬Èç¹û×ó±ßÎª¼Ù£¬ÓÒ±ß²»Ö´ÐÐ
         System.out.println((a > b) && (a > c));//false && false
         System.out.println((a < b) && (a > c));//true && false
         System.out.println((a > b) && (a < c));//false && true
         System.out.println((a < b) && (a < c));//true && true
 
-        //çŸ­è·¯æˆ–ï¼š||  æœ‰trueåˆ™æ˜¯true
-//      ä½œç”¨ä¸Ž|ä¸€æ ·ï¼Œä½†æ˜¯æœ‰çŸ­è·¯æ•ˆæžœ   é€»è¾‘æˆ–|æ— è®ºå·¦è¾¹çœŸå‡å³è¾¹éƒ½è¦æ‰§è¡Œ
-//      çŸ­è·¯æˆ–||å¦‚æžœå·¦è¾¹ä¸ºå‡ï¼Œå³è¾¹æ‰§è¡Œï¼Œå¦‚æžœå·¦è¾¹ä¸ºçœŸï¼Œå³è¾¹ä¸æ‰§è¡Œ|
+        //¶ÌÂ·»ò£º||  ÓÐtrueÔòÊÇtrue
+//      ×÷ÓÃÓë|Ò»Ñù£¬µ«ÊÇÓÐ¶ÌÂ·Ð§¹û   Âß¼­»ò|ÎÞÂÛ×ó±ßÕæ¼ÙÓÒ±ß¶¼ÒªÖ´ÐÐ
+//      ¶ÌÂ·»ò||Èç¹û×ó±ßÎª¼Ù£¬ÓÒ±ßÖ´ÐÐ£¬Èç¹û×ó±ßÎªÕæ£¬ÓÒ±ß²»Ö´ÐÐ|
         System.out.println((a > b) || (a > c));//false || false
         System.out.println((a < b) || (a > c));//true || false
         System.out.println((a > b) || (a < c));//false || true

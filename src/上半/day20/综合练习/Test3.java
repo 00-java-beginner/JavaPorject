@@ -1,24 +1,24 @@
-package ä¸ŠåŠ.day20.ç»¼åˆç»ƒä¹ ;
+package ÉÏ°ë.day20.×ÛºÏÁ·Ï°;
 
 public class Test3 {
     public static void main(String[] args) {
-        /*å®šä¹‰ä¸€ä¸ªæ–¹æ³•è‡ªå·±å®ç°toBinarystringæ–¹æ³•çš„æ•ˆæœï¼Œå°†ä¸€ä¸ªåè¿›åˆ¶æ•´æ•°è½¬æˆå­—ç¬¦ä¸²è¡¨ç¤ºçš„äºŒè¿›åˆ¶ã€‚*/
+        /*¶¨ÒåÒ»¸ö·½·¨×Ô¼ºÊµÏÖtoBinarystring·½·¨µÄĞ§¹û£¬½«Ò»¸öÊ®½øÖÆÕûÊı×ª³É×Ö·û´®±íÊ¾µÄ¶ş½øÖÆ¡£*/
         System.out.println(toBinarystring(6));
         System.out.println(Integer.toBinaryString(6));
 
     }
     public static String toBinarystring(int number){
         StringBuilder sb = new StringBuilder();
-        //åˆ©ç”¨å¾ªç¯ä¸æ–­é™¤ä»¥2
+        //ÀûÓÃÑ­»·²»¶Ï³ıÒÔ2
         while (true){
             if (number == 0){
                 break;
             }
-            //è·å–ä½™æ•°
+            //»ñÈ¡ÓàÊı
             int remaindar = number % 2;
-            //å€’ç€æ‹¼æ¥
+            //µ¹×ÅÆ´½Ó
             sb.insert(0,remaindar);
-            //é™¤ä»¥2
+            //³ıÒÔ2
             number = number / 2;
         }
         return sb.toString();

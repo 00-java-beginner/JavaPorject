@@ -1,18 +1,18 @@
-package ä¸ŠåŠ.day20.ç»¼åˆç»ƒä¹ ;
+package ÉÏ°ë.day20.×ÛºÏÁ·Ï°;
 
 public class Test2 {
     public static void main(String[] args) {
-        /*è‡ªå·±å®ç°parselntæ–¹æ³•çš„æ•ˆæœï¼Œå°†å­—ç¬¦ä¸²å½¢å¼çš„æ•°æ®è½¬æˆæ•´æ•°ã€‚è¦æ±‚:
-        å­—ç¬¦ä¸²ä¸­åªèƒ½æ˜¯æ•°å­—ä¸èƒ½æœ‰å…¶ä»–å­—ç¬¦æœ€å°‘ä¸€ä½ï¼Œæœ€å¤š10ä½
-        0ä¸èƒ½å¼€å¤´*/
+        /*×Ô¼ºÊµÏÖparselnt·½·¨µÄĞ§¹û£¬½«×Ö·û´®ĞÎÊ½µÄÊı¾İ×ª³ÉÕûÊı¡£ÒªÇó:
+        ×Ö·û´®ÖĞÖ»ÄÜÊÇÊı×Ö²»ÄÜÓĞÆäËû×Ö·û×îÉÙÒ»Î»£¬×î¶à10Î»
+        0²»ÄÜ¿ªÍ·*/
 
-        //å®šä¹‰å­—ç¬¦ä¸²
+        //¶¨Òå×Ö·û´®
         String str = "123456";
 
         if (!str.matches("[1-9]\\d{0,9}")){
-            System.out.println("æ ¼å¼é”™è¯¯");
+            System.out.println("¸ñÊ½´íÎó");
         }else {
-            System.out.println("æ ¼å¼æ­£ç¡®");
+            System.out.println("¸ñÊ½ÕıÈ·");
             int num = Integer.parseInt(str);
             System.out.println(num);
         }

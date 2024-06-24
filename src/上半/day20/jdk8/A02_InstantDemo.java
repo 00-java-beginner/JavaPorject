@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day20.jdk8;
+package ÉÏ°ë.day20.jdk8;
 
 import java.time.Instant;
 import java.time.ZoneId;
@@ -7,18 +7,18 @@ import java.time.ZonedDateTime;
 public class A02_InstantDemo {
     public static void main(String[] args) {
         /*
-            static Instant now() è·å–å½“å‰æ—¶é—´çš„Instantå¯¹è±¡(æ ‡å‡†æ—¶é—´)
-            static Instant ofXxxx(long epochMilli) æ ¹æ®(ç§’/æ¯«ç§’/çº³ç§’)è·å–Instantå¯¹è±¡
-            ZonedDateTime atZone(ZoneIdzone) æŒ‡å®šæ—¶åŒº
-            boolean isxxx(Instant otherInstant) åˆ¤æ–­ç³»åˆ—çš„æ–¹æ³•
-            Instant minusXxx(long millisToSubtract) å‡å°‘æ—¶é—´ç³»åˆ—çš„æ–¹æ³•
-            Instant plusXxx(long millisToSubtract) å¢åŠ æ—¶é—´ç³»åˆ—çš„æ–¹æ³•
+            static Instant now() »ñÈ¡µ±Ç°Ê±¼äµÄInstant¶ÔÏó(±ê×¼Ê±¼ä)
+            static Instant ofXxxx(long epochMilli) ¸ù¾İ(Ãë/ºÁÃë/ÄÉÃë)»ñÈ¡Instant¶ÔÏó
+            ZonedDateTime atZone(ZoneIdzone) Ö¸¶¨Ê±Çø
+            boolean isxxx(Instant otherInstant) ÅĞ¶ÏÏµÁĞµÄ·½·¨
+            Instant minusXxx(long millisToSubtract) ¼õÉÙÊ±¼äÏµÁĞµÄ·½·¨
+            Instant plusXxx(long millisToSubtract) Ôö¼ÓÊ±¼äÏµÁĞµÄ·½·¨
         */
-        //1.è·å–å½“å‰æ—¶é—´çš„Instantå¯¹è±¡(æ ‡å‡†æ—¶é—´)
+        //1.»ñÈ¡µ±Ç°Ê±¼äµÄInstant¶ÔÏó(±ê×¼Ê±¼ä)
         Instant now = Instant.now();
         System.out.println(now);
 
-        //2.æ ¹æ®(ç§’/æ¯«ç§’/çº³ç§’)è·å–Instantå¯¹è±¡
+        //2.¸ù¾İ(Ãë/ºÁÃë/ÄÉÃë)»ñÈ¡Instant¶ÔÏó
         Instant instant1 = Instant.ofEpochMilli(0L);
         System.out.println(instant1);//1970-01-01T00:00:00z
 
@@ -28,25 +28,25 @@ public class A02_InstantDemo {
         Instant instant3 = Instant.ofEpochSecond(1L, 1000000000L);
         System.out.println(instant3);//1970-01-01T00:00:027
 
-        //3. æŒ‡å®šæ—¶åŒº
+        //3. Ö¸¶¨Ê±Çø
         ZonedDateTime time = Instant.now().atZone(ZoneId.of("Asia/Shanghai"));
         System.out.println(time);
 
 
-        //4.isXxx åˆ¤æ–­
+        //4.isXxx ÅĞ¶Ï
         Instant instant4=Instant.ofEpochMilli(0L);
         Instant instant5 =Instant.ofEpochMilli(1000L);
 
-        //5.ç”¨äºæ—¶é—´çš„åˆ¤æ–­
-        //isBefore:åˆ¤æ–­è°ƒç”¨è€…ä»£è¡¨çš„æ—¶é—´æ˜¯å¦åœ¨å‚æ•°è¡¨ç¤ºæ—¶é—´çš„å‰é¢
+        //5.ÓÃÓÚÊ±¼äµÄÅĞ¶Ï
+        //isBefore:ÅĞ¶Ïµ÷ÓÃÕß´ú±íµÄÊ±¼äÊÇ·ñÔÚ²ÎÊı±íÊ¾Ê±¼äµÄÇ°Ãæ
         boolean result1=instant4.isBefore(instant5);
         System.out.println(result1);//true
 
-        //isAfter:åˆ¤æ–­è°ƒç”¨è€…ä»£è¡¨çš„æ—¶é—´æ˜¯å¦åœ¨å‚æ•°è¡¨ç¤ºæ—¶é—´çš„åé¢
+        //isAfter:ÅĞ¶Ïµ÷ÓÃÕß´ú±íµÄÊ±¼äÊÇ·ñÔÚ²ÎÊı±íÊ¾Ê±¼äµÄºóÃæ
         boolean result2 = instant4.isAfter(instant5);
         System.out.println(result2);//false
 
-        //6.Instant minusXxx(long millisToSubtract) å‡å°‘æ—¶é—´ç³»åˆ—çš„æ–¹æ³•
+        //6.Instant minusXxx(long millisToSubtract) ¼õÉÙÊ±¼äÏµÁĞµÄ·½·¨
         Instant instant6 =Instant.ofEpochMilli(3000L);
         System.out.println(instant6);//1970-01-01T00:00:03Z
 

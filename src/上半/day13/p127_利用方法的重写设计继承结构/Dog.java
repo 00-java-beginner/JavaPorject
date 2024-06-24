@@ -1,13 +1,13 @@
-package ä¸ŠåŠ.day13.p127_åˆ©ç”¨æ–¹æ³•çš„é‡å†™è®¾è®¡ç»§æ‰¿ç»“æ„;
+package ÉÏ°ë.day13.p127_ÀûÓÃ·½·¨µÄÖØĞ´Éè¼Æ¼Ì³Ğ½á¹¹;
 
 public class Dog {
     public void eat(){
-        System.out.println("åƒç‹—ç²®");
+        System.out.println("³Ô¹·Á¸");
     }
     public void drink(){
-        System.out.println("å–æ°´");
+        System.out.println("ºÈË®");
     }
     public void lookHome(){
-        System.out.println("çœ‹å®¶");
+        System.out.println("¿´¼Ò");
     }
 }

@@ -1,21 +1,21 @@
-package ä¸ŠåŠ.day20.jdk8;
+package ÉÏ°ë.day20.jdk8;
 
 import java.time.LocalDate;
 import java.time.Period;
 
 public class A08_PeriodDemo {
     public static void main(String[] args) {
-        // å½“å‰æœ¬åœ° å¹´æœˆæ—¥
+        // µ±Ç°±¾µØ ÄêÔÂÈÕ
         LocalDate today = LocalDate.now();
         System.out.println(today);
 
-        // ç”Ÿæ—¥çš„ å¹´æœˆæ—¥
+        // ÉúÈÕµÄ ÄêÔÂÈÕ
         LocalDate birthDate = LocalDate.of(2000, 1, 1);
         System.out.println(birthDate);
 
-        Period period = Period.between(birthDate, today);//ç¬¬äºŒä¸ªå‚æ•°å‡ç¬¬ä¸€ä¸ªå‚æ•°
+        Period period = Period.between(birthDate, today);//µÚ¶ş¸ö²ÎÊı¼õµÚÒ»¸ö²ÎÊı
 
-        System.out.println("ç›¸å·®çš„æ—¶é—´é—´éš”å¯¹è±¡:" + period);
+        System.out.println("Ïà²îµÄÊ±¼ä¼ä¸ô¶ÔÏó:" + period);
         System.out.println(period.getYears());
         System.out.println(period.getMonths());
         System.out.println(period.getDays());

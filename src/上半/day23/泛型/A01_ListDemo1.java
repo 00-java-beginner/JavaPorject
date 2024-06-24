@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day23.æ³›å‹;
+package ÉÏ°ë.day23.·ºĞÍ;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,42 +7,42 @@ public class A01_ListDemo1 {
     public static void main(String[] args) {
        /*
 
-        Listç³»åˆ—é›†åˆç‹¬æœ‰çš„æ–¹æ³•ï¼š
-            void add(int index,E element)       åœ¨æ­¤é›†åˆä¸­çš„æŒ‡å®šä½ç½®æ’å…¥æŒ‡å®šçš„å…ƒç´ 
-            E remove(int index)                 åˆ é™¤æŒ‡å®šç´¢å¼•å¤„çš„å…ƒç´ ï¼Œè¿”å›è¢«åˆ é™¤çš„å…ƒç´ 
-            E set(int index,E element)          ä¿®æ”¹æŒ‡å®šç´¢å¼•å¤„çš„å…ƒç´ ï¼Œè¿”å›è¢«ä¿®æ”¹çš„å…ƒç´ 
-            E get(int index)                    è¿”å›æŒ‡å®šç´¢å¼•å¤„çš„å…ƒç´ 
+        ListÏµÁĞ¼¯ºÏ¶ÀÓĞµÄ·½·¨£º
+            void add(int index,E element)       ÔÚ´Ë¼¯ºÏÖĞµÄÖ¸¶¨Î»ÖÃ²åÈëÖ¸¶¨µÄÔªËØ
+            E remove(int index)                 É¾³ıÖ¸¶¨Ë÷Òı´¦µÄÔªËØ£¬·µ»Ø±»É¾³ıµÄÔªËØ
+            E set(int index,E element)          ĞŞ¸ÄÖ¸¶¨Ë÷Òı´¦µÄÔªËØ£¬·µ»Ø±»ĞŞ¸ÄµÄÔªËØ
+            E get(int index)                    ·µ»ØÖ¸¶¨Ë÷Òı´¦µÄÔªËØ
         */
 
 
-        //1.åˆ›å»ºä¸€ä¸ªé›†åˆ
+        //1.´´½¨Ò»¸ö¼¯ºÏ
         List<String> list = new ArrayList<>();
 
-        //2.æ·»åŠ å…ƒç´ 
+        //2.Ìí¼ÓÔªËØ
         list.add("aaa");
         list.add("bbb");//1
         list.add("ccc");
 
 
-        //void add(int index,E element)       åœ¨æ­¤é›†åˆä¸­çš„æŒ‡å®šä½ç½®æ’å…¥æŒ‡å®šçš„å…ƒç´ 
-        //ç»†èŠ‚ï¼šåŸæ¥ç´¢å¼•ä¸Šçš„å…ƒç´ ä¼šä¾æ¬¡å¾€åç§»
+        //void add(int index,E element)       ÔÚ´Ë¼¯ºÏÖĞµÄÖ¸¶¨Î»ÖÃ²åÈëÖ¸¶¨µÄÔªËØ
+        //Ï¸½Ú£ºÔ­À´Ë÷ÒıÉÏµÄÔªËØ»áÒÀ´ÎÍùºóÒÆ
         //list.add(1,"QQQ");
 
-        //E remove(int index)                 åˆ é™¤æŒ‡å®šç´¢å¼•å¤„çš„å…ƒç´ ï¼Œè¿”å›è¢«åˆ é™¤çš„å…ƒç´ 
+        //E remove(int index)                 É¾³ıÖ¸¶¨Ë÷Òı´¦µÄÔªËØ£¬·µ»Ø±»É¾³ıµÄÔªËØ
         //String remove = list.remove(0);
         //System.out.println(remove);//aaa
 
 
-        //E set(int index,E element)          ä¿®æ”¹æŒ‡å®šç´¢å¼•å¤„çš„å…ƒç´ ï¼Œè¿”å›è¢«ä¿®æ”¹çš„å…ƒç´ 
+        //E set(int index,E element)          ĞŞ¸ÄÖ¸¶¨Ë÷Òı´¦µÄÔªËØ£¬·µ»Ø±»ĞŞ¸ÄµÄÔªËØ
         //String result = list.set(0, "QQQ");
         //System.out.println(result);
 
-        // E get(int index)                    è¿”å›æŒ‡å®šç´¢å¼•å¤„çš„å…ƒç´ 
+        // E get(int index)                    ·µ»ØÖ¸¶¨Ë÷Òı´¦µÄÔªËØ
         //String s = list.get(0);
         //System.out.println(s);
 
 
-        //3.æ‰“å°é›†åˆ
+        //3.´òÓ¡¼¯ºÏ
         System.out.println(list);
 
 

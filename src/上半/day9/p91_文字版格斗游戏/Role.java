@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day9.p91_æ–‡å­—ç‰ˆæ ¼æ–—æ¸¸æˆ;
+package ÉÏ°ë.day9.p91_ÎÄ×Ö°æ¸ñ¶·ÓÎÏ·;
 
 import java.util.Random;
 
@@ -7,17 +7,17 @@ public class Role {
     private int blood;
     private char gender;
     private String face;
-    String[] boyfaces = {"å¸…æ°”","è‹±ä¿Š","æ½‡æ´’"};
-    String[] girlfaces = {"ç¾ä¸½","æ¼‚äº®","é£éªš"};
+    String[] boyfaces = {"Ë§Æø","Ó¢¿¡","äìÈ÷"};
+    String[] girlfaces = {"ÃÀÀö","Æ¯ÁÁ","·çÉ§"};
     String[] attacks_desc = {
-            "%sä½¿å‡ºäº†ä¸€æ‹›ã€èƒŒå¿ƒé’‰ã€‘ï¼Œ%sè¿è¿åé€€",
-            "%sä½¿å‡ºäº†ä¸€æ‹›ã€ä½›å±±æ— å½±è„šã€‘ï¼Œ%sè¿è¿åé€€",
-            "%sä½¿å‡ºäº†ä¸€æ‹›ã€é™é¾™åå…«æŒã€‘ï¼Œ%sè¿è¿åé€€"
+            "%sÊ¹³öÁËÒ»ÕĞ¡¾±³ĞÄ¶¤¡¿£¬%sÁ¬Á¬ºóÍË",
+            "%sÊ¹³öÁËÒ»ÕĞ¡¾·ğÉ½ÎŞÓ°½Å¡¿£¬%sÁ¬Á¬ºóÍË",
+            "%sÊ¹³öÁËÒ»ÕĞ¡¾½µÁúÊ®°ËÕÆ¡¿£¬%sÁ¬Á¬ºóÍË"
     };
     String[] injureds_desc = {
-            "ç»“æœ%sé€€äº†åŠæ­¥ï¼Œæ¯«å‘æ— æŸ",
-            "ç»“æœ%sè¢«å‡»é£ï¼Œä¸¥é‡å—ä¼¤",
-            "ç»“æœ%sé€€äº†å‡ æ­¥ï¼Œå—äº†å†…ä¼¤"
+            "½á¹û%sÍËÁË°ë²½£¬ºÁ·¢ÎŞËğ",
+            "½á¹û%s±»»÷·É£¬ÑÏÖØÊÜÉË",
+            "½á¹û%sÍËÁË¼¸²½£¬ÊÜÁËÄÚÉË"
     };
     public Role() {
     }
@@ -29,7 +29,7 @@ public class Role {
         this.name = name;
         this.blood = blood;
         this.gender = gender;
-        //éšå³é•¿ç›¸
+        //Ëæ¼´³¤Ïà
         setFace(gender);
     }
     public String getName() {
@@ -46,24 +46,24 @@ public class Role {
     }
     public void attack(Role role){
         Random r = new Random();
-        //è¾“å‡ºæ”»å‡»çš„æ•ˆæœ
+        //Êä³ö¹¥»÷µÄĞ§¹û
         int index = r.nextInt(attacks_desc.length);
         String KungFu = attacks_desc[index];
         System.out.printf(KungFu,this.getName(),role.getName());
-        //ç”±äºprintfä¸ä¼šæ¢è¡Œï¼Œä¸ºäº†ä»£ç é˜…è¯»æ€§éœ€è¦åŠ ä¸Šprintlnè¿›è¡Œæ¢è¡Œ
+        //ÓÉÓÚprintf²»»á»»ĞĞ£¬ÎªÁË´úÂëÔÄ¶ÁĞÔĞèÒª¼ÓÉÏprintln½øĞĞ»»ĞĞ
         System.out.println();
-        //1.è®¡ç®—é€ æˆçš„ä¼¤å®³
+        //1.¼ÆËãÔì³ÉµÄÉËº¦
         int hurt = r.nextInt(20) + 1;
-        //2.è®¡ç®—å‰©ä½™è¡€é‡
+        //2.¼ÆËãÊ£ÓàÑªÁ¿
         int remainBlood = role.getBlood() - hurt;
-        //3.å¯¹å‰©ä½™è¡€é‡åšä¸€ä¸ªéªŒè¯ï¼Œå¦‚æœä¸ºè´Ÿæ•°ï¼Œåˆ™ä¿®æ”¹ä¸º0
+        //3.¶ÔÊ£ÓàÑªÁ¿×öÒ»¸öÑéÖ¤£¬Èç¹ûÎª¸ºÊı£¬ÔòĞŞ¸ÄÎª0
         remainBlood = Math.max(remainBlood, 0);
-        //4.ä¿®æ”¹ä¸€ä¸‹æŒ¨æçš„äººçš„è¡€é‡
+        //4.ĞŞ¸ÄÒ»ÏÂ°¤×áµÄÈËµÄÑªÁ¿
         role.setBlood(remainBlood);
-        //å—ä¼¤çš„æè¿°
-        //è¡€é‡å¤§äº90 0ç´¢å¼•çš„æè¿°
-        //è¡€é‡å¤§äº50 1ç´¢å¼•çš„æè¿°
-        //è¡€é‡å°äº20 2ç´¢å¼•çš„æè¿°
+        //ÊÜÉËµÄÃèÊö
+        //ÑªÁ¿´óÓÚ90 0Ë÷ÒıµÄÃèÊö
+        //ÑªÁ¿´óÓÚ50 1Ë÷ÒıµÄÃèÊö
+        //ÑªÁ¿Ğ¡ÓÚ20 2Ë÷ÒıµÄÃèÊö
         if (remainBlood > 80){
             System.out.printf(injureds_desc[0],role.getName());
         }else if (remainBlood > 50){
@@ -71,7 +71,7 @@ public class Role {
         }else {
             System.out.printf(injureds_desc[2],role.getName());
         }
-        //ç”±äºprintfä¸ä¼šæ¢è¡Œï¼Œä¸ºäº†ä»£ç é˜…è¯»æ€§éœ€è¦åŠ ä¸Šprintlnè¿›è¡Œæ¢è¡Œ
+        //ÓÉÓÚprintf²»»á»»ĞĞ£¬ÎªÁË´úÂëÔÄ¶ÁĞÔĞèÒª¼ÓÉÏprintln½øĞĞ»»ĞĞ
         System.out.println();
     }
     public char getGender() {
@@ -84,26 +84,26 @@ public class Role {
         return face;
     }
     public void setFace(char gender) {
-        //åˆ¤æ–­ä¼ å…¥çš„æ˜¯ç”·è¿˜æ˜¯å¥³
-        //éšæœºä¼ å…¥
+        //ÅĞ¶Ï´«ÈëµÄÊÇÄĞ»¹ÊÇÅ®
+        //Ëæ»ú´«Èë
         Random r = new Random();
-        if (gender =='ç”·'){
-            //ä¼ å…¥ç”·è„¸
+        if (gender =='ÄĞ'){
+            //´«ÈëÄĞÁ³
             int index = r.nextInt(boyfaces.length);
             this.face = boyfaces[index];
-        }else if (gender == 'å¥³'){
-            //ä¼ å…¥å¥³è„¸
+        }else if (gender == 'Å®'){
+            //´«ÈëÅ®Á³
             int index = r.nextInt(girlfaces.length);
             this.face = girlfaces[index];
         }else {
-            this.face = "é¢ç›®ç‹°ç‹";
+            this.face = "ÃæÄ¿ÕøÄü";
         }
     }
-    //å±•ç¤ºæ‰€æœ‰è§’è‰²çš„ä¿¡æ¯
+    //Õ¹Ê¾ËùÓĞ½ÇÉ«µÄĞÅÏ¢
     public void showRoleInfo(){
-        System.out.println("å§“åä¸º" + getName());
-        System.out.println("è¡€é‡ä¸º" + getBlood());
-        System.out.println("æ€§åˆ«ä¸º" + getGender());
-        System.out.println("é•¿ç›¸ä¸º" + getFace());
+        System.out.println("ĞÕÃûÎª" + getName());
+        System.out.println("ÑªÁ¿Îª" + getBlood());
+        System.out.println("ĞÔ±ğÎª" + getGender());
+        System.out.println("³¤ÏàÎª" + getFace());
     }
 }

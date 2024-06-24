@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day16_day17;
+package ÉÏ°ë.day16_day17;
 
 import javax.swing.*;
 import java.awt.event.MouseEvent;
@@ -7,10 +7,10 @@ import java.util.ArrayList;
 
 public class LoginJFrame extends JFrame implements MouseListener {
     /*
-    LoginJFrame è¡¨ç¤ºç™»å½•ç•Œé¢
-    ä»¥åè·Ÿç™»å½•ç›¸å…³çš„ä»£ç éƒ½å†™åœ¨è¿™é‡Œ
+    LoginJFrame ±íÊ¾µÇÂ¼½çÃæ
+    ÒÔºó¸úµÇÂ¼Ïà¹ØµÄ´úÂë¶¼Ğ´ÔÚÕâÀï
     */
-    //å®šä¹‰ä¸€ä¸ªé›†åˆï¼Œç”¨æ¥å­˜å‚¨ç”¨æˆ·åå’Œå¯†ç 
+    //¶¨ÒåÒ»¸ö¼¯ºÏ£¬ÓÃÀ´´æ´¢ÓÃ»§ÃûºÍÃÜÂë
     static ArrayList<User> allUsers = new ArrayList<>();
     static {
       allUsers.add(new User("zhangsan","123456"));
@@ -21,198 +21,198 @@ public class LoginJFrame extends JFrame implements MouseListener {
     JTextField username = new JTextField();
     JPasswordField password = new JPasswordField();
     JTextField code = new JTextField();
-    //æ­£ç¡®çš„éªŒè¯ç 
+    //ÕıÈ·µÄÑéÖ¤Âë
     JLabel rightCode = new JLabel();
-    String path = "E:\\java\\Programming-novice\\JavaProject\\src\\ä¸ŠåŠ.image\\login\\";
+    String path = "E:\\java\\Programming-novice\\JavaProject\\src\\ÉÏ°ë.image\\login\\";
 
     public LoginJFrame() {
-      //åˆå§‹åŒ–ç•Œé¢
+      //³õÊ¼»¯½çÃæ
       initJFrame();
-      //åœ¨è¿™ä¸ªç•Œé¢æ·»åŠ ä¸œè¥¿
+      //ÔÚÕâ¸ö½çÃæÌí¼Ó¶«Î÷
       initView();
-      //è®©ç•Œé¢å±•ç¤ºå‡ºæ¥
+      //ÈÃ½çÃæÕ¹Ê¾³öÀ´
       this.setVisible(true);
     }
 
     public void initJFrame() {
       this.setSize(488, 430);
-      //è®¾ç½®ç•Œé¢çš„æ ‡é¢˜
-      this.setTitle("æ‹¼å›¾ ç™»å½•");
-      //è®¾ç½®å…³é—­æ–¹æ³•
+      //ÉèÖÃ½çÃæµÄ±êÌâ
+      this.setTitle("Æ´Í¼ µÇÂ¼");
+      //ÉèÖÃ¹Ø±Õ·½·¨
       this.setDefaultCloseOperation(3);
-      //è®¾ç½®ç•Œé¢å±…ä¸­
+      //ÉèÖÃ½çÃæ¾ÓÖĞ
       this.setLocationRelativeTo(null);
-      //è®¾ç½®ç•Œé¢ç½®é¡¶
+      //ÉèÖÃ½çÃæÖÃ¶¥
       this.setAlwaysOnTop(true);
-      //å–æ¶ˆå†…éƒ¨é»˜è®¤å¸ƒå±€
+      //È¡ÏûÄÚ²¿Ä¬ÈÏ²¼¾Ö
       this.setLayout(null);
     };
     public void initView() {
-      //1.æ·»åŠ ç”¨æˆ·åçš„å›¾ç‰‡
-      JLabel usernameTest = new JLabel(new ImageIcon(path + "ç”¨æˆ·å.png"));
+      //1.Ìí¼ÓÓÃ»§ÃûµÄÍ¼Æ¬
+      JLabel usernameTest = new JLabel(new ImageIcon(path + "ÓÃ»§Ãû.png"));
       usernameTest.setBounds(116, 135, 47, 17);
       this.getContentPane().add(usernameTest);
-      //æ·»åŠ ç”¨æˆ·åçš„è¾“å…¥æ¡†
+      //Ìí¼ÓÓÃ»§ÃûµÄÊäÈë¿ò
       username.setBounds(195, 134, 200, 30);
       this.getContentPane().add(username);
 
-      //2.æ·»åŠ å¯†ç çš„å›¾ç‰‡
-      JLabel passwordTest = new JLabel(new ImageIcon(path + "å¯†ç .png"));
+      //2.Ìí¼ÓÃÜÂëµÄÍ¼Æ¬
+      JLabel passwordTest = new JLabel(new ImageIcon(path + "ÃÜÂë.png"));
       passwordTest.setBounds(130, 195, 32, 16);
       this.getContentPane().add(passwordTest);
-      //æ·»åŠ å¯†ç çš„è¾“å…¥æ¡†
+      //Ìí¼ÓÃÜÂëµÄÊäÈë¿ò
       password.setBounds(195, 195, 200, 30);
       this.getContentPane().add(password);
 
-      //3.æ·»åŠ éªŒè¯ç çš„å›¾ç‰‡
-      JLabel codeText = new JLabel(new ImageIcon(path + "éªŒè¯ç .png"));
+      //3.Ìí¼ÓÑéÖ¤ÂëµÄÍ¼Æ¬
+      JLabel codeText = new JLabel(new ImageIcon(path + "ÑéÖ¤Âë.png"));
       codeText.setBounds(133, 256, 50, 30);
       this.getContentPane().add(codeText);
-      //æ·»åŠ éªŒè¯ç çš„è¾“å…¥æ¡†
+      //Ìí¼ÓÑéÖ¤ÂëµÄÊäÈë¿ò
       code.setBounds(195, 256, 100, 30);
       this.getContentPane().add(code);
-      //è·å–éªŒè¯ç å†…å®¹
+      //»ñÈ¡ÑéÖ¤ÂëÄÚÈİ
       String codeStr = CodeUtil.getCode();
-      //å°†è·å–åˆ°çš„éªŒè¯ç è¿›è¡Œä¼ é€’
+      //½«»ñÈ¡µ½µÄÑéÖ¤Âë½øĞĞ´«µİ
       rightCode.setText(codeStr);
-      //ç»‘å®šé¼ æ ‡äº‹ä»¶
+      //°ó¶¨Êó±êÊÂ¼ş
       rightCode.addMouseListener(this);
-      //è®¾ç½®ä½ç½®å’Œå®½é«˜
+      //ÉèÖÃÎ»ÖÃºÍ¿í¸ß
       rightCode.setBounds(300, 256, 50, 30);
-      //æ·»åŠ åˆ°ç•Œé¢ä¸­
+      //Ìí¼Óµ½½çÃæÖĞ
       this.getContentPane().add(rightCode);
 
-      //4.æ·»åŠ ç™»å½•çš„å›¾ç‰‡
+      //4.Ìí¼ÓµÇÂ¼µÄÍ¼Æ¬
       login.setBounds(123, 310, 128, 47);
-      login.setIcon(new ImageIcon(path + "ç™»å½•æŒ‰é’®.png"));
-      //å»é™¤æŒ‰é’®çš„è¾¹æ¡†
+      login.setIcon(new ImageIcon(path + "µÇÂ¼°´Å¥.png"));
+      //È¥³ı°´Å¥µÄ±ß¿ò
       login.setBorderPainted(false);
-      //å»é™¤æŒ‰é’®çš„èƒŒæ™¯
+      //È¥³ı°´Å¥µÄ±³¾°
       login.setContentAreaFilled(false);
-      //ç»™ç™»å½•æ·»åŠ é¼ æ ‡æ—¶é—´
+      //¸øµÇÂ¼Ìí¼ÓÊó±êÊ±¼ä
       login.addMouseListener(this);
-      //æ·»åŠ åˆ°ç•Œé¢ä¸­
+      //Ìí¼Óµ½½çÃæÖĞ
       this.getContentPane().add(login);
 
-      //5.æ·»åŠ æ³¨å†Œçš„å›¾ç‰‡
+      //5.Ìí¼Ó×¢²áµÄÍ¼Æ¬
       register.setBounds(256, 310, 128, 47);
-      register.setIcon(new ImageIcon(path + "æ³¨å†ŒæŒ‰é’®.png"));
-      //å»é™¤æŒ‰é’®çš„è¾¹æ¡†
+      register.setIcon(new ImageIcon(path + "×¢²á°´Å¥.png"));
+      //È¥³ı°´Å¥µÄ±ß¿ò
       register.setBorderPainted(false);
-      //å»é™¤æŒ‰é’®çš„èƒŒæ™¯
+      //È¥³ı°´Å¥µÄ±³¾°
       register.setContentAreaFilled(false);
-      //ç»™æ³¨å†Œæ·»åŠ é¼ æ ‡æ—¶é—´
+      //¸ø×¢²áÌí¼ÓÊó±êÊ±¼ä
       register.addMouseListener(this);
-      //æ·»åŠ åˆ°ç•Œé¢ä¸­
+      //Ìí¼Óµ½½çÃæÖĞ
       this.getContentPane().add(register);
 
-      //6.æ·»åŠ èƒŒæ™¯å›¾ç‰‡
+      //6.Ìí¼Ó±³¾°Í¼Æ¬
       JLabel background = new JLabel(new ImageIcon(path + "background.png"));
       background.setBounds(0,0,470,390);
       this.getContentPane().add(background);
     };
-    //ç‚¹å‡»
+    //µã»÷
     @Override
     public void mouseClicked(MouseEvent e) {
         if (e.getSource() == login){
-            //1.è·å–
-            //è·å–å½“å‰è¾“å…¥çš„ç”¨æˆ·å
+            //1.»ñÈ¡
+            //»ñÈ¡µ±Ç°ÊäÈëµÄÓÃ»§Ãû
             String usernameInput = username.getText();
-            //è·å–å½“å‰è¾“å…¥çš„å¯†ç 
+            //»ñÈ¡µ±Ç°ÊäÈëµÄÃÜÂë
             String passwordInput = password.getText();
-            //è·å–å½“å‰è¾“å…¥çš„éªŒè¯ç 
+            //»ñÈ¡µ±Ç°ÊäÈëµÄÑéÖ¤Âë
             String codeInput = code.getText();
-            //åˆ›å»ºå¯¹è±¡è®°å½•è¾“å…¥çš„ç”¨æˆ·åå’Œå¯†ç ï¼Œç”¨äºåç»­åˆ¤æ–­
+            //´´½¨¶ÔÏó¼ÇÂ¼ÊäÈëµÄÓÃ»§ÃûºÍÃÜÂë£¬ÓÃÓÚºóĞøÅĞ¶Ï
             User userInfo = new User(usernameInput,passwordInput);
-            //2.åˆ¤æ–­
-            //å¯¹éªŒè¯ç è¿›è¡Œåˆ¤æ–­
+            //2.ÅĞ¶Ï
+            //¶ÔÑéÖ¤Âë½øĞĞÅĞ¶Ï
             if (codeInput.isEmpty()){
-              showJDialog("éªŒè¯ç ä¸èƒ½ä¸ºç©º");
+              showJDialog("ÑéÖ¤Âë²»ÄÜÎª¿Õ");
             }else if (usernameInput.isEmpty() || passwordInput.isEmpty()){
-              showJDialog("ç”¨æˆ·åæˆ–å¯†ç ä¸ºç©º");
-            //åˆ¤æ–­éªŒè¯ç æ˜¯å¦æ­£ç¡®(equalsIgnoreCaseç”¨äºå¿½ç•¥å¤§å°å†™)
+              showJDialog("ÓÃ»§Ãû»òÃÜÂëÎª¿Õ");
+            //ÅĞ¶ÏÑéÖ¤ÂëÊÇ·ñÕıÈ·(equalsIgnoreCaseÓÃÓÚºöÂÔ´óĞ¡Ğ´)
             }else if (!codeInput.equalsIgnoreCase(rightCode.getText())){
-              showJDialog("éªŒè¯ç é”™è¯¯");
-            //åˆ¤æ–­ç”¨æˆ·åå’Œå¯†ç æ˜¯å¦æ­£ç¡®
+              showJDialog("ÑéÖ¤Âë´íÎó");
+            //ÅĞ¶ÏÓÃ»§ÃûºÍÃÜÂëÊÇ·ñÕıÈ·
             }else if (contains(userInfo)){
-              System.out.println("ç™»å½•æˆåŠŸ");
-              //éœ€è¦å…³é—­å½“å‰ç™»å½•é¡µé¢
+              System.out.println("µÇÂ¼³É¹¦");
+              //ĞèÒª¹Ø±Õµ±Ç°µÇÂ¼Ò³Ãæ
               this.setVisible(false);
-              //è·³è½¬åˆ°æ¸¸æˆç•Œé¢
+              //Ìø×ªµ½ÓÎÏ·½çÃæ
               new GameJFrame();
             }else {
-              showJDialog("ç”¨æˆ·åæˆ–å¯†ç é”™è¯¯");
+              showJDialog("ÓÃ»§Ãû»òÃÜÂë´íÎó");
             }
         }else if (e.getSource() == register){
-          System.out.println("ç‚¹å‡»äº†æ³¨å†ŒæŒ‰é’®");
+          System.out.println("µã»÷ÁË×¢²á°´Å¥");
         }else if (e.getSource() == rightCode){
             String code = CodeUtil.getCode();
             rightCode.setText(code);
         }
     }
-    //æŒ‰ä½ä¸æ¾
+    //°´×¡²»ËÉ
     @Override
     public void mousePressed(MouseEvent e) {
       if (e.getSource() == login){
-        login.setIcon(new ImageIcon(path + "ç™»å½•æŒ‰ä¸‹.png"));
+        login.setIcon(new ImageIcon(path + "µÇÂ¼°´ÏÂ.png"));
       }else if (e.getSource() == register){
-        register.setIcon(new ImageIcon(path + "æ³¨å†ŒæŒ‰ä¸‹.png"));
+        register.setIcon(new ImageIcon(path + "×¢²á°´ÏÂ.png"));
       }
     }
-    //æ¾å¼€æŒ‰é’®
+    //ËÉ¿ª°´Å¥
     @Override
     public void mouseReleased(MouseEvent e) {
       if (e.getSource() == login){
-        login.setIcon(new ImageIcon(path + "ç™»å½•æŒ‰é’®.png"));
+        login.setIcon(new ImageIcon(path + "µÇÂ¼°´Å¥.png"));
       }else if (e.getSource() == register){
-        register.setIcon(new ImageIcon(path + "æ³¨å†ŒæŒ‰é’®.png"));
+        register.setIcon(new ImageIcon(path + "×¢²á°´Å¥.png"));
       }
     }
-    //é¼ æ ‡æ»‘å…¥
+    //Êó±ê»¬Èë
     @Override
     public void mouseEntered(MouseEvent e) {
     }
-    //é¼ æ ‡æ»‘å‡º
+    //Êó±ê»¬³ö
     @Override
     public void mouseExited(MouseEvent e) {
   }
 
-    //å®šä¹‰ä¸€ä¸ªæ–¹æ³•ï¼Œç”¨æ¥åˆ¤æ–­ç”¨æˆ·åå’Œå¯†ç æ˜¯å¦å­˜åœ¨
+    //¶¨ÒåÒ»¸ö·½·¨£¬ÓÃÀ´ÅĞ¶ÏÓÃ»§ÃûºÍÃÜÂëÊÇ·ñ´æÔÚ
     public boolean contains(User userInput){
-      //å…ˆç”¨å¾ªç¯è·å–åˆ°å½“å‰é›†åˆé‡Œé¢çš„å…¨éƒ¨å‚æ•°
+      //ÏÈÓÃÑ­»·»ñÈ¡µ½µ±Ç°¼¯ºÏÀïÃæµÄÈ«²¿²ÎÊı
       for (int i = 0; i < allUsers.size(); i++) {
-          //å°†é›†åˆé‡Œé¢çš„å‚æ•°èµ‹å€¼ç»™ä¸€ä¸ªæ–°çš„å˜é‡
+          //½«¼¯ºÏÀïÃæµÄ²ÎÊı¸³Öµ¸øÒ»¸öĞÂµÄ±äÁ¿
           User rightUser = allUsers.get(i);
-          //ç”¨å½“å‰ä¼ é€’çš„å‚æ•°ä¸æ–°å˜é‡é‡Œé¢çš„å‚æ•°è¿›è¡Œæ¯”è¾ƒ
+          //ÓÃµ±Ç°´«µİµÄ²ÎÊıÓëĞÂ±äÁ¿ÀïÃæµÄ²ÎÊı½øĞĞ±È½Ï
           if (userInput.getUsername().equals(rightUser.getUsername())
             && userInput.getPassword().equals(rightUser.getPassword()) ){
-              //å¦‚æœä¸€æ ·è¿”å›true
+              //Èç¹ûÒ»Ñù·µ»Øtrue
               return true;
           }
       }
-      //å¦‚æœä¸ä¸€æ ·è¿”å›false
+      //Èç¹û²»Ò»Ñù·µ»Øfalse
       return false;
     }
 
-    //å®šä¹‰ä¸€ä¸ªæ–¹æ³•ï¼Œç”¨äºå¼¹çª—æç¤º
+    //¶¨ÒåÒ»¸ö·½·¨£¬ÓÃÓÚµ¯´°ÌáÊ¾
     public void showJDialog(String content){
-      //åˆ›å»ºä¸€ä¸ªå¼¹æ¡†å¯¹è±¡
+      //´´½¨Ò»¸öµ¯¿ò¶ÔÏó
       JDialog jDialog = new JDialog();
-      //ç»™å¼¹æ¡†è®¾ç½®å¤§å°
+      //¸øµ¯¿òÉèÖÃ´óĞ¡
       jDialog.setSize(200, 150);
-      //è®©å¼¹æ¡†ç½®é¡¶
+      //ÈÃµ¯¿òÖÃ¶¥
       jDialog.setAlwaysOnTop(true);
-      //è®©å¼¹æ¡†å±…ä¸­
+      //ÈÃµ¯¿ò¾ÓÖĞ
       jDialog.setLocationRelativeTo(null);
-      //å¼¹æ¡†ä¸å…³é—­æ°¸è¿œæ— æ³•æ“ä½œä¸‹é¢çš„ç•Œé¢
+      //µ¯¿ò²»¹Ø±ÕÓÀÔ¶ÎŞ·¨²Ù×÷ÏÂÃæµÄ½çÃæ
       jDialog.setModal(true);
 
-      //åˆ›å»ºJlabelå¯¹è±¡ç®¡ç†æ–‡å­—å¹¶æ·»åŠ åˆ°å¼¹æ¡†å½“ä¸­
+      //´´½¨Jlabel¶ÔÏó¹ÜÀíÎÄ×Ö²¢Ìí¼Óµ½µ¯¿òµ±ÖĞ
       JLabel warning = new JLabel(content);
       warning.setBounds(0, 0, 200, 150);
       jDialog.getContentPane().add(warning);
 
-      //è®©å¼¹æ¡†å±•ç¤ºå‡ºæ¥
+      //ÈÃµ¯¿òÕ¹Ê¾³öÀ´
       jDialog.setVisible(true);
 
     }

@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day13.p132_å¤šæ€ç»¼åˆç»ƒä¹ ;
+package ÉÏ°ë.day13.p132_¶àÌ¬×ÛºÏÁ·Ï°;
 
 public class Dog extends Animal{
     public Dog() {
@@ -8,10 +8,10 @@ public class Dog extends Animal{
     }
     @Override
     public void eat(String something){
-        System.out.println(getAge() + "å²çš„"+getColor()
-                +"é¢œè‰²çš„ç‹—ä¸¤åªå‰è…¿æ­»æ­»çš„æŠ±ä½"+something+"çŒ›åƒ");
+        System.out.println(getAge() + "ËêµÄ"+getColor()
+                +"ÑÕÉ«µÄ¹·Á½Ö»Ç°ÍÈËÀËÀµÄ±§×¡"+something+"ÃÍ³Ô");
     }
     public void lookHome(){
-        System.out.println("ç‹—åœ¨çœ‹å®¶");
+        System.out.println("¹·ÔÚ¿´¼Ò");
     }
 }

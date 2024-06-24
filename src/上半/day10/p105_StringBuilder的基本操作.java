@@ -1,23 +1,23 @@
-package ä¸ŠåŠ.day10;
+package ÉÏ°ë.day10;
 
-public class p105_StringBuilderçš„åŸºæœ¬æ“ä½œ {
+public class p105_StringBuilderµÄ»ù±¾²Ù×÷ {
     public static void main(String[] args) {
-        //1.åˆ›å»ºå¯¹è±¡
+        //1.´´½¨¶ÔÏó
         StringBuilder sb = new StringBuilder("abc");
 
-        //2.æ·»åŠ å…ƒç´ 
+        //2.Ìí¼ÓÔªËØ
         sb.append(1);
         sb.append(6.6);
         sb.append(true);
 
-        //3.åè½¬
+        //3.·´×ª
         sb.reverse();
 
-        //4.è·å–é•¿åº¦
+        //4.»ñÈ¡³¤¶È
         int len = sb.length();
         System.out.println(len);
 
-        //5.å†æŠŠStringBuilderå˜å›å­—ç¬¦ä¸²
+        //5.ÔÙ°ÑStringBuilder±ä»Ø×Ö·û´®
         String str = sb.toString();
         System.out.println(str);
 

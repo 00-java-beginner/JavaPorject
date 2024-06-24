@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day15.p138_æ¥å£å’ŒæŠ½è±¡ç±»ç»¼åˆç»ƒä¹ ;
+package ÉÏ°ë.day15.p138_½Ó¿ÚºÍ³éÏóÀà×ÛºÏÁ·Ï°;
 
 public class PingPangSporter extends Sporter implements English{
     public PingPangSporter() {
@@ -10,11 +10,11 @@ public class PingPangSporter extends Sporter implements English{
 
     @Override
     public void Study() {
-        System.out.println("ä¹’ä¹“çƒè¿åŠ¨å‘˜åœ¨å­¦ä¹ æ‰“ä¹’ä¹“çƒ");
+        System.out.println("Æ¹ÅÒÇòÔË¶¯Ô±ÔÚÑ§Ï°´òÆ¹ÅÒÇò");
     }
 
     @Override
     public void SpeakEnglish() {
-        System.out.println("ä¹’ä¹“çƒè¿åŠ¨å‘˜åœ¨è¯´è‹±è¯­");
+        System.out.println("Æ¹ÅÒÇòÔË¶¯Ô±ÔÚËµÓ¢Óï");
     }
 }

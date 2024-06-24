@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day21.æ’åº.é€‰æ‹©æ’åº;
+package ÉÏ°ë.day21.ÅÅĞò.Ñ¡ÔñÅÅĞò;
 
 public class selection {
     public static void main(String[] args) {

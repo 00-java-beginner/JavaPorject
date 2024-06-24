@@ -1,4 +1,4 @@
-package 涓婂崐.day18_day19.five_object;
+package 上半.day18_day19.five_object;
 
 import java.util.Objects;
 
@@ -16,7 +16,7 @@ public class Student {
     }
 
     /**
-     * 鑾峰彇
+     * 获取
      *
      * @return name
      */
@@ -25,7 +25,7 @@ public class Student {
     }
 
     /**
-     * 璁剧疆
+     * 设置
      *
      * @param name
      */
@@ -34,7 +34,7 @@ public class Student {
     }
 
     /**
-     * 鑾峰彇
+     * 获取
      *
      * @return age
      */
@@ -43,7 +43,7 @@ public class Student {
     }
 
     /**
-     * 璁剧疆
+     * 设置
      *
      * @param age
      */

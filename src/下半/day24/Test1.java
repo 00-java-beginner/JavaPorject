@@ -1,21 +1,21 @@
-package ä¸‹åŠ.day24;
+package ÏÂ°ë.day24;
 
 import java.util.HashMap;
 
 public class Test1 {
     public static void main(String[] args) {
-        //æ ¸å¿ƒç‚¹ï¼šHashMapçš„é”®ä½ç½®å¦‚æœå­˜æ”¾çš„æ˜¯è‡ªå®šä¹‰å¯¹è±¡ï¼Œéœ€è¦é‡å†™hashCodeå’Œequalsæ–¹æ³•
-        //å¦åˆ™æ¯”è¾ƒçš„æ˜¯åœ°å€å€¼ï¼Œè€Œä¸æ˜¯å¯¹è±¡å†…éƒ¨çš„å±æ€§å€¼
+        //ºËĞÄµã£ºHashMapµÄ¼üÎ»ÖÃÈç¹û´æ·ÅµÄÊÇ×Ô¶¨Òå¶ÔÏó£¬ĞèÒªÖØĞ´hashCodeºÍequals·½·¨
+        //·ñÔò±È½ÏµÄÊÇµØÖ·Öµ£¬¶ø²»ÊÇ¶ÔÏóÄÚ²¿µÄÊôĞÔÖµ
         HashMap<Student, String> map = new HashMap<>();
         Student s1 = new Student("xiaohong", 20);
         Student s2 = new Student("xiaobai", 22);
         Student s3 = new Student("xiaolan", 24);
         Student s4 = new Student("xiaolan", 24);
 
-        map.put(s1, "å¹¿ä¸œ");
-        map.put(s2, "ç¦å»º");
-        map.put(s3, "ä¸Šæµ·");
-        map.put(s4, "ä¸Šæµ·");
+        map.put(s1, "¹ã¶«");
+        map.put(s2, "¸£½¨");
+        map.put(s3, "ÉÏº£");
+        map.put(s4, "ÉÏº£");
 
         map.forEach((key, value) -> System.out.println(key + " = " + value));
     }

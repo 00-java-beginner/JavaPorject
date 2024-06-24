@@ -1,81 +1,81 @@
-package ä¸ŠåŠ.day4;
+package ÉÏ°ë.day4;
 
 import java.util.Scanner;
 
-public class å¾ªç¯å’Œåˆ¤æ–­_05_switch {
+public class Ñ­»·ºÍÅĞ¶Ï_05_switch {
     public static void main(String[] args) {
 
-/*     é¦–å…ˆè®¡ç®—è¡¨è¾¾å¼çš„å€¼ï¼Œä¾æ¬¡å’Œcaseåé¢çš„å€¼è¿›è¡Œæ¯”è¾ƒï¼Œå¦‚æœæœ‰å¯¹åº”çš„å€¼ï¼Œå°±ä¼šæ‰§è¡Œç›¸åº”çš„è¯­å¥ï¼Œåœ¨æ‰§è¡Œçš„è¿‡ç¨‹ä¸­ ï¼Œé‡åˆ°breakå°±ç»“æŸã€‚
-       å¦‚æœæ‰€æœ‰çš„caseåé¢çš„å€¼å’Œè¡¨è¾¾å¼çš„å€¼éƒ½ä¸åŒ¹é…ï¼Œå°±ä¼šæ‰§è¡Œdefaulté‡Œé¢çš„è¯­å¥ä½“ï¼Œç„¶åç»“æŸæ•´ä¸ªswitchè¯­å¥
-       æ ¼å¼è¯´æ˜ï¼š
-              è¡¨è¾¾å¼ï¼šå–å€¼ä¸ºï¼šbyteï¼Œshortï¼Œintï¼Œcharï¼Œæšä¸¾ï¼Œstring
-              caseï¼š
-                  1.åé¢è·Ÿçš„æ˜¯è¦è·Ÿè¡¨è¾¾å¼è¿›è¡Œæ¯”è¾ƒçš„å€¼
-                  2.åé¢çš„å€¼åªèƒ½æ˜¯å­—é¢é‡ï¼Œä¸èƒ½æ˜¯å˜é‡
-                  3.ç»™å‡ºçš„å€¼ä¸å…è®¸é‡å¤
-       switch (è¡¨è¾¾å¼){
-           case å€¼1:
-                è¯­å¥ä½“1;
+/*     Ê×ÏÈ¼ÆËã±í´ïÊ½µÄÖµ£¬ÒÀ´ÎºÍcaseºóÃæµÄÖµ½øĞĞ±È½Ï£¬Èç¹ûÓĞ¶ÔÓ¦µÄÖµ£¬¾Í»áÖ´ĞĞÏàÓ¦µÄÓï¾ä£¬ÔÚÖ´ĞĞµÄ¹ı³ÌÖĞ £¬Óöµ½break¾Í½áÊø¡£
+       Èç¹ûËùÓĞµÄcaseºóÃæµÄÖµºÍ±í´ïÊ½µÄÖµ¶¼²»Æ¥Åä£¬¾Í»áÖ´ĞĞdefaultÀïÃæµÄÓï¾äÌå£¬È»ºó½áÊøÕû¸öswitchÓï¾ä
+       ¸ñÊ½ËµÃ÷£º
+              ±í´ïÊ½£ºÈ¡ÖµÎª£ºbyte£¬short£¬int£¬char£¬Ã¶¾Ù£¬string
+              case£º
+                  1.ºóÃæ¸úµÄÊÇÒª¸ú±í´ïÊ½½øĞĞ±È½ÏµÄÖµ
+                  2.ºóÃæµÄÖµÖ»ÄÜÊÇ×ÖÃæÁ¿£¬²»ÄÜÊÇ±äÁ¿
+                  3.¸ø³öµÄÖµ²»ÔÊĞíÖØ¸´
+       switch (±í´ïÊ½){
+           case Öµ1:
+                Óï¾äÌå1;
                 break;
-           case å€¼2:
-                è¯­å¥ä½“2;
+           case Öµ2:
+                Óï¾äÌå2;
                 break;
            default:
-                è¯­å¥ä½“n+1;
+                Óï¾äÌån+1;
                 break;
         }
 */
-        //1.å®šä¹‰å˜é‡è®°å½•æƒ³åƒçš„é¢
+        //1.¶¨Òå±äÁ¿¼ÇÂ¼Ïë³ÔµÄÃæ
         Scanner sc = new Scanner(System.in);
-        System.out.println("è¾“å…¥ä½ æƒ³åƒçš„é¢");
+        System.out.println("ÊäÈëÄãÏë³ÔµÄÃæ");
         String noodles = sc.next();
 
-        //2.ç”¨è¿™ä¸ªå˜é‡è·Ÿswitchè¿›è¡ŒåŒ¹é…
+        //2.ÓÃÕâ¸ö±äÁ¿¸úswitch½øĞĞÆ¥Åä
         switch (noodles) {
-            case "å…°å·æ‹‰é¢":
-                System.out.println("åƒå…°å·æ‹‰é¢");
+            case "À¼ÖİÀ­Ãæ":
+                System.out.println("³ÔÀ¼ÖİÀ­Ãæ");
                 break;
-            case "çº¢çƒ§ç‰›è‚‰é¢":
-                System.out.println("åƒçº¢çƒ§ç‰›è‚‰é¢");
+            case "ºìÉÕÅ£ÈâÃæ":
+                System.out.println("³ÔºìÉÕÅ£ÈâÃæ");
                 break;
-            case "è€å›é…¸èœé¢":
-                System.out.println("åƒè€å›é…¸èœé¢");
+            case "ÀÏÌ³Ëá²ËÃæ":
+                System.out.println("³ÔÀÏÌ³Ëá²ËÃæ");
                 break;
             default:
-                System.out.println("åƒé¦™è¾£ç‰›è‚‰é¢");
+                System.out.println("³ÔÏãÀ±Å£ÈâÃæ");
                 break;
         }
 
-        //1.é”®ç›˜å½•å…¥ä»Šå¤©æ˜ŸæœŸå‡ 
+        //1.¼üÅÌÂ¼Èë½ñÌìĞÇÆÚ¼¸
         Scanner sc1 = new Scanner(System.in);
-        System.out.println("è¾“å…¥ä»Šå¤©æ˜ŸæœŸå‡ ");
+        System.out.println("ÊäÈë½ñÌìĞÇÆÚ¼¸");
         int week = sc1.nextInt();
 
-        //2.åˆ©ç”¨switchå¯¹æ˜ŸæœŸè¿›è¡ŒåŒ¹é…
+        //2.ÀûÓÃswitch¶ÔĞÇÆÚ½øĞĞÆ¥Åä
         switch (week) {
             case 1:
-                System.out.println("è·‘æ­¥");
+                System.out.println("ÅÜ²½");
                 break;
             case 2:
-                System.out.println("æ¸¸æ³³");
+                System.out.println("ÓÎÓ¾");
                 break;
             case 3:
-                System.out.println("æ…¢èµ°");
+                System.out.println("Âı×ß");
                 break;
             case 4:
-                System.out.println("åŠ¨æ„Ÿå•è½¦");
+                System.out.println("¶¯¸Ğµ¥³µ");
                 break;
             case 5:
-                System.out.println("æ‹³å‡»");
+                System.out.println("È­»÷");
                 break;
             case 6:
-                System.out.println("çˆ¬å±±");
+                System.out.println("ÅÀÉ½");
                 break;
             case 7:
-                System.out.println("å¥½å¥½åƒä¸€é¡¿");
+                System.out.println("ºÃºÃ³ÔÒ»¶Ù");
                 break;
             default:
-                System.out.println("è¾“å…¥æ­£ç¡®çš„æ˜ŸæœŸ");
+                System.out.println("ÊäÈëÕıÈ·µÄĞÇÆÚ");
                 break;
 
         }

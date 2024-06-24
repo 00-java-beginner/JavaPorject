@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day9.p94andp95_æ·»åŠ å’Œéå†;
+package ÉÏ°ë.day9.p94andp95_Ìí¼ÓºÍ±éÀú;
 public class Student {
     private int id;
     private String name;

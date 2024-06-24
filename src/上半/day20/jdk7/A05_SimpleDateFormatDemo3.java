@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day20.jdk7;
+package ÉÏ°ë.day20.jdk7;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -6,44 +6,44 @@ import java.util.Date;
 
 public class A05_SimpleDateFormatDemo3 {
     public static void main(String[] args) throws ParseException {
-        /* éœ€æ±‚:
-            ç§’æ€æ´»åŠ¨å¼€å§‹æ—¶é—´:2023å¹´11æœˆ11æ—¥ 0:0:0(æ¯«ç§’å€¼)
-            ç§’æ€æ´»åŠ¨ç»“æŸæ—¶é—´:2023å¹´11æœˆ11æ—¥ 0:10:0(æ¯«ç§’å€¼)
+        /* ÐèÇó:
+            ÃëÉ±»î¶¯¿ªÊ¼Ê±¼ä:2023Äê11ÔÂ11ÈÕ 0:0:0(ºÁÃëÖµ)
+            ÃëÉ±»î¶¯½áÊøÊ±¼ä:2023Äê11ÔÂ11ÈÕ 0:10:0(ºÁÃëÖµ)
 
-            å°è´¾ä¸‹å•å¹¶ä»˜æ¬¾çš„æ—¶é—´ä¸º:2023å¹´11æœˆ11æ—¥ 0:01:0
-            å°çš®ä¸‹å•å¹¶ä»˜æ¬¾çš„æ—¶é—´ä¸º:2023å¹´11æœˆ11æ—¥ 0:11:0
-            ç”¨ä»£ç è¯´æ˜Žè¿™ä¸¤ä½åŒå­¦æœ‰æ²¡æœ‰å‚åŠ ä¸Šç§’æ€æ´»åŠ¨?
+            Ð¡¼ÖÏÂµ¥²¢¸¶¿îµÄÊ±¼äÎª:2023Äê11ÔÂ11ÈÕ 0:01:0
+            Ð¡Æ¤ÏÂµ¥²¢¸¶¿îµÄÊ±¼äÎª:2023Äê11ÔÂ11ÈÕ 0:11:0
+            ÓÃ´úÂëËµÃ÷ÕâÁ½Î»Í¬Ñ§ÓÐÃ»ÓÐ²Î¼ÓÉÏÃëÉ±»î¶¯?
          */
 
-        //1.å®šä¹‰å­—ç¬¦ä¸²è¡¨ç¤ºä¸‰ä¸ªæ—¶é—´
-        String startstr = "2023å¹´11æœˆ11æ—¥ 0:0:0";
-        String endstr = "2023å¹´11æœˆ11æ—¥ 0:10:0";
-        String orderstr = "2023å¹´11æœˆ11æ—¥ 0:01:00";
-        String orderstr1 = "2023å¹´11æœˆ11æ—¥ 0:11:0";
-        //2.è§£æžä¸Šé¢çš„ä¸‰ä¸ªæ—¶é—´ï¼Œå¾—åˆ°Dateå¯¹è±¡
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyyå¹´MMæœˆddæ—¥HH:mm:ss");
+        //1.¶¨Òå×Ö·û´®±íÊ¾Èý¸öÊ±¼ä
+        String startstr = "2023Äê11ÔÂ11ÈÕ 0:0:0";
+        String endstr = "2023Äê11ÔÂ11ÈÕ 0:10:0";
+        String orderstr = "2023Äê11ÔÂ11ÈÕ 0:01:00";
+        String orderstr1 = "2023Äê11ÔÂ11ÈÕ 0:11:0";
+        //2.½âÎöÉÏÃæµÄÈý¸öÊ±¼ä£¬µÃµ½Date¶ÔÏó
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyyÄêMMÔÂddÈÕHH:mm:ss");
         Date startDate = sdf.parse(startstr);
         Date endDate = sdf.parse(endstr);
         Date orderDate = sdf.parse(orderstr);
         Date orderDate1 = sdf.parse(orderstr1);
 
-        //3.å¾—åˆ°ä¸‰ä¸ªæ—¶é—´çš„æ¯«ç§’å€¼
+        //3.µÃµ½Èý¸öÊ±¼äµÄºÁÃëÖµ
         long startTime = startDate.getTime();
         long endTime = endDate.getTime();
         long orderTime = orderDate.getTime();
         long orderTime1 = orderDate1.getTime();
 
-      //4.åˆ¤æ–­
+      //4.ÅÐ¶Ï
         if (orderTime >= startTime && orderTime <= endTime) {
-            System.out.println("å‚åŠ ç§’æ€æ´»åŠ¨æˆåŠŸ");
+            System.out.println("²Î¼ÓÃëÉ±»î¶¯³É¹¦");
         }else {
-            System.out.println("å‚åŠ ç§’æ€æ´»åŠ¨å¤±è´¥");
+            System.out.println("²Î¼ÓÃëÉ±»î¶¯Ê§°Ü");
         }
         
         if (orderTime1 >= startTime && orderTime1 <= endTime) {
-          System.out.println("å‚åŠ ç§’æ€æ´»åŠ¨æˆåŠŸ");
+          System.out.println("²Î¼ÓÃëÉ±»î¶¯³É¹¦");
         }else {
-          System.out.println("å‚åŠ ç§’æ€æ´»åŠ¨å¤±è´¥");
+          System.out.println("²Î¼ÓÃëÉ±»î¶¯Ê§°Ü");
         }
 
 

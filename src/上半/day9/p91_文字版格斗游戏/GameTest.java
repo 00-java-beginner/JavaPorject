@@ -1,25 +1,25 @@
-package ä¸ŠåŠ.day9.p91_æ–‡å­—ç‰ˆæ ¼æ–—æ¸¸æˆ;
+package ÉÏ°ë.day9.p91_ÎÄ×Ö°æ¸ñ¶·ÓÎÏ·;
 public class GameTest {
     public static void main(String[] args) {
-        //1.åˆ›å»ºä¸¤ä¸ªè§’è‰²
-        Role r1 = new Role("ä¹”å³°" , 100,'ç”·');
-        Role r2 = new Role("é¸ æ‘©æ™º" , 100,'ç”·');
+        //1.´´½¨Á½¸ö½ÇÉ«
+        Role r1 = new Role("ÇÇ·å" , 100,'ÄĞ');
+        Role r2 = new Role("ğ¯Ä¦ÖÇ" , 100,'ÄĞ');
         r1.showRoleInfo();
         r2.showRoleInfo();
-        //2.å¼€å§‹æ ¼æ–—ï¼Œå›åˆåˆ¶æ¸¸æˆ
+        //2.¿ªÊ¼¸ñ¶·£¬»ØºÏÖÆÓÎÏ·
         while (true){
-            //r1å¼€å§‹æ”»å‡»r2
+            //r1¿ªÊ¼¹¥»÷r2
             r1.attack(r2);
-            //åˆ¤æ–­r2å‰©ä½™çš„è¡€é‡
+            //ÅĞ¶Ïr2Ê£ÓàµÄÑªÁ¿
             if (r2.getBlood() == 0 ){
-                System.out.println(r1.getName() + "K.Oäº†" + r2.getName());
+                System.out.println(r1.getName() + "K.OÁË" + r2.getName());
                 break;
             }
-            //r2å¼€å§‹æ”»å‡»r1
+            //r2¿ªÊ¼¹¥»÷r1
             r2.attack(r1);
-            //åˆ¤æ–­r1å‰©ä½™çš„è¡€é‡
+            //ÅĞ¶Ïr1Ê£ÓàµÄÑªÁ¿
             if (r1.getBlood() == 0 ) {
-                System.out.println(r2.getName() + "K.Oäº†" + r1.getName());
+                System.out.println(r2.getName() + "K.OÁË" + r1.getName());
                 break;
             }
         }

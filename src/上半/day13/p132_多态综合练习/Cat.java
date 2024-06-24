@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day13.p132_å¤šæ€ç»¼åˆç»ƒä¹ ;
+package ÉÏ°ë.day13.p132_¶àÌ¬×ÛºÏÁ·Ï°;
 
 public class Cat extends Animal{
     public Cat() {
@@ -9,10 +9,10 @@ public class Cat extends Animal{
     }
     @Override
     public void eat(String something){
-        System.out.println(getAge() + "å²çš„"+getColor()
-                +"é¢œè‰²çš„çŒ«çœ¯ç€çœ¼ç›ä¾§ç€å¤´åƒ"+something);
+        System.out.println(getAge() + "ËêµÄ"+getColor()
+                +"ÑÕÉ«µÄÃ¨ÃĞ×ÅÑÛ¾¦²à×ÅÍ·³Ô"+something);
     }
     public void catchMouse(){
-        System.out.println("çŒ«åœ¨æŠ“è€é¼ ");
+        System.out.println("Ã¨ÔÚ×¥ÀÏÊó");
     }
 }

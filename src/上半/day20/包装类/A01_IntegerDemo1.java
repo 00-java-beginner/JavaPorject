@@ -1,22 +1,22 @@
-package ä¸ŠåŠ.day20.åŒ…è£…ç±»;
+package ÉÏ°ë.day20.°ü×°Àà;
 
 public class A01_IntegerDemo1 {
     public static void main(String[] args) {
         /*
-            public Integer(int value) æ ¹æ®ä¼ é€’çš„æ•´æ•°åˆ›å»ºä¸€ä¸ªIntegerå¯¹è±¡
-            public Integer(String s) æ ¹æ®ä¼ é€’çš„å­—ç¬¦ä¸²åˆ›å»ºä¸€ä¸ªIntegerå¯¹è±¡
-            public static Integer valueOf(int i) æ ¹æ®ä¼ é€’çš„æ•´æ•°åˆ›å»ºä¸€ä¸ªIntegerå¯¹è±¡
-            public static Integer valueof(String s) æ ¹æ®ä¼ é€’çš„å­—ç¬¦ä¸²åˆ›å»ºä¸€ä¸ªIntegerå¯¹è±¡
-            public static Integer valueof(String s, int radix) æ ¹æ®ä¼ é€’çš„å­—ç¬¦ä¸²å’Œè¿›åˆ¶åˆ›å»ºä¸€ä¸ªIntegerå¯¹è±¡
+            public Integer(int value) ¸ù¾İ´«µİµÄÕûÊı´´½¨Ò»¸öInteger¶ÔÏó
+            public Integer(String s) ¸ù¾İ´«µİµÄ×Ö·û´®´´½¨Ò»¸öInteger¶ÔÏó
+            public static Integer valueOf(int i) ¸ù¾İ´«µİµÄÕûÊı´´½¨Ò»¸öInteger¶ÔÏó
+            public static Integer valueof(String s) ¸ù¾İ´«µİµÄ×Ö·û´®´´½¨Ò»¸öInteger¶ÔÏó
+            public static Integer valueof(String s, int radix) ¸ù¾İ´«µİµÄ×Ö·û´®ºÍ½øÖÆ´´½¨Ò»¸öInteger¶ÔÏó
         */
 
-        //1.åˆ©ç”¨æ„é€ æ–¹æ³•è·å–Integerçš„å¯¹è±¡(JDK5ä»¥å‰çš„æ–¹å¼)
+        //1.ÀûÓÃ¹¹Ôì·½·¨»ñÈ¡IntegerµÄ¶ÔÏó(JDK5ÒÔÇ°µÄ·½Ê½)
         /*Integer i1 = new Integer(1);
         Integer i2 = new Integer("1");
         System.out.println(i1);
         System.out.println(i2);*/
 
-        //2.åˆ©ç”¨é™æ€æ–¹æ³•è·å–Integerçš„å¯¹è±¡(JDK5ä»¥å‰çš„æ–¹å¼)
+        //2.ÀûÓÃ¾²Ì¬·½·¨»ñÈ¡IntegerµÄ¶ÔÏó(JDK5ÒÔÇ°µÄ·½Ê½)
         Integer i3 = Integer.valueOf(123);
         Integer i4 = Integer.valueOf("123");
         Integer i5 = Integer.valueOf("123", 8);
@@ -25,12 +25,12 @@ public class A01_IntegerDemo1 {
         System.out.println(i4);
         System.out.println(i5);
 
-        //3.è¿™ä¸¤ç§æ–¹å¼è·å–å¯¹è±¡çš„åŒºåˆ«(æŒæ¡)
-        //åº•å±‚åŸç†ï¼š
-        //å› ä¸ºåœ¨å®é™…å¼€å‘ä¸­ï¼Œ-128~127ä¹‹é—´çš„æ•°æ®ï¼Œç”¨çš„æ¯”è¾ƒå¤šã€‚
-        //å¦‚æœæ¯æ¬¡ä½¿ç”¨éƒ½æ˜¯newå¯¹è±¡ï¼Œé‚£ä¹ˆå¤ªæµªè´¹å†…å­˜äº†
-        //æ‰€ä»¥ï¼Œæå‰æŠŠè¿™ä¸ªèŒƒå›´ä¹‹å†…çš„æ¯ä¸€ä¸ªæ•°æ®éƒ½åˆ›å»ºå¥½å¯¹è±¡
-        //å¦‚æœè¦ç”¨åˆ°äº†ä¸ä¼šåˆ›å»ºæ–°çš„ï¼Œè€Œæ˜¯è¿”å›å·²ç»åˆ›å»ºå¥½çš„å¯¹è±¡ã€‚
+        //3.ÕâÁ½ÖÖ·½Ê½»ñÈ¡¶ÔÏóµÄÇø±ğ(ÕÆÎÕ)
+        //µ×²ãÔ­Àí£º
+        //ÒòÎªÔÚÊµ¼Ê¿ª·¢ÖĞ£¬-128~127Ö®¼äµÄÊı¾İ£¬ÓÃµÄ±È½Ï¶à¡£
+        //Èç¹ûÃ¿´ÎÊ¹ÓÃ¶¼ÊÇnew¶ÔÏó£¬ÄÇÃ´Ì«ÀË·ÑÄÚ´æÁË
+        //ËùÒÔ£¬ÌáÇ°°ÑÕâ¸ö·¶Î§Ö®ÄÚµÄÃ¿Ò»¸öÊı¾İ¶¼´´½¨ºÃ¶ÔÏó
+        //Èç¹ûÒªÓÃµ½ÁË²»»á´´½¨ĞÂµÄ£¬¶øÊÇ·µ»ØÒÑ¾­´´½¨ºÃµÄ¶ÔÏó¡£
         Integer i6 = Integer.valueOf(127);
         Integer i7 = Integer.valueOf(127);
         System.out.println(i6 == i7);//true
@@ -39,8 +39,8 @@ public class A01_IntegerDemo1 {
         Integer i9 = Integer.valueOf(128);
         System.out.println(i8 == i9);//false
 
-        //å› ä¸ºçœ‹åˆ°äº†newå…³é”®å­—ï¼Œåœ¨Javaä¸­ï¼Œæ¯ä¸€æ¬¡newéƒ½æ˜¯åˆ›å»ºäº†ä¸€ä¸ªæ–°çš„å¯¹è±¡
-        //æ‰€ä»¥ä¸‹é¢çš„ä¸¤ä¸ªå¯¹è±¡éƒ½æ˜¯newå‡ºæ¥ï¼Œåœ°å€å€¼ä¸ä¸€æ ·ã€‚
+        //ÒòÎª¿´µ½ÁËnew¹Ø¼ü×Ö£¬ÔÚJavaÖĞ£¬Ã¿Ò»´Înew¶¼ÊÇ´´½¨ÁËÒ»¸öĞÂµÄ¶ÔÏó
+        //ËùÒÔÏÂÃæµÄÁ½¸ö¶ÔÏó¶¼ÊÇnew³öÀ´£¬µØÖ·Öµ²»Ò»Ñù¡£
         /*Integer i10 = new Integer(127);
         Integer i11 = new Integer(127);
         System.out.println(i10 == i11);

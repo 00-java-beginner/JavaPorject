@@ -1,14 +1,14 @@
-package ä¸ŠåŠ.day23.set;
+package ÉÏ°ë.day23.set;
 
 
 import java.util.LinkedHashSet;
 
 public class LinkedHashset {
     public static void main(String[] args) {
-        Student s1 = new Student(23,"å¼ ä¸‰");
-        Student s2 = new Student(22,"æå››");
-        Student s3 = new Student(25,"ç‹äº”");
-        Student s4 = new Student(23,"å¼ ä¸‰");
+        Student s1 = new Student(23,"ÕÅÈı");
+        Student s2 = new Student(22,"ÀîËÄ");
+        Student s3 = new Student(25,"ÍõÎå");
+        Student s4 = new Student(23,"ÕÅÈı");
 
         LinkedHashSet<Student> lhs = new LinkedHashSet<>();
         lhs.add(s1);
@@ -19,11 +19,11 @@ public class LinkedHashset {
 
         System.out.println(lhs);
 
-        //ç‰¹ç‚¹å’ŒåŸç†
-        //æœ‰åºï¼Œä¸é‡å¤ï¼Œæ— ç´¢å¼•
-        //åº•å±‚åŸºäºå“ˆå¸Œè¡¨ï¼Œä½¿ç”¨åŒé“¾è¡¨è®°å½•æ·»åŠ é¡ºåº
+        //ÌØµãºÍÔ­Àí
+        //ÓĞĞò£¬²»ÖØ¸´£¬ÎŞË÷Òı
+        //µ×²ã»ùÓÚ¹şÏ£±í£¬Ê¹ÓÃË«Á´±í¼ÇÂ¼Ìí¼ÓË³Ğò
 
-        //ä»¥åè¦æ•°æ®å»é‡ä½¿ç”¨å“ªä¸ª
-        //é»˜è®¤ä½¿ç”¨HashSetï¼Œå¦‚æœè¦å»å»é‡ä¸”æœ‰åºå­˜å–ï¼Œæ‰ä½¿ç”¨LinkedHashSet
+        //ÒÔºóÒªÊı¾İÈ¥ÖØÊ¹ÓÃÄÄ¸ö
+        //Ä¬ÈÏÊ¹ÓÃHashSet£¬Èç¹ûÒªÈ¥È¥ÖØÇÒÓĞĞò´æÈ¡£¬²ÅÊ¹ÓÃLinkedHashSet
     }
 }

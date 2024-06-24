@@ -1,6 +1,6 @@
-package ä¸ŠåŠ.day15.p138_æ¥å£å’ŒæŠ½è±¡ç±»ç»¼åˆç»ƒä¹ ;
+package ÉÏ°ë.day15.p138_½Ó¿ÚºÍ³éÏóÀà×ÛºÏÁ·Ï°;
 
-import ä¸ŠåŠ.day13.p132_å¤šæ€ç»¼åˆç»ƒä¹ .Person;
+import ÉÏ°ë.day13.p132_¶àÌ¬×ÛºÏÁ·Ï°.Person;
 
 public  abstract class Coach extends Person {
     public Coach() {

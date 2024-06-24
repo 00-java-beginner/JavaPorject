@@ -1,8 +1,8 @@
-package 涓婂崐.day10;
+package 上半.day10;
 
 public class p110_test4 {
     public static void main(String[] args) {
-        //瀹氫箟涓�涓瓧绗︿覆锛岀敱鑻ュ共鍗曡瘝缁勬垚锛岃繑鍥炲瓧绗︿覆涓渶鍚庝竴涓崟璇嶇殑闀垮害
+        //定义一个字符串，由若干单词组成，返回字符串中最后一个单词的长度
         String str = "Hello World";
         char[] arr = str.toCharArray();
         int count = 0;

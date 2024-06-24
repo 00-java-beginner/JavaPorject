@@ -1,50 +1,50 @@
-package ä¸ŠåŠ.day21.åˆ†å—æŸ¥æ‰¾;
+package ÉÏ°ë.day21.·Ö¿é²éÕÒ;
 
 public class blockSearch {
     public static void main(String[] args) {
-        /*åˆ†å—æŸ¥æ‰¾æ ¸å¿ƒæ€æƒ³:å—å†…æ— åºï¼Œå—é—´æœ‰åº
-          å®žçŽ°æ­¥éª¤ï¼š1.åˆ›å»ºæ•°ç»„blockArrå­˜æ”¾æ¯ä¸€ä¸ªå—å¯¹è±¡çš„ä¿¡æ¯
-                  2.å…ˆæŸ¥æ‰¾blockArrç¡®å®šè¦æŸ¥æ‰¾çš„æ•°æ®å±žäºŽå“ªä¸€å—3.å†å•ç‹¬éåŽ†è¿™ä¸€å—æ•°æ®å³å¯*/
+        /*·Ö¿é²éÕÒºËÐÄË¼Ïë:¿éÄÚÎÞÐò£¬¿é¼äÓÐÐò
+          ÊµÏÖ²½Öè£º1.´´½¨Êý×éblockArr´æ·ÅÃ¿Ò»¸ö¿é¶ÔÏóµÄÐÅÏ¢
+                  2.ÏÈ²éÕÒblockArrÈ·¶¨Òª²éÕÒµÄÊý¾ÝÊôÓÚÄÄÒ»¿é3.ÔÙµ¥¶À±éÀúÕâÒ»¿éÊý¾Ý¼´¿É*/
 
 
         int[] arr = {16, 5, 9, 12, 21, 18,
                 32, 23, 37, 26, 45, 34,
                 50, 48, 61, 52, 73, 66};
-        //1.åˆ›å»ºå¯¹è±¡
+        //1.´´½¨¶ÔÏó
         Block b1 = new Block(21, 0, 5);
         Block b2 = new Block(45, 6, 11);
         Block b3 = new Block(73, 12, 17);
 
-        //2.å®šä¹‰æ•°ç»„ç”¨æ¥ç®¡ç†ä¸‰ä¸ªå—çš„å¯¹è±¡ï¼ˆç´¢å¼•è¡¨ï¼‰
-        //æ³¨æ„ï¼šæ•°ç»„ä¸­å­˜æ”¾çš„æ•°æ®ä¸ºå¯¹è±¡æ—¶ï¼Œæ•°æ®ç±»åž‹éœ€è¦è·Ÿå¯¹è±¡çš„æ•°æ®ç±»åž‹ç»Ÿä¸€
+        //2.¶¨ÒåÊý×éÓÃÀ´¹ÜÀíÈý¸ö¿éµÄ¶ÔÏó£¨Ë÷Òý±í£©
+        //×¢Òâ£ºÊý×éÖÐ´æ·ÅµÄÊý¾ÝÎª¶ÔÏóÊ±£¬Êý¾ÝÀàÐÍÐèÒª¸ú¶ÔÏóµÄÊý¾ÝÀàÐÍÍ³Ò»
         Block[] blockArr = {b1, b2, b3};
 
-        //3.å®šä¹‰ä¸€ä¸ªå˜é‡ç”¨æ¥è®°å½•éœ€è¦æŸ¥æ‰¾çš„å…ƒç´ 
+        //3.¶¨ÒåÒ»¸ö±äÁ¿ÓÃÀ´¼ÇÂ¼ÐèÒª²éÕÒµÄÔªËØ
         int number = 16;
 
-        //4.è°ƒç”¨æ–¹æ³•ï¼Œä¼ é€’ç´¢å¼•è¡¨ï¼Œæºæ•°ç»„ï¼Œè¦æŸ¥æ‰¾çš„å…ƒç´ ï¼Œè¿›è¡ŒæŸ¥æ‰¾
+        //4.µ÷ÓÃ·½·¨£¬´«µÝË÷Òý±í£¬Ô´Êý×é£¬Òª²éÕÒµÄÔªËØ£¬½øÐÐ²éÕÒ
         int index = getIndex(blockArr, arr, number);
 
-        //5.æ‰“å°å¯¹åº”çš„ç´¢å¼•
+        //5.´òÓ¡¶ÔÓ¦µÄË÷Òý
         System.out.println(index);
         
     }
 
-    //åˆ©ç”¨åˆ†å—æŸ¥æ‰¾çš„åŽŸç†ï¼ŒæŸ¥è¯¢è¦æŸ¥æ‰¾çš„å…ƒç´ çš„ç´¢å¼•
+    //ÀûÓÃ·Ö¿é²éÕÒµÄÔ­Àí£¬²éÑ¯Òª²éÕÒµÄÔªËØµÄË÷Òý
     public static int getIndex(Block[] blockArr, int[] arr, int number) {
-        //1.ç¡®å®šnumberåœ¨å“ªä¸€å—å½“ä¸­
+        //1.È·¶¨numberÔÚÄÄÒ»¿éµ±ÖÐ
         int indexBlock = findIndexBlock(blockArr, number);
 
-        //2.å¯¹å¼‚å¸¸åœºæ™¯è¿›è¡Œåˆ¤æ–­
+        //2.¶ÔÒì³£³¡¾°½øÐÐÅÐ¶Ï
         if (indexBlock == -1) {
             return -1;
         }
-        //3.ä»£ç æ‰§è¡Œåˆ°è¿™é‡Œè¡¨ç¤ºè¦æŸ¥æ‰¾çš„å…ƒç´ åœ¨æ•°ç»„ä¸­ï¼Œæ­¤æ—¶éœ€è¦èŽ·å–ä»–çš„èµ·å§‹ç´¢å¼•å’Œç»“æŸç´¢å¼•
-        //blockArr[indexBlock]è¡¨ç¤ºï¼šå½“å‰è¦æŸ¥æ‰¾çš„å…ƒç´ åœ¨æ•°ç»„çš„å“ªä¸€ä¸ªç´¢å¼•ä¸Šï¼Œåˆ©ç”¨è¿™ä¸ªåŽ»èŽ·å–å¯¹åº”æ•°ç»„çš„ç´¢å¼•
+        //3.´úÂëÖ´ÐÐµ½ÕâÀï±íÊ¾Òª²éÕÒµÄÔªËØÔÚÊý×éÖÐ£¬´ËÊ±ÐèÒª»ñÈ¡ËûµÄÆðÊ¼Ë÷ÒýºÍ½áÊøË÷Òý
+        //blockArr[indexBlock]±íÊ¾£ºµ±Ç°Òª²éÕÒµÄÔªËØÔÚÊý×éµÄÄÄÒ»¸öË÷ÒýÉÏ£¬ÀûÓÃÕâ¸öÈ¥»ñÈ¡¶ÔÓ¦Êý×éµÄË÷Òý
         int startIndex = blockArr[indexBlock].getStartIndex();
         int endIndex = blockArr[indexBlock].getEndIndex();
 
-        //4.éåŽ†æ•°ç»„,å¼€å§‹æ¡ä»¶å’Œç»“æŸæ¡ä»¶ä¸ºå½“å‰numberæ‰€åœ¨çš„æ•°ç»„çš„èµ·å§‹ç´¢å¼•å’Œç»“æŸç´¢å¼•
+        //4.±éÀúÊý×é,¿ªÊ¼Ìõ¼þºÍ½áÊøÌõ¼þÎªµ±Ç°numberËùÔÚµÄÊý×éµÄÆðÊ¼Ë÷ÒýºÍ½áÊøË÷Òý
         for (int i = startIndex; i <= endIndex; i++) {
             if (arr[i] == number) {
                 return i;
@@ -53,13 +53,13 @@ public class blockSearch {
         return -1;
     }
 
-    //å®šä¹‰ä¸€ä¸ªæ–¹æ³•ï¼Œç”¨æ¥ç¡®å®šè¦æŸ¥æ‰¾çš„å…ƒç´ åœ¨å“ªä¸€å—å½“ä¸­
+    //¶¨ÒåÒ»¸ö·½·¨£¬ÓÃÀ´È·¶¨Òª²éÕÒµÄÔªËØÔÚÄÄÒ»¿éµ±ÖÐ
     public static int findIndexBlock(Block[] blockArr, int number) {
-        //ä»Ž0ç´¢å¼•å¼€å§‹éåŽ†blockArrï¼Œå¦‚æžœnumberå°äºŽmaxçš„å€¼ï¼Œé‚£ä¹ˆå°±è¡¨ç¤ºnumberæ˜¯åœ¨è¿™ä¸€å—å½“ä¸­
+        //´Ó0Ë÷Òý¿ªÊ¼±éÀúblockArr£¬Èç¹ûnumberÐ¡ÓÚmaxµÄÖµ£¬ÄÇÃ´¾Í±íÊ¾numberÊÇÔÚÕâÒ»¿éµ±ÖÐ
         for (int i = 0; i < blockArr.length; i++) {
-            //blockArr[i].getMax()è¡¨ç¤ºï¼šèŽ·å–å½“å‰ç´¢å¼•å¯¹åº”çš„æ•°ç»„ä¸­çš„æœ€å¤§å€¼
+            //blockArr[i].getMax()±íÊ¾£º»ñÈ¡µ±Ç°Ë÷Òý¶ÔÓ¦µÄÊý×éÖÐµÄ×î´óÖµ
             if (number <= blockArr[i].getMax()) {
-                //ç¬¦åˆæ¡ä»¶åˆ™è¿”å›žç´¢å¼•ï¼Œè¡¨ç¤ºå½“å‰éœ€è¦æŸ¥æ‰¾çš„å…ƒç´ åœ¨è¿™ä¸ªç´¢å¼•æ‰€å¯¹åº”çš„æ•°ç»„ä¸­
+                //·ûºÏÌõ¼þÔò·µ»ØË÷Òý£¬±íÊ¾µ±Ç°ÐèÒª²éÕÒµÄÔªËØÔÚÕâ¸öË÷ÒýËù¶ÔÓ¦µÄÊý×éÖÐ
                 return i;
             }
         }

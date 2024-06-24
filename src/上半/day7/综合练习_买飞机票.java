@@ -1,43 +1,43 @@
-package ä¸ŠåŠ.day7;
+package ÉÏ°ë.day7;
 
 import java.util.Scanner;
 
-public class ç»¼åˆç»ƒä¹ _ä¹°é£žæœºç¥¨ {
+public class ×ÛºÏÁ·Ï°_Âò·É»úÆ± {
     public static void main(String[] args) {
-        //éœ€æ±‚:æœºç¥¨ä»·æ ¼æŒ‰ç…§æ·¡å­£æ—ºå­£ã€å¤´ç­‰èˆ±å’Œç»æµŽèˆ±æ”¶è´¹ã€è¾“å…¥æœºç¥¨åŽŸä»·ï¼Œæœˆä»½å’Œå¤´ç­‰èˆ±æˆ–ç»æµŽèˆ±ã€‚
-        //æŒ‰ç…§å¦‚ä¸‹è§„åˆ™è®¡ç®—æœºç¥¨ä»·æ ¼:æ—ºå­£(5-10æœˆ)å¤´ç­‰èˆ±9æŠ˜ï¼Œç»æµŽèˆ±8.5æŠ˜ï¼Œæ·¡å­£(11æœˆåˆ°æ¥å¹´4æœˆ)å¤´ç­‰èˆ±7æŠ˜ï¼Œç»æµŽèˆ±6.5æŠ˜ã€‚
-        //1.é”®ç›˜å½•å…¥éœ€è¦è¾“å…¥çš„å‚æ•°
+        //ÐèÇó:»úÆ±¼Û¸ñ°´ÕÕµ­¼¾Íú¼¾¡¢Í·µÈ²ÕºÍ¾­¼Ã²ÕÊÕ·Ñ¡¢ÊäÈë»úÆ±Ô­¼Û£¬ÔÂ·ÝºÍÍ·µÈ²Õ»ò¾­¼Ã²Õ¡£
+        //°´ÕÕÈçÏÂ¹æÔò¼ÆËã»úÆ±¼Û¸ñ:Íú¼¾(5-10ÔÂ)Í·µÈ²Õ9ÕÛ£¬¾­¼Ã²Õ8.5ÕÛ£¬µ­¼¾(11ÔÂµ½À´Äê4ÔÂ)Í·µÈ²Õ7ÕÛ£¬¾­¼Ã²Õ6.5ÕÛ¡£
+        //1.¼üÅÌÂ¼ÈëÐèÒªÊäÈëµÄ²ÎÊý
         Scanner sc = new Scanner(System.in);
-        System.out.println("è¯·è¾“å…¥æœºç¥¨çš„åŽŸä»·");
+        System.out.println("ÇëÊäÈë»úÆ±µÄÔ­¼Û");
         int ticket = sc.nextInt();
-        System.out.println("è¯·è¾“å…¥å½“å‰çš„æœˆä»½");
+        System.out.println("ÇëÊäÈëµ±Ç°µÄÔÂ·Ý");
         int mouth = sc.nextInt();
-        System.out.println("è¯·è¾“å…¥ä½ æ˜¯ä»€ä¹ˆèˆ± 0ï¼šå¤´ç­‰èˆ±ï¼Œ1ï¼šç»æµŽèˆ±");
+        System.out.println("ÇëÊäÈëÄãÊÇÊ²Ã´²Õ 0£ºÍ·µÈ²Õ£¬1£º¾­¼Ã²Õ");
         int seat = sc.nextInt();
 
-        //2.åˆ¤æ–­æ˜¯æ—ºå­£è¿˜æ˜¯æ·¡å­£
+        //2.ÅÐ¶ÏÊÇÍú¼¾»¹ÊÇµ­¼¾
         if (mouth >= 5 && mouth <= 10) {
-            //æ—ºå­£å¤´ç­‰èˆ±9æŠ˜ï¼Œç»æµŽèˆ±8.5æŠ˜
+            //Íú¼¾Í·µÈ²Õ9ÕÛ£¬¾­¼Ã²Õ8.5ÕÛ
             ticket = getprice(ticket, seat, 0.9, 0.85);
         } else if ((mouth >= 1 && mouth <= 4) || (mouth == 11 && mouth == 12)) {
-            //æ·¡å­£å¤´ç­‰èˆ±7æŠ˜ï¼Œç»æµŽèˆ±6.5æŠ˜
+            //µ­¼¾Í·µÈ²Õ7ÕÛ£¬¾­¼Ã²Õ6.5ÕÛ
             ticket = getprice(ticket, seat, 0.7, 0.65);
         } else {
-            System.out.println("é”®ç›˜å½•å…¥çš„æœˆä»½ä¸åˆæ³•");
+            System.out.println("¼üÅÌÂ¼ÈëµÄÔÂ·Ý²»ºÏ·¨");
         }
         System.out.println(ticket);
     }
 
     public static int getprice(int ticket, int seat, double v0, double v1) {
-        //3.åˆ¤æ–­æ˜¯ä»€ä¹ˆèˆ±
+        //3.ÅÐ¶ÏÊÇÊ²Ã´²Õ
         if (seat == 0) {
-            System.out.println("å½“å‰ä¸ºæ·¡å­£å¤´ç­‰èˆ±ï¼Œæ‰“ä¸ƒæŠ˜");
+            System.out.println("µ±Ç°Îªµ­¼¾Í·µÈ²Õ£¬´òÆßÕÛ");
             ticket = (int) (ticket * v0);
         } else if (seat == 1) {
-            System.out.println("å½“å‰ä¸ºæ·¡å­£ç»æµŽèˆ±ï¼Œæ‰“6.5æŠ˜");
+            System.out.println("µ±Ç°Îªµ­¼¾¾­¼Ã²Õ£¬´ò6.5ÕÛ");
             ticket = (int) (ticket * v1);
         } else {
-            System.out.println("æ²¡æœ‰è¿™ä¸ªèˆ±ä½");
+            System.out.println("Ã»ÓÐÕâ¸ö²ÕÎ»");
         }
         return ticket;
     }

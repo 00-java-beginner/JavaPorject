@@ -1,4 +1,4 @@
-package 涓婂崐.day22.闆嗗悎椤跺眰鎺ュ彛collection;
+package 上半.day22.集合顶层接口collection;
 
 import java.util.Objects;
 
@@ -16,7 +16,7 @@ public class Student {
     }
 
     /**
-     * 鑾峰彇
+     * 获取
      * @return name
      */
     public String getName() {
@@ -24,7 +24,7 @@ public class Student {
     }
 
     /**
-     * 璁剧疆
+     * 设置
      * @param name
      */
     public void setName(String name) {
@@ -32,7 +32,7 @@ public class Student {
     }
 
     /**
-     * 鑾峰彇
+     * 获取
      * @return age
      */
     public int getAge() {
@@ -40,7 +40,7 @@ public class Student {
     }
 
     /**
-     * 璁剧疆
+     * 设置
      * @param age
      */
     public void setAge(int age) {

@@ -1,4 +1,4 @@
-package ä¸‹åŠ.day24;
+package ÏÂ°ë.day24;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,44 +6,44 @@ import java.util.Map;
 public class A01_MapDemo1 {
     public static void main(String[] args) {
         /*
-            V put(K key,V value)                    æ·»åŠ å…ƒç´ 
-            V remove(Object key)                    æ ¹æ®é”®åˆ é™¤é”®å€¼å¯¹å…ƒç´ 
-            void clear()                            ç§»é™¤æ‰€æœ‰çš„é”®å€¼å¯¹å…ƒç´ 
-            boolean containsKey(Object key)         åˆ¤æ–­é›†åˆæ˜¯å¦åŒ…å«æŒ‡å®šçš„é”®
-            boolean containsValue(Object value)     åˆ¤æ–­é›†åˆæ˜¯å¦åŒ…å«æŒ‡å®šçš„å€¼
-            boolean isEmpty()                       åˆ¤æ–­é›†åˆæ˜¯å¦ä¸ºç©º
-            int size()                              é›†åˆçš„é•¿åº¦ï¼Œä¹Ÿå°±æ˜¯é›†åˆä¸­é”®å€¼å¯¹çš„ä¸ªæ•°
+            V put(K key,V value)                    Ìí¼ÓÔªËØ
+            V remove(Object key)                    ¸ù¾İ¼üÉ¾³ı¼üÖµ¶ÔÔªËØ
+            void clear()                            ÒÆ³ıËùÓĞµÄ¼üÖµ¶ÔÔªËØ
+            boolean containsKey(Object key)         ÅĞ¶Ï¼¯ºÏÊÇ·ñ°üº¬Ö¸¶¨µÄ¼ü
+            boolean containsValue(Object value)     ÅĞ¶Ï¼¯ºÏÊÇ·ñ°üº¬Ö¸¶¨µÄÖµ
+            boolean isEmpty()                       ÅĞ¶Ï¼¯ºÏÊÇ·ñÎª¿Õ
+            int size()                              ¼¯ºÏµÄ³¤¶È£¬Ò²¾ÍÊÇ¼¯ºÏÖĞ¼üÖµ¶ÔµÄ¸öÊı
         */
 
 
-        //1.åˆ›å»ºMapé›†åˆçš„å¯¹è±¡
+        //1.´´½¨Map¼¯ºÏµÄ¶ÔÏó
         Map<String, String> m = new HashMap<>();
 
-        //2.æ·»åŠ å…ƒç´ 
-        //putæ–¹æ³•çš„ç»†èŠ‚ï¼š
-        //æ·»åŠ /è¦†ç›–
-        //åœ¨æ·»åŠ æ•°æ®çš„æ—¶å€™ï¼Œå¦‚æœé”®ä¸å­˜åœ¨ï¼Œé‚£ä¹ˆç›´æ¥æŠŠé”®å€¼å¯¹å¯¹è±¡æ·»åŠ åˆ°mapé›†åˆå½“ä¸­,æ–¹æ³•è¿”å›null
-        //åœ¨æ·»åŠ æ•°æ®çš„æ—¶å€™ï¼Œå¦‚æœé”®æ˜¯å­˜åœ¨çš„ï¼Œé‚£ä¹ˆä¼šæŠŠåŸæœ‰çš„é”®å€¼å¯¹å¯¹è±¡è¦†ç›–ï¼Œä¼šæŠŠè¢«è¦†ç›–çš„å€¼è¿›è¡Œè¿”å›ã€‚
+        //2.Ìí¼ÓÔªËØ
+        //put·½·¨µÄÏ¸½Ú£º
+        //Ìí¼Ó/¸²¸Ç
+        //ÔÚÌí¼ÓÊı¾İµÄÊ±ºò£¬Èç¹û¼ü²»´æÔÚ£¬ÄÇÃ´Ö±½Ó°Ñ¼üÖµ¶Ô¶ÔÏóÌí¼Óµ½map¼¯ºÏµ±ÖĞ,·½·¨·µ»Ønull
+        //ÔÚÌí¼ÓÊı¾İµÄÊ±ºò£¬Èç¹û¼üÊÇ´æÔÚµÄ£¬ÄÇÃ´»á°ÑÔ­ÓĞµÄ¼üÖµ¶Ô¶ÔÏó¸²¸Ç£¬»á°Ñ±»¸²¸ÇµÄÖµ½øĞĞ·µ»Ø¡£
 
-        m.put("éƒ­é–", "é»„è“‰");
-        m.put("éŸ¦å°å®","æ²å‰‘å±");
-        m.put("å°¹å¿—å¹³","å°é¾™å¥³");
+        m.put("¹ù¾¸", "»ÆÈØ");
+        m.put("Î¤Ğ¡±¦","ãå½£ÆÁ");
+        m.put("ÒüÖ¾Æ½","Ğ¡ÁúÅ®");
 
-        //String value2 = m.put("éŸ¦å°å®", "åŒå„¿");
+        //String value2 = m.put("Î¤Ğ¡±¦", "Ë«¶ù");
         //System.out.println(value2);
 
-        //åˆ é™¤
-        //String result = m.remove("éƒ­é–");//é»„è“‰
+        //É¾³ı
+        //String result = m.remove("¹ù¾¸");//»ÆÈØ
         //System.out.println(result);
 
-        //æ¸…ç©º
+        //Çå¿Õ
         //m.clear();
 
-        //åˆ¤æ–­æ˜¯å¦åŒ…å«
-        /*boolean keyResult = m.containsKey("éƒ­é–");
+        //ÅĞ¶ÏÊÇ·ñ°üº¬
+        /*boolean keyResult = m.containsKey("¹ù¾¸");
         System.out.println(keyResult);
 
-        boolean valueResult = m.containsValue("å°é¾™å¥³2");
+        boolean valueResult = m.containsValue("Ğ¡ÁúÅ®2");
         System.out.println(valueResult);*/
 
        /* boolean result = m.isEmpty();
@@ -53,7 +53,7 @@ public class A01_MapDemo1 {
         System.out.println(size);
 
 
-        //3.æ‰“å°é›†åˆ
+        //3.´òÓ¡¼¯ºÏ
         System.out.println(m);
 
     }

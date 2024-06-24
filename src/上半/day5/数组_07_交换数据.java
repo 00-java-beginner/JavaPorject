@@ -1,26 +1,26 @@
-package ä¸ŠåŠ.day5;
+package ÉÏ°ë.day5;
 
-public class æ•°ç»„_07_äº¤æ¢æ•°æ® {
+public class Êý×é_07_½»»»Êý¾Ý {
     public static void main(String[] args) {
         /*
-        éœ€æ±‚ï¼šå®šä¹‰ä¸€ä¸ªæ•°ç»„ï¼Œå­˜å…¥1ï¼Œ2ï¼Œ3ï¼Œ4ï¼Œ5  äº¤æ¢é¦–å°¾ç´¢å¼•å¯¹åº”çš„å…ƒç´ 
+        ÐèÇó£º¶¨ÒåÒ»¸öÊý×é£¬´æÈë1£¬2£¬3£¬4£¬5  ½»»»Ê×Î²Ë÷Òý¶ÔÓ¦µÄÔªËØ
          */
-        //1.å®šä¹‰ä¸€ä¸ªæ•°ç»„ï¼Œå­˜å…¥1ï¼Œ2ï¼Œ3ï¼Œ4ï¼Œ5
+        //1.¶¨ÒåÒ»¸öÊý×é£¬´æÈë1£¬2£¬3£¬4£¬5
         int arr[] = {1, 2, 3, 4, 5};
 
-        //2.åˆ©ç”¨å¾ªçŽ¯äº¤æ¢æ•°æ®
-        //å¾ªçŽ¯å¼€å§‹æ¡ä»¶ä¸ºi = 0ç´¢å¼•ï¼Œj = length - 1ç´¢å¼•
-        //å¾ªçŽ¯ç»“æŸæ¡ä»¶ä¸º i < j
-        //æ¯æ¬¡å¾ªçŽ¯iè‡ªå¢žä¸€æ¬¡ï¼Œjè‡ªå‡ä¸€æ¬¡
+        //2.ÀûÓÃÑ­»·½»»»Êý¾Ý
+        //Ñ­»·¿ªÊ¼Ìõ¼þÎªi = 0Ë÷Òý£¬j = length - 1Ë÷Òý
+        //Ñ­»·½áÊøÌõ¼þÎª i < j
+        //Ã¿´ÎÑ­»·i×ÔÔöÒ»´Î£¬j×Ô¼õÒ»´Î
         for (int i = 0, j = arr.length - 1; i < j; i++, j--) {
-            //å®šä¹‰ä¸€ä¸ªä¸´æ—¶å˜é‡è®°å½•é¦–ä½æŸä¸ªç´¢å¼•çš„å€¼
+            //¶¨ÒåÒ»¸öÁÙÊ±±äÁ¿¼ÇÂ¼Ê×Î»Ä³¸öË÷ÒýµÄÖµ
             int temp = arr[i];
-            //å…ˆå°†å°¾ç´¢å¼•çš„å€¼èµ‹ç»™é¦–ç´¢å¼•
+            //ÏÈ½«Î²Ë÷ÒýµÄÖµ¸³¸øÊ×Ë÷Òý
             arr[i] = arr[j];
-            //å†å°†ä¸´æ—¶å˜é‡çš„å€¼èµ‹å€¼ç»™å°¾ç´¢å¼•
+            //ÔÙ½«ÁÙÊ±±äÁ¿µÄÖµ¸³Öµ¸øÎ²Ë÷Òý
             arr[j] = temp;
         }
-        //å¾ªçŽ¯ç»“æŸåŽæ‰“å°æ•°ç»„éªŒè¯ç»“æžœ
+        //Ñ­»·½áÊøºó´òÓ¡Êý×éÑéÖ¤½á¹û
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i]);
         }

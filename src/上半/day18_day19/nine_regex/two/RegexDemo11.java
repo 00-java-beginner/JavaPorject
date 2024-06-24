@@ -1,19 +1,19 @@
-package ä¸ŠåŠ.day18_day19.nine_regex.two;
+package ÉÏ°ë.day18_day19.nine_regex.two;
 
 public class RegexDemo11 {
     public static void main(String[] args) {
-        //public string replaceAll(string regex,string newstr) æŒ‰ç…§æ­£åˆ™è¡¨è¾¾å¼çš„è§„åˆ™è¿›è¡Œæ›¿æ¢
-        //public string[] split(string regex): æŒ‰ç…§æ­£åˆ™è¡¨è¾¾å¼çš„è§„åˆ™åˆ‡å‰²å­—ç¬¦ä¸²
+        //public string replaceAll(string regex,string newstr) °´ÕÕÕıÔò±í´ïÊ½µÄ¹æÔò½øĞĞÌæ»»
+        //public string[] split(string regex): °´ÕÕÕıÔò±í´ïÊ½µÄ¹æÔòÇĞ¸î×Ö·û´®
 
         /*
-            æœ‰ä¸€æ®µå­—ç¬¦ä¸²:å°è¯—è¯—dqwefqwfqwfwq12312å°ä¸¹ä¸¹dqwefqwfqwfwq12312å°æƒ æƒ 
-            è¦æ±‚1:æŠŠå­—ç¬¦ä¸²ä¸­ä¸‰ä¸ªå§“åä¹‹é—´çš„å­—æ¯æ›¿æ¢ä¸ºvs
-            è¦æ±‚2:æŠŠå­—ç¬¦ä¸²ä¸­çš„ä¸‰ä¸ªå§“ååˆ‡å‰²å‡ºæ¥*/
+            ÓĞÒ»¶Î×Ö·û´®:Ğ¡Ê«Ê«dqwefqwfqwfwq12312Ğ¡µ¤µ¤dqwefqwfqwfwq12312Ğ¡»İ»İ
+            ÒªÇó1:°Ñ×Ö·û´®ÖĞÈı¸öĞÕÃûÖ®¼äµÄ×ÖÄ¸Ìæ»»Îªvs
+            ÒªÇó2:°Ñ×Ö·û´®ÖĞµÄÈı¸öĞÕÃûÇĞ¸î³öÀ´*/
 
-        String s = "å°è¯—è¯—dqwefqwfqwfwq12312å°ä¸¹ä¸¹dqwefqwfqwfwq12312å°æƒ æƒ ";
-        //ç»†èŠ‚:
-        //æ–¹æ³•åœ¨åº•å±‚è·Ÿä¹‹å‰ä¸€æ ·ä¹Ÿä¼šåˆ›å»ºæ–‡æœ¬è§£æå™¨çš„å¯¹è±¡
-        //ç„¶åä»å¤´å¼€å§‹å»è¯»å–å­—ç¬¦ä¸²ä¸­çš„å†…å®¹ï¼Œåªè¦æœ‰æ»¡è¶³çš„ï¼Œé‚£ä¹ˆå°±ç”¨ç¬¬ä¸€ä¸ªå‚æ•°å»æ›¿æ¢ã€‚
+        String s = "Ğ¡Ê«Ê«dqwefqwfqwfwq12312Ğ¡µ¤µ¤dqwefqwfqwfwq12312Ğ¡»İ»İ";
+        //Ï¸½Ú:
+        //·½·¨ÔÚµ×²ã¸úÖ®Ç°Ò»ÑùÒ²»á´´½¨ÎÄ±¾½âÎöÆ÷µÄ¶ÔÏó
+        //È»ºó´ÓÍ·¿ªÊ¼È¥¶ÁÈ¡×Ö·û´®ÖĞµÄÄÚÈİ£¬Ö»ÒªÓĞÂú×ãµÄ£¬ÄÇÃ´¾ÍÓÃµÚÒ»¸ö²ÎÊıÈ¥Ìæ»»¡£
         String result1 = s.replaceAll("[\\w&&[^_]]+", "vs");
         System.out.println(result1);
 

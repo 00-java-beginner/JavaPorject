@@ -1,7 +1,7 @@
-package ä¸ŠåŠ.day13.p125_ç»§æ‰¿çš„ç‰¹ç‚¹å’Œç»§æ‰¿ä½“ç³»çš„è®¾è®¡;
+package ÉÏ°ë.day13.p125_¼Ì³ĞµÄÌØµãºÍ¼Ì³ĞÌåÏµµÄÉè¼Æ;
 
 public class Husky extends Dog{
     public void breakHome(){
-        System.out.println("æ‹†å®¶");
+        System.out.println("²ğ¼Ò");
     }
 }

@@ -1,31 +1,31 @@
-package ä¸ŠåŠ.day22.é›†åˆé¡¶å±‚æ¥å£collection;
+package ÉÏ°ë.day22.¼¯ºÏ¶¥²ã½Ó¿Úcollection;
 
 import java.util.ArrayList;
 import java.util.Collection;
 
 public class A02_CollectionDemo2 {
     public static void main(String[] args) {
-        //1.åˆ›å»ºé›†åˆçš„å¯¹è±¡
+        //1.´´½¨¼¯ºÏµÄ¶ÔÏó
         Collection<Student> coll = new ArrayList<>();
 
 
-        //2.åˆ›å»ºä¸‰ä¸ªå­¦ç”Ÿå¯¹è±¡
+        //2.´´½¨Èı¸öÑ§Éú¶ÔÏó
         Student s1 = new Student("zhangsan",23);
         Student s2 = new Student("lisi",24);
         Student s3 = new Student("wangwu",25);
 
 
-        //3.æŠŠå­¦ç”Ÿå¯¹è±¡æ·»åŠ åˆ°é›†åˆå½“ä¸­
+        //3.°ÑÑ§Éú¶ÔÏóÌí¼Óµ½¼¯ºÏµ±ÖĞ
         coll.add(s1);
         coll.add(s2);
         coll.add(s3);
 
-        //4.åˆ¤æ–­é›†åˆä¸­æŸä¸€ä¸ªå­¦ç”Ÿå¯¹è±¡æ˜¯å¦åŒ…å«
+        //4.ÅĞ¶Ï¼¯ºÏÖĞÄ³Ò»¸öÑ§Éú¶ÔÏóÊÇ·ñ°üº¬
         Student s4 = new Student("zhangsan",23);
-        //å› ä¸ºcontainsæ–¹æ³•åœ¨åº•å±‚ä¾èµ–equalsæ–¹æ³•åˆ¤æ–­å¯¹è±¡æ˜¯å¦ä¸€è‡´çš„ã€‚
-        //å¦‚æœå­˜çš„æ˜¯è‡ªå®šä¹‰å¯¹è±¡ï¼Œæ²¡æœ‰é‡å†™equalsæ–¹æ³•ï¼Œé‚£ä¹ˆé»˜è®¤ä½¿ç”¨Objectç±»ä¸­çš„equalsæ–¹æ³•è¿›è¡Œåˆ¤æ–­ï¼Œè€ŒObjectç±»ä¸­equalsæ–¹æ³•ï¼Œä¾èµ–åœ°å€å€¼è¿›è¡Œåˆ¤æ–­ã€‚
-        //éœ€æ±‚ï¼šå¦‚æœåŒå§“åå’ŒåŒå¹´é¾„ï¼Œå°±è®¤ä¸ºæ˜¯åŒä¸€ä¸ªå­¦ç”Ÿã€‚
-        //æ‰€ä»¥ï¼Œéœ€è¦åœ¨è‡ªå®šä¹‰çš„Javabeanç±»ä¸­ï¼Œé‡å†™equalsæ–¹æ³•å°±å¯ä»¥äº†ã€‚
+        //ÒòÎªcontains·½·¨ÔÚµ×²ãÒÀÀµequals·½·¨ÅĞ¶Ï¶ÔÏóÊÇ·ñÒ»ÖÂµÄ¡£
+        //Èç¹û´æµÄÊÇ×Ô¶¨Òå¶ÔÏó£¬Ã»ÓĞÖØĞ´equals·½·¨£¬ÄÇÃ´Ä¬ÈÏÊ¹ÓÃObjectÀàÖĞµÄequals·½·¨½øĞĞÅĞ¶Ï£¬¶øObjectÀàÖĞequals·½·¨£¬ÒÀÀµµØÖ·Öµ½øĞĞÅĞ¶Ï¡£
+        //ĞèÇó£ºÈç¹ûÍ¬ĞÕÃûºÍÍ¬ÄêÁä£¬¾ÍÈÏÎªÊÇÍ¬Ò»¸öÑ§Éú¡£
+        //ËùÒÔ£¬ĞèÒªÔÚ×Ô¶¨ÒåµÄJavabeanÀàÖĞ£¬ÖØĞ´equals·½·¨¾Í¿ÉÒÔÁË¡£
         System.out.println(coll.contains(s4));
     }
 }

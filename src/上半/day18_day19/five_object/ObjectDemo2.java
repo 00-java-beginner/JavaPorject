@@ -1,9 +1,9 @@
-package ä¸ŠåŠ.day18_day19.five_object;
+package ÉÏ°ë.day18_day19.five_object;
 
 public class ObjectDemo2 {
     public static void main(String[] args) {
         /*
-            public boolean equals(Object obj) æ¯”è¾ƒä¸¤ä¸ªå¯¹è±¡æ˜¯å¦ç›¸ç­‰
+            public boolean equals(Object obj) ±È½ÏÁ½¸ö¶ÔÏóÊÇ·ñÏàµÈ
         */
         Student s1 = new Student("zhangsan",23);
         Student s2 =new Student("zhangsan",23);
@@ -11,8 +11,8 @@ public class ObjectDemo2 {
         boolean result1 = s1.equals(s2);
         System.out.println(result1);//true
 
-        //ç»“è®º:
-        //1.å¦‚æœæ²¡æœ‰é‡å†™equalsæ–¹æ³•ï¼Œé‚£ä¹ˆé»˜è®¤ä½¿ç”¨Objectä¸­çš„æ–¹æ³•è¿›è¡Œæ¯”è¾ƒï¼Œæ¯”è¾ƒçš„æ˜¯åœ°å€å€¼æ˜¯å¦ç›¸ç­‰
-        //2.ä¸€èˆ¬æ¥è®²åœ°å€å€¼å¯¹äºæˆ‘ä»¬æ„ä¹‰ä¸å¤§ï¼Œæ‰€ä»¥æˆ‘ä»¬ä¼šé‡å†™ï¼Œé‡å†™ä¹‹åæ¯”è¾ƒçš„å°±æ˜¯å¯¹è±¡å†…éƒ¨çš„å±æ€§å€¼äº†ã€‚
+        //½áÂÛ:
+        //1.Èç¹ûÃ»ÓĞÖØĞ´equals·½·¨£¬ÄÇÃ´Ä¬ÈÏÊ¹ÓÃObjectÖĞµÄ·½·¨½øĞĞ±È½Ï£¬±È½ÏµÄÊÇµØÖ·ÖµÊÇ·ñÏàµÈ
+        //2.Ò»°ãÀ´½²µØÖ·Öµ¶ÔÓÚÎÒÃÇÒâÒå²»´ó£¬ËùÒÔÎÒÃÇ»áÖØĞ´£¬ÖØĞ´Ö®ºó±È½ÏµÄ¾ÍÊÇ¶ÔÏóÄÚ²¿µÄÊôĞÔÖµÁË¡£
     }
 }

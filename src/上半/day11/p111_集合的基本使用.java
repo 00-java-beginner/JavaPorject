@@ -1,27 +1,27 @@
-package ä¸ŠåŠ.day11;
+package ÉÏ°ë.day11;
 
 import java.util.ArrayList;
 
-public class p111_é›†åˆçš„åŸºæœ¬ä½¿ç”¨ {
+public class p111_¼¯ºÏµÄ»ù±¾Ê¹ÓÃ {
     public static void main(String[] args) {
-        //1.åˆ›å»ºé›†åˆçš„å¯¹è±¡
+        //1.´´½¨¼¯ºÏµÄ¶ÔÏó
         ArrayList<String> list = new ArrayList<>();
 
-        //2.æ·»åŠ å…ƒç´ 
+        //2.Ìí¼ÓÔªËØ
         list.add("aaa");
         list.add("bbb");
 
-        //3.åˆ é™¤å…ƒç´ 
+        //3.É¾³ıÔªËØ
 //        list.remove("aaa");
 //        list.remove(0);
 
-        //4.ä¿®æ”¹å…ƒç´ 
+        //4.ĞŞ¸ÄÔªËØ
         list.set(0,"ccc");
 
-        //5.æŸ¥è¯¢å…ƒç´ 
+        //5.²éÑ¯ÔªËØ
         String s = list.get(0);
 
-        //6.éå†
+        //6.±éÀú
         for (int i = 0; i < list.size(); i++) {
             String str = list.get(i);
             System.out.println(str);

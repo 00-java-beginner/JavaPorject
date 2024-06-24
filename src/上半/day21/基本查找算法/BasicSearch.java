@@ -1,8 +1,8 @@
-package ä¸ŠåŠ.day21.åŸºæœ¬æŸ¥æ‰¾ç®—æ³•;
+package ÉÏ°ë.day21.»ù±¾²éÕÒËã·¨;
 
 public class BasicSearch {
     public static void main(String[] args) {
-        //éœ€æ±‚ï¼šå®šä¹‰ä¸€ä¸ªæ–¹æ³•åˆ©ç”¨åŸºæœ¬ä»æŸ¥æ‰¾ï¼ŒæŸ¥è¯¢æŸä¸ªå…ƒç´ æ˜¯å¦å­˜åœ¨
+        //ĞèÇó£º¶¨ÒåÒ»¸ö·½·¨ÀûÓÃ»ù±¾´Ó²éÕÒ£¬²éÑ¯Ä³¸öÔªËØÊÇ·ñ´æÔÚ
         int [] arr = {1,2,3,4,5,6,7,8};
         System.out.println(basicSearch(arr, 111));
     }

@@ -1,19 +1,19 @@
-package p96andp110_å­—ç¬¦ä¸²;
+package p96andp110_×Ö·û´®;
 
-public class p99_å­—ç¬¦ä¸²çš„æ¯”è¾ƒ {
+public class p99_×Ö·û´®µÄ±È½Ï {
     public static void main(String[] args) {
-        //1.åˆ›å»ºä¸¤ä¸ªå­—ç¬¦ä¸²å¯¹è±¡
+        //1.´´½¨Á½¸ö×Ö·û´®¶ÔÏó
         String s1 = new String("abc");
         String s2 = "Abc";
 
-        //2.==å·æ¯”è¾ƒ
+        //2.==ºÅ±È½Ï
         System.out.println(s1 == s2);
 
-        //3.æ¯”è¾ƒå¯¹è±¡ä¸­çš„å†…å®¹æ˜¯å¦ç›¸åŒ
+        //3.±È½Ï¶ÔÏóÖĞµÄÄÚÈİÊÇ·ñÏàÍ¬
         boolean result = s1.equals(s2);
         System.out.println(result);
 
-        //4.å¿½ç•¥å¤§å°å†™æ¯”è¾ƒ
+        //4.ºöÂÔ´óĞ¡Ğ´±È½Ï
         boolean result1 = s1.equalsIgnoreCase(s2);
         System.out.println(result1);
     }

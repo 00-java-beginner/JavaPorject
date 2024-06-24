@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day13.p128ç»§æ‰¿çš„æ„é€ æ–¹æ³•å’Œthiså’Œsuperå…³é”®å­—;
+package ÉÏ°ë.day13.p128¼Ì³ĞµÄ¹¹Ôì·½·¨ºÍthisºÍsuper¹Ø¼ü×Ö;
 
 public class Employee {
     private String id;
@@ -15,7 +15,7 @@ public class Employee {
     }
 
     /**
-     * è·å–
+     * »ñÈ¡
      * @return id
      */
     public String getId() {
@@ -23,7 +23,7 @@ public class Employee {
     }
 
     /**
-     * è®¾ç½®
+     * ÉèÖÃ
      * @param id
      */
     public void setId(String id) {
@@ -31,7 +31,7 @@ public class Employee {
     }
 
     /**
-     * è·å–
+     * »ñÈ¡
      * @return name
      */
     public String getName() {
@@ -39,7 +39,7 @@ public class Employee {
     }
 
     /**
-     * è®¾ç½®
+     * ÉèÖÃ
      * @param name
      */
     public void setName(String name) {
@@ -47,7 +47,7 @@ public class Employee {
     }
 
     /**
-     * è·å–
+     * »ñÈ¡
      * @return salary
      */
     public double getSalary() {
@@ -55,7 +55,7 @@ public class Employee {
     }
 
     /**
-     * è®¾ç½®
+     * ÉèÖÃ
      * @param salary
      */
     public void setSalary(double salary) {
@@ -66,9 +66,9 @@ public class Employee {
         return "Employee{id = " + id + ", name = " + name + ", salary = " + salary + "}";
     }
     public void work(){
-        System.out.println("å‘˜å·¥åœ¨å¹²æ´»");
+        System.out.println("Ô±¹¤ÔÚ¸É»î");
     }
     public void eat(){
-        System.out.println("åƒé¥­");
+        System.out.println("³Ô·¹");
     }
 }

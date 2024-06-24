@@ -1,21 +1,21 @@
-package ä¸ŠåŠ.day15.p141_p143å†…éƒ¨ç±»;
+package ÉÏ°ë.day15.p141_p143ÄÚ²¿Àà;
 
 public class p142_Outer{
     //int a = 10;
     //static int b = 20;
-    //é™æ€å†…éƒ¨ç±»
+    //¾²Ì¬ÄÚ²¿Àà
     static class Inner{
         public void show1(){
-            System.out.println("éé™æ€æ–¹æ³•è¢«è°ƒç”¨äº†");
-            //å¦‚æœæƒ³è¦è®¿é—®éé™æ€çš„éœ€è¦åˆ›å»ºå¤–éƒ¨ç±»çš„å¯¹è±¡ã€‚
+            System.out.println("·Ç¾²Ì¬·½·¨±»µ÷ÓÃÁË");
+            //Èç¹ûÏëÒª·ÃÎÊ·Ç¾²Ì¬µÄĞèÒª´´½¨Íâ²¿ÀàµÄ¶ÔÏó¡£
             /*p142_Outer o = new p142_Outer();
             System.out.println(o.a);
             System.out.println(b);*/
 
         }
         public static void show2(){
-            System.out.println("é™æ€æ–¹æ³•è¢«è°ƒç”¨äº†");
-            //å¦‚æœæƒ³è¦è®¿é—®éé™æ€çš„éœ€è¦åˆ›å»ºå¤–éƒ¨ç±»çš„å¯¹è±¡ã€‚
+            System.out.println("¾²Ì¬·½·¨±»µ÷ÓÃÁË");
+            //Èç¹ûÏëÒª·ÃÎÊ·Ç¾²Ì¬µÄĞèÒª´´½¨Íâ²¿ÀàµÄ¶ÔÏó¡£
             /*p142_Outer o = new p142_Outer();
             System.out.println(o.a);
             System.out.println(b);*/

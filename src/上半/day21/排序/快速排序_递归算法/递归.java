@@ -1,18 +1,18 @@
-package ä¸ŠåŠ.day21.æ’åº.å¿«é€Ÿæ’åº_é€’å½’ç®—æ³•;
+package ÉÏ°ë.day21.ÅÅĞò.¿ìËÙÅÅĞò_µİ¹éËã·¨;
 
-public class é€’å½’ {
+public class µİ¹é {
     public static void main(String[] args) {
-        //æ±‚1-100ä¹‹é—´çš„å’Œ
+        //Çó1-100Ö®¼äµÄºÍ
         System.out.println(getSum(100));
         System.out.println(getJc(5));
     }
     public static int getSum(int number){
-        //åªæœ‰å½“ç¬¦åˆæ¡ä»¶çš„æ—¶å€™æ‰ä¼šç»“æŸé€’å½’
-        //åªè¦ä¸è°ƒç”¨è‡ªèº«ï¼Œå°±ä¼šç»“æŸé€’å½’
+        //Ö»ÓĞµ±·ûºÏÌõ¼şµÄÊ±ºò²Å»á½áÊøµİ¹é
+        //Ö»Òª²»µ÷ÓÃ×ÔÉí£¬¾Í»á½áÊøµİ¹é
         if (number == 1){
             return 1;
         }
-        //ç”±äºæ–¹æ³•å†…è°ƒç”¨äº†è‡ªèº«ï¼Œæ‰€ä»¥è§¦å‘äº†é€’å½’
+        //ÓÉÓÚ·½·¨ÄÚµ÷ÓÃÁË×ÔÉí£¬ËùÒÔ´¥·¢ÁËµİ¹é
         return number + getSum(number - 1);
     }
     public static int getJc(int number){

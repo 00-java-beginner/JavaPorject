@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day23.æ³›å‹ç»ƒä¹ ;
+package ÉÏ°ë.day23.·ºĞÍÁ·Ï°;
 
 public class bosiCat extends Cat{
     public bosiCat() {
@@ -10,6 +10,6 @@ public class bosiCat extends Cat{
 
     @Override
     public void eat(){
-        System.out.println("ä¸€åªå«åš" + getName()+ "çš„"+getAge() + "å²çš„æ³¢æ–¯çŒ«ï¼Œæ­£åœ¨åƒå°é¥¼å¹²");
+        System.out.println("Ò»Ö»½Ğ×ö" + getName()+ "µÄ"+getAge() + "ËêµÄ²¨Ë¹Ã¨£¬ÕıÔÚ³ÔĞ¡±ı¸É");
     }
 }

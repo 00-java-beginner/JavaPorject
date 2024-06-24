@@ -1,11 +1,11 @@
-package ä¸ŠåŠ.day13.é¢å‘å¯¹è±¡è¿›é˜¶_02_01;
+package ÉÏ°ë.day13.ÃæÏò¶ÔÏó½ø½×_02_01;
 import java.util.ArrayList;
 public class StudentTest {
     public static void main(String[] args) {
         ArrayList<Student> list = new ArrayList<>();
-        Student stu1 = new Student("å¼ ä¸‰",28,"ç”·");
-        Student stu2 = new Student("æå››",24,"ç”·");
-        Student stu3 = new Student("ç‹äº”",26,"ç”·");
+        Student stu1 = new Student("ÕÅÈı",28,"ÄĞ");
+        Student stu2 = new Student("ÀîËÄ",24,"ÄĞ");
+        Student stu3 = new Student("ÍõÎå",26,"ÄĞ");
         list.add(stu1);
         list.add(stu2);
         list.add(stu3);

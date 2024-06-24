@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day18_day19.nine_regex.two;
+package ÉÏ°ë.day18_day19.nine_regex.two;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,23 +10,23 @@ import java.util.regex.Pattern;
 
 public class RegexDemo7 {
     public static void main(String[] args) throws IOException {
-        /* æ‰©å±•éœ€æ±‚2:
-            æŠŠè¿æ¥:https://m.sengzan.com/jiaoyu/29104.html?ivk sa=1025883i
-            ä¸­æ‰€æœ‰çš„èº«ä»½è¯å·ç éƒ½çˆ¬å–å‡ºæ¥ã€‚
+        /* À©Õ¹ĞèÇó2:
+            °ÑÁ¬½Ó:https://m.sengzan.com/jiaoyu/29104.html?ivk sa=1025883i
+            ÖĞËùÓĞµÄÉí·İÖ¤ºÅÂë¶¼ÅÀÈ¡³öÀ´¡£
         */
 
-        //åˆ›å»ºä¸€ä¸ªURLå¯¹è±¡
+        //´´½¨Ò»¸öURL¶ÔÏó
         URL url = new URL("https://m.sengzan.com/jiaoyu/29104.html?ivk sa=1025883i");
-        //è¿æ¥ä¸Šè¿™ä¸ªç½‘å€
-        //ç»†èŠ‚:ä¿è¯ç½‘ç»œæ˜¯ç•…é€š
-        URLConnection conn = url.openConnection();//åˆ›å»ºä¸€ä¸ªå¯¹è±¡å»è¯»å–ç½‘ç»œä¸­çš„æ•°æ®
+        //Á¬½ÓÉÏÕâ¸öÍøÖ·
+        //Ï¸½Ú:±£Ö¤ÍøÂçÊÇ³©Í¨
+        URLConnection conn = url.openConnection();//´´½¨Ò»¸ö¶ÔÏóÈ¥¶ÁÈ¡ÍøÂçÖĞµÄÊı¾İ
         BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
         String line;
-        //è·å–æ­£åˆ™è¡¨è¾¾å¼çš„å¯¹è±¡pattern
+        //»ñÈ¡ÕıÔò±í´ïÊ½µÄ¶ÔÏópattern
         String regex = "[1-9]\\d{17}";
-        Pattern pattern = Pattern.compile(regex);//åœ¨è¯»å–çš„æ—¶å€™æ¯æ¬¡è¯»ä¸€æ•´è¡Œ
+        Pattern pattern = Pattern.compile(regex);//ÔÚ¶ÁÈ¡µÄÊ±ºòÃ¿´Î¶ÁÒ»ÕûĞĞ
         while ((line = br.readLine()) != null) {
-            //æ‹¿ç€æ–‡æœ¬åŒ¹é…å™¨çš„å¯¹è±¡matcheræŒ‰ç…§patternçš„è§„åˆ™å»è¯»å–å½“å‰çš„è¿™ä¸€è¡Œä¿¡æ¯
+            //ÄÃ×ÅÎÄ±¾Æ¥ÅäÆ÷µÄ¶ÔÏómatcher°´ÕÕpatternµÄ¹æÔòÈ¥¶ÁÈ¡µ±Ç°µÄÕâÒ»ĞĞĞÅÏ¢
             Matcher matcher = pattern.matcher(line);
             while (matcher.find()) {
                 System.out.println(matcher.group());

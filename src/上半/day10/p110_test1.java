@@ -1,24 +1,24 @@
-package ä¸ŠåŠ.day10;
+package ÉÏ°ë.day10;
 import java.util.Random;
 import java.util.Scanner;
 public class p110_test1 {
     public static void main(String[] args) {
-        //é”®ç›˜å½•å…¥ä¸€ä¸ªå­—ç¬¦ä¸²ï¼Œå¹¶æ‰“ä¹±é¡ºåº
-        //1.é”®ç›˜å½•å…¥
+        //¼üÅÌÂ¼ÈëÒ»¸ö×Ö·û´®£¬²¢´òÂÒË³Ğò
+        //1.¼üÅÌÂ¼Èë
         Scanner sc = new Scanner(System.in);
-        System.out.println("è¯·è¾“å…¥ä¸€ä¸ªå­—ç¬¦ä¸²");
+        System.out.println("ÇëÊäÈëÒ»¸ö×Ö·û´®");
         String str = sc.next();
-        //2.å°†å­—ç¬¦ä¸²è½¬æ¢ä¸ºå­—ç¬¦æ•°ç»„
+        //2.½«×Ö·û´®×ª»»Îª×Ö·ûÊı×é
         char[] strArr = str.toCharArray();
-        //3.å°†å­—ç¬¦æ•°ç»„æ‰“ä¹±é¡ºåº
-        //åˆ©ç”¨ç´¢å¼•è·Ÿéšæœºç´¢å¼•äº¤æ¢ä½ç½®
+        //3.½«×Ö·ûÊı×é´òÂÒË³Ğò
+        //ÀûÓÃË÷Òı¸úËæ»úË÷Òı½»»»Î»ÖÃ
         Random r = new Random();
         for (int i = 0; i < strArr.length; i++) {
-            //è·å–éšæœºç´¢å¼•
+            //»ñÈ¡Ëæ»úË÷Òı
             int number = r.nextInt(strArr.length);
-            //å®šä¹‰ä¸€ä¸ªä¸´æ—¶å˜é‡è®°å½•æœªæ‰“ä¹±å‰çš„å€¼
+            //¶¨ÒåÒ»¸öÁÙÊ±±äÁ¿¼ÇÂ¼Î´´òÂÒÇ°µÄÖµ
             char temp = strArr[i];
-            //æ‰“ä¹±é¡ºåº
+            //´òÂÒË³Ğò
             strArr[i] = strArr[number];
             strArr[number] = temp;
         }

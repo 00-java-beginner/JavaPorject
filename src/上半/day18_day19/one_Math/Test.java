@@ -1,41 +1,41 @@
-package ä¸ŠåŠ.day18_day19.one_Math;
+package ÉÏ°ë.day18_day19.one_Math;
 
 public class Test {
   public static void main(String[] args) {
-    //1.abs:è·å–å‚æ•°ç»å¯¹å€¼
+    //1.abs:»ñÈ¡²ÎÊı¾ø¶ÔÖµ
     System.out.println(Math.abs(-88));
-    //1.1ç”±äºabsä¼ é€’-2147483648ä¼šæœ‰bugï¼Œæ‰€ä»¥å¯ä»¥ç”¨absExactæŠ›å‡ºå¼‚å¸¸
+    //1.1ÓÉÓÚabs´«µİ-2147483648»áÓĞbug£¬ËùÒÔ¿ÉÒÔÓÃabsExactÅ×³öÒì³£
     //System.out.println(Math.absExact(-2147483648));
 
-    //2.ceil:è¿›ä¸€æ³•ï¼Œå¾€ç«–è½´çš„æ­£æ–¹å‘è¿›ä¸€
+    //2.ceil:½øÒ»·¨£¬ÍùÊúÖáµÄÕı·½Ïò½øÒ»
     System.out.println(Math.ceil(12.5));
     System.out.println(Math.ceil(-12.5));
 
-    //3.floor:å»å°¾æ³•
+    //3.floor:È¥Î²·¨
     System.out.println(Math.floor(12.5));
     System.out.println(Math.floor(-12.5));
 
-    //4.round:å››èˆäº”å…¥
+    //4.round:ËÄÉáÎåÈë
     System.out.println(Math.round(12.4));
     System.out.println(Math.round(-12.6));
 
-    //5.max:è·å–ä¸¤ä¸ªæ•´æ•°è¾ƒå¤§å€¼
+    //5.max:»ñÈ¡Á½¸öÕûÊı½Ï´óÖµ
     System.out.println(Math.max(1,2));
 
-    //6.min:è·å–ä¸¤ä¸ªæ•´æ•°è¾ƒå¤§å€¼
+    //6.min:»ñÈ¡Á½¸öÕûÊı½Ï´óÖµ
     System.out.println(Math.min(1,2));
 
-    //7.pow:è·å–açš„bæ¬¡å¹‚
+    //7.pow:»ñÈ¡aµÄb´ÎÃİ
     System.out.println(Math.pow(8, 2));
 
-    //8.sqrt:å¼€å¹³æ–¹
+    //8.sqrt:¿ªÆ½·½
     System.out.println(Math.sqrt(4));
 
-    //9.cbrt:å¼€ç«‹æ–¹
+    //9.cbrt:¿ªÁ¢·½
     System.out.println(Math.cbrt(8));
 
-    //10.random:éšæœºæ•°ï¼ˆèŒƒå›´0-1ï¼‰
-    //è·å–åä¸ª1-100ä¹‹é—´çš„éšæœºæ•°
+    //10.random:Ëæ»úÊı£¨·¶Î§0-1£©
+    //»ñÈ¡Ê®¸ö1-100Ö®¼äµÄËæ»úÊı
     for (int i = 0; i < 10; i++) {
       System.out.println(Math.floor(Math.random()*100)+1);
     }

@@ -1,39 +1,39 @@
-package ä¸ŠåŠ.day18_day19.seven_biginteger;
+package ÉÏ°ë.day18_day19.seven_biginteger;
 
 import java.math.BigInteger;
 
 public class BigIntegerDemo2 {
     public static void main(String[] args) {
         /*
-            public BigInteger add(BigInteger val) åŠ æ³•
-            public BigInteger subtract(BigInteger val) å‡æ³•
-            public BigInteger multiply(BigInteger val) ä¹˜æ³•
-            public BigInteger divide(BigInteger val) é™¤æ³•ï¼Œè·å–å•†
-            public BigInteger[] divideAndRemainder(BigInteger val) é™¤æ³•ï¼Œè·å–å•†å’Œä½™æ•°
-            public boolean equals(Object x) æ¯”è¾ƒæ˜¯å¦ç›¸åŒ
-            public BigInteger pow(int exponent) æ¬¡å¹‚
-            public BigInteger max/min(BigInteger val) è¿”å›è¾ƒå¤§å€¼/è¾ƒå°å€¼
-            public int intValue(BigInteger val) è½¬ä¸ºintç±»å‹æ•´æ•°ï¼Œè¶…å‡ºèŒƒå›´æ•°æ®æœ‰è¯¯
+            public BigInteger add(BigInteger val) ¼Ó·¨
+            public BigInteger subtract(BigInteger val) ¼õ·¨
+            public BigInteger multiply(BigInteger val) ³Ë·¨
+            public BigInteger divide(BigInteger val) ³ı·¨£¬»ñÈ¡ÉÌ
+            public BigInteger[] divideAndRemainder(BigInteger val) ³ı·¨£¬»ñÈ¡ÉÌºÍÓàÊı
+            public boolean equals(Object x) ±È½ÏÊÇ·ñÏàÍ¬
+            public BigInteger pow(int exponent) ´ÎÃİ
+            public BigInteger max/min(BigInteger val) ·µ»Ø½Ï´óÖµ/½ÏĞ¡Öµ
+            public int intValue(BigInteger val) ×ªÎªintÀàĞÍÕûÊı£¬³¬³ö·¶Î§Êı¾İÓĞÎó
         */
 
-        //1.åˆ›å»ºä¸¤ä¸ªBigIntegerå¯¹è±¡
+        //1.´´½¨Á½¸öBigInteger¶ÔÏó
         BigInteger bd1 = BigInteger.valueOf(10);
         BigInteger bd2 = BigInteger.valueOf(5);
 
-        //2.åŠ æ³•
+        //2.¼Ó·¨
         BigInteger bd3 = bd1.add(bd2);
         System.out.println(bd3);
 
-        //3.é™¤æ³•ï¼Œè·å–å•†å’Œä½™æ•°
+        //3.³ı·¨£¬»ñÈ¡ÉÌºÍÓàÊı
         BigInteger[] arr = bd1.divideAndRemainder(bd2);
         System.out.println(arr[0]);
         System.out.println(arr[1]);
 
-        //4.æ¯”è¾ƒæ˜¯å¦ç›¸åŒ
+        //4.±È½ÏÊÇ·ñÏàÍ¬
         boolean result = bd1.equals(bd2);
         System.out.println(result);
 
-        //5.æ¬¡å¹‚
+        //5.´ÎÃİ
         BigInteger bd4 = bd1.pow(2);
         System.out.println(bd4);
 
@@ -41,7 +41,7 @@ public class BigIntegerDemo2 {
         BigInteger bd5 = bd1.max(bd2);
 
 
-        //7.è½¬ä¸ºintç±»å‹æ•´æ•°ï¼Œè¶…å‡ºèŒƒå›´æ•°æ®æœ‰è¯¯
+        //7.×ªÎªintÀàĞÍÕûÊı£¬³¬³ö·¶Î§Êı¾İÓĞÎó
         /* BigInteger bd6 = BigInteger.valueOf(2147483647L);
          int i = bd6.intValue();
          System.out.println(i);

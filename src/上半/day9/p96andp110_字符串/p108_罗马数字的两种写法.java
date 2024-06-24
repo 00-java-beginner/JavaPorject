@@ -1,19 +1,19 @@
-package p96andp110_å­—ç¬¦ä¸²;
+package p96andp110_×Ö·û´®;
 import java.util.Scanner;
 import java.util.StringJoiner;
-public class p108_ç½—é©¬æ•°å­—çš„ä¸¤ç§å†™æ³• {
+public class p108_ÂŞÂíÊı×ÖµÄÁ½ÖÖĞ´·¨ {
     public static void main(String[] args) {
-        //1.é”®ç›˜å½•å…¥ä¸€ä¸ªå­—ç¬¦ä¸²ï¼Œé•¿åº¦å°äº9ï¼Œåªèƒ½æ˜¯æ•°å­—
+        //1.¼üÅÌÂ¼ÈëÒ»¸ö×Ö·û´®£¬³¤¶ÈĞ¡ÓÚ9£¬Ö»ÄÜÊÇÊı×Ö
         Scanner sc = new Scanner(System.in);
         String str;
         while (true){
-            System.out.println("è¯·è¾“å…¥ä¸€ä¸ªæ•°å­—");
+            System.out.println("ÇëÊäÈëÒ»¸öÊı×Ö");
             str = sc.next();
             boolean flag = checkStr(str);
             if (flag){
                 break;
             }else {
-                System.out.println("å½“å‰è¾“å…¥çš„å­—ç¬¦ä¸²éæ³•ï¼Œè¯·é‡æ–°è¾“å…¥");
+                System.out.println("µ±Ç°ÊäÈëµÄ×Ö·û´®·Ç·¨£¬ÇëÖØĞÂÊäÈë");
             }
         }
         StringJoiner sb = new StringJoiner("");
@@ -29,40 +29,40 @@ public class p108_ç½—é©¬æ•°å­—çš„ä¸¤ç§å†™æ³• {
         }
         System.out.println(sb);
     }
-    //å®šä¹‰ä¸€ä¸ªæ–¹æ³•å¯¹å½•å…¥çš„å­—ç¬¦ä¸²è¿›è¡Œæ ¡éªŒ
+    //¶¨ÒåÒ»¸ö·½·¨¶ÔÂ¼ÈëµÄ×Ö·û´®½øĞĞĞ£Ñé
     public static boolean checkStr(String str){
         if (str.length() > 9){
             return false;
         }
         for (int i = 0; i < str.length(); i++) {
-            //è¡¨ç¤ºæŠŠå¾ªç¯é‡Œé¢çš„æ¯ä¸€ä¸ªå…ƒç´ å–å‡ºæ¥
+            //±íÊ¾°ÑÑ­»·ÀïÃæµÄÃ¿Ò»¸öÔªËØÈ¡³öÀ´
             char c = str.charAt(i);
             if (c < '0' || c > '9'){
                 return false;
             }
         }
-        //æ³¨æ„ï¼šåªæœ‰å½“å¾ªç¯ç»“æŸåæ‰èƒ½è¿”å›true
+        //×¢Òâ£ºÖ»ÓĞµ±Ñ­»·½áÊøºó²ÅÄÜ·µ»Øtrue
         return true;
     }
-    //å®šä¹‰ä¸€ä¸ªæ–¹æ³•è®©ç´¢å¼•è·Ÿç½—é©¬æ•°å­—äº§ç”Ÿå…³ç³»
+    //¶¨ÒåÒ»¸ö·½·¨ÈÃË÷Òı¸úÂŞÂíÊı×Ö²úÉú¹ØÏµ
     public static String changLuoMa(int number){
-        //ç”±äºç½—é©¬æ•°å­—æ²¡æœ‰0ï¼Œæ‰€ä»¥éœ€è¦å°†ç´¢å¼•ä¸æ•°å­—å…³è”èµ·æ¥å°±éœ€è¦å°†0ç´¢å¼•å˜æˆä¸€ä¸ªç©ºçš„å­—ç¬¦ä¸²
-        String [] arr = {"","â… ","â…¡","â…¢","â…£","â…¤","â…¥","â…¦","â…§","â…¨"};
+        //ÓÉÓÚÂŞÂíÊı×ÖÃ»ÓĞ0£¬ËùÒÔĞèÒª½«Ë÷ÒıÓëÊı×Ö¹ØÁªÆğÀ´¾ÍĞèÒª½«0Ë÷Òı±ä³ÉÒ»¸ö¿ÕµÄ×Ö·û´®
+        String [] arr = {"","¢ñ","¢ò","¢ó","¢ô","¢õ","¢ö","¢÷","¢ø","¢ù"};
         return arr[number];
     }
-    //åˆ©ç”¨switchè¿›è¡ŒåŒ¹é…
+    //ÀûÓÃswitch½øĞĞÆ¥Åä
     public static String changLuoMa1(char number){
         String str = switch (number){
           case '0' -> "";
-          case '1' -> "â… ";
-          case '2' -> "â…¡";
-          case '3' -> "â…¢";
-          case '4' -> "â…£";
-          case '5' -> "â…¤";
-          case '6' -> "â…¥";
-          case '7' -> "â…¦";
-          case '8' -> "â…§";
-          case '9' -> "â…¨";
+          case '1' -> "¢ñ";
+          case '2' -> "¢ò";
+          case '3' -> "¢ó";
+          case '4' -> "¢ô";
+          case '5' -> "¢õ";
+          case '6' -> "¢ö";
+          case '7' -> "¢÷";
+          case '8' -> "¢ø";
+          case '9' -> "¢ù";
             default -> str = "";
         };
         return str;

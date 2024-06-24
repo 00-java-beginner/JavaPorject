@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day20.jdk8;
+package ÉÏ°ë.day20.jdk8;
 
 import java.time.Instant;
 import java.time.ZoneId;
@@ -7,37 +7,37 @@ import java.time.ZonedDateTime;
 public class A03_ZoneDateTimeDemo {
     public static void main(String[] args) {
         /*
-            static ZonedDateTime now() è·å–å½“å‰æ—¶é—´çš„ZonedDateTimeå¯¹è±¡
-            static ZonedDateTime ofXxxx(ã€‚ã€‚ã€‚) è·å–æŒ‡å®šæ—¶é—´çš„ZonedDateTimeå¯¹è±¡
-            ZonedDateTime withXxx(æ—¶é—´) ä¿®æ”¹æ—¶é—´ç³»åˆ—çš„æ–¹æ³•
-            ZonedDateTime minusXxx(æ—¶é—´) å‡å°‘æ—¶é—´ç³»åˆ—çš„æ–¹æ³•
-            ZonedDateTime plusXxx(æ—¶é—´) å¢åŠ æ—¶é—´ç³»åˆ—çš„æ–¹æ³•
+            static ZonedDateTime now() »ñÈ¡µ±Ç°Ê±¼äµÄZonedDateTime¶ÔÏó
+            static ZonedDateTime ofXxxx(¡£¡£¡£) »ñÈ¡Ö¸¶¨Ê±¼äµÄZonedDateTime¶ÔÏó
+            ZonedDateTime withXxx(Ê±¼ä) ĞŞ¸ÄÊ±¼äÏµÁĞµÄ·½·¨
+            ZonedDateTime minusXxx(Ê±¼ä) ¼õÉÙÊ±¼äÏµÁĞµÄ·½·¨
+            ZonedDateTime plusXxx(Ê±¼ä) Ôö¼ÓÊ±¼äÏµÁĞµÄ·½·¨
          */
-        //1.è·å–å½“å‰æ—¶é—´å¯¹è±¡(å¸¦æ—¶åŒº)
+        //1.»ñÈ¡µ±Ç°Ê±¼ä¶ÔÏó(´øÊ±Çø)
         ZonedDateTime now = ZonedDateTime.now();
         System.out.println(now);
 
-        //2.è·å–æŒ‡å®šçš„æ—¶é—´å¯¹è±¡(å¸¦æ—¶åŒº)1/å¹´æœˆæ—¥æ—¶åˆ†ç§’çº³ç§’æ–¹å¼æŒ‡å®š
+        //2.»ñÈ¡Ö¸¶¨µÄÊ±¼ä¶ÔÏó(´øÊ±Çø)1/ÄêÔÂÈÕÊ±·ÖÃëÄÉÃë·½Ê½Ö¸¶¨
         ZonedDateTime time1 = ZonedDateTime.of(2023, 10, 1,
                 11, 12, 12, 0, ZoneId.of("Asia/Shanghai"));
         System.out.println(time1);
 
-        //é€šè¿‡Instant + æ—¶åŒºçš„æ–¹å¼æŒ‡å®šè·å–æ—¶é—´å¯¹è±¡
+        //Í¨¹ıInstant + Ê±ÇøµÄ·½Ê½Ö¸¶¨»ñÈ¡Ê±¼ä¶ÔÏó
         Instant instant = Instant.ofEpochMilli(0L);
         ZoneId zoneId = ZoneId.of("Asia/Shanghai");
         ZonedDateTime time2 = ZonedDateTime.ofInstant(instant, zoneId);
         System.out.println(time2);
 
 
-        //3.withXxx ä¿®æ”¹æ—¶é—´ç³»åˆ—çš„æ–¹æ³•
+        //3.withXxx ĞŞ¸ÄÊ±¼äÏµÁĞµÄ·½·¨
         ZonedDateTime time3 = time2.withYear(2000);
         System.out.println(time3);
 
-        //4. å‡å°‘æ—¶é—´
+        //4. ¼õÉÙÊ±¼ä
         ZonedDateTime time4 = time3.minusYears(1);
         System.out.println(time4);
 
-        //5.å¢åŠ æ—¶é—´
+        //5.Ôö¼ÓÊ±¼ä
         ZonedDateTime time5 = time4.plusYears(1);
         System.out.println(time5);
 

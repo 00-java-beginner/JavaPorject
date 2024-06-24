@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day13.p132_å¤šæ€ç»¼åˆç»ƒä¹ ;
+package ÉÏ°ë.day13.p132_¶àÌ¬×ÛºÏÁ·Ï°;
 
 public class Animal {
     private int age;
@@ -22,6 +22,6 @@ public class Animal {
         this.color = color;
     }
     public void eat(String something){
-        System.out.println("åŠ¨ç‰©åœ¨åƒ" + something);
+        System.out.println("¶¯ÎïÔÚ³Ô" + something);
     }
 }

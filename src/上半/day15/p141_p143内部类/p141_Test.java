@@ -1,8 +1,8 @@
-package ä¸ŠåŠ.day15.p141_p143å†…éƒ¨ç±»;
+package ÉÏ°ë.day15.p141_p143ÄÚ²¿Àà;
 
 public class p141_Test {
     public static void main(String[] args) {
-        //åˆ›å»ºå†…éƒ¨ç±»å¯¹è±¡ï¼Œè°ƒç”¨showæ–¹æ³•
+        //´´½¨ÄÚ²¿Àà¶ÔÏó£¬µ÷ÓÃshow·½·¨
         p141_Test_Outer.Inner oi = new p141_Test_Outer().new Inner();
 
         oi.show();

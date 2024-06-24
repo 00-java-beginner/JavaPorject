@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day16_day17;
+package ÉÏ°ë.day16_day17;
 
 import javax.swing.*;
 import javax.swing.border.BevelBorder;
@@ -9,66 +9,66 @@ import java.awt.event.KeyListener;
 import java.util.Random;
 
 public class GameJFrame extends JFrame implements KeyListener, ActionListener {
-    /*  JFrame  ç•Œé¢,çª—ä½“
-        å­ç±»å‘¢?ä¹Ÿè¡¨ç¤ºç•Œé¢,çª—ä½“
-        è§„å®š:GameJFrameè¿™ä¸ªç•Œé¢è¡¨ç¤ºçš„å°±æ˜¯æ¸¸æˆçš„ä¸»ç•Œé¢
-        ä»¥åè·Ÿæ¸¸æˆç›¸å…³çš„æ‰€æœ‰é€»è¾‘éƒ½å†™åœ¨è¿™ä¸ªç±»ä¸­
+    /*  JFrame  ½çÃæ,´°Ìå
+        ×ÓÀàÄØ?Ò²±íÊ¾½çÃæ,´°Ìå
+        ¹æ¶¨:GameJFrameÕâ¸ö½çÃæ±íÊ¾µÄ¾ÍÊÇÓÎÏ·µÄÖ÷½çÃæ
+        ÒÔºó¸úÓÎÏ·Ïà¹ØµÄËùÓĞÂß¼­¶¼Ğ´ÔÚÕâ¸öÀàÖĞ
 */
     Random r = new Random();
-    //åˆ›å»ºä¸€ä¸ªäºŒç»´æ•°ç»„
-    //ç›®çš„ï¼šç”¨æ¥ç®¡ç†æ•°æ®ï¼ŒåŠ è½½å›¾ç‰‡çš„æ—¶å€™ä¼šæ ¹æ®äºŒç»´æ•°ç»„ä¸­çš„æ•°æ®åŠ è½½
+    //´´½¨Ò»¸ö¶şÎ¬Êı×é
+    //Ä¿µÄ£ºÓÃÀ´¹ÜÀíÊı¾İ£¬¼ÓÔØÍ¼Æ¬µÄÊ±ºò»á¸ù¾İ¶şÎ¬Êı×éÖĞµÄÊı¾İ¼ÓÔØ
     int [][] data = new int[4][4];
-    //å®šä¹‰ä¸¤ä¸ªå˜é‡è®°å½•0ç´¢å¼•åœ¨äºŒç»´æ•°ç»„ä¸­çš„åæ ‡
+    //¶¨ÒåÁ½¸ö±äÁ¿¼ÇÂ¼0Ë÷ÒıÔÚ¶şÎ¬Êı×éÖĞµÄ×ø±ê
     int x = 0;
     int y = 0;
-    //å®šä¹‰ä¸€ä¸ªå˜é‡è®°å½•è·¯å¾„ï¼ˆWindowsï¼‰
-    String path = "E:\\java\\Programming-novice\\JavaProject\\src\\ä¸ŠåŠ.image\\animal\\animal3\\";
-    //macè·¯å¾„
-    //String path = "/Users/bytedance/IdeaProjects/Programming-novice/JavaProject/src/ä¸ŠåŠ.image/animal/animal3/";
+    //¶¨ÒåÒ»¸ö±äÁ¿¼ÇÂ¼Â·¾¶£¨Windows£©
+    String path = "E:\\java\\Programming-novice\\JavaProject\\src\\ÉÏ°ë.image\\animal\\animal3\\";
+    //macÂ·¾¶
+    //String path = "/Users/bytedance/IdeaProjects/Programming-novice/JavaProject/src/ÉÏ°ë.image/animal/animal3/";
 
-    //å®šä¹‰ä¸€ä¸ªäºŒç»´æ•°ç»„è®°å½•æ­£ç¡®çš„å€¼
+    //¶¨ÒåÒ»¸ö¶şÎ¬Êı×é¼ÇÂ¼ÕıÈ·µÄÖµ
     int[][] win = {
             {1,2,3,4},
             {5,6,7,8},
             {9,10,11,12},
             {13,14,15,0}
     };
-    //å®šä¹‰ä¸€ä¸ªå˜é‡è®°å½•æ­¥æ•°
+    //¶¨ÒåÒ»¸ö±äÁ¿¼ÇÂ¼²½Êı
     int step = 0;
 
-    //åˆ›å»ºé€‰é¡¹ä¸‹é¢çš„æ¡ç›®å¯¹è±¡
-    JMenuItem replayItem = new JMenuItem("é‡æ–°æ¸¸æˆ");
-    JMenuItem reLoginItem = new JMenuItem("é‡æ–°ç™»å½•");
-    JMenuItem closeItem = new JMenuItem("å…³é—­æ¸¸æˆ");
-    JMenuItem accountItem = new JMenuItem("æ”¶æ¬¾ç ");
-    JMenuItem girl = new JMenuItem("ç¾å¥³");
-    JMenuItem animal = new JMenuItem("åŠ¨ç‰©");
-    JMenuItem sport = new JMenuItem("è¿åŠ¨");
+    //´´½¨Ñ¡ÏîÏÂÃæµÄÌõÄ¿¶ÔÏó
+    JMenuItem replayItem = new JMenuItem("ÖØĞÂÓÎÏ·");
+    JMenuItem reLoginItem = new JMenuItem("ÖØĞÂµÇÂ¼");
+    JMenuItem closeItem = new JMenuItem("¹Ø±ÕÓÎÏ·");
+    JMenuItem accountItem = new JMenuItem("ÊÕ¿îÂë");
+    JMenuItem girl = new JMenuItem("ÃÀÅ®");
+    JMenuItem animal = new JMenuItem("¶¯Îï");
+    JMenuItem sport = new JMenuItem("ÔË¶¯");
     public GameJFrame(){
-        //1.åˆå§‹åŒ–ç•Œé¢
+        //1.³õÊ¼»¯½çÃæ
         initJFrame();
 
-        //2.åˆå§‹åŒ–èœå•
+        //2.³õÊ¼»¯²Ëµ¥
         initJMnuBar();
 
-        //åˆå§‹åŒ–æ•°æ®(æ‰“ä¹±å›¾ç‰‡)
+        //³õÊ¼»¯Êı¾İ(´òÂÒÍ¼Æ¬)
         initDate();
 
-        //3.åˆå§‹åŒ–å›¾ç‰‡
+        //3.³õÊ¼»¯Í¼Æ¬
         initImage();
 
-        //è®©ç•Œé¢æ˜¾ç¤ºå‡ºæ¥ï¼Œå»ºè®®å†™åœ¨æœ€å
+        //ÈÃ½çÃæÏÔÊ¾³öÀ´£¬½¨ÒéĞ´ÔÚ×îºó
         this.setVisible(true);
 
     }
 
     private void initDate() {
-        //1.å®šä¹‰ä¸€ä¸ªä¸€ç»´æ•°ç»„ï¼Œå¹¶æ‰“ä¹±é¡ºåº
+        //1.¶¨ÒåÒ»¸öÒ»Î¬Êı×é£¬²¢´òÂÒË³Ğò
         int [] tempArr = {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15};
-        //2.å¾ªç¯éå†å¾—åˆ°æ¯ä¸€ä¸ªå…ƒç´ 
+        //2.Ñ­»·±éÀúµÃµ½Ã¿Ò»¸öÔªËØ
         Random r = new Random();
         for (int i = 0; i < tempArr.length; i++) {
-            //å®šä¹‰ä¸€ä¸ªä¸´æ—¶å˜é‡è®°å½•æœ€åˆçš„å€¼
+            //¶¨ÒåÒ»¸öÁÙÊ±±äÁ¿¼ÇÂ¼×î³õµÄÖµ
             int temp = tempArr[i];
             int index = r.nextInt(tempArr.length);
             tempArr[i] = tempArr[index];
@@ -79,8 +79,8 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
         }
         System.out.println();*/
 
-        //4.ç»™äºŒç»´æ•°ç»„æ·»åŠ æ•°æ®
-        //è§£æ³•ä¸€
+        //4.¸ø¶şÎ¬Êı×éÌí¼ÓÊı¾İ
+        //½â·¨Ò»
         for (int i = 0; i < tempArr.length; i++) {
             if (tempArr[i] == 0){
                 x = i / 4;
@@ -89,27 +89,27 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
             data[i / 4][i % 4] = tempArr[i];
         }
 
-        /*è§£æ³•äºŒ
-        //éå†äºŒç»´æ•°ç»„ï¼Œç»™é‡Œé¢çš„æ¯ä¸€ä¸ªæ•°æ®èµ‹å€¼(åˆ©ç”¨è‡ªå¢æ€æƒ³)
-        //å¤–å¾ªç¯ï¼šäºŒç»´æ•°ç»„
+        /*½â·¨¶ş
+        //±éÀú¶şÎ¬Êı×é£¬¸øÀïÃæµÄÃ¿Ò»¸öÊı¾İ¸³Öµ(ÀûÓÃ×ÔÔöË¼Ïë)
+        //ÍâÑ­»·£º¶şÎ¬Êı×é
         int index = 0;
         for (int i = 0; i < data.length; i++) {
-            //å†…å¾ªç¯dataã€iã€‘è¡¨ç¤ºä¸€ç»´æ•°ç»„
+            //ÄÚÑ­»·data¡¾i¡¿±íÊ¾Ò»Î¬Êı×é
             for (int j = 0; j < data[i].length; j++) {
                 if (tempArr[i] == 0){
                     x = i / 4;
                     y = i % 4;
                 }else {
-                    //ç­‰å·å·¦è¾¹ã€iã€‘ã€jã€‘ä¾æ¬¡è¡¨ç¤ºäºŒç»´æ•°ç»„ä¸­çš„æ¯ä¸€ä¸ªä½ç½®
-                    //ç­‰å·å³è¾¹è¡¨ç¤ºå–å€¼ä»å“ªæ¥ï¼šä»ä¸€ç»´æ•°ç»„ä¸­æ¥ï¼ˆåˆ©ç”¨ç´¢å¼•å–å€¼ï¼‰
+                    //µÈºÅ×ó±ß¡¾i¡¿¡¾j¡¿ÒÀ´Î±íÊ¾¶şÎ¬Êı×éÖĞµÄÃ¿Ò»¸öÎ»ÖÃ
+                    //µÈºÅÓÒ±ß±íÊ¾È¡Öµ´ÓÄÄÀ´£º´ÓÒ»Î¬Êı×éÖĞÀ´£¨ÀûÓÃË÷ÒıÈ¡Öµ£©
                     data[i][j] = tempArr[index];
-                    //æ¯æ¬¡èµ‹å€¼åindexè‡ªå¢ä¸€æ¬¡
+                    //Ã¿´Î¸³Öµºóindex×ÔÔöÒ»´Î
                     index++;
                 }
 
             }
         }*/
-        //5.æ‰“å°äºŒç»´æ•°ç»„
+        //5.´òÓ¡¶şÎ¬Êı×é
         /*for (int i = 0; i < data.length; i++) {
             for (int j = 0; j < data[i].length; j++) {
                 System.out.print(data[i][j] + " ");
@@ -119,78 +119,78 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
     }
 
     private void initImage() {
-        //æ¸…ç©ºå›¾ç‰‡
+        //Çå¿ÕÍ¼Æ¬
         this.getContentPane().removeAll();
-        //å¯¹ç»“æœè¿›è¡Œåˆ¤æ–­ï¼Œå¦‚æœç»“æœä¸ºtrueè¡¨ç¤ºä¸¤ä¸ªæ•°ç»„é‡Œé¢çš„å€¼ç›¸åŒï¼Œå°±æ·»åŠ èƒœåˆ©çš„å›¾ç‰‡
+        //¶Ô½á¹û½øĞĞÅĞ¶Ï£¬Èç¹û½á¹ûÎªtrue±íÊ¾Á½¸öÊı×éÀïÃæµÄÖµÏàÍ¬£¬¾ÍÌí¼ÓÊ¤ÀûµÄÍ¼Æ¬
         if (victory()){
             //windows
-            JLabel winJLabel = new JLabel(new ImageIcon("E:\\java\\Programming-novice\\JavaProject\\src\\ä¸ŠåŠ.image\\win.png"));
+            JLabel winJLabel = new JLabel(new ImageIcon("E:\\java\\Programming-novice\\JavaProject\\src\\ÉÏ°ë.image\\win.png"));
             //mac
-            //JLabel winJLabel = new JLabel(new ImageIcon("/Users/bytedance/IdeaProjects/Programming-novice/JavaProject/src/ä¸ŠåŠ.image/win.png"));
+            //JLabel winJLabel = new JLabel(new ImageIcon("/Users/bytedance/IdeaProjects/Programming-novice/JavaProject/src/ÉÏ°ë.image/win.png"));
             winJLabel.setBounds(203,283,197,73);
             this.getContentPane().add(winJLabel);
         }
-        //å°†æ­¥æ•°æ·»åŠ åˆ°ç•Œé¢ä¸­
-        JLabel setpCount = new JLabel("æ­¥æ•°ï¼š" + step);
+        //½«²½ÊıÌí¼Óµ½½çÃæÖĞ
+        JLabel setpCount = new JLabel("²½Êı£º" + step);
         setpCount.setBounds(50,30,100,20);
         this.getContentPane().add(setpCount);
-        //3.åˆå§‹åŒ–å›¾ç‰‡
-        //3.1åˆ›å»ºä¸€ä¸ªå›¾ç‰‡ImageIconçš„å¯¹è±¡
-        //ImageIcon icon = new ImageIcon("C:\\Users\\Administrator\\IdeaProjects\\JavaTest\\ä¸ŠåŠ.image\\animal\\animal3\\3.jpg");
-        //å®šä¹‰ä¸€ä¸ªå˜é‡ï¼Œè®°å½•æ¯æ¬¡å¾ªç¯åçš„å€¼ï¼Œè¡¨ç¤ºä¾æ¬¡å°†ä¸åŒçš„å›¾ç‰‡æ·»åŠ åˆ°å®¹å™¨ä¸­
+        //3.³õÊ¼»¯Í¼Æ¬
+        //3.1´´½¨Ò»¸öÍ¼Æ¬ImageIconµÄ¶ÔÏó
+        //ImageIcon icon = new ImageIcon("C:\\Users\\Administrator\\IdeaProjects\\JavaTest\\ÉÏ°ë.image\\animal\\animal3\\3.jpg");
+        //¶¨ÒåÒ»¸ö±äÁ¿£¬¼ÇÂ¼Ã¿´ÎÑ­»·ºóµÄÖµ£¬±íÊ¾ÒÀ´Î½«²»Í¬µÄÍ¼Æ¬Ìí¼Óµ½ÈİÆ÷ÖĞ
         //int number = 1;
-        //å¤–å¾ªç¯ --- è¡¨ç¤ºå°†å†…å¾ªç¯æ‰§è¡Œäº†å››æ¬¡ï¼Œå…ˆæ¨ªå‘æ·»åŠ å›¾ç‰‡
+        //ÍâÑ­»· --- ±íÊ¾½«ÄÚÑ­»·Ö´ĞĞÁËËÄ´Î£¬ÏÈºáÏòÌí¼ÓÍ¼Æ¬
         for (int i = 0; i < 4; i++) {
-            //å†…å¾ªç¯ --- è¡¨ç¤ºåœ¨ä¸€è¡Œæ·»åŠ äº†å››å¼ å›¾ç‰‡
+            //ÄÚÑ­»· --- ±íÊ¾ÔÚÒ»ĞĞÌí¼ÓÁËËÄÕÅÍ¼Æ¬
             for (int j = 0; j < 4; j++) {
-                //è·å–äºŒç»´æ•°ç»„çš„æ•°æ®å¹¶èµ‹å€¼
+                //»ñÈ¡¶şÎ¬Êı×éµÄÊı¾İ²¢¸³Öµ
                 int num = data[i][j];
-                //3.2åˆ›å»ºä¸€ä¸ªJLabelçš„å¯¹è±¡ï¼ˆç®¡ç†å®¹å™¨ï¼‰
+                //3.2´´½¨Ò»¸öJLabelµÄ¶ÔÏó£¨¹ÜÀíÈİÆ÷£©
                 JLabel jLabel = new JLabel(new ImageIcon(path +num+".jpg"));
-                //3.3è®¾ç½®å›¾ç‰‡çš„åæ ‡
+                //3.3ÉèÖÃÍ¼Æ¬µÄ×ø±ê
                 jLabel.setBounds(105 * j + 83,105 * i + 134,105,105);
 
-                //ç»™å›¾ç‰‡æ·»åŠ è¾¹æ¡†
-                //0:å‡¸å‡º   1:å‡¹é™·
+                //¸øÍ¼Æ¬Ìí¼Ó±ß¿ò
+                //0:Í¹³ö   1:°¼Ïİ
                 jLabel.setBorder(new BevelBorder(0));
 
-                //3.æŠŠç®¡ç†å®¹å™¨æ·»åŠ åˆ°ç•Œé¢ä¸­
-                //æ³¨æ„ï¼šå…ˆè¦è·å–åˆ°éšè—å®¹å™¨æ‰èƒ½è¿›è¡Œæ·»åŠ 
+                //3.°Ñ¹ÜÀíÈİÆ÷Ìí¼Óµ½½çÃæÖĞ
+                //×¢Òâ£ºÏÈÒª»ñÈ¡µ½Òş²ØÈİÆ÷²ÅÄÜ½øĞĞÌí¼Ó
                 //this.add(jLabel);
                 this.getContentPane().add(jLabel);
 
-                //æ³¨æ„ï¼šæ¯æ¬¡æ·»åŠ å®Œæˆåéœ€è¦å°†å˜é‡numberè‡ªå¢ä¸€æ¬¡ï¼Œå¦åˆ™å›¾ç‰‡ä¸ä¼šå‘ç”Ÿå˜åŒ–
+                //×¢Òâ£ºÃ¿´ÎÌí¼ÓÍê³ÉºóĞèÒª½«±äÁ¿number×ÔÔöÒ»´Î£¬·ñÔòÍ¼Æ¬²»»á·¢Éú±ä»¯
                 //number++;
             }
         }
-        //ç»†èŠ‚ï¼šå…ˆåŠ è½½çš„å›¾ç‰‡åœ¨ä¸Šæ–¹ï¼ŒååŠ è½½çš„å›¾ç‰‡åœ¨ä¸‹æ–¹ï¼Œæ‰€ä»¥èƒŒæ™¯è¦æœ€ååŠ è½½
-        //æ·»åŠ èƒŒæ™¯å›¾ç‰‡
+        //Ï¸½Ú£ºÏÈ¼ÓÔØµÄÍ¼Æ¬ÔÚÉÏ·½£¬ºó¼ÓÔØµÄÍ¼Æ¬ÔÚÏÂ·½£¬ËùÒÔ±³¾°Òª×îºó¼ÓÔØ
+        //Ìí¼Ó±³¾°Í¼Æ¬
         //Windows
-        JLabel background = new JLabel(new ImageIcon("E:\\java\\Programming-novice\\JavaProject\\src\\ä¸ŠåŠ.image\\background.png"));
+        JLabel background = new JLabel(new ImageIcon("E:\\java\\Programming-novice\\JavaProject\\src\\ÉÏ°ë.image\\background.png"));
         //mac
-        //JLabel background = new JLabel(new ImageIcon("/Users/bytedance/IdeaProjects/Programming-novice/JavaProject/src/ä¸ŠåŠ.image/background.png"));
+        //JLabel background = new JLabel(new ImageIcon("/Users/bytedance/IdeaProjects/Programming-novice/JavaProject/src/ÉÏ°ë.image/background.png"));
 
-        //è®¾ç½®èƒŒæ™¯çš„ä½ç½®
+        //ÉèÖÃ±³¾°µÄÎ»ÖÃ
         background.setBounds(40,40,508,560);
 
-        //æŠŠèƒŒæ™¯æ·»åŠ åˆ°å®¹å™¨ä¸­
+        //°Ñ±³¾°Ìí¼Óµ½ÈİÆ÷ÖĞ
         this.getContentPane().add(background);
 
-        //åˆ·æ–°ä¸€ä¸‹ç•Œé¢
+        //Ë¢ĞÂÒ»ÏÂ½çÃæ
         this.getContentPane().repaint();
     }
 
     private void initJMnuBar() {
-        //2.åˆå§‹åŒ–èœå•
-        //2.1åˆ›å»ºæ•´ä¸ªèœå•çš„å¯¹è±¡
+        //2.³õÊ¼»¯²Ëµ¥
+        //2.1´´½¨Õû¸ö²Ëµ¥µÄ¶ÔÏó
         JMenuBar jMenuBar = new JMenuBar();
 
-        //2.2åˆ›å»ºèœå•ä¸Šé¢çš„ä¸¤ä¸ªé€‰é¡¹çš„å¯¹è±¡ï¼ˆåŠŸèƒ½ï¼Œå…³äºæˆ‘ä»¬ï¼‰
-        JMenu functionJMenu = new JMenu("åŠŸèƒ½");
-        JMenu aboutJMenu = new JMenu("æ‰“èµä¸€ä¸‹");
-        //2.3åˆ›å»ºæ›´æ¢å›¾ç‰‡
-        JMenu changeImage = new JMenu("æ›´æ¢å›¾ç‰‡");
-        //2.4å°†æ¯ä¸€ä¸ªé€‰é¡¹ä¸‹é¢çš„æ¡ç›®æ·»åŠ åˆ°é€‰é¡¹å½“ä¸­
+        //2.2´´½¨²Ëµ¥ÉÏÃæµÄÁ½¸öÑ¡ÏîµÄ¶ÔÏó£¨¹¦ÄÜ£¬¹ØÓÚÎÒÃÇ£©
+        JMenu functionJMenu = new JMenu("¹¦ÄÜ");
+        JMenu aboutJMenu = new JMenu("´òÉÍÒ»ÏÂ");
+        //2.3´´½¨¸ü»»Í¼Æ¬
+        JMenu changeImage = new JMenu("¸ü»»Í¼Æ¬");
+        //2.4½«Ã¿Ò»¸öÑ¡ÏîÏÂÃæµÄÌõÄ¿Ìí¼Óµ½Ñ¡Ïîµ±ÖĞ
         functionJMenu.add(changeImage);
         functionJMenu.add(replayItem);
         functionJMenu.add(reLoginItem);
@@ -200,7 +200,7 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
         changeImage.add(animal);
         changeImage.add(sport);
 
-        //ç»™æ¡ç›®æ·»åŠ äº‹ä»¶
+        //¸øÌõÄ¿Ìí¼ÓÊÂ¼ş
         replayItem.addActionListener(this);
         reLoginItem.addActionListener(this);
         closeItem.addActionListener(this);
@@ -209,29 +209,29 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
         animal.addActionListener(this);
         sport.addActionListener(this);
 
-        //2.5å°†æ¡ç›®é‡Œé¢çš„ä¸¤ä¸ªé€‰é¡¹æ·»åŠ åˆ°èœå•é‡Œé¢
+        //2.5½«ÌõÄ¿ÀïÃæµÄÁ½¸öÑ¡ÏîÌí¼Óµ½²Ëµ¥ÀïÃæ
         jMenuBar.add(functionJMenu);
         jMenuBar.add(aboutJMenu);
 
-        //2.6ç»™æ•´ä¸ªé¡µé¢è®¾ç½®èœå•
+        //2.6¸øÕû¸öÒ³ÃæÉèÖÃ²Ëµ¥
         this.setJMenuBar(jMenuBar);
     }
 
     private void initJFrame() {
-        //1.åˆå§‹åŒ–ç•Œé¢
-        //1.1è®¾ç½®ç•Œé¢çš„å®½é«˜
+        //1.³õÊ¼»¯½çÃæ
+        //1.1ÉèÖÃ½çÃæµÄ¿í¸ß
         this.setSize(603,680);
-        //1.2è®¾ç½®ç•Œé¢çš„æ ‡é¢˜
-        this.setTitle("æ‹¼å›¾å•æœºç‰ˆ v1.0");
-        //1.3è®¾ç½®ç•Œé¢ç½®é¡¶
+        //1.2ÉèÖÃ½çÃæµÄ±êÌâ
+        this.setTitle("Æ´Í¼µ¥»ú°æ v1.0");
+        //1.3ÉèÖÃ½çÃæÖÃ¶¥
         this.setAlwaysOnTop(true);
-        //1.4è®¾ç½®ç•Œé¢å±…ä¸­
+        //1.4ÉèÖÃ½çÃæ¾ÓÖĞ
         this.setLocationRelativeTo(null);
-        //1.5è®¾ç½®å…³é—­æ–¹æ³•
+        //1.5ÉèÖÃ¹Ø±Õ·½·¨
         this.setDefaultCloseOperation(3);
-        //1.6å–æ¶ˆé»˜è®¤å±…ä¸­æ”¾ç½®ï¼Œåªæœ‰å–æ¶ˆäº†æ‰ä¼šæŒ‰ç…§xyè½´çš„å½¢å¼æ·»åŠ ç»„ä»¶
+        //1.6È¡ÏûÄ¬ÈÏ¾ÓÖĞ·ÅÖÃ£¬Ö»ÓĞÈ¡ÏûÁË²Å»á°´ÕÕxyÖáµÄĞÎÊ½Ìí¼Ó×é¼ş
         this.setLayout(null);
-        //1.7ç»™æ•´ä¸ªç•Œé¢æ·»åŠ é”®ç›˜ç›‘å¬
+        //1.7¸øÕû¸ö½çÃæÌí¼Ó¼üÅÌ¼àÌı
         this.addKeyListener(this);
     }
 
@@ -242,86 +242,86 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
     public void keyPressed(KeyEvent e) {
         int code = e.getKeyCode();
         if (code == 65){
-            //åˆ é™¤å…¨éƒ¨å›¾ç‰‡
+            //É¾³ıÈ«²¿Í¼Æ¬
             this.getContentPane().removeAll();
-            //æ·»åŠ å›¾ç‰‡
+            //Ìí¼ÓÍ¼Æ¬
             JLabel all = new JLabel(new ImageIcon(path + "all.jpg"));
             all.setBounds(83,134,420,420);
             this.getContentPane().add(all);
-            //æ·»åŠ èƒŒæ™¯å›¾ç‰‡
-            JLabel background = new JLabel(new ImageIcon("E:\\java\\Programming-novice\\JavaProject\\src\\ä¸ŠåŠ.image\\background.png"));
+            //Ìí¼Ó±³¾°Í¼Æ¬
+            JLabel background = new JLabel(new ImageIcon("E:\\java\\Programming-novice\\JavaProject\\src\\ÉÏ°ë.image\\background.png"));
             //mac
-            //JLabel background = new JLabel(new ImageIcon("/Users/bytedance/IdeaProjects/Programming-novice/JavaProject/src/ä¸ŠåŠ.image/background.png"));
-            //è®¾ç½®èƒŒæ™¯çš„ä½ç½®
+            //JLabel background = new JLabel(new ImageIcon("/Users/bytedance/IdeaProjects/Programming-novice/JavaProject/src/ÉÏ°ë.image/background.png"));
+            //ÉèÖÃ±³¾°µÄÎ»ÖÃ
             background.setBounds(40,40,508,560);
-            //æŠŠèƒŒæ™¯æ·»åŠ åˆ°å®¹å™¨ä¸­
+            //°Ñ±³¾°Ìí¼Óµ½ÈİÆ÷ÖĞ
             this.getContentPane().add(background);
-            //åˆ·æ–°ä¸€ä¸‹ç•Œé¢
+            //Ë¢ĞÂÒ»ÏÂ½çÃæ
             this.getContentPane().repaint();
         }
     }
     @Override
     public void keyReleased(KeyEvent e) {
         int code = e.getKeyCode();
-        //åˆ¤æ–­æ¸¸æˆæ˜¯å¦èƒœåˆ©ï¼Œå¦‚æœèƒœåˆ© ä¸‹é¢çš„ä»£ç ä¸éœ€è¦æ‰§è¡Œ
+        //ÅĞ¶ÏÓÎÏ·ÊÇ·ñÊ¤Àû£¬Èç¹ûÊ¤Àû ÏÂÃæµÄ´úÂë²»ĞèÒªÖ´ĞĞ
         if (victory()){
             return;
         }
-        //å¯¹ä¸Šä¸‹å·¦å³è¿›è¡Œåˆ¤æ–­
-        //å·¦ï¼š37  ä¸Šï¼š38  å³ï¼š39  ä¸‹ï¼š40
+        //¶ÔÉÏÏÂ×óÓÒ½øĞĞÅĞ¶Ï
+        //×ó£º37  ÉÏ£º38  ÓÒ£º39  ÏÂ£º40
         if (code == 37){
-            System.out.println("å‘å·¦ç§»åŠ¨");
+            System.out.println("Ïò×óÒÆ¶¯");
             if (y == 3){
                 return;
             }
             data[x][y] = data[x][y+1];
             data[x][y+1] = 0;
             y++;
-            //æ¯æŒ‰ä¸€æ¬¡é”®ç›˜æ­¥æ•°è‡ªå¢ä¸€æ¬¡
+            //Ã¿°´Ò»´Î¼üÅÌ²½Êı×ÔÔöÒ»´Î
             step++;
-            //è°ƒç”¨æ–¹æ³•æŒ‰ç…§æœ€æ–°çš„æ•°å­—åŠ è½½å›¾ç‰‡
+            //µ÷ÓÃ·½·¨°´ÕÕ×îĞÂµÄÊı×Ö¼ÓÔØÍ¼Æ¬
             initImage();
 
         }else if (code == 38){
-            System.out.println("å‘ä¸Šç§»åŠ¨");
+            System.out.println("ÏòÉÏÒÆ¶¯");
             if (x == 3){
                 return;
             }
-            //é€»è¾‘ï¼šæŠŠç©ºç™½æ–¹å—ä¸‹æ–¹çš„æ•°å­—å‘ä¸Šç§»åŠ¨
-            //xï¼Œyè¡¨ç¤ºç©ºç™½æ–¹å—ï¼Œx+1ï¼Œyè¡¨ç¤ºç©ºç™½æ–¹å—ä¸‹æ–¹çš„æ•°å­—
-            //å°†ç©ºç™½æ–¹å—ä¸‹æ–¹çš„æ•°å­—èµ‹å€¼ç»™ç©ºç™½æ–¹å—
+            //Âß¼­£º°Ñ¿Õ°×·½¿éÏÂ·½µÄÊı×ÖÏòÉÏÒÆ¶¯
+            //x£¬y±íÊ¾¿Õ°×·½¿é£¬x+1£¬y±íÊ¾¿Õ°×·½¿éÏÂ·½µÄÊı×Ö
+            //½«¿Õ°×·½¿éÏÂ·½µÄÊı×Ö¸³Öµ¸ø¿Õ°×·½¿é
             data[x][y] = data[x+1][y];
             data[x+1][y] = 0;
             x++;
-            //æ¯æŒ‰ä¸€æ¬¡é”®ç›˜æ­¥æ•°è‡ªå¢ä¸€æ¬¡
+            //Ã¿°´Ò»´Î¼üÅÌ²½Êı×ÔÔöÒ»´Î
             step++;
-            //è°ƒç”¨æ–¹æ³•æŒ‰ç…§æœ€æ–°çš„æ•°å­—åŠ è½½å›¾ç‰‡
+            //µ÷ÓÃ·½·¨°´ÕÕ×îĞÂµÄÊı×Ö¼ÓÔØÍ¼Æ¬
             initImage();
 
         }else if (code == 39){
-            System.out.println("å‘å³ç§»åŠ¨");
+            System.out.println("ÏòÓÒÒÆ¶¯");
             if (y == 0){
                 return;
             }
             data[x][y] = data[x][y-1];
             data[x][y-1] = 0;
             y--;
-            //æ¯æŒ‰ä¸€æ¬¡é”®ç›˜æ­¥æ•°è‡ªå¢ä¸€æ¬¡
+            //Ã¿°´Ò»´Î¼üÅÌ²½Êı×ÔÔöÒ»´Î
             step++;
-            //è°ƒç”¨æ–¹æ³•æŒ‰ç…§æœ€æ–°çš„æ•°å­—åŠ è½½å›¾ç‰‡
+            //µ÷ÓÃ·½·¨°´ÕÕ×îĞÂµÄÊı×Ö¼ÓÔØÍ¼Æ¬
             initImage();
 
         }else if (code == 40){
-            System.out.println("å‘ä¸‹ç§»åŠ¨");
+            System.out.println("ÏòÏÂÒÆ¶¯");
             if (x == 0){
                 return;
             }
             data[x][y] = data[x-1][y];
             data[x-1][y] = 0;
             x--;
-            //æ¯æŒ‰ä¸€æ¬¡é”®ç›˜æ­¥æ•°è‡ªå¢ä¸€æ¬¡
+            //Ã¿°´Ò»´Î¼üÅÌ²½Êı×ÔÔöÒ»´Î
             step++;
-            //è°ƒç”¨æ–¹æ³•æŒ‰ç…§æœ€æ–°çš„æ•°å­—åŠ è½½å›¾ç‰‡
+            //µ÷ÓÃ·½·¨°´ÕÕ×îĞÂµÄÊı×Ö¼ÓÔØÍ¼Æ¬
             initImage();
         }else if (code == 65){
             initImage();
@@ -336,7 +336,7 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
         }
     }
 
-    //å®šä¹‰ä¸€ä¸ªæ–¹æ³•ï¼Œç”¨æ¥åˆ¤æ–­äºŒç»´æ•°ç»„ä¸­çš„æ•°å­—ä¸å˜é‡winä¸­çš„æ•°å­—æ˜¯å¦ç›¸åŒ
+    //¶¨ÒåÒ»¸ö·½·¨£¬ÓÃÀ´ÅĞ¶Ï¶şÎ¬Êı×éÖĞµÄÊı×ÖÓë±äÁ¿winÖĞµÄÊı×ÖÊÇ·ñÏàÍ¬
     public boolean victory(){
         for (int i = 0; i < data.length; i++) {
             for (int j = 0; j < data[i].length; j++) {
@@ -352,58 +352,58 @@ public class GameJFrame extends JFrame implements KeyListener, ActionListener {
     public void actionPerformed(ActionEvent e) {
         Object obj = e.getSource();
         if (obj == replayItem){
-            //è®¡æ­¥å™¨æ¸…é›¶
+            //¼Æ²½Æ÷ÇåÁã
             step++;
-            //å†æ¬¡æ‰“ä¹±äºŒç»´æ•°ç»„ä¸­çš„æ•°æ®
+            //ÔÙ´Î´òÂÒ¶şÎ¬Êı×éÖĞµÄÊı¾İ
             initDate();
-            //é‡æ–°åŠ è½½å›¾ç‰‡
+            //ÖØĞÂ¼ÓÔØÍ¼Æ¬
             initImage();
 
         }else if (obj == reLoginItem){
-            System.out.println("é‡æ–°ç™»å½•");
-            //å…³é—­å½“å‰é¡µé¢
+            System.out.println("ÖØĞÂµÇÂ¼");
+            //¹Ø±Õµ±Ç°Ò³Ãæ
             this.setVisible(false);
-            //æ‰“å¼€ç™»å½•é¡µé¢
+            //´ò¿ªµÇÂ¼Ò³Ãæ
             new LoginJFrame();
         }else if (obj == closeItem){
             System.exit(0);
         }else if (obj == accountItem){
-            System.out.println("æ‰“èµä¸€ä¸‹");
-            //åˆ›å»ºä¸€ä¸ªå¼¹çª—å¯¹è±¡
+            System.out.println("´òÉÍÒ»ÏÂ");
+            //´´½¨Ò»¸öµ¯´°¶ÔÏó
             JDialog jDialog = new JDialog();
-            //åˆ›å»ºä¸€ä¸ªç®¡ç†å›¾ç‰‡çš„å®¹å™¨å¯¹è±¡jlaval
-            JLabel jLabel = new JLabel(new ImageIcon("E:\\java\\Programming-novice\\JavaProject\\src\\ä¸ŠåŠ.image\\money.png"));
+            //´´½¨Ò»¸ö¹ÜÀíÍ¼Æ¬µÄÈİÆ÷¶ÔÏójlaval
+            JLabel jLabel = new JLabel(new ImageIcon("E:\\java\\Programming-novice\\JavaProject\\src\\ÉÏ°ë.image\\money.png"));
             //mac
-            //JLabel jLabel = new JLabel(new ImageIcon("/Users/bytedance/IdeaProjects/Programming-novice/JavaProject/src/ä¸ŠåŠ.image/money.png"));
-            //è®¾ç½®ä½ç½®å’Œå®½é«˜
+            //JLabel jLabel = new JLabel(new ImageIcon("/Users/bytedance/IdeaProjects/Programming-novice/JavaProject/src/ÉÏ°ë.image/money.png"));
+            //ÉèÖÃÎ»ÖÃºÍ¿í¸ß
             jLabel.setBounds(0,0,794,819);
-            //å°†å›¾ç‰‡æ·»åŠ åˆ°å¼¹çª—å½“ä¸­
+            //½«Í¼Æ¬Ìí¼Óµ½µ¯´°µ±ÖĞ
             jDialog.getContentPane().add(jLabel);
-            //ç»™å¼¹æ¡†è®¾ç½®å¤§å°
+            //¸øµ¯¿òÉèÖÃ´óĞ¡
             jDialog.setSize(800,820);
-            //è®©å¼¹æ¡†ç½®é¡¶
+            //ÈÃµ¯¿òÖÃ¶¥
             jDialog.setAlwaysOnTop(true);
-            //è®©å¼¹æ¡†å±…ä¸­
+            //ÈÃµ¯¿ò¾ÓÖĞ
             jDialog.setLocationRelativeTo(null);
-            //å¼¹æ¡†ä¸å…³é—­çš„æƒ…å†µä¸‹æ— æ³•æ“ä½œä¸‹é¢çš„ç•Œé¢
+            //µ¯¿ò²»¹Ø±ÕµÄÇé¿öÏÂÎŞ·¨²Ù×÷ÏÂÃæµÄ½çÃæ
             jDialog.setModal(true);
-            //è®©å¼¹æ¡†æ˜¾ç¤ºå‡ºæ¥
+            //ÈÃµ¯¿òÏÔÊ¾³öÀ´
             jDialog.setVisible(true);
         }else if (obj == girl) {
           int index = r.nextInt(13) + 1;
-          path = "E:\\java\\Programming-novice\\JavaProject\\src\\ä¸ŠåŠ.image\\girl\\girl" + index +"\\";
+          path = "E:\\java\\Programming-novice\\JavaProject\\src\\ÉÏ°ë.image\\girl\\girl" + index +"\\";
           step = 0;
           initDate();
           initImage();
         }else if (obj == animal){
           int index = r.nextInt(8) + 1;
-          path = "E:\\java\\Programming-novice\\JavaProject\\src\\ä¸ŠåŠ.image\\animal\\animal" + index +"\\";
+          path = "E:\\java\\Programming-novice\\JavaProject\\src\\ÉÏ°ë.image\\animal\\animal" + index +"\\";
           step = 0;
           initDate();
           initImage();
         }else if (obj == sport){
           int index = r.nextInt(10) + 1;
-          path = "E:\\java\\Programming-novice\\JavaProject\\src\\ä¸ŠåŠ.image\\sport\\sport" + index +"\\";
+          path = "E:\\java\\Programming-novice\\JavaProject\\src\\ÉÏ°ë.image\\sport\\sport" + index +"\\";
           step = 0;
           initDate();
           initImage();

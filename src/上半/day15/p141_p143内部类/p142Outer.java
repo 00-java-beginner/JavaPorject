@@ -1,23 +1,23 @@
-package ä¸ŠåŠ.day15.p141_p143å†…éƒ¨ç±»;
+package ÉÏ°ë.day15.p141_p143ÄÚ²¿Àà;
 
 public class p142Outer {
     int a = 10;
     public void show(){
         int b = 20;
-        //å±€éƒ¨å†…éƒ¨ç±»
+        //¾Ö²¿ÄÚ²¿Àà
         class Inner{
             String name;
             int age;
             public void method(){
                 System.out.println(a);
                 System.out.println(b);
-                System.out.println("å±€éƒ¨å†…éƒ¨ç±»ä¸­çš„methodæ–¹æ³•");
+                System.out.println("¾Ö²¿ÄÚ²¿ÀàÖĞµÄmethod·½·¨");
             }
             public static void method1(){
-                System.out.println("å±€éƒ¨å†…éƒ¨ç±»ä¸­çš„method1é™æ€æ–¹æ³•");
+                System.out.println("¾Ö²¿ÄÚ²¿ÀàÖĞµÄmethod1¾²Ì¬·½·¨");
             }
         }
-        //éœ€è¦åœ¨æ–¹æ³•å†…éƒ¨åˆ›å»ºå¯¹è±¡å¹¶ä½¿ç”¨
+        //ĞèÒªÔÚ·½·¨ÄÚ²¿´´½¨¶ÔÏó²¢Ê¹ÓÃ
         Inner i = new Inner();
         System.out.println(i.age);
         System.out.println(i.name);

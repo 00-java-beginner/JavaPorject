@@ -1,26 +1,26 @@
-package ä¸ŠåŠ.day20.jdk8;
+package ÉÏ°ë.day20.jdk8;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
 
 public class A09_DurationDemo {
     public static void main(String[] args) {
-        // æœ¬åœ°æ—¥æœŸæ—¶é—´å¯¹è±¡ã€‚
+        // ±¾µØÈÕÆÚÊ±¼ä¶ÔÏó¡£
         LocalDateTime today = LocalDateTime.now();
         System.out.println(today);
 
-        // å‡ºç”Ÿçš„æ—¥æœŸæ—¶é—´å¯¹è±¡
+        // ³öÉúµÄÈÕÆÚÊ±¼ä¶ÔÏó
         LocalDateTime birthDate = LocalDateTime.of(2000, 1, 1, 0, 0, 0);
         System.out.println(birthDate);
 
-        Duration duration = Duration.between(birthDate, today);//ç¬¬äºŒä¸ªå‚æ•°å‡ç¬¬ä¸€ä¸ªå‚æ•°
-        System.out.println("ç›¸å·®çš„æ—¶é—´é—´éš”å¯¹è±¡:" + duration);
+        Duration duration = Duration.between(birthDate, today);//µÚ¶ş¸ö²ÎÊı¼õµÚÒ»¸ö²ÎÊı
+        System.out.println("Ïà²îµÄÊ±¼ä¼ä¸ô¶ÔÏó:" + duration);
 
         System.out.println("============================================");
-        System.out.println(duration.toDays());//ä¸¤ä¸ªæ—¶é—´å·®çš„å¤©æ•°
-        System.out.println(duration.toHours());//ä¸¤ä¸ªæ—¶é—´å·®çš„å°æ—¶æ•°
-        System.out.println(duration.toMinutes());//ä¸¤ä¸ªæ—¶é—´å·®çš„åˆ†é’Ÿæ•°
-        System.out.println(duration.toMillis());//ä¸¤ä¸ªæ—¶é—´å·®çš„æ¯«ç§’æ•°
-        System.out.println(duration.toNanos());//ä¸¤ä¸ªæ—¶é—´å·®çš„çº³ç§’æ•°
+        System.out.println(duration.toDays());//Á½¸öÊ±¼ä²îµÄÌìÊı
+        System.out.println(duration.toHours());//Á½¸öÊ±¼ä²îµÄĞ¡Ê±Êı
+        System.out.println(duration.toMinutes());//Á½¸öÊ±¼ä²îµÄ·ÖÖÓÊı
+        System.out.println(duration.toMillis());//Á½¸öÊ±¼ä²îµÄºÁÃëÊı
+        System.out.println(duration.toNanos());//Á½¸öÊ±¼ä²îµÄÄÉÃëÊı
     }
 }

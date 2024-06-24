@@ -1,7 +1,7 @@
-package ä¸ŠåŠ.day13.é¢å‘å¯¹è±¡è¿›é˜¶_02;
+package ÉÏ°ë.day13.ÃæÏò¶ÔÏó½ø½×_02;
 public class ArrayUtil {
     private ArrayUtil(){};
-    //å¯¹æ•°ç»„è¿›è¡Œæ‹¼æ¥
+    //¶ÔÊı×é½øĞĞÆ´½Ó
     public static String printArr(int [] arr){
         StringBuilder sb = new StringBuilder();
         sb.append("[");
@@ -15,7 +15,7 @@ public class ArrayUtil {
         sb.append("]");
         return sb.toString();
     }
-    //æ±‚å¹³å‡åˆ†
+    //ÇóÆ½¾ù·Ö
     public static double getAvg(double [] arr){
         double sum = 0;
         for (int i = 0; i < arr.length; i++) {

@@ -1,28 +1,28 @@
-package p96andp110_å­—ç¬¦ä¸²;
+package p96andp110_×Ö·û´®;
 import java.util.Scanner;
-public class p101_éå†å­—ç¬¦ä¸²å’Œç»Ÿè®¡ä¸ªæ•° {
+public class p101_±éÀú×Ö·û´®ºÍÍ³¼Æ¸öÊı {
     public static void main(String[] args) {
-        /*//1.é”®ç›˜å½•å…¥ä¸€ä¸ªå­—ç¬¦ä¸²
+        /*//1.¼üÅÌÂ¼ÈëÒ»¸ö×Ö·û´®
         Scanner sc = new Scanner(System.in);
         String str = sc.next();
 
-        //2.éå†å­—ç¬¦ä¸²
+        //2.±éÀú×Ö·û´®
         for (int i = 0; i < str.length(); i++) {
             char c = str.charAt(i);
             System.out.println(c);
         }*/
-        //1.é”®ç›˜å½•å…¥ä¸€ä¸ªå­—ç¬¦ä¸²
+        //1.¼üÅÌÂ¼ÈëÒ»¸ö×Ö·û´®
         Scanner sc = new Scanner(System.in);
-        System.out.println("è¯·è¾“å…¥ä¸€ä¸ªå­—ç¬¦ä¸²");
+        System.out.println("ÇëÊäÈëÒ»¸ö×Ö·û´®");
         String str = sc.next();
-        //2.ç»Ÿè®¡å¤§å°å†™å’Œæ•°å­—çš„ä¸ªæ•°
+        //2.Í³¼Æ´óĞ¡Ğ´ºÍÊı×ÖµÄ¸öÊı
         int bigCount = 0;
         int smallCount = 0;
         int numberCount = 0;
-        //3.éå†å­—ç¬¦ä¸²
+        //3.±éÀú×Ö·û´®
         for (int i = 0; i < str.length(); i++) {
             char c = str.charAt(i);
-            //æ³¨æ„ï¼šcharç±»å‹çš„å˜é‡åœ¨å‚ä¸è®¡ç®—çš„æ—¶å€™è‡ªåŠ¨æå‡ä¸ºintç±»å‹ï¼ŒæŸ¥è¯¢asciiç è¡¨
+            //×¢Òâ£ºcharÀàĞÍµÄ±äÁ¿ÔÚ²ÎÓë¼ÆËãµÄÊ±ºò×Ô¶¯ÌáÉıÎªintÀàĞÍ£¬²éÑ¯asciiÂë±í
             if (c >= 'a' && c <= 'z'){
                 smallCount++;
             }else if (c >= 'A' && c <= 'Z'){

@@ -1,21 +1,21 @@
-package ä¸ŠåŠ.day10;
-public class p104_02_èº«ä»½è¯ä¿¡æ¯æŸ¥çœ‹ {
+package ÉÏ°ë.day10;
+public class p104_02_Éí·İÖ¤ĞÅÏ¢²é¿´ {
     public static void main(String[] args) {
-        //1.å®šä¹‰ä¸€ä¸ªå˜é‡è®°å½•èº«ä»½è¯
+        //1.¶¨ÒåÒ»¸ö±äÁ¿¼ÇÂ¼Éí·İÖ¤
         String id = "522424199507219819";
-        //2.æˆªå–èº«ä»½è¯çš„7-14ä½
+        //2.½ØÈ¡Éí·İÖ¤µÄ7-14Î»
         String year = id.substring(6,10);
         String month = id.substring(10,12);
         String day = id.substring(12,14);
-        System.out.println("äººç‰©ä¿¡æ¯ä¸ºï¼š");
-        System.out.println("å‡ºç”Ÿå¹´æœˆæ—¥ï¼š" + year + "å¹´" + month + "æœˆ" + day + "æ—¥");
-        //3.æˆªå–èº«ä»½è¯çš„17ä½
+        System.out.println("ÈËÎïĞÅÏ¢Îª£º");
+        System.out.println("³öÉúÄêÔÂÈÕ£º" + year + "Äê" + month + "ÔÂ" + day + "ÈÕ");
+        //3.½ØÈ¡Éí·İÖ¤µÄ17Î»
         char gender = id.charAt(16);
         int num = gender - 48;
         if (num % 2 == 0){
-            System.out.println("æ€§åˆ«ä¸ºï¼šå¥³");
+            System.out.println("ĞÔ±ğÎª£ºÅ®");
         }else {
-            System.out.println("æ€§åˆ«ä¸ºï¼šç”·");
+            System.out.println("ĞÔ±ğÎª£ºÄĞ");
         }
 
 

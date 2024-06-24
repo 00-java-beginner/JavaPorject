@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day13.p128ç»§æ‰¿çš„æ„é€ æ–¹æ³•å’Œthiså’Œsuperå…³é”®å­—;
+package ÉÏ°ë.day13.p128¼Ì³ĞµÄ¹¹Ôì·½·¨ºÍthisºÍsuper¹Ø¼ü×Ö;
 
 public class Cook extends Employee {
     public Cook() {
@@ -9,6 +9,6 @@ public class Cook extends Employee {
     }
     @Override
     public void work(){
-        System.out.println("ç‚’èœ");
+        System.out.println("³´²Ë");
     }
 }

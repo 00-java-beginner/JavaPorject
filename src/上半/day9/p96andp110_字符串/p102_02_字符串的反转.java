@@ -1,13 +1,13 @@
-package p96andp110_å­—ç¬¦ä¸²;
-public class p102_02_å­—ç¬¦ä¸²çš„åè½¬ {
+package p96andp110_×Ö·û´®;
+public class p102_02_×Ö·û´®µÄ·´×ª {
     public static void main(String[] args) {
-        //å®šä¹‰ä¸€ä¸ªæ–¹æ³•,å®žçŽ°å­—ç¬¦ä¸²åè½¬ã€‚
-        //é”®ç›˜å½•å…¥ä¸€ä¸ªå­—ç¬¦ä¸²,è°ƒç”¨è¯¥æ–¹æ³•åŽ,åœ¨æŽ§åˆ¶å°è¾“å‡ºç»“æžœ
+        //¶¨ÒåÒ»¸ö·½·¨,ÊµÏÖ×Ö·û´®·´×ª¡£
+        //¼üÅÌÂ¼ÈëÒ»¸ö×Ö·û´®,µ÷ÓÃ¸Ã·½·¨ºó,ÔÚ¿ØÖÆÌ¨Êä³ö½á¹û
         String result = reverser("abc");
         System.out.println(result);
     }
     public static String reverser(String str){
-        //å½“å‰å¾ªçŽ¯è¡¨ç¤ºå€’ç€å¾ªçŽ¯
+        //µ±Ç°Ñ­»·±íÊ¾µ¹×ÅÑ­»·
         String result = "";
         for (int i = str.length() - 1; i >= 0; i--) {
             char c = str.charAt(i);

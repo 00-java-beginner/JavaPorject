@@ -1,4 +1,4 @@
-package ä¸‹åŠ.day24;
+package ÏÂ°ë.day24;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -6,30 +6,30 @@ import java.util.Map;
 import java.util.Set;
 import java.util.function.Consumer;
 
-public class mapéå†çš„ç¬¬ä¸€ç§æ–¹å¼ {
+public class map±éÀúµÄµÚÒ»ÖÖ·½Ê½ {
     public static void main(String[] args) {
         Map<String,String> m = new HashMap<>();
 
-        m.put("éƒ­é–", "é»„è“‰");
-        m.put("éŸ¦å°å®","æ²å‰‘å±");
-        m.put("å°¹å¿—å¹³","å°é¾™å¥³");
+        m.put("¹ù¾¸", "»ÆÈØ");
+        m.put("Î¤Ğ¡±¦","ãå½£ÆÁ");
+        m.put("ÒüÖ¾Æ½","Ğ¡ÁúÅ®");
 
-        //éœ€è¦å…ˆè·å–keyï¼Œå°†keyå…¨éƒ¨æ”¾å…¥é›†åˆä¸­
+        //ĞèÒªÏÈ»ñÈ¡key£¬½«keyÈ«²¿·ÅÈë¼¯ºÏÖĞ
         Set<String> keys = m.keySet();
 
-        //åˆ©ç”¨å¢å¼ºforå¾ªç¯è·å–æ‰€æœ‰key
+        //ÀûÓÃÔöÇ¿forÑ­»·»ñÈ¡ËùÓĞkey
         for (String key : keys) {
             String value = m.get(key);
             System.out.println(key + " = " + value);
         }
-        //åˆ©ç”¨è¿­ä»£å™¨
+        //ÀûÓÃµü´úÆ÷
         Iterator<String> it = keys.iterator();
         while (it.hasNext()){
             String key = it.next();
             String value = m.get(key);
             System.out.println(key + " = " + value);
         }
-        //åˆ©ç”¨lambdaè¡¨è¾¾å¼
+        //ÀûÓÃlambda±í´ïÊ½
         keys.forEach(key -> {
                 String value = m.get(key);
                 System.out.println(key + " = " + value);

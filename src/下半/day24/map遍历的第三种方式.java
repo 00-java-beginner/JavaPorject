@@ -1,15 +1,15 @@
-package ä¸‹åŠ.day24;
+package ÏÂ°ë.day24;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class mapéå†çš„ç¬¬ä¸‰ç§æ–¹å¼ {
+public class map±éÀúµÄµÚÈıÖÖ·½Ê½ {
     public static void main(String[] args) {
         Map<String, String> m = new HashMap<>();
 
-        m.put("éƒ­é–", "é»„è“‰");
-        m.put("éŸ¦å°å®", "æ²å‰‘å±");
-        m.put("å°¹å¿—å¹³", "å°é¾™å¥³");
+        m.put("¹ù¾¸", "»ÆÈØ");
+        m.put("Î¤Ğ¡±¦", "ãå½£ÆÁ");
+        m.put("ÒüÖ¾Æ½", "Ğ¡ÁúÅ®");
 
         m.forEach((key, value) -> System.out.println(key + " = " + value));
     }

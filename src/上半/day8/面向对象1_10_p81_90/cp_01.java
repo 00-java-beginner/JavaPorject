@@ -1,25 +1,25 @@
-package ä¸ŠåŠ.day8.é¢å‘å¯¹è±¡1_10_p81_90;
+package ÉÏ°ë.day8.ÃæÏò¶ÔÏó1_10_p81_90;
 
 public class cp_01 {
     public static void main(String[] args) {
-        //åˆ›å»ºå¯¹è±¡
+        //´´½¨¶ÔÏó
         cp f = new cp();
-        //è°ƒç”¨å±æ€§ç»™å˜é‡èµ‹å€¼
-        f.setFood("çº¢çƒ§è‚‰");
+        //µ÷ÓÃÊôĞÔ¸ø±äÁ¿¸³Öµ
+        f.setFood("ºìÉÕÈâ");
         f.setPrice(66);
         System.out.println(f.getFood());
         System.out.println(f.getPrice());
-        //è°ƒç”¨è¡Œä¸º
+        //µ÷ÓÃĞĞÎª
         f.eat();
 
-        //åˆ›å»ºç¬¬äºŒä¸ªå¯¹è±¡åªéœ€è¦ä¿®æ”¹å¯¹è±¡åå³å¯
+        //´´½¨µÚ¶ş¸ö¶ÔÏóÖ»ĞèÒªĞŞ¸Ä¶ÔÏóÃû¼´¿É
         cp f1 = new cp();
-        //è°ƒç”¨å±æ€§ç»™å˜é‡èµ‹å€¼
-        f1.setFood("çº¢çƒ§æ’éª¨");
+        //µ÷ÓÃÊôĞÔ¸ø±äÁ¿¸³Öµ
+        f1.setFood("ºìÉÕÅÅ¹Ç");
         f1.setPrice(88);
         System.out.println(f1.getFood());
         System.out.println(f1.getPrice());
-        //è°ƒç”¨è¡Œä¸º
+        //µ÷ÓÃĞĞÎª
         f1.eat();
     }
 }

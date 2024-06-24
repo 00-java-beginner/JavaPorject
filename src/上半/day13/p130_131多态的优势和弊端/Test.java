@@ -1,41 +1,41 @@
-package ä¸ŠåŠ.day13.p130_131å¤šæ€çš„ä¼˜åŠ¿å’Œå¼Šç«¯;
+package ÉÏ°ë.day13.p130_131¶àÌ¬µÄÓÅÊÆºÍ±×¶Ë;
 
 public class Test {
     public static void main(String[] args) {
         Animal a = new Dog();
         a.eat();
-        //å¤šæ€çš„å¼Šç«¯ï¼šä¸èƒ½è°ƒç”¨å­ç±»çš„ç‰¹æœ‰åŠŸèƒ½ï¼Œåªèƒ½å¼ºè½¬åæ‰èƒ½è¿›è¡Œè°ƒç”¨
-        //æ³¨æ„ï¼šå¼ºè½¬æ—¶å¦‚æœè½¬æˆå…¶ä»–ç±»å‹ï¼Œä¹Ÿä¼šæŠ¥é”™
-        //è§£å†³æ–¹æ¡ˆï¼šå¯ä»¥ç”¨instanceofå…³é”®å­—è¿›è¡Œåˆ¤æ–­
+        //¶àÌ¬µÄ±×¶Ë£º²»ÄÜµ÷ÓÃ×ÓÀàµÄÌØÓĞ¹¦ÄÜ£¬Ö»ÄÜÇ¿×ªºó²ÅÄÜ½øĞĞµ÷ÓÃ
+        //×¢Òâ£ºÇ¿×ªÊ±Èç¹û×ª³ÉÆäËûÀàĞÍ£¬Ò²»á±¨´í
+        //½â¾ö·½°¸£º¿ÉÒÔÓÃinstanceof¹Ø¼ü×Ö½øĞĞÅĞ¶Ï
         if (a instanceof Dog d){
             d.LookHome();
         }else if (a instanceof Cat c){
             c.CatchMouse();
         }else {
-            System.out.println("å½“å‰ç±»å‹ä¸å­˜åœ¨");
+            System.out.println("µ±Ç°ÀàĞÍ²»´æÔÚ");
         }
     }
 }
 class Animal{
     public void eat(){
-        System.out.println("åŠ¨ç‰©åœ¨åƒä¸œè¥¿");
+        System.out.println("¶¯ÎïÔÚ³Ô¶«Î÷");
     }
 }
 class Dog extends Animal{
     @Override
     public void eat(){
-        System.out.println("ç‹—åœ¨åƒéª¨å¤´");
+        System.out.println("¹·ÔÚ³Ô¹ÇÍ·");
     }
     public void LookHome(){
-        System.out.println("ç‹—åœ¨çœ‹å®¶");
+        System.out.println("¹·ÔÚ¿´¼Ò");
     }
 }
 class Cat extends Animal{
     @Override
     public void eat(){
-        System.out.println("çŒ«åœ¨åƒçŒ«ç²®");
+        System.out.println("Ã¨ÔÚ³ÔÃ¨Á¸");
     }
     public void CatchMouse(){
-        System.out.println("çŒ«åœ¨æŠ“è€é¼ ");
+        System.out.println("Ã¨ÔÚ×¥ÀÏÊó");
     }
 }

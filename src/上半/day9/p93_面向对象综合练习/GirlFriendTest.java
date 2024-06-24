@@ -1,25 +1,25 @@
-package ä¸ŠåŠ.day9.p93_é¢å‘å¯¹è±¡ç»¼åˆç»ƒä¹ ;
+package ÉÏ°ë.day9.p93_ÃæÏò¶ÔÏó×ÛºÏÁ·Ï°;
 
 public class GirlFriendTest {
     public static void main(String[] args) {
-        /*å®šä¹‰æ•°ç»„å­˜å‚¨4ä¸ªå¥³æœ‹å‹çš„å¯¹è±¡
-        å¥³æœ‹å‹çš„å±æ€§:å§“åã€å¹´é¾„ã€æ€§åˆ«ã€çˆ±å¥½
-        è¦æ±‚1:è®¡ç®—å‡ºå››å¥³æœ‹å‹çš„å¹³å‡å¹´é¾„
-        è¦æ±‚2:ç»Ÿè®¡å¹´é¾„æ¯”å¹³å‡å€¼ä½çš„å¥³æœ‹å‹æœ‰å‡ ä¸ª?å¹¶æŠŠå¥¹ä»¬çš„,æ‰€æœ‰ä¿¡æ¯æ‰“å°å‡ºæ¥ã€‚*/
-        //1.å®šä¹‰æ•°ç»„å­˜å‚¨å¯¹è±¡
+        /*¶¨ÒåÊı×é´æ´¢4¸öÅ®ÅóÓÑµÄ¶ÔÏó
+        Å®ÅóÓÑµÄÊôĞÔ:ĞÕÃû¡¢ÄêÁä¡¢ĞÔ±ğ¡¢°®ºÃ
+        ÒªÇó1:¼ÆËã³öËÄÅ®ÅóÓÑµÄÆ½¾ùÄêÁä
+        ÒªÇó2:Í³¼ÆÄêÁä±ÈÆ½¾ùÖµµÍµÄÅ®ÅóÓÑÓĞ¼¸¸ö?²¢°ÑËıÃÇµÄ,ËùÓĞĞÅÏ¢´òÓ¡³öÀ´¡£*/
+        //1.¶¨ÒåÊı×é´æ´¢¶ÔÏó
         GirlFriend[] arr = new GirlFriend[4];
-        //2.åˆ›å»ºå¯¹è±¡
-        GirlFriend gf1 = new GirlFriend("å°ç¾", 18, "å¥³", "åƒä¸œè¥¿");
-        GirlFriend gf2 = new GirlFriend("å°ç‹", 20, "å¥³", "ä¹°ä¸œè¥¿");
-        GirlFriend gf3 = new GirlFriend("å°çº¢", 22, "å¥³", "é€›è¡—");
-        GirlFriend gf4 = new GirlFriend("å°èµµ", 24, "å¥³", "ä¸Šç­");
-        //3.å°†å¯¹è±¡æ·»åŠ åˆ°æ•°ç»„ä¸­
+        //2.´´½¨¶ÔÏó
+        GirlFriend gf1 = new GirlFriend("Ğ¡ÃÀ", 18, "Å®", "³Ô¶«Î÷");
+        GirlFriend gf2 = new GirlFriend("Ğ¡Íõ", 20, "Å®", "Âò¶«Î÷");
+        GirlFriend gf3 = new GirlFriend("Ğ¡ºì", 22, "Å®", "¹ä½Ö");
+        GirlFriend gf4 = new GirlFriend("Ğ¡ÕÔ", 24, "Å®", "ÉÏ°à");
+        //3.½«¶ÔÏóÌí¼Óµ½Êı×éÖĞ
         arr[0] = gf1;
         arr[1] = gf2;
         arr[2] = gf3;
         arr[3] = gf4;
-        //4.è®¡ç®—å‡ºå¹³å‡å¹´é¾„
-        //æ±‚å’Œ
+        //4.¼ÆËã³öÆ½¾ùÄêÁä
+        //ÇóºÍ
         int sum = 0;
         for (GirlFriend gf : arr) {
             sum = sum + gf.getAge();
@@ -27,7 +27,7 @@ public class GirlFriendTest {
         int avg = sum / arr.length;
         System.out.println(avg);
 
-        //5.ç»Ÿè®¡å¹´é¾„æ¯”å¹³å‡å€¼ä½çš„æœ‰å‡ ä¸ª
+        //5.Í³¼ÆÄêÁä±ÈÆ½¾ùÖµµÍµÄÓĞ¼¸¸ö
         int count = 0;
         for (GirlFriend gf : arr) {
             int age = gf.getAge();

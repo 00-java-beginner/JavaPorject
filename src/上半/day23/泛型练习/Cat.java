@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day23.æ³›å‹ç»ƒä¹ ;
+package ÉÏ°ë.day23.·ºĞÍÁ·Ï°;
 
 public abstract class Cat extends Animal{
 

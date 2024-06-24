@@ -1,34 +1,35 @@
-package ä¸ŠåŠ.day11;
+/*
+package ÉÏ°ë.day11;
 
 import java.util.ArrayList;
 
-public class p114_æŸ¥æ‰¾ç”¨æˆ·æ˜¯å¦å­˜åœ¨ {
+public class p114_²éÕÒÓÃ»§ÊÇ·ñ´æÔÚ {
     public static void main(String[] args) {
-        //1.åˆ›å»ºä¸€ä¸ªé›†åˆ
+        //1.´´½¨Ò»¸ö¼¯ºÏ
         ArrayList<User> list = new ArrayList<>();
-        //2.åˆ›å»ºå¯¹è±¡
+        //2.´´½¨¶ÔÏó
         User u1 = new User("001","zhangsan","123456");
         User u2 = new User("002","lisi","12345678");
         User u3 = new User("003","wangwu","123456qwe");
-        //3.æ·»åŠ å…ƒç´ åˆ°é›†åˆä¸­
+        //3.Ìí¼ÓÔªËØµ½¼¯ºÏÖĞ
         list.add(u1);
         list.add(u2);
         list.add(u3);
-        //4.è°ƒç”¨æ–¹æ³•
+        //4.µ÷ÓÃ·½·¨
         boolean flag = contains(list,"001");
         System.out.println(flag);
-        //5.æŸ¥æ‰¾ç´¢å¼•
+        //5.²éÕÒË÷Òı
         int index = getIndex(list,"001");
         System.out.println(index);
     }
-    //å®šä¹‰æ–¹æ³•æŸ¥è¯¢idæ˜¯å¦å­˜åœ¨
+    //¶¨Òå·½·¨²éÑ¯idÊÇ·ñ´æÔÚ
     public static boolean contains(ArrayList<User> list,String id){
         for (int i = 0; i < list.size(); i++) {
-            //å…ˆè·å–ç”¨æˆ·å¯¹è±¡
+            //ÏÈ»ñÈ¡ÓÃ»§¶ÔÏó
             User u = list.get(i);
-            //è·å–ç”¨æˆ·å¯¹è±¡é‡Œé¢çš„id
+            //»ñÈ¡ÓÃ»§¶ÔÏóÀïÃæµÄid
             String uid = u.getId();
-            //è¿›è¡Œåˆ¤æ–­
+            //½øĞĞÅĞ¶Ï
             if (uid.equals(id)){
                 return true;
             }
@@ -52,3 +53,4 @@ public class p114_æŸ¥æ‰¾ç”¨æˆ·æ˜¯å¦å­˜åœ¨ {
 
 
 }
+*/

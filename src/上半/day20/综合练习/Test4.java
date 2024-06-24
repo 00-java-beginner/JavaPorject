@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day20.ç»¼åˆç»ƒä¹ ;
+package ÉÏ°ë.day20.×ÛºÏÁ·Ï°;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -8,17 +8,17 @@ import java.util.Date;
 
 public class Test4 {
     public static void main(String[] args) throws ParseException {
-        //1.ç”¨jdk7è®¡ç®—å‡ºç”Ÿåˆ°ç°åœ¨ä¸€å…±å¤šå°‘å¤©
-        String birthday = "2000å¹´6æœˆ30æ—¥";
-        //è§£æå­—ç¬¦ä¸²
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyyå¹´MMæœˆddæ—¥");
-        //è·å–æ¯«ç§’å€¼
+        //1.ÓÃjdk7¼ÆËã³öÉúµ½ÏÖÔÚÒ»¹²¶àÉÙÌì
+        String birthday = "2000Äê6ÔÂ30ÈÕ";
+        //½âÎö×Ö·û´®
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyyÄêMMÔÂddÈÕ");
+        //»ñÈ¡ºÁÃëÖµ
         Date data = sdf.parse(birthday);
-        //å°†è·å–åˆ°çš„æ¯«ç§’å€¼èµ‹å€¼ç»™åŸºæœ¬æ•°æ®ç±»å‹
+        //½«»ñÈ¡µ½µÄºÁÃëÖµ¸³Öµ¸ø»ù±¾Êı¾İÀàĞÍ
         long birthdayTime = data.getTime();
-        //è·å–å½“å‰æ—¶é—´çš„æ¯«ç§’å€¼
+        //»ñÈ¡µ±Ç°Ê±¼äµÄºÁÃëÖµ
         long todayTime = System.currentTimeMillis();
-        //æ±‚å‡ºä¸¤ä¸ªæ¯«ç§’å€¼çš„å·®å€¼
+        //Çó³öÁ½¸öºÁÃëÖµµÄ²îÖµ
         long time = todayTime - birthdayTime;
         System.out.println(time / 3600 / 24 / 1000);
 

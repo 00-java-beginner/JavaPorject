@@ -1,44 +1,44 @@
-package ä¸ŠåŠ.day16_day17;
+package ÉÏ°ë.day16_day17;
 
 import java.util.ArrayList;
 import java.util.Random;
 
 public class CodeUtil {
   public static String getCode(){
-    //1.åˆ›å»ºä¸€ä¸ªé›†åˆ
-    ArrayList<Character> list = new ArrayList<>();//52  ç´¢å¼•çš„èŒƒå›´ï¼š0 ~ 51
-    //2.æ·»åŠ å­—æ¯ a - z  A - Z
+    //1.´´½¨Ò»¸ö¼¯ºÏ
+    ArrayList<Character> list = new ArrayList<>();//52  Ë÷ÒıµÄ·¶Î§£º0 ~ 51
+    //2.Ìí¼Ó×ÖÄ¸ a - z  A - Z
     for (int i = 0; i < 26; i++) {
       list.add((char)('a' + i));//a - z
       list.add((char)('A' + i));//A - Z
     }
-    //3.æ‰“å°é›†åˆ
+    //3.´òÓ¡¼¯ºÏ
     //System.out.println(list);
-    //4.ç”Ÿæˆ4ä¸ªéšæœºå­—æ¯
+    //4.Éú³É4¸öËæ»ú×ÖÄ¸
     String result = "";
     Random r = new Random();
     for (int i = 0; i < 4; i++) {
-      //è·å–éšæœºç´¢å¼•
+      //»ñÈ¡Ëæ»úË÷Òı
       int randomIndex = r.nextInt(list.size());
       char c = list.get(randomIndex);
       result = result + c;
     }
-    //System.out.println(result);//é•¿åº¦ä¸º4çš„éšæœºå­—ç¬¦ä¸²
+    //System.out.println(result);//³¤¶ÈÎª4µÄËæ»ú×Ö·û´®
 
-    //5.åœ¨åé¢æ‹¼æ¥æ•°å­— 0~9
+    //5.ÔÚºóÃæÆ´½ÓÊı×Ö 0~9
     int number = r.nextInt(10);
-    //6.æŠŠéšæœºæ•°å­—æ‹¼æ¥åˆ°resultçš„åé¢
+    //6.°ÑËæ»úÊı×ÖÆ´½Óµ½resultµÄºóÃæ
     result = result + number;
     //System.out.println(result);//ABCD5
-    //7.æŠŠå­—ç¬¦ä¸²å˜æˆå­—ç¬¦æ•°ç»„
+    //7.°Ñ×Ö·û´®±ä³É×Ö·ûÊı×é
     char[] chars = result.toCharArray();//[A,B,C,D,5]
-    //8.åœ¨å­—ç¬¦æ•°ç»„ä¸­ç”Ÿæˆä¸€ä¸ªéšæœºç´¢å¼•
+    //8.ÔÚ×Ö·ûÊı×éÖĞÉú³ÉÒ»¸öËæ»úË÷Òı
     int index = r.nextInt(chars.length);
-    //9.æ‹¿ç€4ç´¢å¼•ä¸Šçš„æ•°å­—ï¼Œè·Ÿéšæœºç´¢å¼•ä¸Šçš„æ•°å­—è¿›è¡Œäº¤æ¢
+    //9.ÄÃ×Å4Ë÷ÒıÉÏµÄÊı×Ö£¬¸úËæ»úË÷ÒıÉÏµÄÊı×Ö½øĞĞ½»»»
     char temp = chars[4];
     chars[4] = chars[index];
     chars[index] = temp;
-    //10.æŠŠå­—ç¬¦æ•°ç»„å†å˜å›å­—ç¬¦ä¸²
+    //10.°Ñ×Ö·ûÊı×éÔÙ±ä»Ø×Ö·û´®
     String code = new String(chars);
     //System.out.println(code);
     return code;

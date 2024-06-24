@@ -1,4 +1,4 @@
-package 涓婂崐.day23.set;
+package 上半.day23.set;
 
 import java.util.TreeSet;
 
@@ -13,9 +13,9 @@ public class Treeset {
 
         TreeSet<Student> ts2 = new TreeSet<>();
 
-        Student s1 = new Student(23,"寮犱笁");
-        Student s2 = new Student(22,"鏉庡洓");
-        Student s3 = new Student(25,"鐜嬩簲");
+        Student s1 = new Student(23,"张三");
+        Student s2 = new Student(22,"李四");
+        Student s3 = new Student(25,"王五");
         ts2.add(s1);
         ts2.add(s2);
         ts2.add(s3);

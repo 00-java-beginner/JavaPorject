@@ -1,8 +1,8 @@
-package 涓婂崐.day15.p135_鎶借薄绫诲拰鎶借薄鏂规硶;
+package 上半.day15.p135_抽象类和抽象方法;
 
 public class Test {
     public static void main(String[] args) {
-        Forg f = new Forg("灏忕豢",2);
+        Forg f = new Forg("小绿",2);
         System.out.println(f.getName() + ", " + f.getAge());
         f.eat();
         f.drink();

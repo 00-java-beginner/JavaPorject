@@ -1,6 +1,6 @@
-package ä¸ŠåŠ.day9.p93_é¢å‘å¯¹è±¡ç»¼åˆç»ƒä¹ ;
+package ÉÏ°ë.day9.p93_ÃæÏò¶ÔÏó×ÛºÏÁ·Ï°;
 public class GirlFriend {
-    //å¥³æœ‹å‹çš„å±æ€§:å§“åã€å¹´é¾„ã€æ€§åˆ«ã€çˆ±å¥½
+    //Å®ÅóÓÑµÄÊôĞÔ:ĞÕÃû¡¢ÄêÁä¡¢ĞÔ±ğ¡¢°®ºÃ
     private String name;
     private int age;
     private String gender;

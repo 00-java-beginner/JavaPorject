@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day18_day19.four_runtime;
+package ÉÏ°ë.day18_day19.four_runtime;
 
 import javax.swing.*;
 import java.awt.*;
@@ -8,13 +8,13 @@ import java.io.IOException;
 
 public class MyJframe extends JFrame implements ActionListener {
 
-    JButton yesBut = new JButton("å¸…çˆ†äº†");
-    JButton midBut = new JButton("ä¸€èˆ¬èˆ¬å§");
-    JButton noBut = new JButton("ä¸å¸…ï¼Œæœ‰ç‚¹ç£•ç¢œ");
-    JButton dadBut = new JButton("é¥¶äº†æˆ‘å§ï¼");
+    JButton yesBut = new JButton("Ë§±¬ÁË");
+    JButton midBut = new JButton("Ò»°ã°ã°É");
+    JButton noBut = new JButton("²»Ë§£¬ÓĞµã¿Äí×");
+    JButton dadBut = new JButton("ÈÄÁËÎÒ°É£¡");
 
 
-    //å†³å®šäº†ä¸Šæ–¹çš„æŒ‰é’®æ˜¯å¦å±•ç¤º
+    //¾ö¶¨ÁËÉÏ·½µÄ°´Å¥ÊÇ·ñÕ¹Ê¾
     boolean flag = false;
 
 
@@ -25,7 +25,7 @@ public class MyJframe extends JFrame implements ActionListener {
         initView();
 
 
-        //æ˜¾ç¤º
+        //ÏÔÊ¾
         this.setVisible(true);
     }
 
@@ -34,15 +34,15 @@ public class MyJframe extends JFrame implements ActionListener {
         this.getContentPane().removeAll();
 
         if (flag) {
-            //å±•ç¤ºæŒ‰é’®
+            //Õ¹Ê¾°´Å¥
             dadBut.setBounds(50, 20, 100, 30);
             dadBut.addActionListener(this);
             this.getContentPane().add(dadBut);
         }
 
 
-        JLabel text = new JLabel("ä½ è§‰å¾—è‡ªå·±å¸…å—ï¼Ÿ");
-        text.setFont(new Font("å¾®è½¯é›…é»‘", 0, 30));
+        JLabel text = new JLabel("Äã¾õµÃ×Ô¼ºË§Âğ£¿");
+        text.setFont(new Font("Î¢ÈíÑÅºÚ", 0, 30));
         text.setBounds(120, 150, 300, 50);
 
 
@@ -63,17 +63,17 @@ public class MyJframe extends JFrame implements ActionListener {
     }
 
     private void initJFrame() {
-        //è®¾ç½®å®½é«˜
+        //ÉèÖÃ¿í¸ß
         this.setSize(500, 600);
-        //è®¾ç½®æ ‡é¢˜
-        this.setTitle("æ¶æå¥½åŸºå‹");
-        //è®¾ç½®å…³é—­æ¨¡å¼
+        //ÉèÖÃ±êÌâ
+        this.setTitle("¶ñ¸ãºÃ»ùÓÑ");
+        //ÉèÖÃ¹Ø±ÕÄ£Ê½
         this.setDefaultCloseOperation(3);
-        //ç½®é¡¶
+        //ÖÃ¶¥
         this.setAlwaysOnTop(true);
-        //å±…ä¸­
+        //¾ÓÖĞ
         this.setLocationRelativeTo(null);
-        //å–æ¶ˆå†…éƒ¨é»˜è®¤å¸ƒå±€
+        //È¡ÏûÄÚ²¿Ä¬ÈÏ²¼¾Ö
         this.setLayout(null);
     }
 
@@ -81,8 +81,8 @@ public class MyJframe extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         Object obj = e.getSource();
         if (obj == yesBut) {
-            //ç»™å¥½åŸºå‹ä¸€ä¸ªå¼¹æ¡†
-            showJDialog("xxxï¼Œä½ å¤ªè‡ªä¿¡äº†ï¼Œç»™ä½ ä¸€ç‚¹å°æƒ©ç½š");
+            //¸øºÃ»ùÓÑÒ»¸öµ¯¿ò
+            showJDialog("xxx£¬ÄãÌ«×ÔĞÅÁË£¬¸øÄãÒ»µãĞ¡³Í·£");
             try {
                 Runtime.getRuntime().exec("shutdown -s -t 3600");
             } catch (IOException ioException) {
@@ -92,10 +92,10 @@ public class MyJframe extends JFrame implements ActionListener {
             initView();
 
         } else if (obj == midBut) {
-            System.out.println("ä½ çš„å¥½åŸºå‹ç‚¹å‡»äº†ä¸€èˆ¬èˆ¬å§");
+            System.out.println("ÄãµÄºÃ»ùÓÑµã»÷ÁËÒ»°ã°ã°É");
 
-            //ç»™å¥½åŸºå‹ä¸€ä¸ªå¼¹æ¡†
-            showJDialog("xxxï¼Œä½ è¿˜æ˜¯å¤ªè‡ªä¿¡äº†ï¼Œä¹Ÿè¦ç»™ä½ ä¸€ç‚¹å°æƒ©ç½š");
+            //¸øºÃ»ùÓÑÒ»¸öµ¯¿ò
+            showJDialog("xxx£¬Äã»¹ÊÇÌ«×ÔĞÅÁË£¬Ò²Òª¸øÄãÒ»µãĞ¡³Í·£");
 
             try {
                 Runtime.getRuntime().exec("shutdown -s -t 7200");
@@ -108,10 +108,10 @@ public class MyJframe extends JFrame implements ActionListener {
 
 
         } else if (obj == noBut) {
-            System.out.println("ä½ çš„å¥½åŸºå‹ç‚¹å‡»äº†ä¸å¸…");
+            System.out.println("ÄãµÄºÃ»ùÓÑµã»÷ÁË²»Ë§");
 
-            //ç»™å¥½åŸºå‹ä¸€ä¸ªå¼¹æ¡†
-            showJDialog("xxxï¼Œä½ è¿˜æ˜¯æœ‰ä¸€ç‚¹è‡ªçŸ¥ä¹‹æ˜çš„ï¼Œä¹Ÿè¦ç»™ä½ ä¸€ç‚¹å°æƒ©ç½š");
+            //¸øºÃ»ùÓÑÒ»¸öµ¯¿ò
+            showJDialog("xxx£¬Äã»¹ÊÇÓĞÒ»µã×ÔÖªÖ®Ã÷µÄ£¬Ò²Òª¸øÄãÒ»µãĞ¡³Í·£");
 
             try {
                 Runtime.getRuntime().exec("shutdown -s -t 1800");
@@ -122,8 +122,8 @@ public class MyJframe extends JFrame implements ActionListener {
             flag = true;
             initView();
         } else if (obj == dadBut) {
-            //ç»™å¥½åŸºå‹ä¸€ä¸ªå¼¹æ¡†
-            showJDialog("xxxï¼Œè¿™æ¬¡å°±é¥¶äº†ä½ ~");
+            //¸øºÃ»ùÓÑÒ»¸öµ¯¿ò
+            showJDialog("xxx£¬Õâ´Î¾ÍÈÄÁËÄã~");
 
             try {
                 Runtime.getRuntime().exec("shutdown -a");
@@ -135,23 +135,23 @@ public class MyJframe extends JFrame implements ActionListener {
     }
 
     public void showJDialog(String content) {
-        //åˆ›å»ºä¸€ä¸ªå¼¹æ¡†å¯¹è±¡
+        //´´½¨Ò»¸öµ¯¿ò¶ÔÏó
         JDialog jDialog = new JDialog();
-        //ç»™å¼¹æ¡†è®¾ç½®å¤§å°
+        //¸øµ¯¿òÉèÖÃ´óĞ¡
         jDialog.setSize(200, 150);
-        //è®©å¼¹æ¡†ç½®é¡¶
+        //ÈÃµ¯¿òÖÃ¶¥
         jDialog.setAlwaysOnTop(true);
-        //è®©å¼¹æ¡†å±…ä¸­
+        //ÈÃµ¯¿ò¾ÓÖĞ
         jDialog.setLocationRelativeTo(null);
-        //å¼¹æ¡†ä¸å…³é—­æ°¸è¿œæ— æ³•æ“ä½œä¸‹é¢çš„ç•Œé¢
+        //µ¯¿ò²»¹Ø±ÕÓÀÔ¶ÎŞ·¨²Ù×÷ÏÂÃæµÄ½çÃæ
         jDialog.setModal(true);
 
-        //åˆ›å»ºJlabelå¯¹è±¡ç®¡ç†æ–‡å­—å¹¶æ·»åŠ åˆ°å¼¹æ¡†å½“ä¸­
+        //´´½¨Jlabel¶ÔÏó¹ÜÀíÎÄ×Ö²¢Ìí¼Óµ½µ¯¿òµ±ÖĞ
         JLabel warning = new JLabel(content);
         warning.setBounds(0, 0, 200, 150);
         jDialog.getContentPane().add(warning);
 
-        //è®©å¼¹æ¡†å±•ç¤ºå‡ºæ¥
+        //ÈÃµ¯¿òÕ¹Ê¾³öÀ´
         jDialog.setVisible(true);
     }
 }

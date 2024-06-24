@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day18_day19.nine_regex.two;
+package ÉÏ°ë.day18_day19.nine_regex.two;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -6,21 +6,21 @@ import java.util.regex.Pattern;
 public class RegexDemo10 {
     public static void main(String[] args) {
         /*
-            åªå†™+å’Œ*è¡¨ç¤ºè´ªå©ªåŒ¹é…
+            Ö»Ğ´+ºÍ*±íÊ¾Ì°À·Æ¥Åä
 
-            +? éè´ªå©ªåŒ¹é…
-            *? éè´ªå©ªåŒ¹é…
+            +? ·ÇÌ°À·Æ¥Åä
+            *? ·ÇÌ°À·Æ¥Åä
 
-            è´ªå©ªçˆ¬å–:åœ¨çˆ¬å–æ•°æ®çš„æ—¶å€™å°½å¯èƒ½çš„å¤šè·å–æ•°æ®
-            éè´ªå©ªçˆ¬å–:åœ¨çˆ¬å–æ•°æ®çš„æ—¶å€™å°½å¯èƒ½çš„å°‘è·å–æ•°æ®
+            Ì°À·ÅÀÈ¡:ÔÚÅÀÈ¡Êı¾İµÄÊ±ºò¾¡¿ÉÄÜµÄ¶à»ñÈ¡Êı¾İ
+            ·ÇÌ°À·ÅÀÈ¡:ÔÚÅÀÈ¡Êı¾İµÄÊ±ºò¾¡¿ÉÄÜµÄÉÙ»ñÈ¡Êı¾İ
 
             ab+:
-            è´ªå©ªçˆ¬å–:abbbbbbbbbbbb
-            éè´ªå©ªçˆ¬å–:ab
+            Ì°À·ÅÀÈ¡:abbbbbbbbbbbb
+            ·ÇÌ°À·ÅÀÈ¡:ab
         */
-        String s = "Javaè‡ªä»95å¹´é—®ä¸–ä»¥æ¥ï¼Œabbbbbbbbbbbbaaaaaaaaaaaaaaaaaa" +
-                "ç»å†äº†å¾ˆå¤šç‰ˆæœ¨ï¼Œç›®å‰ä¼ä¸šä¸­ç”¨çš„æœ€å¤šçš„æ˜¯]ava8å’Œ]ava11ï¼Œå› ä¸ºè¿™ä¸¤ä¸ªæ˜¯é•¿æœŸæ”¯æŒç‰ˆæœ¨ã€‚" +
-                "ä¸‹ä¸€ä¸ªé•¿æœŸæ”¯æŒç‰ˆæœ¬æ˜¯Java17ï¼Œç›¸ä¿¡åœ¨æœªæ¥ä¸ä¹…Java17ä¹Ÿä¼šé€æ¸ç™»ä¸Šå†å²èˆå°";
+        String s = "Java×Ô´Ó95ÄêÎÊÊÀÒÔÀ´£¬abbbbbbbbbbbbaaaaaaaaaaaaaaaaaa" +
+                "¾­ÀúÁËºÜ¶à°æÄ¾£¬Ä¿Ç°ÆóÒµÖĞÓÃµÄ×î¶àµÄÊÇ]ava8ºÍ]ava11£¬ÒòÎªÕâÁ½¸öÊÇ³¤ÆÚÖ§³Ö°æÄ¾¡£" +
+                "ÏÂÒ»¸ö³¤ÆÚÖ§³Ö°æ±¾ÊÇJava17£¬ÏàĞÅÔÚÎ´À´²»¾ÃJava17Ò²»áÖğ½¥µÇÉÏÀúÊ·ÎèÌ¨";
 
         String regex = "ab+";
         Pattern p = Pattern.compile(regex);

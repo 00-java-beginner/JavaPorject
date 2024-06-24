@@ -1,10 +1,10 @@
-package ä¸ŠåŠ.day10;
+package ÉÏ°ë.day10;
 import java.util.Random;
 public class p110_test2 {
     public static void main(String[] args) {
-        //ç”ŸæˆéªŒè¯ç ï¼Œå¯ä»¥æ˜¯å¤§å†™ï¼Œä¹Ÿå¯ä»¥æ˜¯å°å†™ï¼Œè¿˜å¯ä»¥æ˜¯æ•°å­—
-        //è§„åˆ™ï¼šé•¿åº¦ä¸º5ï¼Œå››ä½å­—æ¯ï¼Œä¸€ä½æ•°å­—ï¼Œæ•°å­—å¯ä»¥å‡ºç°åœ¨ä»»æ„ä½ç½®
-        //1.å¯ä»¥æŠŠæ‰€æœ‰å¤§å°å†™å­—æ¯æ”¾åœ¨ä¸€ä¸ªæ•°ç»„ä¸­
+        //Éú³ÉÑéÖ¤Âë£¬¿ÉÒÔÊÇ´óĞ´£¬Ò²¿ÉÒÔÊÇĞ¡Ğ´£¬»¹¿ÉÒÔÊÇÊı×Ö
+        //¹æÔò£º³¤¶ÈÎª5£¬ËÄÎ»×ÖÄ¸£¬Ò»Î»Êı×Ö£¬Êı×Ö¿ÉÒÔ³öÏÖÔÚÈÎÒâÎ»ÖÃ
+        //1.¿ÉÒÔ°ÑËùÓĞ´óĞ¡Ğ´×ÖÄ¸·ÅÔÚÒ»¸öÊı×éÖĞ
         char[] arr = new char[52];
         for (int i = 0; i < arr.length; i++) {
             if (i <= 25){
@@ -13,27 +13,27 @@ public class p110_test2 {
                 arr[i] = (char) (65 + i - 26);
             }
         }
-        //2.ä»æ•°ç»„ä¸­éšæœºå››æ¬¡å°†å­—æ¯å–å‡ºæ¥
+        //2.´ÓÊı×éÖĞËæ»úËÄ´Î½«×ÖÄ¸È¡³öÀ´
         Random r = new Random();
         String result = "";
         for (int i = 0; i < 4; i++) {
             int randomIndex = r.nextInt(arr.length);
             result = result + arr[randomIndex];
         }
-        //3.ç”Ÿæˆä¸€ä¸ªéšæœºæ•°å­—æ‹¼æ¥åœ¨åé¢ï¼Œå¹¶æ‰“ä¹±é¡ºåº
+        //3.Éú³ÉÒ»¸öËæ»úÊı×ÖÆ´½ÓÔÚºóÃæ£¬²¢´òÂÒË³Ğò
         int number = r.nextInt(10);
-        //4.ç”Ÿæˆæœ€ç»ˆçš„ç»“æœå¹¶è½¬æ¢æˆæ•°ç»„
+        //4.Éú³É×îÖÕµÄ½á¹û²¢×ª»»³ÉÊı×é
         result = result + number;
         char[] newArr = result.toCharArray();
-        //5.æ‰“ä¹±æ•°ç»„ä¸­çš„å†…å®¹
+        //5.´òÂÒÊı×éÖĞµÄÄÚÈİ
         for (int i = 0; i < newArr.length; i++) {
-            //è·å–ä¸€ä¸ªéšæœºç´¢å¼•
+            //»ñÈ¡Ò»¸öËæ»úË÷Òı
             int index = r.nextInt(newArr.length);
             char temp = newArr[i];
             newArr[i] = newArr[index];
             newArr[index] = temp;
         }
-        //6.å°†æ•°ç»„è½¬æ¢ä¸ºå­—ç¬¦ä¸²
+        //6.½«Êı×é×ª»»Îª×Ö·û´®
         String result1 = new String(newArr);
         System.out.println(result1);
 

@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day15.p135_æŠ½è±¡ç±»å’ŒæŠ½è±¡æ–¹æ³•;
+package ÉÏ°ë.day15.p135_³éÏóÀàºÍ³éÏó·½·¨;
 
 public class Dog extends Animal {
     public Dog() {
@@ -10,6 +10,6 @@ public class Dog extends Animal {
 
     @Override
     public void eat() {
-        System.out.println("ç‹—åœ¨åƒéª¨å¤´");
+        System.out.println("¹·ÔÚ³Ô¹ÇÍ·");
     }
 }

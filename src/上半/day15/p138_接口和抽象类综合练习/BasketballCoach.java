@@ -1,4 +1,4 @@
-package 涓婂崐.day15.p138_鎺ュ彛鍜屾娊璞＄被缁煎悎缁冧範;
+package 上半.day15.p138_接口和抽象类综合练习;
 
 public class BasketballCoach extends Coach{
     public BasketballCoach() {
@@ -10,6 +10,6 @@ public class BasketballCoach extends Coach{
 
     @Override
     public void teach() {
-        System.out.println("绡悆鏁欑粌鍦ㄦ暀绡悆");
+        System.out.println("篮球教练在教篮球");
     }
 }

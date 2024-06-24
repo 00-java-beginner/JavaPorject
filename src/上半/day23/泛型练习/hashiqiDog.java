@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day23.æ³›å‹ç»ƒä¹ ;
+package ÉÏ°ë.day23.·ºĞÍÁ·Ï°;
 
 public class hashiqiDog extends Dog{
     public hashiqiDog() {
@@ -10,6 +10,6 @@ public class hashiqiDog extends Dog{
 
     @Override
     public void eat(){
-        System.out.println("ä¸€åªå«åš" + getName()+ "çš„"+getAge() + "å²çš„å“ˆå£«å¥‡ï¼Œæ­£åœ¨åƒéª¨å¤´ï¼Œè¾¹åƒè¾¹æ‹†å®¶");
+        System.out.println("Ò»Ö»½Ğ×ö" + getName()+ "µÄ"+getAge() + "ËêµÄ¹şÊ¿Ææ£¬ÕıÔÚ³Ô¹ÇÍ·£¬±ß³Ô±ß²ğ¼Ò");
     }
 }

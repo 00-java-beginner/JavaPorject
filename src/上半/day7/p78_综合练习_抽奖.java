@@ -1,30 +1,30 @@
 import java.util.Random;
 
-public class p78_ç»¼åˆç»ƒä¹ _æŠ½å¥– {
+public class p78_×ÛºÏÁ·Ï°_³é½± {
     public static void main(String[] args) {
-        //1.å®šä¹‰æ•°ç»„
+        //1.¶¨ÒåÊı×é
         int[] arr = {88, 888, 8888, 88888, 888888};
-        //2.å®šä¹‰ä¸€ä¸ªæ–°çš„æ•°ç»„ç”¨æ¥æ¥å—
+        //2.¶¨ÒåÒ»¸öĞÂµÄÊı×éÓÃÀ´½ÓÊÜ
         int [] newArr = new int [arr.length];
-        //3.æŠ½å¥–
+        //3.³é½±
         Random r = new Random();
         for (int i = 0; i < 5; ) {
-            //è·å–éšæœºç´¢å¼•
+            //»ñÈ¡Ëæ»úË÷Òı
             int randomIndex = r.nextInt(arr.length);
-            //è·å–å¥–é¡¹
+            //»ñÈ¡½±Ïî
             int prize = arr[randomIndex];
-            //åˆ¤æ–­å¥–é¡¹æ˜¯å¦å­˜åœ¨ï¼Œå¦‚æœå­˜åœ¨åˆ™é‡æ–°æŠ½å–ï¼Œä¸å­˜åœ¨åˆ™æ˜¯æœ‰æ•ˆå¥–é¡¹
+            //ÅĞ¶Ï½±ÏîÊÇ·ñ´æÔÚ£¬Èç¹û´æÔÚÔòÖØĞÂ³éÈ¡£¬²»´æÔÚÔòÊÇÓĞĞ§½±Ïî
             if(!(contains(newArr,prize))){
-                //æŠŠæŠ½å–åˆ°çš„å¥–é¡¹æ”¾åˆ°newArré‡Œé¢
+                //°Ñ³éÈ¡µ½µÄ½±Ïî·Åµ½newArrÀïÃæ
                 newArr[i] = prize;
-                i++;//æ·»åŠ å®Œæ¯•åç§»åŠ¨ç´¢å¼•
+                i++;//Ìí¼ÓÍê±ÏºóÒÆ¶¯Ë÷Òı
             }
         }
         for (int i = 0; i < newArr.length; i++) {
             System.out.println(newArr[i]);
         }
     }
-    //å®šä¹‰æ–¹æ³•åˆ¤æ–­prizeåœ¨æ•°ç»„å½“ä¸­æ˜¯å¦å­˜åœ¨,å­˜åœ¨è¿”å›true  ä¸å­˜åœ¨è¿”å›false
+    //¶¨Òå·½·¨ÅĞ¶ÏprizeÔÚÊı×éµ±ÖĞÊÇ·ñ´æÔÚ,´æÔÚ·µ»Øtrue  ²»´æÔÚ·µ»Øfalse
     public static boolean contains(int [] arr,int prize){
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == prize){

@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day23.set;
+package ÉÏ°ë.day23.set;
 
 import java.util.HashSet;
 import java.util.Iterator;
@@ -8,23 +8,23 @@ import java.util.Set;
 public class Test1 {
     public static void main(String[] args) {
         Set<String> s = new HashSet<>();
-        boolean r1 = s.add("å¼ ä¸‰");
-        boolean r2 = s.add("æå››");
-        boolean r3 = s.add("ç‹äº”");
-        boolean r4 = s.add("èµµå…­");
+        boolean r1 = s.add("ÕÅÈı");
+        boolean r2 = s.add("ÀîËÄ");
+        boolean r3 = s.add("ÍõÎå");
+        boolean r4 = s.add("ÕÔÁù");
 
-        //è¿­ä»£å™¨éå†
+        //µü´úÆ÷±éÀú
         Iterator<String> it = s.iterator();
         while (it.hasNext()){
             String str = it.next();
             System.out.println(str);
         }
-        //å¢å¼ºfor
+        //ÔöÇ¿for
         for (String str : s) {
             System.out.println(str);
         }
 
-        //lambdaè¡¨è¾¾å¼
+        //lambda±í´ïÊ½
         s.forEach(str ->System.out.println(str));
 
     }

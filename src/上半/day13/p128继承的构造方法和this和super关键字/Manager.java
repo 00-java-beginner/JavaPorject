@@ -1,13 +1,13 @@
-package ä¸ŠåŠ.day13.p128ç»§æ‰¿çš„æ„é€ æ–¹æ³•å’Œthiså’Œsuperå…³é”®å­—;
+package ÉÏ°ë.day13.p128¼Ì³ĞµÄ¹¹Ôì·½·¨ºÍthisºÍsuper¹Ø¼ü×Ö;
 
 public class Manager extends Employee {
     private double bouns;
 
-    //ç©ºå‚æ„é€ 
+    //¿Õ²Î¹¹Ôì
     public Manager(){
 
     }
-    //å¸¦å…¨éƒ¨å‚æ•°æ„é€ 
+    //´øÈ«²¿²ÎÊı¹¹Ôì
     public Manager(String id,String name,double salary,double bouns){
         super(id,name,salary);
         this.bouns = bouns;
@@ -20,6 +20,6 @@ public class Manager extends Employee {
     }
     @Override
     public void work(){
-        System.out.println("ç®¡ç†å…¶ä»–äºº");
+        System.out.println("¹ÜÀíÆäËûÈË");
     }
 }

@@ -1,11 +1,11 @@
-package ä¸ŠåŠ.day21.Lambda;
+package ÉÏ°ë.day21.Lambda;
 
 import java.util.Arrays;
 
 public class LambdaTest {
     public static void main(String[] args) {
-        /*å®šä¹‰æ•°ç»„å¹¶å­˜å‚¨ä¸€äº›å­—ç¬¦ä¸²ï¼Œåˆ©ç”¨Arraysä¸­çš„sortæ–¹æ³•è¿›è¡ŒæŽ’åºè¦æ±‚:
-        æŒ‰ç…§å­—ç¬¦ä¸²çš„é•¿åº¦è¿›è¡ŒæŽ’åºï¼ŒçŸ­çš„åœ¨å‰é¢ï¼Œé•¿çš„åœ¨åŽé¢ã€‚*/
+        /*¶¨ÒåÊý×é²¢´æ´¢Ò»Ð©×Ö·û´®£¬ÀûÓÃArraysÖÐµÄsort·½·¨½øÐÐÅÅÐòÒªÇó:
+        °´ÕÕ×Ö·û´®µÄ³¤¶È½øÐÐÅÅÐò£¬¶ÌµÄÔÚÇ°Ãæ£¬³¤µÄÔÚºóÃæ¡£*/
 
         String[] arr = {"a", "aaaa", "aaa", "aa"};
         Arrays.sort(arr, (o1, o2) -> o1.length() - o2.length());

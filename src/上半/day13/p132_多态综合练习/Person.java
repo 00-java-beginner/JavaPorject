@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day13.p132_å¤šæ€ç»¼åˆç»ƒä¹ ;
+package ÉÏ°ë.day13.p132_¶àÌ¬×ÛºÏÁ·Ï°;
 public class Person {
     private int age;
     private String name;
@@ -27,30 +27,30 @@ public class Person {
     }
 
     public void keepPet(Dog dog, String something){
-        System.out.println("å¹´é¾„ä¸º"+age+"å²çš„"+name+"å…»äº†ä¸€åª"
-                +dog.getColor()+"é¢œè‰²çš„"+dog.getAge()+"å²çš„ç‹—");
+        System.out.println("ÄêÁäÎª"+age+"ËêµÄ"+name+"ÑøÁËÒ»Ö»"
+                +dog.getColor()+"ÑÕÉ«µÄ"+dog.getAge()+"ËêµÄ¹·");
         dog.eat(something);
 
     }
     public void keepPet(Cat cat , String something){
-        System.out.println("å¹´é¾„ä¸º"+age+"å²çš„"+name+"å…»äº†ä¸€åª"
-                +cat.getColor()+"é¢œè‰²çš„"+cat.getAge()+"å²çš„çŒ«");
+        System.out.println("ÄêÁäÎª"+age+"ËêµÄ"+name+"ÑøÁËÒ»Ö»"
+                +cat.getColor()+"ÑÕÉ«µÄ"+cat.getAge()+"ËêµÄÃ¨");
         cat.eat(something);
     }
-    //æƒ³è¦ä¸€ä¸ªæ–¹æ³•ï¼Œå¯ä»¥æ¥å—æ‰€æœ‰çš„åŠ¨ç‰©
-    //æ–¹æ³•çš„è¡Œå‚ï¼šå¯ä»¥å†™è¿™äº›çš„çˆ¶ç±»
+    //ÏëÒªÒ»¸ö·½·¨£¬¿ÉÒÔ½ÓÊÜËùÓĞµÄ¶¯Îï
+    //·½·¨µÄĞĞ²Î£º¿ÉÒÔĞ´ÕâĞ©µÄ¸¸Àà
     public void keepPet(Animal a,String something){
-        //å¯¹ä¼ é€’è¿‡æ¥çš„åŠ¨ç‰©è¿›è¡Œåˆ¤æ–­
+        //¶Ô´«µİ¹ıÀ´µÄ¶¯Îï½øĞĞÅĞ¶Ï
         if (a instanceof Dog d){
-            System.out.println("å¹´é¾„ä¸º"+age+"å²çš„"+name+"å…»äº†ä¸€åª"
-                    +d.getColor()+"é¢œè‰²çš„"+d.getAge()+"å²çš„ç‹—");
+            System.out.println("ÄêÁäÎª"+age+"ËêµÄ"+name+"ÑøÁËÒ»Ö»"
+                    +d.getColor()+"ÑÕÉ«µÄ"+d.getAge()+"ËêµÄ¹·");
             d.eat(something);
         }else if (a instanceof Cat c){
-            System.out.println("å¹´é¾„ä¸º"+age+"å²çš„"+name+"å…»äº†ä¸€åª"
-                    +c.getColor()+"é¢œè‰²çš„"+c.getAge()+"å²çš„ç‹—");
+            System.out.println("ÄêÁäÎª"+age+"ËêµÄ"+name+"ÑøÁËÒ»Ö»"
+                    +c.getColor()+"ÑÕÉ«µÄ"+c.getAge()+"ËêµÄ¹·");
             c.eat(something);
         }else {
-            System.out.println("æ²¡æœ‰è¿™ç§åŠ¨ç‰©");
+            System.out.println("Ã»ÓĞÕâÖÖ¶¯Îï");
         }
     }
 }

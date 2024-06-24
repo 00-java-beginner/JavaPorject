@@ -1,27 +1,27 @@
-package ä¸ŠåŠ.day18_day19.eight_bigdecimal;
+package ÉÏ°ë.day18_day19.eight_bigdecimal;
 
 import java.math.BigDecimal;
 
 public class BigDecimalDemo2 {
     public static void main(String[] args) {
         /*
-            æ„é€ æ–¹æ³•è·å–BigDecimalå¯¹è±¡
+            ¹¹Ôì·½·¨»ñÈ¡BigDecimal¶ÔÏó
             public BigDecimal(double val) public BigDecimal(string val)
 
-            é™æ€æ–¹æ³•è·å–BigDecimalå¯¹è±¡
+            ¾²Ì¬·½·¨»ñÈ¡BigDecimal¶ÔÏó
             public static BigDecimal valuef(double val)
         */
 
-        //1.é€šè¿‡ä¼ é€’doubleç±»å‹çš„å°æ•°æ¥åˆ›å»ºå¯¹è±¡
-        //ç»†èŠ‚:
-        //è¿™ç§æ–¹å¼æœ‰å¯èƒ½æ˜¯ä¸ç²¾ç¡®çš„ï¼Œæ‰€ä»¥ä¸å»ºè®®ä½¿ç”¨
+        //1.Í¨¹ı´«µİdoubleÀàĞÍµÄĞ¡ÊıÀ´´´½¨¶ÔÏó
+        //Ï¸½Ú:
+        //ÕâÖÖ·½Ê½ÓĞ¿ÉÄÜÊÇ²»¾«È·µÄ£¬ËùÒÔ²»½¨ÒéÊ¹ÓÃ
         BigDecimal bd1 = new BigDecimal(0.01);
         BigDecimal bd2 = new BigDecimal(0.09);
 
         System.out.println(bd1);
         System.out.println(bd2);
 
-        //é€šè¿‡ä¼ é€’å­—ç¬¦ä¸²è¡¨ç¤ºçš„å°æ•°æ¥åˆ›å»ºå¯¹è±¡
+        //Í¨¹ı´«µİ×Ö·û´®±íÊ¾µÄĞ¡ÊıÀ´´´½¨¶ÔÏó
         BigDecimal bd3 = new BigDecimal("0.01");
         BigDecimal bd4 = new BigDecimal("0.09");
         BigDecimal bd5 = bd3.add(bd4);
@@ -29,11 +29,11 @@ public class BigDecimalDemo2 {
         System.out.println(bd4);
         System.out.println(bd5);
 
-        //3.é€šè¿‡é™æ€æ–¹æ³•è·å–å¯¹è±¡
-        //ç»†èŠ‚:
-        //1.å¦‚æœè¦è¡¨ç¤ºçš„æ•°å­—ä¸å¤§ï¼Œæ²¡æœ‰è¶…å‡ºdoubleçš„å–å€¼èŒƒå›´ï¼Œå»ºè®®ä½¿ç”¨é™æ€æ–¹æ³•
-        //2.å¦‚æœè¦è¡¨ç¤ºçš„æ•°å­—æ¯”è¾ƒå¤§ï¼Œè¶…å‡ºäº†doubleçš„å–å€¼èŒƒå›´ï¼Œå»ºè®®ä½¿ç”¨æ„é€ æ–¹æ³•
-        //3.å¦‚æœæˆ‘ä»¬ä¼ é€’çš„æ˜¯0~10ä¹‹é—´çš„æ•´æ•°ï¼ŒåŒ…å«0ï¼ŒåŒ…å«10ï¼Œé‚£ä¹ˆæ–¹æ³•ä¼šè¿”å›å·²ç»åˆ›å»ºå¥½çš„å¯¹è±¡ï¼Œä¸ä¼šé‡æ–°new
+        //3.Í¨¹ı¾²Ì¬·½·¨»ñÈ¡¶ÔÏó
+        //Ï¸½Ú:
+        //1.Èç¹ûÒª±íÊ¾µÄÊı×Ö²»´ó£¬Ã»ÓĞ³¬³ödoubleµÄÈ¡Öµ·¶Î§£¬½¨ÒéÊ¹ÓÃ¾²Ì¬·½·¨
+        //2.Èç¹ûÒª±íÊ¾µÄÊı×Ö±È½Ï´ó£¬³¬³öÁËdoubleµÄÈ¡Öµ·¶Î§£¬½¨ÒéÊ¹ÓÃ¹¹Ôì·½·¨
+        //3.Èç¹ûÎÒÃÇ´«µİµÄÊÇ0~10Ö®¼äµÄÕûÊı£¬°üº¬0£¬°üº¬10£¬ÄÇÃ´·½·¨»á·µ»ØÒÑ¾­´´½¨ºÃµÄ¶ÔÏó£¬²»»áÖØĞÂnew
         BigDecimal bd6 = BigDecimal.valueOf(10.0);
         BigDecimal bd7 = BigDecimal.valueOf(10.0);
         System.out.println(bd6 == bd7);

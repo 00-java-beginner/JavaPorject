@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day20.jdk7;
+package ÉÏ°ë.day20.jdk7;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -7,20 +7,20 @@ import java.util.Date;
 public class A04_SimpleDateFormatDemo2 {
     public static void main(String[] args) throws ParseException {
         /*
-            å‡è®¾ï¼Œä½ åˆæ‹çš„å‡ºç”Ÿå¹´æœˆæ—¥ä¸º:2000-11-11
-            è¯·ç”¨å­—ç¬¦ä¸²è¡¨ç¤ºè¿™ä¸ªæ•°æ®ï¼Œå¹¶å°†å…¶è½¬æ¢ä¸º:2000å¹´11æœˆ11æ—¥
+            ¼ÙÉè£¬Äã³õÁµµÄ³öÉúÄêÔÂÈÕÎª:2000-11-11
+            ÇëÓÃ×Ö·û´®±íÊ¾Õâ¸öÊı¾İ£¬²¢½«Æä×ª»»Îª:2000Äê11ÔÂ11ÈÕ
 
-            åˆ›å»ºä¸€ä¸ªDateå¯¹è±¡è¡¨ç¤º2000å¹´11æœˆ11æ—¥
-            åˆ›å»ºä¸€ä¸ªSimpleDateFormatå¯¹è±¡ï¼Œå¹¶å®šä¹‰æ ¼å¼ä¸ºå¹´æœˆæ—¥æŠŠæ—¶é—´å˜æˆ:2000å¹´11æœˆ11æ—¥
+            ´´½¨Ò»¸öDate¶ÔÏó±íÊ¾2000Äê11ÔÂ11ÈÕ
+            ´´½¨Ò»¸öSimpleDateFormat¶ÔÏó£¬²¢¶¨Òå¸ñÊ½ÎªÄêÔÂÈÕ°ÑÊ±¼ä±ä³É:2000Äê11ÔÂ11ÈÕ
         */
 
-        //1.å¯ä»¥é€šè¿‡2000-11-11è¿›è¡Œè§£æï¼Œè§£ææˆä¸€ä¸ªDateå¯¹è±¡
+        //1.¿ÉÒÔÍ¨¹ı2000-11-11½øĞĞ½âÎö£¬½âÎö³ÉÒ»¸öDate¶ÔÏó
         String str = "2000-11-11";
-        //2.è§£æ
+        //2.½âÎö
         SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd");
         Date date = sdf1.parse(str);
-        //3.æ ¼å¼åŒ–
-        SimpleDateFormat sdf2 = new SimpleDateFormat("yyyyå¹´MMæœˆddæ—¥");
+        //3.¸ñÊ½»¯
+        SimpleDateFormat sdf2 = new SimpleDateFormat("yyyyÄêMMÔÂddÈÕ");
         String result = sdf2.format(date);
         System.out.println(result);
     }

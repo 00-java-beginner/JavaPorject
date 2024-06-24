@@ -1,32 +1,32 @@
-package ä¸ŠåŠ.day5;
+package ÉÏ°ë.day5;
 
 import java.util.Random;
 import java.util.Scanner;
 
-public class å¾ªç¯é«˜çº§ç»¼åˆç»ƒä¹ _05_éšæœºæ•° {
+public class Ñ­»·¸ß¼¶×ÛºÏÁ·Ï°_05_Ëæ»úÊı {
     public static void main(String[] args) {
-        //1.ç”Ÿæˆä¸€ä¸ª1-100ä¹‹é—´çš„éšæœºæ•°
+        //1.Éú³ÉÒ»¸ö1-100Ö®¼äµÄËæ»úÊı
         int conut = 0;
         Random r = new Random();
         int number = r.nextInt(100) + 1;
-        //2.çŒœè¿™ä¸ªæ•°å­—æ˜¯å¤šå°‘
+        //2.²ÂÕâ¸öÊı×ÖÊÇ¶àÉÙ
         Scanner sc = new Scanner(System.in);
         while (true) {
-            System.out.println("è¯·è¾“å…¥ä¸€ä¸ªæ•°å­—");
+            System.out.println("ÇëÊäÈëÒ»¸öÊı×Ö");
             int number1 = sc.nextInt();
 
-            //3.åˆ¤æ–­ä¸¤ä¸ªæ•°å­—ç»™å‡ºä¸åŒçš„æç¤º
+            //3.ÅĞ¶ÏÁ½¸öÊı×Ö¸ø³ö²»Í¬µÄÌáÊ¾
             conut++;
             if (conut == 3) {
-                System.out.println("çŒœä¸­äº†");
+                System.out.println("²ÂÖĞÁË");
                 break;
             }
             if (number < number1) {
-                System.out.println("çŒœå°äº†");
+                System.out.println("²ÂĞ¡ÁË");
             } else if (number > number1) {
-                System.out.println("çŒœå°äº†");
+                System.out.println("²ÂĞ¡ÁË");
             } else {
-                System.out.println("çŒœä¸­äº†");
+                System.out.println("²ÂÖĞÁË");
                 break;
             }
 

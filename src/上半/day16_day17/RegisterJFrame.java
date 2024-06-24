@@ -1,21 +1,21 @@
-package ä¸ŠåŠ.day16_day17;
+package ÉÏ°ë.day16_day17;
 
 import javax.swing.*;
 
 public class RegisterJFrame extends JFrame {
     /*
-    RegisterJFrame:æ³¨å†Œ
-    ä»¥åè·Ÿæ³¨å†Œç›¸å…³çš„ä»£ç éƒ½å†™åœ¨æ³¨å†Œé‡Œé¢
+    RegisterJFrame:×¢²á
+    ÒÔºó¸ú×¢²áÏà¹ØµÄ´úÂë¶¼Ğ´ÔÚ×¢²áÀïÃæ
     */
     public RegisterJFrame(){
         this.setSize(488,500);
-        //è®¾ç½®ç•Œé¢çš„æ ‡é¢˜
-        this.setTitle("æ‹¼å›¾ æ³¨å†Œ");
-        //è®¾ç½®ç•Œé¢ç½®é¡¶
+        //ÉèÖÃ½çÃæµÄ±êÌâ
+        this.setTitle("Æ´Í¼ ×¢²á");
+        //ÉèÖÃ½çÃæÖÃ¶¥
         this.setAlwaysOnTop(true);
-        //è®¾ç½®ç•Œé¢å±…ä¸­
+        //ÉèÖÃ½çÃæ¾ÓÖĞ
         this.setLocationRelativeTo(null);
-        //è®¾ç½®å…³é—­æ–¹æ³•
+        //ÉèÖÃ¹Ø±Õ·½·¨
         this.setDefaultCloseOperation(3);
 
 

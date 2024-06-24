@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day22.é›†åˆé¡¶å±‚æŽ¥å£collection;
+package ÉÏ°ë.day22.¼¯ºÏ¶¥²ã½Ó¿Úcollection;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -7,17 +7,17 @@ import java.util.Iterator;
 public class A05_CollectionDemo5 {
     public static void main(String[] args) {
       /*
-        è¿­ä»£å™¨çš„ç»†èŠ‚æ³¨æ„ç‚¹ï¼š
-            1.æŠ¥é”™NoSuchElementException
-            2.è¿­ä»£å™¨éåŽ†å®Œæ¯•ï¼ŒæŒ‡é’ˆä¸ä¼šå¤ä½
-            3.å¾ªçŽ¯ä¸­åªèƒ½ç”¨ä¸€æ¬¡nextæ–¹æ³•
-            4.è¿­ä»£å™¨éåŽ†æ—¶ï¼Œä¸èƒ½ç”¨é›†åˆçš„æ–¹æ³•è¿›è¡Œå¢žåŠ æˆ–è€…åˆ é™¤
-                æš‚æ—¶å½“åšä¸€ä¸ªç»“è®ºå…ˆè¡Œè®°å¿†ï¼Œåœ¨ä»Šå¤©æˆ‘ä»¬ä¼šè®²è§£æºç è¯¦ç»†çš„å†æ¥åˆ†æžã€‚
-                å¦‚æžœæˆ‘å®žåœ¨è¦åˆ é™¤ï¼šé‚£ä¹ˆå¯ä»¥ç”¨è¿­ä»£å™¨æä¾›çš„removeæ–¹æ³•è¿›è¡Œåˆ é™¤ã€‚
-                å¦‚æžœæˆ‘è¦æ·»åŠ ï¼Œæš‚æ—¶æ²¡æœ‰åŠžæ³•ã€‚
+        µü´úÆ÷µÄÏ¸½Ú×¢Òâµã£º
+            1.±¨´íNoSuchElementException
+            2.µü´úÆ÷±éÀúÍê±Ï£¬Ö¸Õë²»»á¸´Î»
+            3.Ñ­»·ÖÐÖ»ÄÜÓÃÒ»´Înext·½·¨
+            4.µü´úÆ÷±éÀúÊ±£¬²»ÄÜÓÃ¼¯ºÏµÄ·½·¨½øÐÐÔö¼Ó»òÕßÉ¾³ý
+                ÔÝÊ±µ±×öÒ»¸ö½áÂÛÏÈÐÐ¼ÇÒä£¬ÔÚ½ñÌìÎÒÃÇ»á½²½âÔ´ÂëÏêÏ¸µÄÔÙÀ´·ÖÎö¡£
+                Èç¹ûÎÒÊµÔÚÒªÉ¾³ý£ºÄÇÃ´¿ÉÒÔÓÃµü´úÆ÷Ìá¹©µÄremove·½·¨½øÐÐÉ¾³ý¡£
+                Èç¹ûÎÒÒªÌí¼Ó£¬ÔÝÊ±Ã»ÓÐ°ì·¨¡£
        */
 
-        //1.åˆ›å»ºé›†åˆå¹¶æ·»åŠ å…ƒç´ 
+        //1.´´½¨¼¯ºÏ²¢Ìí¼ÓÔªËØ
         Collection<String> coll = new ArrayList<>();
         coll.add("aaa");
         coll.add("bbb");
@@ -25,12 +25,12 @@ public class A05_CollectionDemo5 {
         coll.add("ddd");
         coll.add("eee");
 
-        //2.èŽ·å–è¿­ä»£å™¨å¯¹è±¡
-        //è¿­ä»£å™¨å°±å¥½æ¯”æ˜¯ä¸€ä¸ªç®­å¤´ï¼Œé»˜è®¤æŒ‡å‘é›†åˆçš„0ç´¢å¼•å¤„
+        //2.»ñÈ¡µü´úÆ÷¶ÔÏó
+        //µü´úÆ÷¾ÍºÃ±ÈÊÇÒ»¸ö¼ýÍ·£¬Ä¬ÈÏÖ¸Ïò¼¯ºÏµÄ0Ë÷Òý´¦
         Iterator<String> it = coll.iterator();
-        //3.åˆ©ç”¨å¾ªçŽ¯ä¸æ–­çš„åŽ»èŽ·å–é›†åˆä¸­çš„æ¯ä¸€ä¸ªå…ƒç´ 
+        //3.ÀûÓÃÑ­»·²»¶ÏµÄÈ¥»ñÈ¡¼¯ºÏÖÐµÄÃ¿Ò»¸öÔªËØ
         while(it.hasNext()){
-            //4.nextæ–¹æ³•çš„ä¸¤ä»¶äº‹æƒ…ï¼šèŽ·å–å…ƒç´ ,å¹¶ç§»åŠ¨æŒ‡é’ˆ
+            //4.next·½·¨µÄÁ½¼þÊÂÇé£º»ñÈ¡ÔªËØ,²¢ÒÆ¶¯Ö¸Õë
             String str = it.next();
             if("bbb".equals(str)){
                 //coll.remove("bbb");

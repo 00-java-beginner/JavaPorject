@@ -1,4 +1,4 @@
-package ä¸ŠåŠ.day23.æ³›å‹;
+package ÉÏ°ë.day23.·ºĞÍ;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -11,9 +11,9 @@ public class A01_ArrayListDemo1 {
         list.add("ccc");
 
         /*
-            iterator(): ç”Ÿæˆä¸€ä¸ªè¿­ä»£å™¨å¯¹è±¡ï¼Œé»˜è®¤æŒ‡å‘é›†åˆçš„0ç´¢å¼•å¤„
-            hasNext():  åˆ¤æ–­å½“å‰æŒ‡å‘çš„ä½ç½®æ˜¯å¦æœ‰å…ƒç´ 
-            next():     1.è·å–å…ƒç´   2.ç§»åŠ¨æŒ‡é’ˆ
+            iterator(): Éú³ÉÒ»¸öµü´úÆ÷¶ÔÏó£¬Ä¬ÈÏÖ¸Ïò¼¯ºÏµÄ0Ë÷Òı´¦
+            hasNext():  ÅĞ¶Ïµ±Ç°Ö¸ÏòµÄÎ»ÖÃÊÇ·ñÓĞÔªËØ
+            next():     1.»ñÈ¡ÔªËØ  2.ÒÆ¶¯Ö¸Õë
 
         */
 
